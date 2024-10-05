@@ -16,7 +16,7 @@
 > - **Желает\Требует\Хочет** 
 > - **Чтобы\Для**
 
-[Гайд](https://habr.com/ru/articles/577420/)
-[Статья на хабре](https://habr.com/ru/companies/X5Tech/articles/723742/)
-[Гайд Яндекс Практикум](https://practicum.yandex.ru/blog/chto-takoe-user-story-i-kak-napisat/)
+[Гайд](https://habr.com/ru/articles/577420/)  \
+[Статья на хабре](https://habr.com/ru/companies/X5Tech/articles/723742/)  \
+[Гайд Яндекс Практикум](https://practicum.yandex.ru/blog/chto-takoe-user-story-i-kak-napisat/)  \
 [BABOK v3 «Руководство к своду знаний по бизнес-анализу» IIBA.](https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/)
