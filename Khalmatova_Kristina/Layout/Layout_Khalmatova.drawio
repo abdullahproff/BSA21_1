@@ -1,5 +1,5 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0" version="24.7.17">
-  <diagram name="Страница — 1" id="72RHj7idrgb7wf3P0ceX">
+  <diagram name="Макет" id="72RHj7idrgb7wf3P0ceX">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="1">
       <root>
         <mxCell id="0" />
@@ -428,6 +428,36 @@
         </mxCell>
         <mxCell id="nACVV3LmcUkWURlD9kM1-61" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;При нажатии, трек удаляется из плейлиста&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&amp;nbsp;и список треков сдвигается на одну позицию вверх&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="519" y="410" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="H1tbn8PHQ9Emmny9dghV-4" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="107.44" y="100" width="18" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="H1tbn8PHQ9Emmny9dghV-5" value="2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="294.45" y="100.5" width="18" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="H1tbn8PHQ9Emmny9dghV-6" value="3" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="484.81" y="100" width="18" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="H1tbn8PHQ9Emmny9dghV-7" value="4" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="688" y="100" width="18" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="H1tbn8PHQ9Emmny9dghV-9" value="A" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="176" y="304.5" width="18" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="H1tbn8PHQ9Emmny9dghV-11" value="A" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="364.5" y="304.5" width="18" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="H1tbn8PHQ9Emmny9dghV-12" value="B" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="317" y="130.61" width="18" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="H1tbn8PHQ9Emmny9dghV-13" value="B" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="514" y="128.61" width="18" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="H1tbn8PHQ9Emmny9dghV-14" value="C" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="552" y="168.19" width="18" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="H1tbn8PHQ9Emmny9dghV-15" value="A" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="757" y="305.5" width="18" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
