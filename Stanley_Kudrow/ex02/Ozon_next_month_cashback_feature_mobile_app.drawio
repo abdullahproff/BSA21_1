@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="li09qqb5fwVE3tS7wrpL">
-    <mxGraphModel dx="1609" dy="982" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1368" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -25,11 +25,8 @@
         <mxCell id="_k14NOsf7yQXFgDvM924-61" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-180;" parent="urL8BZHNpoyfXsBZfCev-18" vertex="1">
           <mxGeometry x="300" y="530" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-16" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Откроется 20.11.2024&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF0080;" vertex="1" parent="urL8BZHNpoyfXsBZfCev-18">
+        <mxCell id="OY-_izu9chUP1zv7eODz-16" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Откроется 20.11.2024&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF0080;" parent="urL8BZHNpoyfXsBZfCev-18" vertex="1">
           <mxGeometry x="230" y="244" width="90" height="10" as="geometry" />
-        </mxCell>
-        <mxCell id="_k14NOsf7yQXFgDvM924-3" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Неактивная до 20 числа текущего месяца (затемнена)&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;dashed=1;" parent="1" vertex="1">
-          <mxGeometry x="650" y="40" width="130" height="98" as="geometry" />
         </mxCell>
         <mxCell id="_k14NOsf7yQXFgDvM924-51" value="&lt;font size=&quot;3&quot;&gt;1&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="200" y="39" width="40" height="40" as="geometry" />
@@ -43,251 +40,152 @@
         <mxCell id="N-lE7uRC2UTWvSIOL3Zv-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1 -&amp;gt; Главная страница раздела &quot;Кэшбэк&quot; - до 20го числа текущего месяца&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="58" y="40" width="130" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="-8ZC4G40E2ZAS9f_rzPk-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="urL8BZHNpoyfXsBZfCev-21" target="_k14NOsf7yQXFgDvM924-3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-3" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="OY-_izu9chUP1zv7eODz-3" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1002" y="41" width="370" height="560" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-4" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-3">
+        <mxCell id="OY-_izu9chUP1zv7eODz-4" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="OY-_izu9chUP1zv7eODz-3" vertex="1">
           <mxGeometry width="370" height="560" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-3">
+        <mxCell id="OY-_izu9chUP1zv7eODz-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="OY-_izu9chUP1zv7eODz-3" vertex="1">
           <mxGeometry x="20" y="40" width="330" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-6" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-3">
+        <mxCell id="OY-_izu9chUP1zv7eODz-6" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="OY-_izu9chUP1zv7eODz-3" vertex="1">
           <mxGeometry x="30" y="200" width="310" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-7" value="Ноябрь" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-3">
+        <mxCell id="OY-_izu9chUP1zv7eODz-7" value="Ноябрь" style="rounded=1;whiteSpace=wrap;html=1;" parent="OY-_izu9chUP1zv7eODz-3" vertex="1">
           <mxGeometry x="200" y="244" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Кэшбэк&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="OY-_izu9chUP1zv7eODz-3">
+        <mxCell id="OY-_izu9chUP1zv7eODz-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Кэшбэк&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="OY-_izu9chUP1zv7eODz-3" vertex="1">
           <mxGeometry x="150" y="210" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-9" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-180;" vertex="1" parent="OY-_izu9chUP1zv7eODz-3">
+        <mxCell id="OY-_izu9chUP1zv7eODz-9" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-180;" parent="OY-_izu9chUP1zv7eODz-3" vertex="1">
           <mxGeometry x="300" y="530" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-21" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFD966;" vertex="1" parent="OY-_izu9chUP1zv7eODz-3">
+        <mxCell id="OY-_izu9chUP1zv7eODz-21" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFD966;" parent="OY-_izu9chUP1zv7eODz-3" vertex="1">
           <mxGeometry x="300" y="249" width="10" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-10" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Плашка с напоминание исчезает и кнопка растеняется (см. макет 1) - становится активной&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="1412" y="41" width="130" height="119" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-11" value="&lt;font size=&quot;3&quot;&gt;2&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="OY-_izu9chUP1zv7eODz-11" value="&lt;font size=&quot;3&quot;&gt;2&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="962" y="40" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Выход из банка на главную страницу Озон&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+        <mxCell id="OY-_izu9chUP1zv7eODz-12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Выход из банка на главную страницу Озон&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="1252" y="631" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0000;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-9" target="OY-_izu9chUP1zv7eODz-12">
+        <mxCell id="OY-_izu9chUP1zv7eODz-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0000;" parent="1" source="OY-_izu9chUP1zv7eODz-9" target="OY-_izu9chUP1zv7eODz-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;2 -&amp;gt; Главная страница раздела &quot;Кэшбэк&quot; - с 20го числа текущего месяца&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="OY-_izu9chUP1zv7eODz-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;2 -&amp;gt; Главная страница раздела &quot;Кэшбэк&quot; - с 20го числа текущего месяца&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="820" y="41" width="130" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-7" target="OY-_izu9chUP1zv7eODz-10">
+        <mxCell id="OY-_izu9chUP1zv7eODz-17" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Плашка с пояснением когда будут доступны выборы категорий на следующий месяц&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="420" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OY-_izu9chUP1zv7eODz-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="OY-_izu9chUP1zv7eODz-16" target="OY-_izu9chUP1zv7eODz-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-17" value="Плашка с пояснением когда будут доступны выборы категорий на следующий месяц" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;rounded=1;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="650" y="450" width="120" height="90" as="geometry" />
+        <mxCell id="OY-_izu9chUP1zv7eODz-20" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="280" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-16" target="OY-_izu9chUP1zv7eODz-17">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-20" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="780" y="240" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-22" target="OY-_izu9chUP1zv7eODz-25">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-91" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-22" target="OY-_izu9chUP1zv7eODz-90">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-22" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Появляется жёлтый кружочек - категории доступ&lt;span style=&quot;background-color: initial;&quot;&gt;ны к выбору&lt;/span&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;dashed=1;" vertex="1" parent="1">
+        <mxCell id="OY-_izu9chUP1zv7eODz-22" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Появляется жёлтый кружочек - категории доступ&lt;span style=&quot;background-color: initial;&quot;&gt;ны к выбору&lt;/span&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="1430" y="370" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-21" target="OY-_izu9chUP1zv7eODz-22">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="OY-_izu9chUP1zv7eODz-27" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="1740" y="41" width="370" height="560" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-24" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1647" y="240" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-25" value="Когда категории будут утверждены, кружочек окрасится в зелёный цвет" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="1430" y="900" width="120" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-27" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="1032" y="841" width="370" height="560" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-28" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-27">
+        <mxCell id="OY-_izu9chUP1zv7eODz-28" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="OY-_izu9chUP1zv7eODz-27" vertex="1">
           <mxGeometry width="370" height="560" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-29" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-27">
+        <mxCell id="OY-_izu9chUP1zv7eODz-29" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="OY-_izu9chUP1zv7eODz-27" vertex="1">
           <mxGeometry x="20" y="40" width="330" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-30" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-27">
+        <mxCell id="OY-_izu9chUP1zv7eODz-30" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="OY-_izu9chUP1zv7eODz-27" vertex="1">
           <mxGeometry x="30" y="200" width="310" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-31" value="Ноябрь" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-27">
+        <mxCell id="OY-_izu9chUP1zv7eODz-31" value="Ноябрь" style="rounded=1;whiteSpace=wrap;html=1;" parent="OY-_izu9chUP1zv7eODz-27" vertex="1">
           <mxGeometry x="200" y="244" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-32" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Кэшбэк&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="OY-_izu9chUP1zv7eODz-27">
+        <mxCell id="OY-_izu9chUP1zv7eODz-32" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Кэшбэк&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="OY-_izu9chUP1zv7eODz-27" vertex="1">
           <mxGeometry x="150" y="210" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-33" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-180;" vertex="1" parent="OY-_izu9chUP1zv7eODz-27">
+        <mxCell id="OY-_izu9chUP1zv7eODz-33" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-180;" parent="OY-_izu9chUP1zv7eODz-27" vertex="1">
           <mxGeometry x="300" y="530" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-34" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#00FF00;" vertex="1" parent="OY-_izu9chUP1zv7eODz-27">
+        <mxCell id="OY-_izu9chUP1zv7eODz-34" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#00FF00;" parent="OY-_izu9chUP1zv7eODz-27" vertex="1">
           <mxGeometry x="300" y="249" width="10" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-35" value="&lt;font size=&quot;3&quot;&gt;3&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="992" y="840" width="40" height="40" as="geometry" />
+        <mxCell id="OY-_izu9chUP1zv7eODz-35" value="&lt;font size=&quot;3&quot;&gt;3&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1700" y="40" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-36" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Выход из банка на главную страницу Озон&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="1282" y="1431" width="120" height="60" as="geometry" />
+        <mxCell id="OY-_izu9chUP1zv7eODz-36" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Выход из банка на главную страницу Озон&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1990" y="631" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0000;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-33" target="OY-_izu9chUP1zv7eODz-36">
+        <mxCell id="OY-_izu9chUP1zv7eODz-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0000;" parent="1" source="OY-_izu9chUP1zv7eODz-33" target="OY-_izu9chUP1zv7eODz-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-38" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;3 -&amp;gt; Главная страница раздела &quot;Кэшбэк&quot; - пользователь утвердил категории с 20го числа текущего месяца т до первого числа следующего&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="832" y="890" width="130" height="50" as="geometry" />
+        <mxCell id="OY-_izu9chUP1zv7eODz-38" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;3 -&amp;gt; Главная страница раздела &quot;Кэшбэк&quot; - пользователь утвердил категории с 20го числа текущего месяца и до первого числа следующего&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="60" width="130" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1.002;entryY=0.474;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-25" target="OY-_izu9chUP1zv7eODz-28">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="OY-_izu9chUP1zv7eODz-53" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="2430" y="39" width="370" height="560" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-40" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1647" y="1070" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-41" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="1892" y="31" width="370" height="560" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-42" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-41">
+        <mxCell id="OY-_izu9chUP1zv7eODz-54" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="OY-_izu9chUP1zv7eODz-53" vertex="1">
           <mxGeometry width="370" height="560" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-43" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-41">
+        <mxCell id="OY-_izu9chUP1zv7eODz-55" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="OY-_izu9chUP1zv7eODz-53" vertex="1">
           <mxGeometry x="20" y="40" width="330" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-44" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-41">
+        <mxCell id="OY-_izu9chUP1zv7eODz-56" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="OY-_izu9chUP1zv7eODz-53" vertex="1">
           <mxGeometry x="30" y="200" width="310" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-45" value="Ноябрь" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-41">
+        <mxCell id="OY-_izu9chUP1zv7eODz-57" value="Ноябрь" style="rounded=1;whiteSpace=wrap;html=1;" parent="OY-_izu9chUP1zv7eODz-53" vertex="1">
           <mxGeometry x="48" y="249" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-46" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Кэшбэк&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="OY-_izu9chUP1zv7eODz-41">
+        <mxCell id="OY-_izu9chUP1zv7eODz-58" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Кэшбэк&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="OY-_izu9chUP1zv7eODz-53" vertex="1">
           <mxGeometry x="150" y="210" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-47" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-180;" vertex="1" parent="OY-_izu9chUP1zv7eODz-41">
+        <mxCell id="OY-_izu9chUP1zv7eODz-59" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-180;" parent="OY-_izu9chUP1zv7eODz-53" vertex="1">
           <mxGeometry x="300" y="530" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-48" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFD966;" vertex="1" parent="OY-_izu9chUP1zv7eODz-41">
+        <mxCell id="OY-_izu9chUP1zv7eODz-60" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#00FF00;" parent="OY-_izu9chUP1zv7eODz-53" vertex="1">
           <mxGeometry x="150" y="259" width="10" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-65" value="Декабрь" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="OY-_izu9chUP1zv7eODz-41">
-          <mxGeometry x="200" y="249" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-49" value="&lt;font size=&quot;3&quot;&gt;4&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1852" y="30" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-50" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Выход из банка на главную страницу Озон&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="2142" y="621" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0000;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-47" target="OY-_izu9chUP1zv7eODz-50">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-52" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;4 -&amp;gt; Главная страница раздела &quot;Кэшбэк&quot; - с 1го числа следующего месяца, который стал текущим и пользователь всё ещё НЕ УТВЕРДИЛ категории&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1710" y="79" width="130" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-53" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="1922" y="831" width="370" height="560" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-54" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-53">
-          <mxGeometry width="370" height="560" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-55" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-53">
-          <mxGeometry x="20" y="40" width="330" height="480" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-56" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-53">
-          <mxGeometry x="30" y="200" width="310" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-57" value="Ноябрь" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="OY-_izu9chUP1zv7eODz-53">
-          <mxGeometry x="48" y="249" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-58" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Кэшбэк&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="OY-_izu9chUP1zv7eODz-53">
-          <mxGeometry x="150" y="210" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-59" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-180;" vertex="1" parent="OY-_izu9chUP1zv7eODz-53">
-          <mxGeometry x="300" y="530" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-60" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#00FF00;" vertex="1" parent="OY-_izu9chUP1zv7eODz-53">
-          <mxGeometry x="150" y="259" width="10" height="10" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-75" value="Декабрь" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="OY-_izu9chUP1zv7eODz-53">
+        <mxCell id="OY-_izu9chUP1zv7eODz-75" value="Декабрь" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;" parent="OY-_izu9chUP1zv7eODz-53" vertex="1">
           <mxGeometry x="203" y="250" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-61" value="&lt;font size=&quot;3&quot;&gt;5&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1882" y="830" width="40" height="40" as="geometry" />
+        <mxCell id="OY-_izu9chUP1zv7eODz-61" value="&lt;font size=&quot;3&quot;&gt;4&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2390" y="38" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-62" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Выход из банка на главную страницу Озон&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="2172" y="1421" width="120" height="60" as="geometry" />
+        <mxCell id="OY-_izu9chUP1zv7eODz-62" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Выход из банка на главную страницу Озон&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="2680" y="629" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0000;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-59" target="OY-_izu9chUP1zv7eODz-62">
+        <mxCell id="OY-_izu9chUP1zv7eODz-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0000;" parent="1" source="OY-_izu9chUP1zv7eODz-59" target="OY-_izu9chUP1zv7eODz-62" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-64" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;4 -&amp;gt; Главная страница раздела &quot;Кэшбэк&quot; - с 1го числа следующего месяца, который стал текущим и пользователь УТВЕРДИЛ категории&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1722" y="880" width="130" height="50" as="geometry" />
+        <mxCell id="OY-_izu9chUP1zv7eODz-64" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;4 -&amp;gt; Главная страница раздела &quot;Кэшбэк&quot; - с 1го числа следующего месяца кнопка выбора перемещается на место текущего месяца&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="2230" y="80" width="130" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-78" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="120" y="760" as="sourcePoint" />
-            <mxPoint x="2463.529411764706" y="760" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="5UnHv6mz9iG_G4zbgbHd-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;a&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="800" y="240" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-79" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="160" y="840" as="sourcePoint" />
-            <mxPoint x="160" y="200" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="5UnHv6mz9iG_G4zbgbHd-2" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="280" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-80" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="820" y="1230" as="sourcePoint" />
-            <mxPoint x="820" y="310" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="5UnHv6mz9iG_G4zbgbHd-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;b&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="240" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-81" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1610" y="1230" as="sourcePoint" />
-            <mxPoint x="1610" y="310" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="5UnHv6mz9iG_G4zbgbHd-4" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2230" y="280" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-82">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="159.99999999999977" y="760" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="5UnHv6mz9iG_G4zbgbHd-5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;c&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="2250" y="240" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-82" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;01.10.2024&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="50" y="691" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-85">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="820" y="760" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-85" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;20.10.2024&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="720" y="690" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-86">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1610" y="760" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-86" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;01.11.2024&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1662" y="681" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-90" target="OY-_izu9chUP1zv7eODz-45">
+        <mxCell id="5UnHv6mz9iG_G4zbgbHd-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-7" target="OY-_izu9chUP1zv7eODz-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OY-_izu9chUP1zv7eODz-90" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;С жёлтым кружком сама кнопка покачивается (встряхивается) раз в 10 секунд - для большего внимания&amp;nbsp;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="1670" y="385" width="120" height="145" as="geometry" />
+        <mxCell id="5UnHv6mz9iG_G4zbgbHd-7" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Если категории не были бы утверждены, кружок был бы жёлтым&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="450" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5UnHv6mz9iG_G4zbgbHd-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OY-_izu9chUP1zv7eODz-57" target="5UnHv6mz9iG_G4zbgbHd-7">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
