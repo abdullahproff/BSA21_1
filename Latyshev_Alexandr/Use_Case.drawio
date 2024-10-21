@@ -1,0 +1,176 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17" pages="2">
+  <diagram name="макет" id="flQP20-5zX7BcdRE8flK">
+    <mxGraphModel dx="1750" dy="1097" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t8qjZ4TBIEZS-IhVKaN8-68" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="10" y="35" width="750" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="t8qjZ4TBIEZS-IhVKaN8-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="t8qjZ4TBIEZS-IhVKaN8-68" vertex="1">
+          <mxGeometry width="170" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="qztZ1_po2IppHf0p68Rq-8" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="t8qjZ4TBIEZS-IhVKaN8-68">
+          <mxGeometry y="188.54999999999998" width="170" height="41.45" as="geometry" />
+        </mxCell>
+        <mxCell id="t8qjZ4TBIEZS-IhVKaN8-37" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="t8qjZ4TBIEZS-IhVKaN8-68" vertex="1">
+          <mxGeometry y="230" width="170" height="41.45" as="geometry" />
+        </mxCell>
+        <mxCell id="t8qjZ4TBIEZS-IhVKaN8-33" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="t8qjZ4TBIEZS-IhVKaN8-68" vertex="1">
+          <mxGeometry y="145.09" width="170" height="41.45" as="geometry" />
+        </mxCell>
+        <mxCell id="t8qjZ4TBIEZS-IhVKaN8-8" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Пауэрбанки по адресу ул. Дмитровское шоссе 5&lt;/font&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Осталось - 5&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="t8qjZ4TBIEZS-IhVKaN8-68" vertex="1">
+          <mxGeometry x="313.95" width="186.05" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="t8qjZ4TBIEZS-IhVKaN8-26" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Список постаматов&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="t8qjZ4TBIEZS-IhVKaN8-68" vertex="1">
+          <mxGeometry x="15.23" y="-0.0009090909090900823" width="139.53488372093022" height="62.181818181818194" as="geometry" />
+        </mxCell>
+        <mxCell id="t8qjZ4TBIEZS-IhVKaN8-27" value="&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;1. ул. Дмитровское шоссе 5&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;2. ул. Дмитровское шоссе 20&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;3. ул. Дмитровское шоссе 25&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="t8qjZ4TBIEZS-IhVKaN8-68" vertex="1">
+          <mxGeometry x="0.00046511627905942987" y="154.99818181818182" width="139.53488372093022" height="41.45454545454545" as="geometry" />
+        </mxCell>
+        <mxCell id="t8qjZ4TBIEZS-IhVKaN8-44" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="t8qjZ4TBIEZS-IhVKaN8-68" vertex="1">
+          <mxGeometry x="420" width="60" height="20.73" as="geometry" />
+        </mxCell>
+        <mxCell id="t8qjZ4TBIEZS-IhVKaN8-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="t8qjZ4TBIEZS-IhVKaN8-68" source="t8qjZ4TBIEZS-IhVKaN8-42" target="t8qjZ4TBIEZS-IhVKaN8-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t8qjZ4TBIEZS-IhVKaN8-42" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;назад&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=2;" parent="t8qjZ4TBIEZS-IhVKaN8-68" vertex="1">
+          <mxGeometry x="427.67279069767443" width="52.325581395348834" height="20.727272727272727" as="geometry" />
+        </mxCell>
+        <mxCell id="t8qjZ4TBIEZS-IhVKaN8-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.402;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="t8qjZ4TBIEZS-IhVKaN8-68" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="39.25" y="435.27272727272725" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="38.372093023255815" y="476.72727272727275" />
+              <mxPoint x="40.116279069767444" y="476.72727272727275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t8qjZ4TBIEZS-IhVKaN8-73" value="User story -&amp;nbsp;Я, как пользователь приложения БериЗаряд, хочу иметь возможность&amp;nbsp;&lt;div&gt;знать количество доступных пауэрбанков в постамате, для того чтобы не приходить к постамату если он пустой&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="t8qjZ4TBIEZS-IhVKaN8-68" vertex="1">
+          <mxGeometry y="310" width="650" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qztZ1_po2IppHf0p68Rq-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.033;entryY=0.587;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="t8qjZ4TBIEZS-IhVKaN8-68" source="t8qjZ4TBIEZS-IhVKaN8-33" target="t8qjZ4TBIEZS-IhVKaN8-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qztZ1_po2IppHf0p68Rq-7" value="Поиск: Дмитроввское шоссе" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="t8qjZ4TBIEZS-IhVKaN8-68">
+          <mxGeometry y="84.83" width="170" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="fh1CjbGDdU5sEiXmDEcf" name="UC">
+    <mxGraphModel dx="1500" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-1" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="600" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-2" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-1">
+          <mxGeometry width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-3" value="&lt;b&gt;Заголовок&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-2">
+          <mxGeometry width="160" height="40" as="geometry">
+            <mxRectangle width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-4" value="Проверка количества пауэрбанков в постамате" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-2">
+          <mxGeometry x="160" width="440" height="40" as="geometry">
+            <mxRectangle width="440" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-5" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-1">
+          <mxGeometry y="40" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-6" value="&lt;b&gt;Акторы&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-5">
+          <mxGeometry width="160" height="40" as="geometry">
+            <mxRectangle width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-7" value="Клиент" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-5">
+          <mxGeometry x="160" width="440" height="40" as="geometry">
+            <mxRectangle width="440" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-8" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-1">
+          <mxGeometry y="80" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-9" value="&lt;b&gt;Предусловие&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-8">
+          <mxGeometry width="160" height="40" as="geometry">
+            <mxRectangle width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-10" value="Клиент зарегистрирован и авторизован в приложении БериЗаряд" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-8">
+          <mxGeometry x="160" width="440" height="40" as="geometry">
+            <mxRectangle width="440" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-11" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-1">
+          <mxGeometry y="120" width="600" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-12" value="&lt;b&gt;Ограничения&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-11">
+          <mxGeometry width="160" height="60" as="geometry">
+            <mxRectangle width="160" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-13" value="-" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-11">
+          <mxGeometry x="160" width="440" height="60" as="geometry">
+            <mxRectangle width="440" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-14" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-1">
+          <mxGeometry y="180" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-15" value="&lt;b&gt;Триггер&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-14">
+          <mxGeometry width="160" height="40" as="geometry">
+            <mxRectangle width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-16" value="Клиент нажимает на кнопку адреса" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-14">
+          <mxGeometry x="160" width="440" height="40" as="geometry">
+            <mxRectangle width="440" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-17" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-1">
+          <mxGeometry y="220" width="600" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-18" value="&lt;b&gt;Основной сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-17">
+          <mxGeometry width="160" height="240" as="geometry">
+            <mxRectangle width="160" height="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-19" value="&lt;ol style=&quot;text-align: left;&quot;&gt;&lt;li&gt;Система отображает адреса по алфавиту(экран 1).&lt;/li&gt;&lt;li&gt;Клиент выбирает адрес.&lt;/li&gt;&lt;li&gt;Система отображает количество пауэрбанков по данному адресу (экран 2).&lt;/li&gt;&lt;/ol&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;font-weight: bold; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&lt;b style=&quot;font-weight: bold; background-color: initial; text-align: center;&quot;&gt;Критерий успеха: &lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;отображение количества пауэрбанков в постамате&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-17">
+          <mxGeometry x="160" width="440" height="240" as="geometry">
+            <mxRectangle width="440" height="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-20" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-1">
+          <mxGeometry y="460" width="600" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-21" value="&lt;b&gt;Альтернативный сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-20">
+          <mxGeometry width="160" height="100" as="geometry">
+            <mxRectangle width="160" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-22" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1а.&amp;nbsp; Клиент в поисковой строке вводит адрес.&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- Переход ко 2 шагу основного сценария.&lt;br&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=7;spacingRight=7;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-20">
+          <mxGeometry x="160" width="440" height="100" as="geometry">
+            <mxRectangle width="440" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-23" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-1">
+          <mxGeometry y="560" width="600" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-24" value="&lt;b&gt;Исключительный сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-23">
+          <mxGeometry width="160" height="100" as="geometry">
+            <mxRectangle width="160" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tjyob-ml_2jUHtPQMNYL-25" value="-" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" vertex="1" parent="tjyob-ml_2jUHtPQMNYL-23">
+          <mxGeometry x="160" width="440" height="100" as="geometry">
+            <mxRectangle width="440" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
