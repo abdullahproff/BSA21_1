@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.8.0">
   <diagram name="Page-1" id="ng63fu3lM4MBlFRZrWzI">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -519,6 +519,18 @@
         </mxCell>
         <mxCell id="bad4EyrJ_Dqa51eoFmXy-9" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;новый список добавляется в конец&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="1">
           <mxGeometry x="181.72000000000003" y="232" width="125.64" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RD5ACA6_gbeNSSzkJMfz-1" value="Создать новый список" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-678.64" y="747" width="146.64" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="RD5ACA6_gbeNSSzkJMfz-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="RD5ACA6_gbeNSSzkJMfz-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="391" y="640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-603" y="660" />
+              <mxPoint x="391" y="660" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
