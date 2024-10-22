@@ -1,11 +1,11 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
   <diagram id="iSdH8Bf3Pxa846-qju2B" name="Шаблон">
-    <mxGraphModel dx="2074" dy="1196" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1728" dy="997" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="5DFN9uElky3kn-lGwo1o-1" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontFamily=Comic Sans MS;" parent="1" vertex="1">
-          <mxGeometry x="117" y="43" width="935" height="741" as="geometry" />
+          <mxGeometry x="117" y="35" width="935" height="757" as="geometry" />
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-6" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Comic Sans MS;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
           <mxGeometry width="935" height="40" as="geometry" />
@@ -99,16 +99,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="3GdmSkPxTMsJN_K1McYo-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Comic Sans MS;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
-          <mxGeometry y="600" width="935" height="141" as="geometry" />
+          <mxGeometry y="600" width="935" height="157" as="geometry" />
         </mxCell>
         <mxCell id="3GdmSkPxTMsJN_K1McYo-2" value="&lt;b&gt;Исключительный сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=Comic Sans MS;align=right;spacingRight=21;" parent="3GdmSkPxTMsJN_K1McYo-1" vertex="1">
-          <mxGeometry width="175" height="141" as="geometry">
-            <mxRectangle width="175" height="141" as="alternateBounds" />
+          <mxGeometry width="175" height="157" as="geometry">
+            <mxRectangle width="175" height="157" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3GdmSkPxTMsJN_K1McYo-3" value="&lt;span style=&quot;background-color: initial;&quot;&gt;10b. Пользователь&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;с помощью кнопок&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&quot;Урна&quot;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;или&lt;/span&gt;&amp;nbsp;&quot;-&quot;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;возле Товара, соответственно, удаляет каждый Товар из Корзины&lt;/span&gt;&amp;nbsp;&lt;br&gt;или уменьшает его количество до 0&lt;span style=&quot;background-color: initial;&quot;&gt;;&lt;/span&gt;&lt;div&gt;11b. Система сообщает, что Корзина пуста и отображает кнопку &quot;Вернуться на главную&quot;;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;b&gt;-- Переход к шагу 1 основного сценария&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;&lt;font size=&quot;1&quot; color=&quot;#8654cc&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Результат&lt;/u&gt;:&lt;/span&gt;&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Корзина пуста, Пользователю предложено вернуться на главную страницу для наполнения Корзины.&lt;/b&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=21;spacingRight=7;fontFamily=Comic Sans MS;" parent="3GdmSkPxTMsJN_K1McYo-1" vertex="1">
-          <mxGeometry x="175" width="760" height="141" as="geometry">
-            <mxRectangle width="760" height="141" as="alternateBounds" />
+        <mxCell id="3GdmSkPxTMsJN_K1McYo-3" value="&lt;span style=&quot;background-color: initial;&quot;&gt;10b. Пользователь&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;с помощью кнопок&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&quot;Урна&quot;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;или&lt;/span&gt;&amp;nbsp;&quot;-&quot;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;возле Товара, соответственно, удаляет каждый Товар из Корзины&lt;/span&gt;&amp;nbsp;&lt;br&gt;или уменьшает его количество до 0&lt;span style=&quot;background-color: initial;&quot;&gt;;&lt;/span&gt;&lt;div&gt;11b. Система сообщает, что Корзина пуста и отображает кнопку &quot;Вернуться на главную&quot;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;i&gt;&amp;nbsp;&lt;font color=&quot;#8654cc&quot;&gt;(&lt;font style=&quot;text-decoration-line: underline;&quot;&gt;экран 2.c&lt;/font&gt;);&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;12b. Пользователь нажимает на одну из кнопок &quot;Вернуться на главную&quot; или &quot;Дом&quot;;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;b&gt;-- Переход к шагу 1 основного сценария&lt;/b&gt;&lt;/i&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;&lt;font size=&quot;1&quot; color=&quot;#8654cc&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Результат&lt;/u&gt;:&lt;/span&gt;&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Корзина пуста, Пользователю предложено вернуться на главную страницу для наполнения Корзины.&lt;/b&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=21;spacingRight=7;fontFamily=Comic Sans MS;" parent="3GdmSkPxTMsJN_K1McYo-1" vertex="1">
+          <mxGeometry x="175" width="760" height="157" as="geometry">
+            <mxRectangle width="760" height="157" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
       </root>
