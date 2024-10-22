@@ -54,7 +54,7 @@
             <mxRectangle width="160" height="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kpbq2rMiD-oukpvBsijn-156" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" vertex="1" parent="kpbq2rMiD-oukpvBsijn-154">
+        <mxCell id="kpbq2rMiD-oukpvBsijn-156" value="1.Просмотр текста возможен только у песни которая воспроизводится" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" vertex="1" parent="kpbq2rMiD-oukpvBsijn-154">
           <mxGeometry x="160" width="440" height="60" as="geometry">
             <mxRectangle width="440" height="60" as="alternateBounds" />
           </mxGeometry>
@@ -93,7 +93,7 @@
             <mxRectangle width="160" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kpbq2rMiD-oukpvBsijn-165" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=7;spacingRight=7;" vertex="1" parent="kpbq2rMiD-oukpvBsijn-163">
+        <mxCell id="kpbq2rMiD-oukpvBsijn-165" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=7;spacingRight=7;" vertex="1" parent="kpbq2rMiD-oukpvBsijn-163">
           <mxGeometry x="160" width="440" height="100" as="geometry">
             <mxRectangle width="440" height="100" as="alternateBounds" />
           </mxGeometry>
@@ -119,7 +119,7 @@
             <mxRectangle width="160" height="160" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kpbq2rMiD-oukpvBsijn-171" value="&lt;div style=&quot;text-align: left;&quot;&gt;6а. Пользователь видит что текст не соответствует песне&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;7а. Пользователь жмет на кнопку репорта&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;8а. Система отображает экран отправки сообщения об ошибке&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;9а. Пользователь вводит сообщение и жмет кнопку отправить&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;10а.&amp;nbsp; Система сохраняет сообщение об ошибке и возращает пользователя на экран 1.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;Критерий успеха: &lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;сообщение об ошибке сохранено, и отправлено службе поддержки.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" vertex="1" parent="kpbq2rMiD-oukpvBsijn-169">
+        <mxCell id="kpbq2rMiD-oukpvBsijn-171" value="&lt;div style=&quot;text-align: left;&quot;&gt;6а. Пользователь видит что текст не соответствует песне&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;7а. Пользователь жмет на кнопку репорта&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;8а. Система отображает экран отправки сообщения об ошибке&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;9а. Пользователь вводит сообщение и жмет кнопку отправить&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;10а.&amp;nbsp; Система сохраняет сообщение об ошибке и возращает пользователя на экран 1.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;Критерий успеха: &lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;сообщение об ошибке сохранено и отправлено службе поддержки.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" vertex="1" parent="kpbq2rMiD-oukpvBsijn-169">
           <mxGeometry x="160" width="440" height="160" as="geometry">
             <mxRectangle width="440" height="160" as="alternateBounds" />
           </mxGeometry>
