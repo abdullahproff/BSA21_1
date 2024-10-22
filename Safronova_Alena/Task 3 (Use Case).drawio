@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram id="iSdH8Bf3Pxa846-qju2B" name="Шаблон">
+    <mxGraphModel dx="1034" dy="1273" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5DFN9uElky3kn-lGwo1o-1" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" parent="1" vertex="1">
+          <mxGeometry x="90" y="-90" width="600" height="568" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-6" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry width="600" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-7" value="&lt;b&gt;Заголовок&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-6" vertex="1">
+          <mxGeometry width="160" height="43" as="geometry">
+            <mxRectangle width="160" height="43" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-9" value="Поиск билетов исходя из дат, бюджета и наличия визы" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-6" vertex="1">
+          <mxGeometry x="160" width="440" height="43" as="geometry">
+            <mxRectangle width="440" height="43" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-10" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="43" width="600" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-11" value="&lt;b&gt;Акторы&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-10" vertex="1">
+          <mxGeometry width="160" height="43" as="geometry">
+            <mxRectangle width="160" height="43" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-13" value="Клиент" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-10" vertex="1">
+          <mxGeometry x="160" width="440" height="43" as="geometry">
+            <mxRectangle width="440" height="43" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-14" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="86" width="600" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-15" value="&lt;b&gt;Предусловие&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-14" vertex="1">
+          <mxGeometry width="160" height="43" as="geometry">
+            <mxRectangle width="160" height="43" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-17" value="Клиент авторизован в системе" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-14" vertex="1">
+          <mxGeometry x="160" width="440" height="43" as="geometry">
+            <mxRectangle width="440" height="43" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-18" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="129" width="600" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-19" value="&lt;b&gt;Ограничения&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-18" vertex="1">
+          <mxGeometry width="160" height="65" as="geometry">
+            <mxRectangle width="160" height="65" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-21" value="Слишком маленький бюджет для покупки билетов.&lt;br&gt;Нет билетов в страны без виз.&amp;nbsp;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-18" vertex="1">
+          <mxGeometry x="160" width="440" height="65" as="geometry">
+            <mxRectangle width="440" height="65" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-22" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="194" width="600" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-23" value="&lt;b&gt;Триггер&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-22" vertex="1">
+          <mxGeometry width="160" height="43" as="geometry">
+            <mxRectangle width="160" height="43" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-25" value="Клиент нажимает на кнопку «Не знаю» при поиске билетов" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-22" vertex="1">
+          <mxGeometry x="160" width="440" height="43" as="geometry">
+            <mxRectangle width="440" height="43" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-26" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="237" width="600" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-27" value="&lt;b&gt;Основной сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-26" vertex="1">
+          <mxGeometry width="160" height="153" as="geometry">
+            <mxRectangle width="160" height="153" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-29" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;1.&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;Система отображает экран для ввода данных (экран 1).&lt;/div&gt;&lt;div&gt;2.&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;Клиент вводит необходимые данные для поиска.&amp;nbsp;&lt;/div&gt;&lt;div&gt;3.&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;Система отображает доступные варианты маршрутов (экран 2).&lt;/div&gt;&lt;div&gt;4.&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;Клиент выбирает подходящий маршрут.&lt;/div&gt;&lt;div&gt;5.&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;Система отображает данные выбранных билетов (экран 3).&lt;/div&gt;&lt;div&gt;6.&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;Клиент нажимает «Забронировать».&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Критерий успеха: &lt;/b&gt;клиент нашел и выбрал билеты на поездку (в обе стороны), переходит к оформлению билетов.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-26" vertex="1">
+          <mxGeometry x="160" width="440" height="153" as="geometry">
+            <mxRectangle width="440" height="153" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-30" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="390" width="600" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-31" value="&lt;b&gt;Альтернативный сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-30" vertex="1">
+          <mxGeometry width="160" height="70" as="geometry">
+            <mxRectangle width="160" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-33" value="&lt;div&gt;4а. Клиент не нашел подходящих маршрутов и возвращается на предыдущий шаг.&lt;/div&gt;&lt;div&gt;-- Переход к шагу 2 основного сценария.&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-30" vertex="1">
+          <mxGeometry x="160" width="440" height="70" as="geometry">
+            <mxRectangle width="440" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-34" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="460" width="600" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-35" value="&lt;b&gt;Исключительный сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-34" vertex="1">
+          <mxGeometry width="160" height="108" as="geometry">
+            <mxRectangle width="160" height="108" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-37" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;3b. Система не нашла подходящих вариантов под заданные параметры и предлагает изменить поиск.&lt;/div&gt;&lt;div&gt;-- Переход к шагу 2 основного сценария.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5b. Система сообщает, что места на выбранные рейсы закончились, и предлагает рассмотреть другие маршруты.&amp;nbsp;&lt;/div&gt;&lt;div&gt;-- Переход к шагу 3 основного сценария.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Результат: Покупка не состоялась, клиенту даны инструкции по дальнейшим действиям.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-34" vertex="1">
+          <mxGeometry x="160" width="440" height="108" as="geometry">
+            <mxRectangle width="440" height="108" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
