@@ -1,0 +1,117 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram id="iSdH8Bf3Pxa846-qju2B" name="Шаблон">
+    <mxGraphModel dx="1640" dy="1008" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5DFN9uElky3kn-lGwo1o-1" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" parent="1" vertex="1">
+          <mxGeometry x="70" y="40" width="600" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-6" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-7" value="&lt;b&gt;Заголовок&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-6" vertex="1">
+          <mxGeometry width="160" height="40" as="geometry">
+            <mxRectangle width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-9" value="Создание/изменение задачи на внутреннем портале ВУЗа" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-6" vertex="1">
+          <mxGeometry x="160" width="440" height="40" as="geometry">
+            <mxRectangle width="440" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-10" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="40" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-11" value="&lt;b&gt;Акторы&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-10" vertex="1">
+          <mxGeometry width="160" height="40" as="geometry">
+            <mxRectangle width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-13" value="Студент" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-10" vertex="1">
+          <mxGeometry x="160" width="440" height="40" as="geometry">
+            <mxRectangle width="440" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-14" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="80" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-15" value="&lt;b&gt;Предусловие&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-14" vertex="1">
+          <mxGeometry width="160" height="40" as="geometry">
+            <mxRectangle width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-17" value="Студент зарегистрирован и авторизован на портале ВУЗа&amp;nbsp;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-14" vertex="1">
+          <mxGeometry x="160" width="440" height="40" as="geometry">
+            <mxRectangle width="440" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-18" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="120" width="600" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-19" value="&lt;b&gt;Ограничения&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-18" vertex="1">
+          <mxGeometry width="160" height="60" as="geometry">
+            <mxRectangle width="160" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-21" value="Студент должен быть в статусе &quot;обучается&quot; (не отчислен и не в академе)&lt;br&gt;Студент должен быть закреплен за учебным планом на текущий учебный год" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-18" vertex="1">
+          <mxGeometry x="160" width="440" height="60" as="geometry">
+            <mxRectangle width="440" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-22" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="180" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-23" value="&lt;b&gt;Триггер&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-22" vertex="1">
+          <mxGeometry width="160" height="40" as="geometry">
+            <mxRectangle width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-25" value="Студент нажимает кнопку &quot;Добавить задачу&quot;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-22" vertex="1">
+          <mxGeometry x="160" width="440" height="40" as="geometry">
+            <mxRectangle width="440" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-26" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="220" width="600" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-27" value="&lt;b&gt;Основной сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-26" vertex="1">
+          <mxGeometry width="160" height="240" as="geometry">
+            <mxRectangle width="160" height="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-29" value="&lt;ol style=&quot;text-align: left;&quot;&gt;&lt;li&gt;Система отображает форму главного экрана личного кабинета студента (экран 1)&lt;/li&gt;&lt;li&gt;Студент кликает на подменю &quot;Мои задачи&quot;&lt;/li&gt;&lt;li&gt;Система отображает экран списка задач по дисциплинам (экран 2)&lt;/li&gt;&lt;li&gt;Студент нажимает кнопку &quot;Добавить задачу&quot;&lt;/li&gt;&lt;li&gt;Система переводит студента в меню создания новой задачи (экран 3)&lt;/li&gt;&lt;li&gt;Студент заполняет детальную информацию по своей задаче: наименование, дедлайн, дисциплина, приоритет, описание&lt;/li&gt;&lt;li&gt;Студент нажимает кнопку &quot;Завершить создание задачи&quot;&lt;/li&gt;&lt;li&gt;Данные о задаче успешно сохранены&lt;/li&gt;&lt;/ol&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;font-weight: bold; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&lt;b style=&quot;font-weight: bold; background-color: initial; text-align: center;&quot;&gt;Критерий успеха: &lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;За&lt;/span&gt;&lt;span style=&quot;font-weight: normal; background-color: initial; text-align: center;&quot;&gt;дача создана&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-26" vertex="1">
+          <mxGeometry x="160" width="440" height="240" as="geometry">
+            <mxRectangle width="440" height="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-30" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="460" width="600" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-31" value="&lt;b&gt;Альтернативный сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-30" vertex="1">
+          <mxGeometry width="160" height="100" as="geometry">
+            <mxRectangle width="160" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-33" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;4а. Студент нажимает кнопку &quot;Детализировать&quot; для уже &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;существующей задачи&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;5а. Система отображает окно для редактирования задачи (экран 4)&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6а. Студент изменяет данные и фиксирует изменения&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- Переход к шагу 8 основного сценария" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-30" vertex="1">
+          <mxGeometry x="160" width="440" height="100" as="geometry">
+            <mxRectangle width="440" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-34" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="560" width="600" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-35" value="&lt;b&gt;Исключительный сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-34" vertex="1">
+          <mxGeometry width="160" height="100" as="geometry">
+            <mxRectangle width="160" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-37" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6b. Система сообщает, что в форме создания/редактирования задачи заполнены не все обязательные поля (экран 5)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Результат&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Задача не создана / задача не изменена&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-34" vertex="1">
+          <mxGeometry x="160" width="440" height="100" as="geometry">
+            <mxRectangle width="440" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

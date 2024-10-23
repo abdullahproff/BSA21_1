@@ -1,114 +1,101 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0" version="24.8.0">
   <diagram name="Страница — 1" id="uVoTHYEMFmzPXwjLP7kv">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-14" value="Use Case" style="shape=table;startSize=40;container=1;collapsible=0;childLayout=tableLayout;strokeColor=default;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="80" y="40" width="870" height="683" as="geometry" />
+          <mxGeometry x="80" y="40" width="860" height="732" as="geometry" />
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-15" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-14">
-          <mxGeometry y="40" width="870" height="41" as="geometry" />
+          <mxGeometry y="40" width="860" height="41" as="geometry" />
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-16" value="Заголовок" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-15">
-          <mxGeometry width="280" height="41" as="geometry">
-            <mxRectangle width="280" height="41" as="alternateBounds" />
+          <mxGeometry width="220" height="41" as="geometry">
+            <mxRectangle width="220" height="41" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-17" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Добавление/удаление треков в/из &quot;My playlist&quot;&amp;nbsp;&lt;/blockquote&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-15">
-          <mxGeometry x="280" width="590" height="41" as="geometry">
-            <mxRectangle width="590" height="41" as="alternateBounds" />
+          <mxGeometry x="220" width="640" height="41" as="geometry">
+            <mxRectangle width="640" height="41" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-19" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-14">
-          <mxGeometry y="81" width="870" height="40" as="geometry" />
+          <mxGeometry y="81" width="860" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-20" value="Акторы" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-19">
-          <mxGeometry width="280" height="40" as="geometry">
-            <mxRectangle width="280" height="40" as="alternateBounds" />
+          <mxGeometry width="220" height="40" as="geometry">
+            <mxRectangle width="220" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-21" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Пользователь приложения&lt;/blockquote&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-19">
-          <mxGeometry x="280" width="590" height="40" as="geometry">
-            <mxRectangle width="590" height="40" as="alternateBounds" />
+          <mxGeometry x="220" width="640" height="40" as="geometry">
+            <mxRectangle width="640" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-23" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-14">
-          <mxGeometry y="121" width="870" height="51" as="geometry" />
+          <mxGeometry y="121" width="860" height="69" as="geometry" />
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-24" value="Предусловие" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-23">
-          <mxGeometry width="280" height="51" as="geometry">
-            <mxRectangle width="280" height="51" as="alternateBounds" />
+          <mxGeometry width="220" height="69" as="geometry">
+            <mxRectangle width="220" height="69" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-25" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Пользователь зарегистрирован и авторизован в приложении.&lt;/blockquote&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-23">
-          <mxGeometry x="280" width="590" height="51" as="geometry">
-            <mxRectangle width="590" height="51" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-14">
-          <mxGeometry y="172" width="870" height="58" as="geometry" />
-        </mxCell>
-        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-28" value="Ограничения" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-27">
-          <mxGeometry width="280" height="58" as="geometry">
-            <mxRectangle width="280" height="58" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-29" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;&quot;&gt;Подписка на сервис должна быть активна&lt;/span&gt;&lt;/blockquote&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-27">
-          <mxGeometry x="280" width="590" height="58" as="geometry">
-            <mxRectangle width="590" height="58" as="alternateBounds" />
+        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-25" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Пользователь авторизован в приложении&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Подписка на сервис активна&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-23">
+          <mxGeometry x="220" width="640" height="69" as="geometry">
+            <mxRectangle width="640" height="69" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-30" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-14">
-          <mxGeometry y="230" width="870" height="50" as="geometry" />
+          <mxGeometry y="190" width="860" height="50" as="geometry" />
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-31" value="Триггер" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-30">
-          <mxGeometry width="280" height="50" as="geometry">
-            <mxRectangle width="280" height="50" as="alternateBounds" />
+          <mxGeometry width="220" height="50" as="geometry">
+            <mxRectangle width="220" height="50" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-32" value="Пользователь нажимает кнопку &quot;like&quot; в поле текущего трека(screen 1A)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-30">
-          <mxGeometry x="280" width="590" height="50" as="geometry">
-            <mxRectangle width="590" height="50" as="alternateBounds" />
+          <mxGeometry x="220" width="640" height="50" as="geometry">
+            <mxRectangle width="640" height="50" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-33" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;verticalAlign=top;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-14">
-          <mxGeometry y="280" width="870" height="220" as="geometry" />
+          <mxGeometry y="240" width="860" height="250" as="geometry" />
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-34" value="Основной сценарий" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-33">
-          <mxGeometry width="280" height="220" as="geometry">
-            <mxRectangle width="280" height="220" as="alternateBounds" />
+          <mxGeometry width="220" height="250" as="geometry">
+            <mxRectangle width="220" height="250" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-35" value="&lt;ol&gt;&lt;li&gt;Система фиксирует действия пользователя, изменением цвета кнопки.(screen 2A)&lt;/li&gt;&lt;li&gt;Пользователь нажимает кнопку &quot;Favorites&quot; (screen 2B).&lt;/li&gt;&lt;li&gt;Система отражает экран раздела &quot;Favorites&quot;, в списке треков&amp;nbsp;&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;&quot;My playlist&quot; появляется выбранный трек (screen3).&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Пользователь нажимает кнопку &quot;like&quot; в поле трека, который он хочет удалить(screen 3C)&lt;/li&gt;&lt;li&gt;Система&amp;nbsp; отражает экран раздела&amp;nbsp;&amp;nbsp;&quot;Favorites&quot; с измененным списком треков&amp;nbsp;&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;&quot;My playlist&quot;(screen4).&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;verticalAlign=top;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-33">
-          <mxGeometry x="280" width="590" height="220" as="geometry">
-            <mxRectangle width="590" height="220" as="alternateBounds" />
+        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-35" value="&lt;ol&gt;&lt;li&gt;Система фиксирует действия пользователя, изменением цвета кнопки(трека нет в плейлисте).(screen 2A)&lt;/li&gt;&lt;li&gt;Пользователь нажимает кнопку &quot;Favorites&quot; (screen 2B).&lt;/li&gt;&lt;li&gt;Система отражает экран раздела &quot;Favorites&quot;, в списке треков&amp;nbsp;&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;&quot;My playlist&quot; появляется выбранный трек (screen3).&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Пользователь нажимает кнопку &quot;like&quot; в поле трека, который он хочет удалить(screen 3C)&lt;/li&gt;&lt;li&gt;Система&amp;nbsp; отражает экран раздела&amp;nbsp;&amp;nbsp;&quot;Favorites&quot; с измененным списком треков&amp;nbsp;&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;&quot;My playlist&quot;(screen 4).&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;Критерий успеха&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Трек добавлен/удален в/из &quot;My playlist&quot;&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;verticalAlign=top;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-33">
+          <mxGeometry x="220" width="640" height="250" as="geometry">
+            <mxRectangle width="640" height="250" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-14">
-          <mxGeometry y="500" width="870" height="91" as="geometry" />
+          <mxGeometry y="490" width="860" height="150" as="geometry" />
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-37" value="Альтернативный сценарий" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-36">
-          <mxGeometry width="280" height="91" as="geometry">
-            <mxRectangle width="280" height="91" as="alternateBounds" />
+          <mxGeometry width="220" height="150" as="geometry">
+            <mxRectangle width="220" height="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-38" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3(a). Система отражает экран раздела &quot;Favorites&quot;, в списке треков&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&quot;My playlist&quot; удаляется выбранный трек (screen3).&lt;/span&gt;&lt;/blockquote&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-36">
-          <mxGeometry x="280" width="590" height="91" as="geometry">
-            <mxRectangle width="590" height="91" as="alternateBounds" />
+        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-38" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1(а). Система фиксирует действия пользователя, изменением цвета кнопки(трек есть в плейлисте).&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2(a). Пользователь нажимает кнопку &quot;Favorites&quot; (screen 2B)&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3(a). Система отражает экран раздела &quot;Favorites&quot;, в списке треков&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&quot;My playlist&quot; удаляется выбранный трек (screen3).&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;b&gt;Критерий успеха&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Трек удален из &quot;My playlist&quot;&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&lt;/span&gt;&lt;/blockquote&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-36">
+          <mxGeometry x="220" width="640" height="150" as="geometry">
+            <mxRectangle width="640" height="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TL7R4SuH9gmXkBh_Vcmx-39" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-14">
-          <mxGeometry y="591" width="870" height="92" as="geometry" />
+          <mxGeometry y="640" width="860" height="92" as="geometry" />
         </mxCell>
-        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-40" value="Результат/Критерии успеха" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-39">
-          <mxGeometry width="280" height="92" as="geometry">
-            <mxRectangle width="280" height="92" as="alternateBounds" />
+        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-40" value="Исключительный сценарий" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-39">
+          <mxGeometry width="220" height="92" as="geometry">
+            <mxRectangle width="220" height="92" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-41" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Трек добавлен/удален в/из &quot;My playlist&quot;&lt;/blockquote&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-39">
-          <mxGeometry x="280" width="590" height="92" as="geometry">
-            <mxRectangle width="590" height="92" as="alternateBounds" />
+        <mxCell id="TL7R4SuH9gmXkBh_Vcmx-41" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;1(a). Система выводит сообщение об ошибке, предлагает повторить действие позднее.(screen 5)&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;br&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;b&gt;Результат&lt;/b&gt;: Трек не добавлен в плейлист.&lt;/blockquote&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="TL7R4SuH9gmXkBh_Vcmx-39">
+          <mxGeometry x="220" width="640" height="92" as="geometry">
+            <mxRectangle width="640" height="92" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
       </root>

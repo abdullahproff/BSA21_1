@@ -1,0 +1,120 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram id="DNd9JwdVRwOGt5Ngfk5K" name="Use case">
+    <mxGraphModel dx="843" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-1" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;shadow=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="70" y="40" width="670" height="630.0000000000007" as="geometry" />
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-2" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-1">
+          <mxGeometry width="670" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-3" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Заголовок&lt;/b&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-2">
+          <mxGeometry width="193" height="79" as="geometry">
+            <mxRectangle width="193" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-4" value="Просмотр истории прослушивания музыки" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-2">
+          <mxGeometry x="193" width="477" height="79" as="geometry">
+            <mxRectangle width="477" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-5" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-1">
+          <mxGeometry y="79" width="670" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-6" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Акторы&lt;/b&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-5">
+          <mxGeometry width="193" height="51" as="geometry">
+            <mxRectangle width="193" height="51" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-7" value="Пользователь" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-5">
+          <mxGeometry x="193" width="477" height="51" as="geometry">
+            <mxRectangle width="477" height="51" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-8" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-1">
+          <mxGeometry y="130" width="670" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-9" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Предусловие&lt;/b&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-8">
+          <mxGeometry width="193" height="60" as="geometry">
+            <mxRectangle width="193" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-10" value="Клиент авторизован в приложении Я.Музыка" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-8">
+          <mxGeometry x="193" width="477" height="60" as="geometry">
+            <mxRectangle width="477" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-11" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-1">
+          <mxGeometry y="190" width="670" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-12" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Ограничения&amp;nbsp;&lt;/b&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-11">
+          <mxGeometry width="193" height="61" as="geometry">
+            <mxRectangle width="193" height="61" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-13" value="Система сохраняет информацию за месяц, с каждым новым месяцем список сбрасывается" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-11">
+          <mxGeometry x="193" width="477" height="61" as="geometry">
+            <mxRectangle width="477" height="61" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-14" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-1">
+          <mxGeometry y="251" width="670" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-15" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Триггер&lt;/b&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-14">
+          <mxGeometry width="193" height="40" as="geometry">
+            <mxRectangle width="193" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-16" value="Клиент заходит в приложение Я.Музыка" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-14">
+          <mxGeometry x="193" width="477" height="40" as="geometry">
+            <mxRectangle width="477" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-17" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-1">
+          <mxGeometry y="291" width="670" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-18" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Основной сценарий&lt;/b&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-17">
+          <mxGeometry width="193" height="240" as="geometry">
+            <mxRectangle width="193" height="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-19" value="&lt;ol&gt;&lt;li&gt;Система отображает&amp;nbsp; экран главной страницы с различными рекомендациями (экран 1)&lt;/li&gt;&lt;li&gt;Пользователь нажимает кнопку раздела с его коллекцией обозначенную &quot;♡&quot;&lt;/li&gt;&lt;li&gt;Система переносит нас на экран &quot;мои подборки&quot; с различными разделами (экран 2)&lt;/li&gt;&lt;li&gt;Пользователь выбирает раздел &#39;&#39;коллекция&#39;&#39;&lt;/li&gt;&lt;li&gt;Система отображает коллекцию пользователя с тем, что ему может понравиться (экран 3)&lt;/li&gt;&lt;li&gt;Пользователь нажимает кнопку &quot;недавно слушали&quot;&lt;/li&gt;&lt;li&gt;Система отображает список музыки которую слушал пользователь&lt;br&gt;&amp;nbsp;(экран 4)&lt;/li&gt;&lt;/ol&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-17">
+          <mxGeometry x="193" width="477" height="240" as="geometry">
+            <mxRectangle width="477" height="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-20" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-1">
+          <mxGeometry y="531" width="670" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-21" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Альтернативный сценарий&lt;/b&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-20">
+          <mxGeometry width="193" height="79" as="geometry">
+            <mxRectangle width="193" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rgy7xSx_je9GQYeM1Vjz-22" value="6а Пользователь нажимает &quot;создать плейлист&quot; (экран 3)&lt;div&gt;7а система предлагает добавить недавно прослушанные в плейлист с возможностью выбрать весь список сразу&lt;/div&gt;&lt;div&gt;Пользователь выбирает добавить недавно прослушанные в плейлист&lt;/div&gt;&lt;div&gt;----- переход к шагу 7 основного сценария&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-20">
+          <mxGeometry x="193" width="477" height="79" as="geometry">
+            <mxRectangle width="477" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MUdAtWBjAyUnLLwRL24r-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rgy7xSx_je9GQYeM1Vjz-1">
+          <mxGeometry y="610" width="670" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MUdAtWBjAyUnLLwRL24r-2" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="MUdAtWBjAyUnLLwRL24r-1">
+          <mxGeometry width="193" height="20" as="geometry">
+            <mxRectangle width="193" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MUdAtWBjAyUnLLwRL24r-3" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="MUdAtWBjAyUnLLwRL24r-1">
+          <mxGeometry x="193" width="477" height="20" as="geometry">
+            <mxRectangle width="477" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PZQv5Iq8_nZIDWFXrMf3-1" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Критерий успеха: &lt;/b&gt;пользователь&amp;nbsp;смог посмотреть недавно прослушанную музыку&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="540" width="440" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
