@@ -1,0 +1,130 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram id="iSdH8Bf3Pxa846-qju2B" name="Шаблон">
+    <mxGraphModel dx="953" dy="848" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-1" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" parent="1" vertex="1">
+          <mxGeometry x="250" y="180" width="600" height="1359.9999999999998" as="geometry" />
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-2" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="OBjVdw_Sr_qvOuv_PyUf-1" vertex="1">
+          <mxGeometry width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-3" value="&lt;b&gt;Заголовок&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="OBjVdw_Sr_qvOuv_PyUf-2" vertex="1">
+          <mxGeometry width="160" height="40" as="geometry">
+            <mxRectangle width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-4" value="Удаление и добавление трека в разные плей-листы" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="OBjVdw_Sr_qvOuv_PyUf-2" vertex="1">
+          <mxGeometry x="160" width="440" height="40" as="geometry">
+            <mxRectangle width="440" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-5" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="OBjVdw_Sr_qvOuv_PyUf-1" vertex="1">
+          <mxGeometry y="40" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-6" value="&lt;b&gt;Акторы&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="OBjVdw_Sr_qvOuv_PyUf-5" vertex="1">
+          <mxGeometry width="160" height="40" as="geometry">
+            <mxRectangle width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-7" value="Пользователь" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="OBjVdw_Sr_qvOuv_PyUf-5" vertex="1">
+          <mxGeometry x="160" width="440" height="40" as="geometry">
+            <mxRectangle width="440" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-8" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="OBjVdw_Sr_qvOuv_PyUf-1" vertex="1">
+          <mxGeometry y="80" width="600" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-9" value="&lt;b&gt;Предусловие&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="OBjVdw_Sr_qvOuv_PyUf-8" vertex="1">
+          <mxGeometry width="160" height="70" as="geometry">
+            <mxRectangle width="160" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-10" value="Пользователь зарегистрирован и авторизован в приложении, у пользователя есть несколько созданных плей-листов, пользователь находится на экране проигрывание трека. Пользователю доступен элемент добавления/удаления трека.&amp;nbsp;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="OBjVdw_Sr_qvOuv_PyUf-8" vertex="1">
+          <mxGeometry x="160" width="440" height="70" as="geometry">
+            <mxRectangle width="440" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-11" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="OBjVdw_Sr_qvOuv_PyUf-1" vertex="1">
+          <mxGeometry y="150" width="600" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-12" value="&lt;b&gt;Ограничения&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="OBjVdw_Sr_qvOuv_PyUf-11" vertex="1">
+          <mxGeometry width="160" height="60" as="geometry">
+            <mxRectangle width="160" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-13" value="Экран добавления трека в плей-лист отображает только 5 плей-листов" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="OBjVdw_Sr_qvOuv_PyUf-11" vertex="1">
+          <mxGeometry x="160" width="440" height="60" as="geometry">
+            <mxRectangle width="440" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-14" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="OBjVdw_Sr_qvOuv_PyUf-1" vertex="1">
+          <mxGeometry y="210" width="600" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-15" value="&lt;b&gt;Триггер&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="OBjVdw_Sr_qvOuv_PyUf-14" vertex="1">
+          <mxGeometry width="160" height="60" as="geometry">
+            <mxRectangle width="160" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-16" value="Пользователь нажимает на элемент управления треком" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;align=center;" parent="OBjVdw_Sr_qvOuv_PyUf-14" vertex="1">
+          <mxGeometry x="160" width="440" height="60" as="geometry">
+            <mxRectangle width="440" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-17" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="OBjVdw_Sr_qvOuv_PyUf-1" vertex="1">
+          <mxGeometry y="270" width="600" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-18" value="&lt;b&gt;&amp;nbsp;Основной сценарий 1&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="OBjVdw_Sr_qvOuv_PyUf-17" vertex="1">
+          <mxGeometry width="160" height="290" as="geometry">
+            <mxRectangle width="160" height="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-19" value="&lt;ol style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;li&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; line-height: normal;&quot; class=&quot;p1&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Helvetica&quot;&gt;Система определила что трек уже добавлен в какой то плейлист отобразила это элементом управления(он в галочке)(экран 3)&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;Клиент тапает на элемент управления&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;;&quot; class=&quot;p1&quot;&gt;Система отображает плей-листы пользователя(зеленой галочкой отмечены плейлисты в которые добавлен трек, серыми кружочками в которые можно добавить)(экран 4)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;Пользователь тапнул на плейлист в который трек еще не добавлен&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Система отобразила элемент интерфейса рядом с плей-листом на который тапнул пользователь&amp;nbsp;зеленой галочкой&lt;/li&gt;&lt;li&gt;Пользователь тапнул кнопку &quot;Готово&quot;&lt;/li&gt;&lt;li&gt;Система вернула пользователя на экран воспроизведения трека.&lt;/li&gt;&lt;/ol&gt;&lt;span style=&quot;background-color: initial; font-size: 13px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;font-weight: bold; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&lt;b style=&quot;font-weight: bold; background-color: initial; text-align: center;&quot;&gt;Критерий успеха:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;трек добавлен в выбранный плейлист&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="OBjVdw_Sr_qvOuv_PyUf-17" vertex="1">
+          <mxGeometry x="160" width="440" height="290" as="geometry">
+            <mxRectangle width="440" height="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-20" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="OBjVdw_Sr_qvOuv_PyUf-1" vertex="1">
+          <mxGeometry y="560" width="600" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-21" value="&lt;b&gt;Альтернативный сценарий 1&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="OBjVdw_Sr_qvOuv_PyUf-20" vertex="1">
+          <mxGeometry width="160" height="300" as="geometry">
+            <mxRectangle width="160" height="300" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-22" value="&lt;div&gt;&lt;ol style=&quot;font-size: 13px;&quot;&gt;&lt;li&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; line-height: normal;&quot; class=&quot;p1&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;Система определила что трек еще не добавлен ни в один плей-лист отобразила это элементом управления(он в плюсике)(экран 1)&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;Клиент тапает на элемент управления&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;;&quot; class=&quot;p1&quot;&gt;Система отображает плей-листы пользователя в которые можно добавить трек (экран 2)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;Пользователь тапнул на 2 плей-листа&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Система отобразила элемент интерфейса рядом с плей-листами на который тапнул пользователь&amp;nbsp;зеленой галочкой&lt;/li&gt;&lt;li&gt;Пользователь тапнул кнопку &quot;Готово&quot;&lt;/li&gt;&lt;li&gt;Система вернула пользователя на экран воспроизведения трека.&lt;/li&gt;&lt;/ol&gt;&lt;span style=&quot;text-align: center; background-color: initial; font-size: 13px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&lt;b style=&quot;background-color: initial; text-align: center;&quot;&gt;Критерий успеха:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;трек добавлен в выбранные плейлисты&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=7;spacingRight=7;" parent="OBjVdw_Sr_qvOuv_PyUf-20" vertex="1">
+          <mxGeometry x="160" width="440" height="300" as="geometry">
+            <mxRectangle width="440" height="300" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-23" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="OBjVdw_Sr_qvOuv_PyUf-1" vertex="1">
+          <mxGeometry y="860" width="600" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-24" value="&lt;b&gt;Альтернативный сценарий 2&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="OBjVdw_Sr_qvOuv_PyUf-23" vertex="1">
+          <mxGeometry width="160" height="250" as="geometry">
+            <mxRectangle width="160" height="250" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OBjVdw_Sr_qvOuv_PyUf-25" value="&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;4a. &lt;/span&gt;&lt;font style=&quot;background-color: initial; font-size: 13px;&quot;&gt;На 4 шаге основного сценария пользователь тапнул&amp;nbsp; на&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;плейлист в который трек уже добавлен.&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;background-color: initial; font-size: 13px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5а.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Система отобразила элемент интерфейса рядом с плей-&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;листом на который тапнул пользователь серым&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;кружочком(проинформировала о том что трек будет удален&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;из этого плей-листа).&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;6а. Пользователь тапнул кнопку &quot;Готово&quot;.&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 13px; background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;7а. Система вернула пользователя на экран воспроизведения&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;трека.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 13px; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 13px; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;Критерий успеха: &lt;/b&gt;трек удален из выбранного плей-листа&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;align=left;" parent="OBjVdw_Sr_qvOuv_PyUf-23" vertex="1">
+          <mxGeometry x="160" width="440" height="250" as="geometry">
+            <mxRectangle width="440" height="250" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sFVysJWAAE10z0FjGgaS-1" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="OBjVdw_Sr_qvOuv_PyUf-1">
+          <mxGeometry y="1110" width="600" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="sFVysJWAAE10z0FjGgaS-2" value="&lt;b&gt;Альтернативный сценарий 3&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="sFVysJWAAE10z0FjGgaS-1">
+          <mxGeometry width="160" height="250" as="geometry">
+            <mxRectangle width="160" height="250" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sFVysJWAAE10z0FjGgaS-3" value="&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;4б. &lt;/span&gt;&lt;font style=&quot;background-color: initial; font-size: 13px;&quot;&gt;На 4 шаге основного сценария пользователь тапнул на&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;плейлист в который трек уже добавлен и на плейлист в&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;в который трек еще не добавлен.&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 13px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5б.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Система отобразила элемент интерфейса рядом с плей-&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;листом, в который трек был добавлен, серым&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;кружочком(проинформировала о том что трек будет удален&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;из этого плей-листа) и&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;рядом с плей-листом, в котором&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;трека&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;небыло, зеленой галочкой(трек будет добавлен)&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;6б. Пользователь тапнул кнопку &quot;Готово&quot;.&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 13px; background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;7б. Система вернула пользователя на экран воспроизведения&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;трека.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 13px; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 13px; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;Критерий успеха: &lt;/b&gt;трек удален из выбранного плей-листа и&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; добавлен в другой выбранный плейлист&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;align=left;" vertex="1" parent="sFVysJWAAE10z0FjGgaS-1">
+          <mxGeometry x="160" width="440" height="250" as="geometry">
+            <mxRectangle width="440" height="250" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
