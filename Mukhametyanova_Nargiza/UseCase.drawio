@@ -1,0 +1,143 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.8.2">
+  <diagram id="iSdH8Bf3Pxa846-qju2B" name="Шаблон">
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5DFN9uElky3kn-lGwo1o-1" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" parent="1" vertex="1">
+          <mxGeometry x="80" y="40" width="600" height="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-6" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry width="600" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-7" value="&lt;b&gt;Заголовок&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-6" vertex="1">
+          <mxGeometry width="160" height="56" as="geometry">
+            <mxRectangle width="160" height="56" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-9" value="Формирование заказа из акционных товаров" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-6" vertex="1">
+          <mxGeometry x="160" width="440" height="56" as="geometry">
+            <mxRectangle width="440" height="56" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-10" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="56" width="600" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-11" value="&lt;b&gt;Акторы&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-10" vertex="1">
+          <mxGeometry width="160" height="55" as="geometry">
+            <mxRectangle width="160" height="55" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-13" value="Покупатель" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-10" vertex="1">
+          <mxGeometry x="160" width="440" height="55" as="geometry">
+            <mxRectangle width="440" height="55" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-14" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="111" width="600" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-15" value="&lt;b&gt;Предусловие&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-14" vertex="1">
+          <mxGeometry width="160" height="57" as="geometry">
+            <mxRectangle width="160" height="57" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-17" value="Покупатель зарегистрирован и авторизован в приложении Lamoda и находится на странице &quot;Лучших акций&quot;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-14" vertex="1">
+          <mxGeometry x="160" width="440" height="57" as="geometry">
+            <mxRectangle width="440" height="57" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-18" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="168" width="600" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-19" value="&lt;b&gt;Ограничения&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-18" vertex="1">
+          <mxGeometry width="160" height="92" as="geometry">
+            <mxRectangle width="160" height="92" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-21" value="Акционные товары разделены на категории &quot;Женщины&quot;, &quot;Мужчины&quot;, &quot;Дети&quot;, подкатегории &quot;Одежда&quot;, &quot;Обувь&quot;, &quot;Аксессуары&quot;, &quot;Красота&quot;, &quot;Дом&quot;.&lt;div&gt;Возможно выбрать только один способ оплаты и способ доставки.&lt;/div&gt;&lt;div&gt;Фильтр товаров осуществляется по: цвету, размеру, цене.&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-18" vertex="1">
+          <mxGeometry x="160" width="440" height="92" as="geometry">
+            <mxRectangle width="440" height="92" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-22" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="260" width="600" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-23" value="&lt;b&gt;Триггер&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-22" vertex="1">
+          <mxGeometry width="160" height="56" as="geometry">
+            <mxRectangle width="160" height="56" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-25" value="Покупатель заходит в раздел &quot;Лучшие акции&quot;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-22" vertex="1">
+          <mxGeometry x="160" width="440" height="56" as="geometry">
+            <mxRectangle width="440" height="56" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-26" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="316" width="600" height="415" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-27" value="&lt;b&gt;Основной сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-26" vertex="1">
+          <mxGeometry width="160" height="415" as="geometry">
+            <mxRectangle width="160" height="415" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-29" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;ol style=&quot;text-align: left;&quot;&gt;&lt;li&gt;Система отображает форму лучших акций (экран 1)&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Покупатель выбирает интересующую группу акций&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Система отображает категории и подкатегории акционных товаров (экран 2)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Покупатель выбирает нужные категории и подкатегории&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Система отображает список акционных товаров с возможностью фильтровать товары (экран 3)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Покупатель пользуется фильтром&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Система отобразила товары согласно заполненному фильтру покупателя&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Покупатель добавляет интересующий товар в корзину&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Система отображает счетчик корзины&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Покупатель переходит в корзину&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Система отображает список товаров в корзине (экран 4)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Система отображает покупателю возможность удалить товар&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Система отображает покупателю возможность выбрать способ доставки&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Система отображает покупателю возможность выбрать способ оплаты&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Покупатель выбирает подходящие условия заказа и переходит к оформлению заказа&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Система сохранила заказ и одобрила переход к оформлению заказа&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&lt;b style=&quot;background-color: initial; text-align: center;&quot;&gt;Критерий успеха:&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-weight: normal; text-align: center;&quot;&gt;&amp;nbsp;Покупатель оформил заказ, в системе создан заказ покупателя&lt;/span&gt;&lt;/div&gt;&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-26" vertex="1">
+          <mxGeometry x="160" width="440" height="415" as="geometry">
+            <mxRectangle width="440" height="415" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-30" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="731" width="600" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-31" value="&lt;b&gt;Альтернативный сценарий 1&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-30" vertex="1">
+          <mxGeometry width="160" height="69" as="geometry">
+            <mxRectangle width="160" height="69" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5DFN9uElky3kn-lGwo1o-33" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1b. Система сообщает, что акций нет (экран 5)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Результат&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Просмотр акционных товаров не состоялся&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-30" vertex="1">
+          <mxGeometry x="160" width="440" height="69" as="geometry">
+            <mxRectangle width="440" height="69" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4N9QjTrsQG6XzGWL26nH-7" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="800" width="600" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4N9QjTrsQG6XzGWL26nH-8" value="&lt;b&gt;Альтернативный сценарий 2&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="4N9QjTrsQG6XzGWL26nH-7" vertex="1">
+          <mxGeometry width="160" height="70" as="geometry">
+            <mxRectangle width="160" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4N9QjTrsQG6XzGWL26nH-9" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;7b. Товары по запрошенному фильтру не найдены (экран 6)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt; Результат&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Просмотр отфильтрованных акционных товаров не состоялся&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;spacingLeft=7;spacingRight=7;" parent="4N9QjTrsQG6XzGWL26nH-7" vertex="1">
+          <mxGeometry x="160" width="440" height="70" as="geometry">
+            <mxRectangle width="440" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4N9QjTrsQG6XzGWL26nH-10" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="870" width="600" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4N9QjTrsQG6XzGWL26nH-11" value="&lt;b&gt;Альтернативный сценарий 3&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="4N9QjTrsQG6XzGWL26nH-10" vertex="1">
+          <mxGeometry width="160" height="80" as="geometry">
+            <mxRectangle width="160" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4N9QjTrsQG6XzGWL26nH-12" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;12b. Покупатель удалил один из товаров корзины и продолжает оформление заказа&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;b&gt; Результат:&lt;/b&gt; Система подтверждает переход к оформлению заказа&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;spacingLeft=7;spacingRight=7;" parent="4N9QjTrsQG6XzGWL26nH-10" vertex="1">
+          <mxGeometry x="160" width="440" height="80" as="geometry">
+            <mxRectangle width="440" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4N9QjTrsQG6XzGWL26nH-16" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
+          <mxGeometry y="950" width="600" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4N9QjTrsQG6XzGWL26nH-17" value="&lt;b&gt;Исключительный сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="4N9QjTrsQG6XzGWL26nH-16" vertex="1">
+          <mxGeometry width="160" height="80" as="geometry">
+            <mxRectangle width="160" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4N9QjTrsQG6XzGWL26nH-18" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 12c. Покупатель удалил все товары из корзины (экран 7)&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Результат:&lt;/b&gt; Система заблокировала возможность оформить заказ&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;align=left;" parent="4N9QjTrsQG6XzGWL26nH-16" vertex="1">
+          <mxGeometry x="160" width="440" height="80" as="geometry">
+            <mxRectangle width="440" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
