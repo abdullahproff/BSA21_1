@@ -28,22 +28,22 @@
         </bpmn:childLaneSet>
       </bpmn:lane>
       <bpmn:lane id="Lane_133evcz" name="Система">
-        <bpmn:flowNodeRef>Activity_1iadoax</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_12zsnsh</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_151079u</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_09r1yxc</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0mb3t9u</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0yaqs7a</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_0xzvku6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1iadoax</bpmn:flowNodeRef>
         <bpmn:childLaneSet id="LaneSet_1vz3wz0">
           <bpmn:lane id="Lane_1905qf9">
-            <bpmn:flowNodeRef>Activity_1iadoax</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Activity_12zsnsh</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Activity_151079u</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Activity_09r1yxc</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Activity_0mb3t9u</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Activity_0yaqs7a</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>Event_0xzvku6</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_1iadoax</bpmn:flowNodeRef>
           </bpmn:lane>
         </bpmn:childLaneSet>
       </bpmn:lane>
@@ -51,16 +51,6 @@
     <bpmn:startEvent id="Event_14grdr6" name="авторизация в приложении">
       <bpmn:outgoing>Flow_1pjplrm</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:serviceTask id="Activity_1iadoax" name="отображение плеера с проигрываемой композицией">
-      <bpmn:incoming>Flow_1pjplrm</bpmn:incoming>
-      <bpmn:incoming>Flow_1qpdih6</bpmn:incoming>
-      <bpmn:outgoing>Flow_1sg2w44</bpmn:outgoing>
-      <bpmn:property id="Property_134o3j4" name="__targetRef_placeholder" />
-      <bpmn:dataInputAssociation id="DataInputAssociation_0fq39mq">
-        <bpmn:sourceRef>DataStoreReference_0s3jn0t</bpmn:sourceRef>
-        <bpmn:targetRef>Property_134o3j4</bpmn:targetRef>
-      </bpmn:dataInputAssociation>
-    </bpmn:serviceTask>
     <bpmn:userTask id="Activity_1nrq412" name="свайп вверх или нажатие">
       <bpmn:incoming>Flow_1sg2w44</bpmn:incoming>
       <bpmn:outgoing>Flow_1o02g1c</bpmn:outgoing>
@@ -79,7 +69,7 @@
         <bpmn:targetRef>Property_1da0479</bpmn:targetRef>
       </bpmn:dataInputAssociation>
     </bpmn:serviceTask>
-    <bpmn:serviceTask id="Activity_151079u" name="экран с сообщением что текст песни отсутствует">
+    <bpmn:serviceTask id="Activity_151079u" name="отображение экрана с сообщением &#34;текст песни отсутствует&#34;">
       <bpmn:incoming>Flow_0m25k4a</bpmn:incoming>
       <bpmn:outgoing>Flow_1glbozb</bpmn:outgoing>
     </bpmn:serviceTask>
@@ -128,7 +118,7 @@
       <bpmn:incoming>Flow_1ozinsf</bpmn:incoming>
       <bpmn:outgoing>Flow_1xj2ng3</bpmn:outgoing>
     </bpmn:serviceTask>
-    <bpmn:userTask id="Activity_1u3rahf" name="вводит сообщение и жмет кнопку &#34;отправить&#34;">
+    <bpmn:userTask id="Activity_1u3rahf" name="ввод сообщения и нажатие кнопки &#34;отправить&#34;">
       <bpmn:incoming>Flow_1xj2ng3</bpmn:incoming>
       <bpmn:outgoing>Flow_0pagxd0</bpmn:outgoing>
     </bpmn:userTask>
@@ -143,6 +133,16 @@
     <bpmn:endEvent id="Event_0xzvku6">
       <bpmn:incoming>Flow_1glbozb</bpmn:incoming>
     </bpmn:endEvent>
+    <bpmn:serviceTask id="Activity_1iadoax" name="отображение плеера с проигрываемой композицией">
+      <bpmn:incoming>Flow_1pjplrm</bpmn:incoming>
+      <bpmn:incoming>Flow_1qpdih6</bpmn:incoming>
+      <bpmn:outgoing>Flow_1sg2w44</bpmn:outgoing>
+      <bpmn:property id="Property_134o3j4" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_0fq39mq">
+        <bpmn:sourceRef>DataStoreReference_0s3jn0t</bpmn:sourceRef>
+        <bpmn:targetRef>Property_134o3j4</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+    </bpmn:serviceTask>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1nph4nz">
@@ -169,10 +169,6 @@
         <bpmndi:BPMNLabel>
           <dc:Bounds x="273" y="144.5" width="74" height="27" />
         </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_1iadoax_di" bpmnElement="Activity_1iadoax">
-        <dc:Bounds x="260" y="440" width="100" height="80" />
-        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1nrq412_di" bpmnElement="Activity_1nrq412">
         <dc:Bounds x="420" y="160" width="100" height="80" />
@@ -240,19 +236,23 @@
       <bpmndi:BPMNShape id="Event_0xzvku6_di" bpmnElement="Event_0xzvku6">
         <dc:Bounds x="592" y="522" width="36" height="36" />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1iadoax_di" bpmnElement="Activity_1iadoax">
+        <dc:Bounds x="260" y="410" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_1pjplrm_di" bpmnElement="Flow_1pjplrm">
         <di:waypoint x="310" y="218" />
-        <di:waypoint x="310" y="440" />
+        <di:waypoint x="310" y="410" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1qpdih6_di" bpmnElement="Flow_1qpdih6">
         <di:waypoint x="1640" y="490" />
         <di:waypoint x="1640" y="660" />
         <di:waypoint x="310" y="660" />
-        <di:waypoint x="310" y="520" />
+        <di:waypoint x="310" y="490" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1sg2w44_di" bpmnElement="Flow_1sg2w44">
-        <di:waypoint x="360" y="480" />
-        <di:waypoint x="390" y="480" />
+        <di:waypoint x="360" y="450" />
+        <di:waypoint x="390" y="450" />
         <di:waypoint x="390" y="200" />
         <di:waypoint x="420" y="200" />
       </bpmndi:BPMNEdge>
@@ -326,7 +326,7 @@
       <bpmndi:BPMNEdge id="DataInputAssociation_0fq39mq_di" bpmnElement="DataInputAssociation_0fq39mq">
         <di:waypoint x="465" y="580" />
         <di:waypoint x="340" y="580" />
-        <di:waypoint x="340" y="520" />
+        <di:waypoint x="340" y="490" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataInputAssociation_1czaffq_di" bpmnElement="DataInputAssociation_1czaffq">
         <di:waypoint x="515" y="580" />
