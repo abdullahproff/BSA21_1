@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.2" pages="2">
   <diagram id="iSdH8Bf3Pxa846-qju2B" name="Шаблон">
-    <mxGraphModel dx="954" dy="639" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="823" dy="1371" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="5DFN9uElky3kn-lGwo1o-1" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" parent="1" vertex="1">
-          <mxGeometry x="50" y="49" width="600" height="852" as="geometry" />
+          <mxGeometry x="50" y="49" width="600" height="1221" as="geometry" />
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-6" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
           <mxGeometry width="600" height="40" as="geometry" />
@@ -47,46 +47,46 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-18" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
-          <mxGeometry y="120" width="600" height="60" as="geometry" />
+          <mxGeometry y="120" width="600" height="71" as="geometry" />
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-19" value="&lt;b&gt;Ограничения&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-18" vertex="1">
-          <mxGeometry width="160" height="60" as="geometry">
-            <mxRectangle width="160" height="60" as="alternateBounds" />
+          <mxGeometry width="160" height="71" as="geometry">
+            <mxRectangle width="160" height="71" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5DFN9uElky3kn-lGwo1o-21" value="При загрузке фото формат должен быть : PEG (JPG), PNG, SVG.&lt;br&gt;В Telegram можно установить дату рождения, начиная с 1900 года." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-18" vertex="1">
-          <mxGeometry x="160" width="440" height="60" as="geometry">
-            <mxRectangle width="440" height="60" as="alternateBounds" />
+        <mxCell id="5DFN9uElky3kn-lGwo1o-21" value="При загрузке фото формат должен быть : PEG (JPG), PNG, SVG.&lt;br&gt;Максимальный размер файла до 2ГБ.&lt;br&gt;Максимальное кол-во загруженных фото для аватара 10шт.&lt;br&gt;В Telegram можно установить дату рождения, начиная с 1900 года." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-18" vertex="1">
+          <mxGeometry x="160" width="440" height="71" as="geometry">
+            <mxRectangle width="440" height="71" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-22" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
-          <mxGeometry y="180" width="600" height="50" as="geometry" />
+          <mxGeometry y="191" width="600" height="71" as="geometry" />
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-23" value="&lt;b&gt;Триггер&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-22" vertex="1">
-          <mxGeometry width="160" height="50" as="geometry">
-            <mxRectangle width="160" height="50" as="alternateBounds" />
+          <mxGeometry width="160" height="71" as="geometry">
+            <mxRectangle width="160" height="71" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-25" value="Клиент нажимает кнопку плюс, для смены аватарки, поле с подсказкой Ф.И.О для изменения имени, поле с подсказкой день рождения для изменения даты, поле с подсказкой статус для изменения статусаю" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-22" vertex="1">
-          <mxGeometry x="160" width="440" height="50" as="geometry">
-            <mxRectangle width="440" height="50" as="alternateBounds" />
+          <mxGeometry x="160" width="440" height="71" as="geometry">
+            <mxRectangle width="440" height="71" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-26" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
-          <mxGeometry y="230" width="600" height="391" as="geometry" />
+          <mxGeometry y="262" width="600" height="391" as="geometry" />
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-27" value="&lt;b&gt;Основной сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-26" vertex="1">
           <mxGeometry width="160" height="391" as="geometry">
             <mxRectangle width="160" height="391" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5DFN9uElky3kn-lGwo1o-29" value="&lt;ol style=&quot;text-align: left;&quot;&gt;&lt;li&gt;Система отображает форму выбора редактирования аватара, имени, даты рождения, статуса(экран номер 1)&lt;/li&gt;&lt;li&gt;Клиент нажимает на иконку плюса&lt;/li&gt;&lt;li&gt;Система отображает экран разрешения доступа к галерее (экран 5.2)&lt;/li&gt;&lt;li&gt;Клиент нажимает на кнопку &quot;Да&quot;&lt;/li&gt;&lt;li&gt;Клиент выбирает фото которое устанавливается на аватар (экран 5)&lt;/li&gt;&lt;li&gt;Клиент нажимает область с изменением имени (экран 1)&amp;nbsp;&lt;/li&gt;&lt;li&gt;Система отображает окно ввода имени и фамилии (экран 4)&lt;/li&gt;&lt;li&gt;Клиент вводит данные и нажимает кнопку сохранить (экран 4)&lt;/li&gt;&lt;li&gt;Клиент нажимает область с изменением дня рождения (экран 1)&lt;/li&gt;&lt;li&gt;Система выводит всплывающее окно с выбором дня, месяца, года (экран 3)&lt;/li&gt;&lt;li&gt;Клиент свайпом вверх/вниз выбирает день рождения и нажимает кнопку сохранить(экран 3)&lt;/li&gt;&lt;li&gt;Клиент нажимает область с изменением статуса (экран 1)&lt;/li&gt;&lt;li&gt;Система выводит окно с выбором статуса, по умолчанию статус&amp;nbsp; &quot;в сети&quot; (экран 2)&lt;/li&gt;&lt;li&gt;Клиент выбирает статус &quot;Занят&quot;&amp;nbsp;&lt;br&gt;&lt;b style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ol&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&lt;b style=&quot;background-color: initial; text-align: center;&quot;&gt;Критерий успеха:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-weight: normal; text-align: center;&quot;&gt;Измененён аватар, заполнена графа Ф.И.О, заполнен День рождения, изменён статус.&lt;/span&gt;&lt;/div&gt;&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-26" vertex="1">
+        <mxCell id="5DFN9uElky3kn-lGwo1o-29" value="&lt;ol style=&quot;text-align: left;&quot;&gt;&lt;li&gt;Система отображает форму выбора редактирования аватара, имени, даты рождения, статуса (экран номер 1)&lt;/li&gt;&lt;li&gt;Клиент нажимает на иконку плюса&amp;nbsp;(экран номер 1)&lt;/li&gt;&lt;li&gt;Система отображает экран разрешения доступа к галерее (экран 5.2)&lt;/li&gt;&lt;li&gt;Клиент нажимает на кнопку &quot;Да&quot;&lt;/li&gt;&lt;li&gt;Клиент выбирает фото которое устанавливается на аватар (экран 5)&lt;/li&gt;&lt;li&gt;Клиент нажимает область с изменением имени (экран 1)&amp;nbsp;&lt;/li&gt;&lt;li&gt;Система отображает окно ввода имени и фамилии (экран 4)&lt;/li&gt;&lt;li&gt;Клиент вводит данные и нажимает кнопку сохранить (экран 4)&lt;/li&gt;&lt;li&gt;Клиент нажимает область с изменением дня рождения (экран 1)&lt;/li&gt;&lt;li&gt;Система выводит всплывающее окно с выбором дня, месяца, года (экран 3)&lt;/li&gt;&lt;li&gt;Клиент свайпом вверх/вниз выбирает день рождения и нажимает кнопку сохранить(экран 3)&lt;/li&gt;&lt;li&gt;Клиент нажимает область с изменением статуса (экран 1)&lt;/li&gt;&lt;li&gt;Система выводит окно с выбором статуса, по умолчанию статус&amp;nbsp; &quot;в сети&quot; (экран 2)&lt;/li&gt;&lt;li&gt;Клиент выбирает статус &quot;Занят&quot; (экран 2)&lt;br&gt;&lt;b style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ol&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&lt;b style=&quot;background-color: initial; text-align: center;&quot;&gt;Критерий успеха:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-weight: normal; text-align: center;&quot;&gt;Измененён аватар, заполнена графа Ф.И.О, заполнен День рождения, изменён статус.&lt;/span&gt;&lt;/div&gt;&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-26" vertex="1">
           <mxGeometry x="160" width="440" height="391" as="geometry">
             <mxRectangle width="440" height="391" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-30" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
-          <mxGeometry y="621" width="600" height="131" as="geometry" />
+          <mxGeometry y="653" width="600" height="131" as="geometry" />
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-31" value="&lt;b&gt;Альтернативный сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-30" vertex="1">
           <mxGeometry width="160" height="131" as="geometry">
@@ -99,18 +99,32 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-34" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5DFN9uElky3kn-lGwo1o-1" vertex="1">
-          <mxGeometry y="752" width="600" height="100" as="geometry" />
+          <mxGeometry y="784" width="600" height="437" as="geometry" />
         </mxCell>
         <mxCell id="5DFN9uElky3kn-lGwo1o-35" value="&lt;b&gt;Исключительный сценарий&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="5DFN9uElky3kn-lGwo1o-34" vertex="1">
-          <mxGeometry width="160" height="100" as="geometry">
-            <mxRectangle width="160" height="100" as="alternateBounds" />
+          <mxGeometry width="160" height="437" as="geometry">
+            <mxRectangle width="160" height="437" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5DFN9uElky3kn-lGwo1o-37" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-34" vertex="1">
-          <mxGeometry x="160" width="440" height="100" as="geometry">
-            <mxRectangle width="440" height="100" as="alternateBounds" />
+        <mxCell id="5DFN9uElky3kn-lGwo1o-37" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ol&gt;&lt;li&gt;Система отображает форму выбора редактирования аватара, имени, даты рождения, статуса(экран номер 1)&lt;/li&gt;&lt;li&gt;Клиент нажимает на иконку плюса&lt;/li&gt;&lt;li&gt;Система отображает экран разрешения доступа к галерее (экран 5.2)&lt;/li&gt;&lt;li&gt;Клиент нажимает на кнопку &quot;Нет&quot;.&lt;br&gt;4.1 возврат на предыдущий экран.&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Клиент выбирает фото которое устанавливается на аватар (экран 5)&lt;br&gt;5.1 (Ошибка) Фото не подходит под требования загрузки&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Клиент нажимает область с изменением имени (экран 1)&amp;nbsp;&lt;/li&gt;&lt;li&gt;Система отображает окно ввода имени и фамилии (экран 4)&lt;/li&gt;&lt;li&gt;Клиент вводит данные и нажимает кнопку сохранить (экран 4)&lt;br&gt;8.1 Из за сбоя интернета данные не сохраняются&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Клиент нажимает область с изменением дня рождения (экран 1)&lt;/li&gt;&lt;li&gt;Система выводит всплывающее окно с выбором дня, месяца, года (экран 3)&lt;/li&gt;&lt;li&gt;Клиент свайпом вверх/вниз выбирает день рождения экран 3)&lt;br&gt;11.1 Пользователь пытается выбрать несуществующую дату (до 1900г)&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Клиент нажимает область с изменением статуса (экран 1)&lt;/li&gt;&lt;li&gt;Система выводит окно с выбором статуса, по умолчанию статус&amp;nbsp; &quot;в сети&quot; (экран 2)&lt;/li&gt;&lt;li&gt;Клиент выбирает статус &quot;Занят&quot;&amp;nbsp;&lt;br&gt;14.1 Из за сбоя интернета информация о статусе не сохраняется&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;spacingLeft=7;spacingRight=7;" parent="5DFN9uElky3kn-lGwo1o-34" vertex="1">
+          <mxGeometry x="160" width="440" height="437" as="geometry">
+            <mxRectangle width="440" height="437" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="w7P0oziuDzubAVSOEuZz-1" value="Я, как пользователь приложения [Telegram], хочу иметь возможность редактировать информацию на странице профиля, для того что бы я мог вносить актуальные данные о себе." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=default;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="210" y="-30" width="440" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w7P0oziuDzubAVSOEuZz-3" value="User Story" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="-30" width="160" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="kDOAFjhYfCbkSAanV9E3" name="Страница — 2">
+    <mxGraphModel dx="954" dy="639" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>

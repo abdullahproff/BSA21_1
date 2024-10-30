@@ -1,5 +1,5 @@
-# Упражнение 2
+# Домашнее задание 2
 
-Делаем макет по пользовательской истории из [упражнения 1](../ex01/ex01_user_story.md).
+Макет по пользовательской истории (user story) из [упражнения 1](../ex01/README.md).
 
-![Exercise 02 - User Story Layout](./Ozon_next_month_cashback_feature_mobile_app.drawio.png "Exercise 02 - User Story Layout")
+![Exercise 02 - User Story layout](./Ozon_next_month_cashback_feature_mobile_app.drawio.png "Exercise 02 - User Story layout")
