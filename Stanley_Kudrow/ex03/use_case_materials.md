@@ -15,3 +15,4 @@ School 21: mhorton
 
 - [Варианты на все случаи жизни: как написать полезный use case - Practicum.Yandex.ru](https://practicum.yandex.ru/blog/chto-takoe-use-case-kak-ih-napisat/)
 - [Алгоритм описания функциональных требований к системе в формате Use Case - Systems.Education](https://systems.education/functional_requirements_in_usecases)
+- [Use Case: для чего описывают сценарии использования ПО](https://o2k.ru/blog/use-case)
