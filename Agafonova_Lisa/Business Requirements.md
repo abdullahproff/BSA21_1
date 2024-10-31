@@ -15,7 +15,7 @@
 
 ## 1. ID фичи<a id='1'></a>
 
-[FDIARY-12345](https://github.com/abdullahproff/BSA21_1/tree/main/Agafonova_Lisa)
+[FDIARY-00001](https://github.com/abdullahproff/BSA21_1/tree/main/Agafonova_Lisa)
 
 ## 2. Название продукта<a id='2'></a>
 
@@ -46,15 +46,15 @@
 
 Я, как пользователь мобильного приложения Здоровье, хочу вести дневник питания и получать аналитику, чтобы улучшить свои пищевые привычки.
 
+## 7. Wireframe<a id='5'></a>
 
-# . Wireframe<a id='5'></a>
+![Wireframe](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/02_%20Wireframe.drawio.png)
 
+## 8. Use Case<a id='6'></a>
 
-## 7. Use Case<a id='6'></a>
+![Use Case](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/03_Use%20Case.drawio.png)
 
-![Use Case](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/03_Use%20Case.drawio.pdf)
-
-## 8. BPMN<a id='7'></a>
+## 9. BPMN<a id='7'></a>
 
 ![BPMN](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/04_BPMN.png?raw=true)
 
