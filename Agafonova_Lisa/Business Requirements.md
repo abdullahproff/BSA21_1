@@ -48,11 +48,11 @@
 
 ## 7. Wireframe<a id='7'></a>
 
-![Wireframe](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/02_%20Wireframe.drawio.png)
+![Wireframe](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/02_%20Wireframe.drawio.png?raw=true)
 
 ## 8. Use Case<a id='8'></a>
 
-![Use Case](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/03_Use%20Case.drawio.png)
+![Use Case](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/03_Use%20Case.drawio.png?raw=true)
 
 ## 9. BPMN<a id='9'></a>
 
