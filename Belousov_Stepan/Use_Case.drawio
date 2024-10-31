@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 YaBrowser/24.10.0.0 Safari/537.36" version="24.8.3">
+  <diagram name="Страница — 1" id="1hPXFgXhSr1WO4rUE2s8">
+    <mxGraphModel dx="2868" dy="1534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="80" width="760" height="2760" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;USE CASE&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="510" y="39" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-6" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Ограничения&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="320" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-7" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Папки не могут быть пустыми, но могут содержать только один канал&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="320" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-8" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Предусловие&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="240" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-9" value="&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-stretch: normal; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;1.Пользователь авторизован в мобильном приложении&lt;br&gt;2. Существуют папки для добавления в них каналов&lt;/font&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="240" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-10" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Акторы&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="160" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-11" value="&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-stretch: normal; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Пользователи мобильного приложения&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 15px; background-color: initial;&quot;&gt;YouTube&lt;/span&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="160" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Заголовок&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="80" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-13" value="&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-stretch: normal; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Группировка каналов по папкам в мобильном приложении YouTube&lt;/span&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="80" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-14" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Исключительный сценарий №2&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="2640" width="380" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-15" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;После попытки сохранить изменения на шаге 6 основного сценария происходит ошибка доступа к интернету.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Система выводит сообщение об ошибке: &quot;Не удалось сохранить изменения. Проверьте соединение с интернетом и повторите попытку&quot;.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Пользователь возвращается на предыдущий экран.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="580" y="2640" width="380" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-16" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Альтернативный сценарий №1&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="840" width="380" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-17" value="&lt;ol style=&quot;font-size: 15px;&quot;&gt;&lt;li style=&quot;text-align: left; font-size: 15px;&quot;&gt;Пользователь открывает приложение и тапает на видео с главной страницы.&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left; font-size: 15px;&quot;&gt;Пользователь тапает на кнопку&amp;nbsp;&amp;nbsp;Action Menu под видео на странице запустившегося видео.&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left; font-size: 15px;&quot;&gt;см. пункт 2 основного сценария&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="580" y="840" width="380" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-18" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Основной сценарий&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="480" width="380" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-19" value="&lt;ol style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Пользователь открывает приложение и тапает на кнопку&amp;nbsp;&amp;nbsp;Action Menu под видео на главной странице.&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;В открывшемся меню пользователь выбирает &quot;Добавить канал в папку&quot;.&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Система отображает список всех существующих папок.&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Пользователь отмечает галочками нужные папки для добавления в них канала.&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Пользователь нажимает на кнопку &quot;Готово&quot;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Изменения вносятся в папк(и/у)&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Пользователь возвращается на предыдущий экран&lt;/li&gt;&lt;/ol&gt;&lt;font face=&quot;Helvetica Neue&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;ol style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="480" width="380" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-20" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Триггер&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="400" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y2E87wazrkwQNpm6JytJ-21" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Пользователь тапает на элемент интерфейса отвечающий за переход в меню добавления каналов в папку&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="400" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yLXXrojaPnzSfdaDTpV--1" value="&lt;ol style=&quot;font-size: 15px;&quot;&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Пользователь открывает приложение и переходит с главной страницы в раздел &quot;Shorts&quot;.&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Пользователь тапает на кнопку&amp;nbsp;&amp;nbsp;Action Menu под видео на странице запустившегося shorts.&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;см. пункт 2 основного сценария&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1160" width="380" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="yLXXrojaPnzSfdaDTpV--2" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Альтернативный сценарий №2&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1160" width="380" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="yLXXrojaPnzSfdaDTpV--3" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Альтернативный сценарий №3&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1480" width="380" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="yLXXrojaPnzSfdaDTpV--4" value="&lt;ol style=&quot;font-size: 15px;&quot;&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Пользователь открывает приложение и переходит с главной страницы в раздел &quot;Подписки&quot;.&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Пользователь тапает на элемент интерфейса отвечающий за добавление канала в папку.&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;см. пункт 3 основного сценария&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1480" width="380" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="yLXXrojaPnzSfdaDTpV--5" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Альтернативный сценарий №4&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1800" width="380" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="yLXXrojaPnzSfdaDTpV--6" value="&lt;ol style=&quot;font-size: 15px;&quot;&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Пользователь открывает приложение и переходит с главной страницы в раздел &quot;Профиль&quot;.&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;В открывшемся меню пользователь выбирает &quot;Папки каналов&quot;.&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Система отображает список всех существующих папок.&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Пользователь тапает на элемент интерфейса отвечающий за добавление каналов в папку.&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Система отображает список всех каналов в подписках.&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Пользователь отмечает галочками нужные каналы для добавления их в папку.&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;см. пункт 5 основного сценария&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1800" width="380" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="yLXXrojaPnzSfdaDTpV--10" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Альтернативный сценарий №5&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="2120" width="380" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="yLXXrojaPnzSfdaDTpV--11" value="&lt;ol style=&quot;font-size: 15px;&quot;&gt;&lt;li style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font face=&quot;Helvetica Neue&quot;&gt;В основном сценарии на пунктах 2, 3&lt;br&gt;или&lt;br&gt;в альтернативном сценарии №4 на пункте 5 &lt;br&gt;пользователь нажимает кнопку &quot;назад&quot;&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font face=&quot;Helvetica Neue&quot;&gt;выбранные изменения не вносятся в систему, а пользователь возвращается на предыдущий экран&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="580" y="2120" width="380" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="yLXXrojaPnzSfdaDTpV--14" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Исключительный сценарий №1&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="2440" width="380" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yLXXrojaPnzSfdaDTpV--15" value="&lt;ol&gt;&lt;li style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font face=&quot;Helvetica Neue&quot;&gt;В основном сценарии на пунктах 3&lt;br&gt;или&lt;br&gt;в альтернативном сценарии №4 на пункте 5&lt;br&gt;канал уже содержится в определённой папке.&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font face=&quot;Helvetica Neue&quot;&gt;В таком случаи в обоих подменю уже использованные папки или каналы нельзя выделить галочкой и добавить канал в папку повторно.&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="2440" width="380" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
