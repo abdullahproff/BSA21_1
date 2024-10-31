@@ -32,13 +32,13 @@
         <bpmn:flowNodeRef>Gateway_1tbvsqc</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_1j0nxty" name="Пользователь">
-        <bpmn:flowNodeRef>Activity_1tadug6</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_15bzqhq</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0ucykkc</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gateway_0xyu7o0</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_1yeus5v</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_1dfmqw4</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1tadug6</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_00v9co5" name="Система">
         <bpmn:flowNodeRef>Activity_18cae88</bpmn:flowNodeRef>
@@ -49,12 +49,9 @@
         <bpmn:flowNodeRef>Activity_0jl2h7i</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_1fmox78</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_1jqy9gd</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0xqvdci</bpmn:flowNodeRef>
       </bpmn:lane>
     </bpmn:laneSet>
-    <bpmn:task id="Activity_1tadug6" name="Нажатие кнопки &#34;Корзина&#34;">
-      <bpmn:incoming>Flow_1uiqt7l</bpmn:incoming>
-      <bpmn:outgoing>Flow_16fkcmj</bpmn:outgoing>
-    </bpmn:task>
     <bpmn:task id="Activity_15bzqhq" name="Нажатие кнопки &#34;-&#34; (минус) рядом с Товаром">
       <bpmn:incoming>Flow_1qsimkc</bpmn:incoming>
       <bpmn:outgoing>Flow_1vuo1tx</bpmn:outgoing>
@@ -65,6 +62,7 @@
       <bpmn:incoming>Flow_0vytw7g</bpmn:incoming>
       <bpmn:incoming>Flow_0t11jnr</bpmn:incoming>
       <bpmn:incoming>Flow_16rkxkb</bpmn:incoming>
+      <bpmn:incoming>Flow_0oj45m2</bpmn:incoming>
       <bpmn:outgoing>Flow_1vwby6y</bpmn:outgoing>
     </bpmn:task>
     <bpmn:task id="Activity_1roiz50" name="Количество Товара в Корзине уменьшено на 1">
@@ -95,7 +93,6 @@
     </bpmn:task>
     <bpmn:parallelGateway id="Gateway_0xyu7o0">
       <bpmn:incoming>Flow_1vwby6y</bpmn:incoming>
-      <bpmn:incoming>Flow_0mg7a8f</bpmn:incoming>
       <bpmn:outgoing>Flow_07coxj1</bpmn:outgoing>
       <bpmn:outgoing>Flow_01jpx3t</bpmn:outgoing>
       <bpmn:outgoing>Flow_1qsimkc</bpmn:outgoing>
@@ -109,7 +106,7 @@
       <bpmn:incoming>Flow_0lxqhw6</bpmn:incoming>
       <bpmn:outgoing>Flow_1lh8lrr</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:task id="Activity_0fsd3a8" name="Проверка наличия всех Товаров">
+    <bpmn:task id="Activity_0fsd3a8" name="Проверка наличия каждого Товара">
       <bpmn:incoming>Flow_1u8hpma</bpmn:incoming>
       <bpmn:outgoing>Flow_114vop5</bpmn:outgoing>
     </bpmn:task>
@@ -139,7 +136,7 @@
     <bpmn:sequenceFlow id="Flow_04z4ecx" name="ДА" sourceRef="Gateway_1a34qiu" targetRef="Activity_1jdwu6o" />
     <bpmn:sequenceFlow id="Flow_06to9tq" sourceRef="Activity_0ucykkc" targetRef="Activity_0jl2h7i" />
     <bpmn:sequenceFlow id="Flow_01jpx3t" sourceRef="Gateway_0xyu7o0" targetRef="Activity_0ucykkc" />
-    <bpmn:sequenceFlow id="Flow_0mg7a8f" name="НЕТ" sourceRef="Gateway_1tbvsqc" targetRef="Gateway_0xyu7o0" />
+    <bpmn:sequenceFlow id="Flow_0mg7a8f" name="НЕТ" sourceRef="Gateway_1tbvsqc" targetRef="Activity_0xqvdci" />
     <bpmn:sequenceFlow id="Flow_07coxj1" sourceRef="Gateway_0xyu7o0" targetRef="Activity_1yeus5v" />
     <bpmn:sequenceFlow id="Flow_1u8hpma" sourceRef="Gateway_0xyu7o0" targetRef="Activity_0fsd3a8" />
     <bpmn:sequenceFlow id="Flow_0g082fy" sourceRef="Activity_1yeus5v" targetRef="Activity_06xd07y" />
@@ -161,6 +158,15 @@
       <bpmn:outgoing>Flow_0lxqhw6</bpmn:outgoing>
       <bpmn:outgoing>Flow_0mg7a8f</bpmn:outgoing>
     </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="Flow_0oj45m2" sourceRef="Activity_0xqvdci" targetRef="Activity_18cae88" />
+    <bpmn:task id="Activity_1tadug6" name="Нажатие кнопки &#34;Корзина&#34;">
+      <bpmn:incoming>Flow_1uiqt7l</bpmn:incoming>
+      <bpmn:outgoing>Flow_16fkcmj</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0xqvdci" name="Под кнопкой возле Товаров отображено количество в наличии">
+      <bpmn:incoming>Flow_0mg7a8f</bpmn:incoming>
+      <bpmn:outgoing>Flow_0oj45m2</bpmn:outgoing>
+    </bpmn:task>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_15qvpi4">
@@ -179,9 +185,6 @@
       <bpmndi:BPMNShape id="Lane_1784utg_di" bpmnElement="Lane_1784utg" isHorizontal="true">
         <dc:Bounds x="190" y="700" width="1450" height="290" />
         <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_0tg91n5_di" bpmnElement="Activity_1tadug6">
-        <dc:Bounds x="480" y="540" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1qob0w3_di" bpmnElement="Activity_15bzqhq">
         <dc:Bounds x="920" y="450" width="100" height="80" />
@@ -239,14 +242,21 @@
       <bpmndi:BPMNShape id="Gateway_1tbvsqc_di" bpmnElement="Gateway_1tbvsqc" isMarkerVisible="true">
         <dc:Bounds x="725" y="855" width="50" height="50" />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0tg91n5_di" bpmnElement="Activity_1tadug6">
+        <dc:Bounds x="470" y="540" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0xqvdci_di" bpmnElement="Activity_0xqvdci">
+        <dc:Bounds x="590" y="291" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_1uiqt7l_di" bpmnElement="Flow_1uiqt7l">
         <di:waypoint x="410" y="371" />
         <di:waypoint x="410" y="580" />
-        <di:waypoint x="480" y="580" />
+        <di:waypoint x="470" y="580" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_16fkcmj_di" bpmnElement="Flow_16fkcmj">
-        <di:waypoint x="530" y="540" />
-        <di:waypoint x="530" y="250" />
+        <di:waypoint x="520" y="540" />
+        <di:waypoint x="520" y="250" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1ivmobo_di" bpmnElement="Flow_1ivmobo">
         <di:waypoint x="308" y="580" />
@@ -337,11 +347,10 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0mg7a8f_di" bpmnElement="Flow_0mg7a8f">
         <di:waypoint x="725" y="880" />
-        <di:waypoint x="650" y="880" />
-        <di:waypoint x="650" y="560" />
-        <di:waypoint x="725" y="560" />
+        <di:waypoint x="640" y="880" />
+        <di:waypoint x="640" y="371" />
         <bpmndi:BPMNLabel color:color="#831311">
-          <dc:Bounds x="694" y="859" width="23" height="14" />
+          <dc:Bounds x="691" y="859" width="23" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_07coxj1_di" bpmnElement="Flow_07coxj1">
@@ -373,9 +382,10 @@
         <di:waypoint x="1020" y="770" />
         <di:waypoint x="1205" y="770" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Association_13wydsl_di" bpmnElement="Association_13wydsl">
-        <di:waypoint x="752" y="903" />
-        <di:waypoint x="752" y="907" />
+      <bpmndi:BPMNEdge id="Flow_0oj45m2_di" bpmnElement="Flow_0oj45m2">
+        <di:waypoint x="590" y="331" />
+        <di:waypoint x="550" y="331" />
+        <di:waypoint x="550" y="250" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="TextAnnotation_10vqiu4_di" bpmnElement="TextAnnotation_10vqiu4">
         <dc:Bounds x="1190" y="805" width="80" height="41" />
@@ -391,6 +401,10 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="TextAnnotation_0uakqno_di" bpmnElement="TextAnnotation_0uakqno">
         <dc:Bounds x="895" y="287" width="150" height="40" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_153tayb_di" bpmnElement="TextAnnotation_153tayb">
+        <dc:Bounds x="704" y="907" width="100" height="41" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Association_1rygdc5_di" bpmnElement="Association_1rygdc5">
@@ -409,10 +423,10 @@
         <di:waypoint x="1556" y="193" />
         <di:waypoint x="1554" y="184" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="TextAnnotation_153tayb_di" bpmnElement="TextAnnotation_153tayb">
-        <dc:Bounds x="704" y="907" width="100" height="41" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_13wydsl_di" bpmnElement="Association_13wydsl">
+        <di:waypoint x="752" y="903" />
+        <di:waypoint x="752" y="907" />
+      </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
