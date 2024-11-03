@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="42CvASub1HwD-BygPTsV">
-    <mxGraphModel dx="441" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1368" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -85,7 +85,7 @@
             <mxRectangle width="240" height="80" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kB5Wtqeiwu8v_5wdKeYX-55" value="&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1. Быть клиентом &quot;Озон Банка&quot; = иметь карту &quot;Озон&quot; банка т подтверждённый виртуальный счёт.&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2. Период с 20го числа (включительно) текущего месяца и до 1го числа (исключительно) следующего месяца&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" parent="kB5Wtqeiwu8v_5wdKeYX-53" vertex="1">
+        <mxCell id="kB5Wtqeiwu8v_5wdKeYX-55" value="&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1. Авторизоваться в сервисе &quot;Озон Банка&quot;.&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2. Период с 20го числа (включительно) текущего месяца и до 1го числа (исключительно) следующего месяца&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" parent="kB5Wtqeiwu8v_5wdKeYX-53" vertex="1">
           <mxGeometry x="240" width="510" height="80" as="geometry">
             <mxRectangle width="510" height="80" as="alternateBounds" />
           </mxGeometry>
@@ -130,29 +130,29 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="kB5Wtqeiwu8v_5wdKeYX-61" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="kB5Wtqeiwu8v_5wdKeYX-28" vertex="1">
-          <mxGeometry y="720" width="750" height="80" as="geometry" />
+          <mxGeometry y="720" width="750" height="40" as="geometry" />
         </mxCell>
         <mxCell id="kB5Wtqeiwu8v_5wdKeYX-62" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Альтернативные сценарии&lt;/b&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="kB5Wtqeiwu8v_5wdKeYX-61" vertex="1">
-          <mxGeometry width="240" height="80" as="geometry">
-            <mxRectangle width="240" height="80" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kB5Wtqeiwu8v_5wdKeYX-63" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6а. пользователь вышел из приложения не сохранив возможно выбранные категории.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6b. Система сбрасывает возможные выбранные категории и переводит пользователя на главную страницу раздела &quot;Бонусы&quot;.&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;" parent="kB5Wtqeiwu8v_5wdKeYX-61" vertex="1">
-          <mxGeometry x="240" width="510" height="80" as="geometry">
-            <mxRectangle width="510" height="80" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kB5Wtqeiwu8v_5wdKeYX-65" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="kB5Wtqeiwu8v_5wdKeYX-28" vertex="1">
-          <mxGeometry y="800" width="750" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="kB5Wtqeiwu8v_5wdKeYX-66" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Исключительные сценарии&lt;/b&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="kB5Wtqeiwu8v_5wdKeYX-65" vertex="1">
           <mxGeometry width="240" height="40" as="geometry">
             <mxRectangle width="240" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kB5Wtqeiwu8v_5wdKeYX-67" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Отсутствуют&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="kB5Wtqeiwu8v_5wdKeYX-65" vertex="1">
+        <mxCell id="kB5Wtqeiwu8v_5wdKeYX-63" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Отсутствует&lt;/font&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" parent="kB5Wtqeiwu8v_5wdKeYX-61" vertex="1">
           <mxGeometry x="240" width="510" height="40" as="geometry">
             <mxRectangle width="510" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kB5Wtqeiwu8v_5wdKeYX-65" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="kB5Wtqeiwu8v_5wdKeYX-28" vertex="1">
+          <mxGeometry y="760" width="750" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kB5Wtqeiwu8v_5wdKeYX-66" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Исключительные сценарии&lt;/b&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="kB5Wtqeiwu8v_5wdKeYX-65" vertex="1">
+          <mxGeometry width="240" height="80" as="geometry">
+            <mxRectangle width="240" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kB5Wtqeiwu8v_5wdKeYX-67" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6а. пользователь вышел из приложения не сохранив возможно выбранные категории.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6b. Система сбрасывает возможные выбранные категории и переводит пользователя на главную страницу раздела &quot;Бонусы&quot;.&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" parent="kB5Wtqeiwu8v_5wdKeYX-65" vertex="1">
+          <mxGeometry x="240" width="510" height="80" as="geometry">
+            <mxRectangle width="510" height="80" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="kB5Wtqeiwu8v_5wdKeYX-99" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Примечание. Шаги 2-6 повторяют ту же логику, что и при выборе категорий на текущий месяц.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;startSize=40;fontStyle=1;" parent="1" vertex="1">
