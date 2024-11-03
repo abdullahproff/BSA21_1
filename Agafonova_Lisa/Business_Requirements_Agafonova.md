@@ -56,6 +56,6 @@
 
 ## 9. BPMN<a id='9'></a>
 
-![BPMN](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/04_BPMN.png?raw=true)
+![BPMN](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/04__BPMN.png?raw=true)
 
 
