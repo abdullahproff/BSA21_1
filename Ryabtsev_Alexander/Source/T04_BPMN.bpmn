@@ -32,11 +32,11 @@
         <bpmn:flowNodeRef>Activity_1dfmqw4</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_1tadug6</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Gateway_0xyu7o0</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_15bzqhq</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0ucykkc</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_1yeus5v</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gateway_1o7upl1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_0xyu7o0</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_00v9co5" name="Система">
         <bpmn:flowNodeRef>Activity_18cae88</bpmn:flowNodeRef>
@@ -121,13 +121,6 @@
     <bpmn:sequenceFlow id="Flow_1qsimkc" sourceRef="Gateway_0xyu7o0" targetRef="Activity_15bzqhq" />
     <bpmn:sequenceFlow id="Flow_1u8hpma" sourceRef="Gateway_1o7upl1" targetRef="Activity_1dfmqw4" />
     <bpmn:sequenceFlow id="Flow_1vwby6y" sourceRef="Activity_18cae88" targetRef="Gateway_1tbvsqc" />
-    <bpmn:parallelGateway id="Gateway_0xyu7o0">
-      <bpmn:incoming>Flow_0oj45m2</bpmn:incoming>
-      <bpmn:incoming>Flow_12oj2z7</bpmn:incoming>
-      <bpmn:outgoing>Flow_07coxj1</bpmn:outgoing>
-      <bpmn:outgoing>Flow_01jpx3t</bpmn:outgoing>
-      <bpmn:outgoing>Flow_1qsimkc</bpmn:outgoing>
-    </bpmn:parallelGateway>
     <bpmn:task id="Activity_15bzqhq" name="Нажатие кнопки &#34;-&#34; (минус) рядом с Товаром">
       <bpmn:incoming>Flow_1qsimkc</bpmn:incoming>
       <bpmn:outgoing>Flow_1vuo1tx</bpmn:outgoing>
@@ -155,11 +148,18 @@
       <bpmn:outgoing>Flow_04z4ecx</bpmn:outgoing>
       <bpmn:outgoing>Flow_1vbs35h</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:parallelGateway id="Gateway_1o7upl1">
+    <bpmn:exclusiveGateway id="Gateway_1o7upl1">
       <bpmn:incoming>Flow_0lxqhw6</bpmn:incoming>
       <bpmn:outgoing>Flow_1u8hpma</bpmn:outgoing>
       <bpmn:outgoing>Flow_12oj2z7</bpmn:outgoing>
-    </bpmn:parallelGateway>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="Gateway_0xyu7o0">
+      <bpmn:incoming>Flow_0oj45m2</bpmn:incoming>
+      <bpmn:incoming>Flow_12oj2z7</bpmn:incoming>
+      <bpmn:outgoing>Flow_07coxj1</bpmn:outgoing>
+      <bpmn:outgoing>Flow_01jpx3t</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1qsimkc</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
     <bpmn:association id="Association_13wydsl" associationDirection="None" sourceRef="Gateway_1tbvsqc" targetRef="TextAnnotation_153tayb" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
@@ -214,9 +214,6 @@
       <bpmndi:BPMNShape id="Activity_1smcg17_di" bpmnElement="Activity_0jl2h7i">
         <dc:Bounds x="1050" y="160" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Gateway_0ztvbla_di" bpmnElement="Gateway_0xyu7o0">
-        <dc:Bounds x="785" y="545" width="50" height="50" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1qob0w3_di" bpmnElement="Activity_15bzqhq">
         <dc:Bounds x="830" y="440" width="100" height="80" />
       </bpmndi:BPMNShape>
@@ -230,14 +227,17 @@
         <dc:Bounds x="680" y="281" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Gateway_1a34qiu_di" bpmnElement="Gateway_1a34qiu" isMarkerVisible="true">
-        <dc:Bounds x="1145" y="785" width="50" height="50" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Gateway_1tbvsqc_di" bpmnElement="Gateway_1tbvsqc" isMarkerVisible="true">
         <dc:Bounds x="615" y="854" width="50" height="50" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Gateway_0npzn9l_di" bpmnElement="Gateway_1o7upl1">
+      <bpmndi:BPMNShape id="Gateway_1a34qiu_di" bpmnElement="Gateway_1a34qiu" isMarkerVisible="true">
+        <dc:Bounds x="1145" y="785" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1q7d4kv_di" bpmnElement="Gateway_1o7upl1" isMarkerVisible="true">
         <dc:Bounds x="735" y="635" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1lsuy8z_di" bpmnElement="Gateway_0xyu7o0" isMarkerVisible="true">
+        <dc:Bounds x="785" y="545" width="50" height="50" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_1uiqt7l_di" bpmnElement="Flow_1uiqt7l">
         <di:waypoint x="370" y="361" />
