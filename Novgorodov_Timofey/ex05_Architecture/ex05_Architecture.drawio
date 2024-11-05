@@ -1,65 +1,65 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
   <diagram name="Страница — 1" id="U7JhZAmEZVtJP8MaD8Og">
-    <mxGraphModel dx="880" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="810" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="etJbkVltKig01Gcyeeor-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="etJbkVltKig01Gcyeeor-1" target="etJbkVltKig01Gcyeeor-4">
+        <mxCell id="etJbkVltKig01Gcyeeor-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="etJbkVltKig01Gcyeeor-1" target="etJbkVltKig01Gcyeeor-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-8" value="https" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="etJbkVltKig01Gcyeeor-7">
+        <mxCell id="etJbkVltKig01Gcyeeor-8" value="https" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="etJbkVltKig01Gcyeeor-7" vertex="1" connectable="0">
           <mxGeometry x="0.0897" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="40" y="80" width="200" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-2" value="&lt;b&gt;А&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-2" value="&lt;b&gt;А&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="110" y="30" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-3" value="web-app" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-3" value="web-app" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="110" y="50" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="etJbkVltKig01Gcyeeor-4" target="etJbkVltKig01Gcyeeor-9">
+        <mxCell id="etJbkVltKig01Gcyeeor-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="etJbkVltKig01Gcyeeor-4" target="etJbkVltKig01Gcyeeor-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-11" value="TCP/IP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="etJbkVltKig01Gcyeeor-10">
+        <mxCell id="etJbkVltKig01Gcyeeor-11" value="TCP/IP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="etJbkVltKig01Gcyeeor-10" vertex="1" connectable="0">
           <mxGeometry x="0.0586" y="4" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-4" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-4" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Проверка полученных данных:&lt;br&gt;userId &amp;gt; 0&lt;br&gt;taskId &amp;gt; 0&lt;br&gt;&lt;br&gt;Задача существует и принадлежит существующему пользователю&amp;nbsp;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="80" width="160" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-5" value="&lt;b&gt;B&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-5" value="&lt;b&gt;B&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="370" y="30" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-6" value="server" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-6" value="server" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="370" y="50" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-9" value="" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-9" value="" style="shape=datastore;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="560" y="80" width="110" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-12" value="&lt;b&gt;C&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-12" value="&lt;b&gt;C&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="585" y="30" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-13" value="РБД PgSQL" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-13" value="РБД PgSQL" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="585" y="50" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-14" value="Задача 2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-14" value="Задача 2" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="130" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-15" value="Задача 1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-15" value="Задача 1" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="100" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-16" value="&lt;div&gt;Authorization: Bearer &amp;lt;user_token&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-16" value="&lt;div&gt;Authorization: Bearer &amp;lt;user_token&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="30" y="220" width="210" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-17" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;p data-pm-slice=&quot;0 0 []&quot;&gt;{&lt;/p&gt;&lt;p&gt;&quot;userId&quot;: 8&lt;/p&gt;&lt;p&gt;&quot;taskId&quot;: 24&lt;/p&gt;&lt;p&gt;&quot;clientType&quot;: desktop &lt;/p&gt;&lt;p&gt;}&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-17" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;p data-pm-slice=&quot;0 0 []&quot;&gt;{&lt;/p&gt;&lt;p&gt;&quot;userId&quot;: 8&lt;/p&gt;&lt;p&gt;&quot;taskId&quot;: 24&lt;/p&gt;&lt;p&gt;&quot;clientType&quot;: desktop &lt;/p&gt;&lt;p&gt;}&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="60" y="220" width="180" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="etJbkVltKig01Gcyeeor-18" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;Используется собственный pgsql Frontend/Backend протокол, отвечающий за структурированность и интерпретацию данных&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="etJbkVltKig01Gcyeeor-18" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;Используется собственный pgsql Frontend/Backend протокол, отвечающий за структурированность и интерпретацию данных&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="455" y="180" width="130" height="80" as="geometry" />
         </mxCell>
       </root>
