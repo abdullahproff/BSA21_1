@@ -49,15 +49,6 @@
         <mxCell id="HA7c1eMe9eumM1eiVlC3-12" value="Корзина" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Comic Sans MS;fontSize=22;fontStyle=0" parent="1" vertex="1">
           <mxGeometry x="167" y="579" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="HA7c1eMe9eumM1eiVlC3-13" value="Проверка &lt;br style=&quot;font-size: 22px;&quot;&gt;&lt;div style=&quot;font-size: 22px;&quot;&gt;авторизации&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Comic Sans MS;fontSize=22;fontStyle=0" parent="1" vertex="1">
-          <mxGeometry x="501.75" y="386" width="160" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="HA7c1eMe9eumM1eiVlC3-14" value="Проверка&amp;nbsp;&lt;br style=&quot;font-size: 22px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 22px;&quot;&gt;наличия&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 22px;&quot;&gt;Товаров&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Comic Sans MS;fontSize=22;fontStyle=0" parent="1" vertex="1">
-          <mxGeometry x="481.75" y="582" width="200" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="HA7c1eMe9eumM1eiVlC3-15" value="Управление&amp;nbsp;&lt;br style=&quot;font-size: 22px;&quot;&gt;Корзиной" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Comic Sans MS;fontSize=22;fontStyle=0" parent="1" vertex="1">
-          <mxGeometry x="501.75" y="482" width="160" height="70" as="geometry" />
-        </mxCell>
         <mxCell id="HA7c1eMe9eumM1eiVlC3-16" value="cart_id" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Comic Sans MS;fontSize=22;fontStyle=0" parent="1" vertex="1">
           <mxGeometry x="872" y="444" width="100" height="40" as="geometry" />
         </mxCell>
