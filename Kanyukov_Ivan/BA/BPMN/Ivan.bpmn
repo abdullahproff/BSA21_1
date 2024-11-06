@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="e4ca998" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.6.0">
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="4a86467" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.6.0">
   <collaboration id="Collaboration_0t7galj">
     <participant id="Participant_05e9qjn" name="Добавление видео в избранное" processRef="addVideoToFavorites" />
     <textAnnotation id="TextAnnotation_15oi7w4">
@@ -15,14 +15,12 @@
         <flowNodeRef>Activity_0ehoid9</flowNodeRef>
         <flowNodeRef>Gateway_0uesqcy</flowNodeRef>
         <flowNodeRef>Event_0q8au4x</flowNodeRef>
-        <flowNodeRef>Event_03jxoxs</flowNodeRef>
         <childLaneSet id="LaneSet_0o2c1bg">
           <lane id="Lane_1hq753c">
             <flowNodeRef>Activity_0vrjq78</flowNodeRef>
             <flowNodeRef>Activity_0ehoid9</flowNodeRef>
             <flowNodeRef>Gateway_0uesqcy</flowNodeRef>
             <flowNodeRef>Event_0q8au4x</flowNodeRef>
-            <flowNodeRef>Event_03jxoxs</flowNodeRef>
           </lane>
         </childLaneSet>
       </lane>
@@ -32,6 +30,8 @@
         <flowNodeRef>Event_0yxnjvx</flowNodeRef>
         <flowNodeRef>Activity_0mwuz6a</flowNodeRef>
         <flowNodeRef>Activity_0c314tk</flowNodeRef>
+        <flowNodeRef>Activity_1vjfoc8</flowNodeRef>
+        <flowNodeRef>Event_03jxoxs</flowNodeRef>
         <childLaneSet id="LaneSet_074uh5m">
           <lane id="Lane_0eijbuk">
             <flowNodeRef>Event_14duii6</flowNodeRef>
@@ -39,6 +39,8 @@
             <flowNodeRef>Event_0yxnjvx</flowNodeRef>
             <flowNodeRef>Activity_0mwuz6a</flowNodeRef>
             <flowNodeRef>Activity_0c314tk</flowNodeRef>
+            <flowNodeRef>Activity_1vjfoc8</flowNodeRef>
+            <flowNodeRef>Event_03jxoxs</flowNodeRef>
           </lane>
         </childLaneSet>
       </lane>
@@ -51,9 +53,8 @@
     <sequenceFlow id="Flow_0ulz7ww" name="да" sourceRef="Gateway_02v82rg" targetRef="Activity_0mwuz6a" />
     <serviceTask id="Activity_0vrjq78" name="Сохранение видео в список избранное">
       <incoming>Flow_1vuchia</incoming>
-      <outgoing>Flow_0mkanv8</outgoing>
+      <outgoing>Flow_1sj7e7p</outgoing>
     </serviceTask>
-    <sequenceFlow id="Flow_0mkanv8" sourceRef="Activity_0vrjq78" targetRef="Event_03jxoxs" />
     <startEvent id="Event_14duii6" name="Переход на главную страницу">
       <outgoing>Flow_0lt0b2z</outgoing>
     </startEvent>
@@ -87,8 +88,14 @@
     <endEvent id="Event_0q8au4x" name="Видео недоступно для добавления">
       <incoming>Flow_0it32bx</incoming>
     </endEvent>
+    <sequenceFlow id="Flow_1uw26rv" sourceRef="Activity_1vjfoc8" targetRef="Event_03jxoxs" />
+    <sequenceFlow id="Flow_1sj7e7p" sourceRef="Activity_0vrjq78" targetRef="Activity_1vjfoc8" />
+    <userTask id="Activity_1vjfoc8" name="Нахождение видео в списке избранное">
+      <incoming>Flow_1sj7e7p</incoming>
+      <outgoing>Flow_1uw26rv</outgoing>
+    </userTask>
     <endEvent id="Event_03jxoxs" name="Видео успешно добавлено в список избранное">
-      <incoming>Flow_0mkanv8</incoming>
+      <incoming>Flow_1uw26rv</incoming>
     </endEvent>
   </process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
@@ -157,10 +164,14 @@
           <dc:Bounds x="910" y="405" width="81" height="40" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1ui51f4_di" bpmnElement="Activity_1vjfoc8">
+        <dc:Bounds x="1160" y="190" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_03jxoxs_di" bpmnElement="Event_03jxoxs">
-        <dc:Bounds x="1202" y="462" width="36" height="36" />
+        <dc:Bounds x="1332" y="212" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1180" y="505" width="80" height="53" />
+          <dc:Bounds x="1310" y="255" width="80" height="53" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_08ybody_di" bpmnElement="Flow_08ybody">
@@ -197,10 +208,6 @@
           <dc:Bounds x="714" y="93" width="12" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_0mkanv8_di" bpmnElement="Flow_0mkanv8">
-        <di:waypoint x="1100" y="480" />
-        <di:waypoint x="1202" y="480" />
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0j104cf_di" bpmnElement="Flow_0j104cf">
         <di:waypoint x="920" y="90" />
         <di:waypoint x="992" y="90" />
@@ -213,14 +220,24 @@
           <dc:Bounds x="846" y="408" width="18" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Association_0zi88ew_di" bpmnElement="Association_0zi88ew">
-        <di:waypoint x="888" y="130" />
-        <di:waypoint x="923" y="210" />
+      <bpmndi:BPMNEdge id="Flow_1uw26rv_di" bpmnElement="Flow_1uw26rv">
+        <di:waypoint x="1260" y="230" />
+        <di:waypoint x="1332" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1sj7e7p_di" bpmnElement="Flow_1sj7e7p">
+        <di:waypoint x="1100" y="480" />
+        <di:waypoint x="1130" y="480" />
+        <di:waypoint x="1130" y="230" />
+        <di:waypoint x="1160" y="230" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="TextAnnotation_15oi7w4_di" bpmnElement="TextAnnotation_15oi7w4">
         <dc:Bounds x="880" y="210" width="100" height="84" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_0zi88ew_di" bpmnElement="Association_0zi88ew">
+        <di:waypoint x="888" y="130" />
+        <di:waypoint x="923" y="210" />
+      </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </definitions>
