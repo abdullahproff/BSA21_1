@@ -134,7 +134,7 @@
             <mxRectangle width="340" height="43" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ub23vjz9PENQ5aywY2CP-22" value="Профиль клиента в приложение по поиску фотографов" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="ub23vjz9PENQ5aywY2CP-19">
+        <mxCell id="ub23vjz9PENQ5aywY2CP-22" value="Профиль клиента в приложении" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="ub23vjz9PENQ5aywY2CP-19">
           <mxGeometry x="580" width="310" height="43" as="geometry">
             <mxRectangle width="310" height="43" as="alternateBounds" />
           </mxGeometry>
@@ -607,7 +607,7 @@
         <mxCell id="ub23vjz9PENQ5aywY2CP-155" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="ub23vjz9PENQ5aywY2CP-154">
           <mxGeometry width="890" height="37" as="geometry" />
         </mxCell>
-        <mxCell id="ub23vjz9PENQ5aywY2CP-156" value="Родительская сущность" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#666666;overflow=hidden;fillColor=#f5f5f5;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;fontStyle=1;fontColor=#333333;perimeterSpacing=1;" vertex="1" parent="ub23vjz9PENQ5aywY2CP-155">
+        <mxCell id="ub23vjz9PENQ5aywY2CP-156" value="Дочерняя сущность" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#666666;overflow=hidden;fillColor=#f5f5f5;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;fontStyle=1;fontColor=#333333;perimeterSpacing=1;" vertex="1" parent="ub23vjz9PENQ5aywY2CP-155">
           <mxGeometry width="240" height="37" as="geometry">
             <mxRectangle width="240" height="37" as="alternateBounds" />
           </mxGeometry>
