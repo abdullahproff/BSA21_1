@@ -1,0 +1,208 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="cx02CMatr94ILN04bPKe">
+    <mxGraphModel dx="441" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ibllBAHYzR9Kgjg2L-2O-44" target="ibllBAHYzR9Kgjg2L-2O-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-44" value="Категория кэшбэка" style="shape=table;startSize=40;container=1;collapsible=0;childLayout=tableLayout;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="280" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-45" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-44">
+          <mxGeometry y="40" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-46" value="Атрибут" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-45">
+          <mxGeometry width="80" height="40" as="geometry">
+            <mxRectangle width="80" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-47" value="Тип" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-45">
+          <mxGeometry x="80" width="80" height="40" as="geometry">
+            <mxRectangle width="80" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-48" value="Описание" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-45">
+          <mxGeometry x="160" width="120" height="40" as="geometry">
+            <mxRectangle width="120" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-50" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-44">
+          <mxGeometry y="80" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-51" value="name" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-50">
+          <mxGeometry width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-52" value="string" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-50">
+          <mxGeometry x="80" width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-53" value="Название категории кэшбэка" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-50">
+          <mxGeometry x="160" width="120" height="80" as="geometry">
+            <mxRectangle width="120" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-91" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-44">
+          <mxGeometry y="160" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-92" value="month" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-91">
+          <mxGeometry width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-93" value="enum" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-91">
+          <mxGeometry x="80" width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-94" value="Месяц" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-91">
+          <mxGeometry x="160" width="120" height="80" as="geometry">
+            <mxRectangle width="120" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-55" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-44">
+          <mxGeometry y="240" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-56" value="icon" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-55">
+          <mxGeometry width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-57" value="str | Path" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-55">
+          <mxGeometry x="80" width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-58" value="Путь к файлу с иконкой категории" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-55">
+          <mxGeometry x="160" width="120" height="80" as="geometry">
+            <mxRectangle width="120" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-128" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-44">
+          <mxGeometry y="320" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-129" value="group" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-128">
+          <mxGeometry width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-130" value="enum" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-128">
+          <mxGeometry x="80" width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-131" value="Группа кэшбэка (обычный или премиальный)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-128">
+          <mxGeometry x="160" width="120" height="80" as="geometry">
+            <mxRectangle width="120" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-60" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-44">
+          <mxGeometry y="400" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-61" value="is_clickable" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-60">
+          <mxGeometry width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-62" value="boolean" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-60">
+          <mxGeometry x="80" width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-63" value="Доступна ли категория для нажатия" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-60">
+          <mxGeometry x="160" width="120" height="80" as="geometry">
+            <mxRectangle width="120" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-65" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-44">
+          <mxGeometry y="480" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-66" value="is_chosen" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-65">
+          <mxGeometry width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-67" value="boolean;&lt;div&gt;False&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-65">
+          <mxGeometry x="80" width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-68" value="Выбрана (прожата - clicked) ли категория&amp;nbsp;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-65">
+          <mxGeometry x="160" width="120" height="80" as="geometry">
+            <mxRectangle width="120" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-87" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-44">
+          <mxGeometry y="560" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-88" value="is_confirmed" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-87">
+          <mxGeometry width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-89" value="boolean;&lt;div&gt;False&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-87">
+          <mxGeometry x="80" width="80" height="80" as="geometry">
+            <mxRectangle width="80" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-90" value="Отмечена ли категория подтверждённой" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-87">
+          <mxGeometry x="160" width="120" height="80" as="geometry">
+            <mxRectangle width="120" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-73" value="Категория может быть доступна в списке категорий, но недоступной для прожатия (is_clickable == False)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Подтверждённая категория (is_confirmed == True) не может иметь поле is_chosen == False&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="400" y="250" width="120" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-158" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ibllBAHYzR9Kgjg2L-2O-148" target="ibllBAHYzR9Kgjg2L-2O-157">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-148" value="Список категорий кэшбэка" style="shape=table;startSize=40;container=1;collapsible=0;childLayout=tableLayout;" vertex="1" parent="1">
+          <mxGeometry x="40" y="720" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-149" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-148">
+          <mxGeometry y="40" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-150" value="Атрибут&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-149">
+          <mxGeometry width="80" height="60" as="geometry">
+            <mxRectangle width="80" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-151" value="Тип" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-149">
+          <mxGeometry x="80" width="80" height="60" as="geometry">
+            <mxRectangle width="80" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-152" value="Описание" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-149">
+          <mxGeometry x="160" width="120" height="60" as="geometry">
+            <mxRectangle width="120" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-153" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-148">
+          <mxGeometry y="100" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-154" value="items" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-153">
+          <mxGeometry width="80" height="60" as="geometry">
+            <mxRectangle width="80" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-155" value="list[CashBack]" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-153">
+          <mxGeometry x="80" width="80" height="60" as="geometry">
+            <mxRectangle width="80" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-156" value="Список неповторимых (уникальных) категорий кэшбэка" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ibllBAHYzR9Kgjg2L-2O-153">
+          <mxGeometry x="160" width="120" height="60" as="geometry">
+            <mxRectangle width="120" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ibllBAHYzR9Kgjg2L-2O-157" value="Хотя это список, не должно быть повторяющихся категорий кэшбэка" style="rounded=1;whiteSpace=wrap;html=1;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="400" y="752.5" width="120" height="95" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
