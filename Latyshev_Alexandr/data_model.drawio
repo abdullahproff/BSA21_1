@@ -49,7 +49,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="anlyr0HJ7M515Zqs3XUz" name="Страница — 2">
-    <mxGraphModel dx="583" dy="366" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="808" dy="506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -146,8 +146,8 @@
             <mxRectangle width="234" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aL5-4rC5Tv-gBn5hk9JL-89" value="Дочерняя сущность - Address_postamat" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry y="280" width="226" height="30" as="geometry" />
+        <mxCell id="aL5-4rC5Tv-gBn5hk9JL-89" value="Родительская сущность - Address_postamat" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry y="280" width="250" height="30" as="geometry" />
         </mxCell>
         <mxCell id="aL5-4rC5Tv-gBn5hk9JL-90" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" vertex="1" parent="1">
           <mxGeometry y="310" width="476" height="220" as="geometry" />
@@ -237,7 +237,7 @@
             <mxRectangle width="120" height="50" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aL5-4rC5Tv-gBn5hk9JL-110" value="Количество постаматов по данному адресу" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="aL5-4rC5Tv-gBn5hk9JL-107">
+        <mxCell id="aL5-4rC5Tv-gBn5hk9JL-110" value="ссылка на сущность Postamat" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="aL5-4rC5Tv-gBn5hk9JL-107">
           <mxGeometry x="236" width="240" height="50" as="geometry">
             <mxRectangle width="240" height="50" as="alternateBounds" />
           </mxGeometry>
