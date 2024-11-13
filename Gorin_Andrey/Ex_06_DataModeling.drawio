@@ -504,7 +504,7 @@
             <mxRectangle width="257" height="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LMaIvzoPrQfNwyaQX1gV-87" value="Artists" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="LMaIvzoPrQfNwyaQX1gV-85">
+        <mxCell id="LMaIvzoPrQfNwyaQX1gV-87" value="Artist" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="LMaIvzoPrQfNwyaQX1gV-85">
           <mxGeometry x="257" width="256" height="60" as="geometry">
             <mxRectangle width="256" height="60" as="alternateBounds" />
           </mxGeometry>
@@ -558,12 +558,12 @@
             <mxRectangle width="257" height="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LMaIvzoPrQfNwyaQX1gV-108" value="Lyrics" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="LMaIvzoPrQfNwyaQX1gV-106">
+        <mxCell id="LMaIvzoPrQfNwyaQX1gV-108" value="Lyrics_status" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="LMaIvzoPrQfNwyaQX1gV-106">
           <mxGeometry x="257" width="256" height="60" as="geometry">
             <mxRectangle width="256" height="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LMaIvzoPrQfNwyaQX1gV-109" value="Текст песни" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="LMaIvzoPrQfNwyaQX1gV-106">
+        <mxCell id="LMaIvzoPrQfNwyaQX1gV-109" value="Информация о наличии/отсутствии текса песни&amp;nbsp;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="LMaIvzoPrQfNwyaQX1gV-106">
           <mxGeometry x="513" width="268" height="60" as="geometry">
             <mxRectangle width="268" height="60" as="alternateBounds" />
           </mxGeometry>
@@ -576,12 +576,12 @@
             <mxRectangle width="257" height="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LMaIvzoPrQfNwyaQX1gV-95" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="LMaIvzoPrQfNwyaQX1gV-93">
+        <mxCell id="LMaIvzoPrQfNwyaQX1gV-95" value="Lyrics" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="LMaIvzoPrQfNwyaQX1gV-93">
           <mxGeometry x="257" width="256" height="60" as="geometry">
             <mxRectangle width="256" height="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LMaIvzoPrQfNwyaQX1gV-96" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="LMaIvzoPrQfNwyaQX1gV-93">
+        <mxCell id="LMaIvzoPrQfNwyaQX1gV-96" value="Текст песни" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="LMaIvzoPrQfNwyaQX1gV-93">
           <mxGeometry x="513" width="268" height="60" as="geometry">
             <mxRectangle width="268" height="60" as="alternateBounds" />
           </mxGeometry>
