@@ -1,59 +1,63 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15" version="24.8.3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Страница 1" id="MTmdy5buGPvok7rcEeNA">
-    <mxGraphModel dx="954" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="954" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="TyosaGSSSq8F9J0Ceh0f-29" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
-          <mxGeometry x="620" y="215" width="140" height="190" as="geometry" />
+          <mxGeometry x="620" y="200" width="140" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-30" value="" style="rounded=1;whiteSpace=wrap;html=1;rotation=89;" parent="1" vertex="1">
-          <mxGeometry x="80.00000000000001" y="260" width="200" height="100" as="geometry" />
+        <mxCell id="TyosaGSSSq8F9J0Ceh0f-33" value="A" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=22;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+          <mxGeometry x="130" y="160" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-31" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="167.67000000000002" y="380.34" width="24.66" height="24.66" as="geometry" />
+        <mxCell id="TyosaGSSSq8F9J0Ceh0f-34" value="B" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=22;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+          <mxGeometry x="414" y="160" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-32" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="340" y="204.66000000000003" width="190" height="204.66" as="geometry" />
-        </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-33" value="A" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=22;" parent="1" vertex="1">
-          <mxGeometry x="150" y="160" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-34" value="B" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=22;" parent="1" vertex="1">
-          <mxGeometry x="405" y="160" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-35" value="C" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=22;" parent="1" vertex="1">
+        <mxCell id="TyosaGSSSq8F9J0Ceh0f-35" value="C" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=22;fontFamily=Comic Sans MS;" parent="1" vertex="1">
           <mxGeometry x="660" y="160" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-36" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=22;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TyosaGSSSq8F9J0Ceh0f-30" target="TyosaGSSSq8F9J0Ceh0f-32" edge="1">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="400" y="390" as="sourcePoint" />
-            <mxPoint x="500" y="290" as="targetPoint" />
+        <mxCell id="TyosaGSSSq8F9J0Ceh0f-40" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;A - фронтенд, мобильное приложение&lt;br style=&quot;font-size: 18px;&quot;&gt;B - бекенд/сервер&lt;br style=&quot;font-size: 18px;&quot;&gt;C - реляциионная база данных, Postgre&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="140" y="440" width="440" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TyosaGSSSq8F9J0Ceh0f-41" value="PG" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+          <mxGeometry x="660" y="302.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TyosaGSSSq8F9J0Ceh0f-44" value="Бронирование автомобиля для&amp;nbsp;&lt;div&gt;поездки между городами&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+          <mxGeometry x="309" y="100" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L9hECfsU2yTZtoAgdhoy-1" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.553;exitY=-0.017;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.02;entryY=0.562;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="221.87712134782066" y="319.6960961558502" as="sourcePoint" />
+            <mxPoint x="336.20000000000005" y="319.6789200000002" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-37" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=22;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="TyosaGSSSq8F9J0Ceh0f-32" target="TyosaGSSSq8F9J0Ceh0f-29" edge="1">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="400" y="390" as="sourcePoint" />
-            <mxPoint x="500" y="290" as="targetPoint" />
+        <mxCell id="L9hECfsU2yTZtoAgdhoy-4" value="http/https" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;" vertex="1" connectable="0" parent="L9hECfsU2yTZtoAgdhoy-1">
+          <mxGeometry x="-0.1006" y="1" relative="1" as="geometry">
+            <mxPoint x="8" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-38" value="&lt;b&gt;1&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" parent="1" vertex="1">
-          <mxGeometry x="260" y="270" width="60" height="30" as="geometry" />
+        <mxCell id="L9hECfsU2yTZtoAgdhoy-2" value="Протоколы" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="235" y="285" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-39" value="&lt;b&gt;2&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" parent="1" vertex="1">
-          <mxGeometry x="550" y="270" width="60" height="30" as="geometry" />
+        <mxCell id="L9hECfsU2yTZtoAgdhoy-5" value="Протоколы" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="530" y="280" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-40" value="A-фронтенд, мобильное приложение&lt;br style=&quot;font-size: 18px;&quot;&gt;B-бекенд/сервер&lt;br style=&quot;font-size: 18px;&quot;&gt;C-Реляциионная База Данных, PG&lt;br style=&quot;font-size: 18px;&quot;&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="140" y="460" width="440" height="100" as="geometry" />
+        <mxCell id="L9hECfsU2yTZtoAgdhoy-6" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.553;exitY=-0.017;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="320" as="sourcePoint" />
+            <mxPoint x="620" y="320" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-41" value="PG" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="660" y="300" width="60" height="30" as="geometry" />
+        <mxCell id="L9hECfsU2yTZtoAgdhoy-7" value="TCP/IP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;" vertex="1" connectable="0" parent="L9hECfsU2yTZtoAgdhoy-6">
+          <mxGeometry x="-0.1006" y="1" relative="1" as="geometry">
+            <mxPoint x="8" as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-42" value="1- Протоколы http/https&lt;br style=&quot;font-size: 18px;&quot;&gt;2- Протоколы IP/TCP" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="140" y="560" width="390" height="50" as="geometry" />
+        <mxCell id="L9hECfsU2yTZtoAgdhoy-10" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="204.66" width="120" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="TyosaGSSSq8F9J0Ceh0f-44" value="Бронирование автомобиля для&amp;nbsp;&lt;div&gt;поездки между городами&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="330" y="110" width="200" height="40" as="geometry" />
+        <mxCell id="L9hECfsU2yTZtoAgdhoy-13" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="339" y="204.66" width="191" height="205.34" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

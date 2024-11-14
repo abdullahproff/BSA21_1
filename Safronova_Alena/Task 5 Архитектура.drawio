@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
+  <diagram name="Страница — 1" id="D_3XNSJvP8yMnQjtB8QF">
+    <mxGraphModel dx="985" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ruW4GjCBtJD8judtqiPq-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="120" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-2" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="190" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-3" value="Заполненные клиентом данные о датах отпуска, бюджете и визе" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="60" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-4" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="207" y="150" as="sourcePoint" />
+            <mxPoint x="274" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-14" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ruW4GjCBtJD8judtqiPq-4">
+          <mxGeometry x="-0.0704" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-5" value="{&lt;div&gt;user_id: 123&lt;/div&gt;&lt;div&gt;start_date: 2024-12-29&lt;/div&gt;&lt;div&gt;end_date: 2025-01-08&lt;/div&gt;&lt;div&gt;budget: 30000&lt;/div&gt;&lt;div&gt;visa_type: no&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="260" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-6" value="Проверить:&lt;div&gt;- start_date отличается от текущей даты минимум на 8 ч&lt;/div&gt;&lt;div&gt;- end_date &amp;gt; start_date&lt;/div&gt;&lt;div&gt;- budget &amp;gt; 0&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="40" width="150" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-8" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="149.64" as="sourcePoint" />
+            <mxPoint x="507" y="149.64" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-15" value="2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ruW4GjCBtJD8judtqiPq-8">
+          <mxGeometry x="0.0107" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-9" value="PG" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="520" y="75" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-10" value="A" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-11" value="B" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="325" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-12" value="C" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ruW4GjCBtJD8judtqiPq-13" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;A - мобильное приложение, отправляет запрос на бэкенд&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;B - бэкенд, проверяет, правильно ли заполнены данные,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;и обращается к базе данных для получения информации о билетах&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;C - база данных, возвращает результаты (инфо о возможных маршрутах)&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;1 - протокол взаимодействия http&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="265" y="271" width="430" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
