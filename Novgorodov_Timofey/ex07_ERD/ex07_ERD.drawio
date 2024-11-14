@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
   <diagram name="Страница — 1" id="Ojl4p2E5A9vSElHT03me">
-    <mxGraphModel dx="1012" dy="729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="767" dy="1242" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -31,7 +31,7 @@
         <mxCell id="gYyTJRr8ez4R1D0XTKku-12" value="task_id INT &lt;font style=&quot;font-size: 10px;&quot; color=&quot;#ff8813&quot;&gt;(PK)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-11">
           <mxGeometry y="30" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="gYyTJRr8ez4R1D0XTKku-13" value="user_id INT&amp;nbsp;&lt;font color=&quot;#1e0fd0&quot;&gt;(FK)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-11">
+        <mxCell id="gYyTJRr8ez4R1D0XTKku-13" value="student_id INT&amp;nbsp;&lt;font color=&quot;#1e0fd0&quot;&gt;(FK)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-11">
           <mxGeometry y="60" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gYyTJRr8ez4R1D0XTKku-14" value="subject_id INT&amp;nbsp;&lt;font color=&quot;#1e0fd0&quot;&gt;(FK)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-11">
@@ -52,17 +52,8 @@
         <mxCell id="gYyTJRr8ez4R1D0XTKku-28" value="description VARCHAR" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-11">
           <mxGeometry y="260" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="gYyTJRr8ez4R1D0XTKku-19" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;" edge="1" parent="1" source="gYyTJRr8ez4R1D0XTKku-1" target="gYyTJRr8ez4R1D0XTKku-11">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="380" y="290" as="sourcePoint" />
-            <mxPoint x="550" y="280" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="400" y="300" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="gYyTJRr8ez4R1D0XTKku-20" value="subjects" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;backgroundOutline=0;" vertex="1" parent="1">
-          <mxGeometry x="550" y="330" width="160" height="180" as="geometry" />
+          <mxGeometry x="550" y="360" width="160" height="150" as="geometry" />
         </mxCell>
         <mxCell id="gYyTJRr8ez4R1D0XTKku-21" value="subject_id INT &lt;font style=&quot;font-size: 10px;&quot; color=&quot;#ff8813&quot;&gt;(PK)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-20">
           <mxGeometry y="30" width="160" height="30" as="geometry" />
@@ -70,41 +61,26 @@
         <mxCell id="gYyTJRr8ez4R1D0XTKku-22" value="task_id INT&amp;nbsp;&lt;font color=&quot;#1e0fd0&quot;&gt;(FK)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-20">
           <mxGeometry y="60" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="gYyTJRr8ez4R1D0XTKku-31" value="teacher_id INT&amp;nbsp;&lt;font color=&quot;#1e0fd0&quot;&gt;(FK)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-20">
+        <mxCell id="gYyTJRr8ez4R1D0XTKku-24" value="title VARCHAR" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-20">
           <mxGeometry y="90" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="gYyTJRr8ez4R1D0XTKku-24" value="title VARCHAR" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-20">
+        <mxCell id="gYyTJRr8ez4R1D0XTKku-25" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;workload INT&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-20">
           <mxGeometry y="120" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="gYyTJRr8ez4R1D0XTKku-25" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;workload INT&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-20">
-          <mxGeometry y="150" width="160" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="gYyTJRr8ez4R1D0XTKku-29" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;entryX=-0.009;entryY=0.351;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="gYyTJRr8ez4R1D0XTKku-12" target="gYyTJRr8ez4R1D0XTKku-22">
+        <mxCell id="gYyTJRr8ez4R1D0XTKku-43" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gYyTJRr8ez4R1D0XTKku-21" target="gYyTJRr8ez4R1D0XTKku-14">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="460" y="375.47" as="sourcePoint" />
-            <mxPoint x="560" y="275.47" as="targetPoint" />
+            <mxPoint x="690" y="380" as="sourcePoint" />
+            <mxPoint x="790" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="gYyTJRr8ez4R1D0XTKku-33" value="teachers" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;backgroundOutline=0;" vertex="1" parent="1">
-          <mxGeometry x="780" y="330" width="160" height="90" as="geometry" />
+        <mxCell id="gYyTJRr8ez4R1D0XTKku-46" value="&lt;font style=&quot;&quot; face=&quot;Helvetica&quot;&gt;Пояснительная бригада:&lt;br&gt;1) Student - Task (1:M) - один студент может создавать&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#0e0e0e&quot;&gt;несколько задач, но каждая задача относится к одному студенту. Task не может жить сам по себе, поэтому участие обеих сущностей одинаковое&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#0e0e0e&quot;&gt;2) Task - Subject (M:1) - каждая задача привязана к одной дисциплине, но одна дисциплина может включать множество задач&lt;/font&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="260" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="gYyTJRr8ez4R1D0XTKku-34" value="teacher_id&amp;nbsp;INT &lt;font style=&quot;font-size: 10px;&quot; color=&quot;#ff8813&quot;&gt;(PK)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-33">
-          <mxGeometry y="30" width="160" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="gYyTJRr8ez4R1D0XTKku-37" value="FIO VARCHAR" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="gYyTJRr8ez4R1D0XTKku-33">
-          <mxGeometry y="60" width="160" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="gYyTJRr8ez4R1D0XTKku-40" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;exitX=0;exitY=0.667;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="gYyTJRr8ez4R1D0XTKku-34" target="gYyTJRr8ez4R1D0XTKku-31">
+        <mxCell id="gYyTJRr8ez4R1D0XTKku-47" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gYyTJRr8ez4R1D0XTKku-2" target="gYyTJRr8ez4R1D0XTKku-13">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="730" y="425" as="sourcePoint" />
-            <mxPoint x="730" y="735" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="670" y="555" />
-            </Array>
+            <mxPoint x="520" y="460" as="sourcePoint" />
+            <mxPoint x="620" y="360" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="gYyTJRr8ez4R1D0XTKku-42" value="Лев сказал, что не нужно в контексте фичи, уточнить на созвоне" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="780" y="430" width="160" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
