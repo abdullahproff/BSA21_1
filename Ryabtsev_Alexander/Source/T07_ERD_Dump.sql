@@ -45,15 +45,15 @@ CREATE TABLE products
     product_category    VARCHAR(255) -- TODO: Иерархическая структура
 );
 
-CREATE TABLE baskets
+CREATE TABLE carts
 (
-    basket_id        SERIAL PRIMARY KEY,
+    cart_id          SERIAL PRIMARY KEY,
     user_id          INT            NOT NULL,
     product_id       INT            NOT NULL,
     product_quantity DECIMAL(17, 4) NOT NULL,
     is_paid          BOOLEAN DEFAULT FALSE,
-    CONSTRAINT fk_baskets_users FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE,
-    CONSTRAINT fk_baskets_products FOREIGN KEY (product_id) REFERENCES products (product_id) ON DELETE SET NULL
+    CONSTRAINT fk_carts_users FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE,
+    CONSTRAINT fk_carts_products FOREIGN KEY (product_id) REFERENCES products (product_id) ON DELETE SET NULL
 );
 
 CREATE TABLE warehouses
@@ -89,7 +89,7 @@ VALUES (1, 1, '+', 1),
        (1, 2, '+', 2),
        (1, 3, '+', 3);
 
-INSERT INTO baskets(user_id, product_id, product_quantity)
+INSERT INTO carts(user_id, product_id, product_quantity)
 VALUES (1, 1, 2),
        (1, 2, 1),
        (2, 3, 1);
@@ -97,7 +97,7 @@ VALUES (1, 1, 2),
 
 
 -- СОЗДАНИЕ ФУНКЦИИ И ТРИГГЕРА ДЛЯ ОБРАБОТКИ ИЗМЕНЕНИЯ СТАТУСА ОПЛАТЫ КОРЗИНЫ НА "TRUE"
-CREATE OR REPLACE FUNCTION handle_paid_basket()
+CREATE OR REPLACE FUNCTION handle_paid_cart()
     RETURNS TRIGGER AS
 $$
 BEGIN
@@ -115,26 +115,26 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-CREATE TRIGGER trigger_paid_basket
+CREATE TRIGGER trigger_paid_cart
     AFTER UPDATE OF is_paid
-    ON baskets
+    ON carts
     FOR EACH ROW
-EXECUTE FUNCTION handle_paid_basket();
+EXECUTE FUNCTION handle_paid_cart();
 
 
 -- ПРИМЕР СЦЕНАРИЯ С ОПЛАТОЙ КОРЗИНЫ ЧЕРЕЗ ПРОВЕРКУ НАЛИЧИЯ НА СКЛАДЕ
-UPDATE baskets
+UPDATE carts
 SET is_paid = TRUE
 WHERE user_id = 1
   AND NOT EXISTS (SELECT 1
-                  FROM baskets
+                  FROM carts
                            LEFT JOIN (SELECT product_id,
                                              SUM(operation_quantity) AS total_quantity
                                       FROM warehouses
                                       GROUP BY product_id) AS w
-                                     ON w.product_id = baskets.product_id
-                  WHERE baskets.user_id = 1
-                    AND (w.total_quantity IS NULL OR w.total_quantity < baskets.product_quantity));
+                                     ON w.product_id = carts.product_id
+                  WHERE carts.user_id = 1
+                    AND (w.total_quantity IS NULL OR w.total_quantity < carts.product_quantity));
 
 
 -- ПРОСМОТР КОРЗИНЫ ПОЛЬЗОВАТЕЛЯ
@@ -146,28 +146,28 @@ SELECT surname                                         AS Фамилия,
        product_unit                                    AS Ед_изм,
        product_quantity                                AS Количество,
        product_price                                   AS Цена_за_ед,
-       product_price * baskets.product_quantity        AS Сумма,
+       product_price * carts.product_quantity          AS Сумма,
        COALESCE(SUM(warehouses.operation_quantity), 0) AS В_наличии,
        CASE
            WHEN COALESCE(SUM(warehouses.operation_quantity), 0) < product_quantity THEN 'Нет'
            WHEN COALESCE(SUM(warehouses.operation_quantity), 0) >= product_quantity THEN 'Да'
            END                                         AS Достаточно_для_заказа
 FROM products
-         INNER JOIN baskets ON baskets.product_id = products.product_id
-         INNER JOIN users ON users.user_id = baskets.user_id
+         INNER JOIN carts ON carts.product_id = products.product_id
+         INNER JOIN users ON users.user_id = carts.user_id
          LEFT JOIN warehouses ON warehouses.product_id = products.product_id
-WHERE baskets.is_paid = FALSE
+WHERE carts.is_paid = FALSE
   AND users.user_id = 1
 GROUP BY 1, 2, 3, 4, 5, 6, 7, 8, 9;
 
 
 -- ПОДСЧЁТ СТАТИСТИКИ ПОЛЬЗОВАТЕЛЯ: ОПЛАЧЕНО / НЕ ОПЛАЧЕНО
-SELECT username                                      AS Имя_пользователя,
-       SUM(baskets.product_quantity)                 AS Количество_Товаров_Итого,
-       SUM(product_price * baskets.product_quantity) AS Сумма_Товаров_Итого,
-       baskets.is_paid                               AS Оплачено
+SELECT username                                    AS Имя_пользователя,
+       SUM(carts.product_quantity)                 AS Количество_Товаров_Итого,
+       SUM(product_price * carts.product_quantity) AS Сумма_Товаров_Итого,
+       carts.is_paid                               AS Оплачено
 FROM products
-         INNER JOIN baskets ON baskets.product_id = products.product_id
-         INNER JOIN users ON users.user_id = baskets.user_id
-GROUP BY username, baskets.is_paid
+         INNER JOIN carts ON carts.product_id = products.product_id
+         INNER JOIN users ON users.user_id = carts.user_id
+GROUP BY username, carts.is_paid
 HAVING username = 'user1';
