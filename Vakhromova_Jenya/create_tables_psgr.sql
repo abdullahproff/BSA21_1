@@ -2,7 +2,7 @@ CREATE TABLE clients
 (
     client_id      INT PRIMARY KEY,
     tel_number_client    VARCHAR(50) UNIQUE CHECK (tel_number_client ~ '^\+?[0-9]{2,}$'),
-    name_client        VARCHAR(150),
+    name_client        VARCHAR(150) not NULL,
     surname_client        VARCHAR(150),
     patronymic_client        VARCHAR(150),
     city_client            VARCHAR(150),
@@ -13,15 +13,15 @@ CREATE TABLE photographers
 (
     photographer_id    INT PRIMARY KEY,
     tel_number_ph      VARCHAR(50) UNIQUE CHECK (tel_number_ph ~ '^\+?[0-9]{2,}$'),
-    name_ph            VARCHAR(150),
+    name_ph            VARCHAR(150) not NULL,
     surname_ph         VARCHAR(150),
     patronymic_ph      VARCHAR(150),
     main_city_ph       VARCHAR(150),
     email_ph           VARCHAR(255) UNIQUE CHECK (email_ph ~ '^[A-Za-z0-9_.-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$'),
-    type_ph            TEXT[],  -- Массив текстовых значений
+    type_ph            TEXT[],
     price_list         VARCHAR(100),
     calendar_ph        VARCHAR(100),
-    style_ph           TEXT[],  -- Массив текстовых значений
+    style_ph           TEXT[],
     portfolio          VARCHAR(100),
     rating_ph          INT
 );
@@ -45,7 +45,7 @@ CREATE TABLE orders
 CREATE TABLE locations
 (
 	loc_id	INT PRIMARY KEY,
-    photographer_id INT,
+    photographer_id INT NOT NULL,
     ph_country VARCHAR(100) NOT NULL,
     ph_city VARCHAR(100),
     ph_street VARCHAR(100),
@@ -56,7 +56,7 @@ CREATE TABLE locations
 );
 
 --  примеры вставки данных 
--- для каждой из таблиц (`clients`, `photographers`, `orders`, `locations`)
+-- для каждой из таблиц (clients, photographers, orders, locations)
 
 INSERT INTO clients (client_id, tel_number_client, name_client, surname_client, patronymic_client, city_client, email_client) VALUES
 (1, '+1234567890', 'Александр', 'Иванов', 'Сергеевич', 'Москва', 'alexandr.ivanov@example.com'),
