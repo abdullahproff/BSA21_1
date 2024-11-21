@@ -29,10 +29,10 @@ CREATE TABLE photographers
 CREATE TABLE orders
 (
     order_id          INT PRIMARY KEY,
-    client_id         INT,
+    client_id         INT NOT NULL,
     photographer_id    INT,
     time_date         TIMESTAMP WITH TIME ZONE,
-    order_location    TEXT,
+    order_location    text,
     duration          INTERVAL,
     type_order        VARCHAR(50),
     style_order       VARCHAR(50),
@@ -54,3 +54,34 @@ CREATE TABLE locations
     ph_longitude DECIMAL(8, 6) NOT NULL,
     CONSTRAINT fk_locations_photographers FOREIGN KEY (photographer_id) REFERENCES photographers(photographer_id)
 );
+
+--  примеры вставки данных 
+-- для каждой из таблиц (`clients`, `photographers`, `orders`, `locations`)
+
+INSERT INTO clients (client_id, tel_number_client, name_client, surname_client, patronymic_client, city_client, email_client) VALUES
+(1, '+1234567890', 'Александр', 'Иванов', 'Сергеевич', 'Москва', 'alexandr.ivanov@example.com'),
+(2, '+9876543210', 'Мария', 'Петрова', 'Владимировна', 'Санкт-Петербург', 'maria.petrova@example.com'),
+(3, '+1029384756', 'Дмитрий', 'Сидоров', 'Алексеевич', 'Казань', 'dmitriy.sidorov@example.com');
+
+INSERT INTO photographers (photographer_id, tel_number_ph, name_ph, surname_ph, patronymic_ph, main_city_ph, email_ph, type_ph, price_list, calendar_ph, style_ph, portfolio, rating_ph) VALUES
+(1, '+1234567891', 'Иван', 'Смирнов', 'Андреевич', 'Москва', 'ivan.smirnov@example.com', 'Фотограф', 'link', 'family', 'Портрет', 'portfolio_ivan.com', 5),
+(2, '+2345678901', 'Ольга', 'Кузнецова', 'Дмитриевна', 'Санкт-Петербург', 'olga.kuznetsova@example.com', 'Семейный', 'link', 'Семейная', 'чб', 'portfolio_olga.ru', 4),
+(3, '+3456789012', 'Алена', 'Васильева', 'Игоревна', 'Екатеринбург', 'alena.vasilieva@example.com', 'Модельный', 'link', 'Детская', 'Модельный', 'portfolio_alena.ru', 5);
+
+INSERT INTO orders (order_id, client_id, photographer_id, order_location, duration, type_order, style_order, summary_price, prepayment) VALUES
+(1, 1, 1,  'Питер, Невский, 3', '2 hours', 'Событие', 'modern', 5000.00, 2500.00),
+(2, 2, 2, 'Москва, Тверская, 17', '1.5 hours', 'Свадьба', NULL, 7000.00, 3500.00),
+(3, 3, 3, 'Нижний Новгород, Ленина, 39/4', '3 hours', 'Портрет', 'чб', 10000.00, 5000.00),
+(4, 3, 'Россия', 'NY', 'Ленина', '15', 56.83890000, 43.60570000);	
+
+INSERT INTO locations (photographer_id, ph_country, ph_city, ph_street, ph_building, ph_latitude, ph_longitude) VALUES
+(1, 1, 'Россия', 'Москва', 'Тверская', '1', 55.7558, 37.6173),
+(2, 2, 'Россия', 'Санкт-Петербург', 'Невский проспект', '10', 59.9343, 30.3351),
+(3, 1, 'Россия', 'Екатеринбург', 'Ленина', '5', 56.8389, 60.6057);
+
+-- пример фильтрации списка фотографа по локации
+select distinct ph.photographer_id, tel_number_ph, name_ph, surname_ph, patronymic_ph, main_city_ph, email_ph, 
+	type_ph, price_list, calendar_ph, style_ph, portfolio, rating_ph
+from  photographers ph inner join locations l on ph.photographer_id = l.photographer_id
+where ph_latitude >= 55  and ph_latitude <= 57 and
+	ph_longitude >= 36 and ph_longitude <= 61;
