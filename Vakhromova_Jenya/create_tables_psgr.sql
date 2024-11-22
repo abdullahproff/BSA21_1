@@ -63,10 +63,10 @@ INSERT INTO clients (client_id, tel_number_client, name_client, surname_client, 
 (2, '+9876543210', 'Мария', 'Петрова', 'Владимировна', 'Санкт-Петербург', 'maria.petrova@example.com'),
 (3, '+1029384756', 'Дмитрий', 'Сидоров', 'Алексеевич', 'Казань', 'dmitriy.sidorov@example.com');
 
-INSERT INTO photographers (photographer_id, tel_number_ph, name_ph, surname_ph, patronymic_ph, main_city_ph, email_ph, type_ph, price_list, calendar_ph, style_ph, portfolio, rating_ph) VALUES
-(1, '+1234567891', 'Иван', 'Смирнов', 'Андреевич', 'Москва', 'ivan.smirnov@example.com', 'Фотограф', 'link', 'family', 'Портрет', 'portfolio_ivan.com', 5),
-(2, '+2345678901', 'Ольга', 'Кузнецова', 'Дмитриевна', 'Санкт-Петербург', 'olga.kuznetsova@example.com', 'Семейный', 'link', 'Семейная', 'чб', 'portfolio_olga.ru', 4),
-(3, '+3456789012', 'Алена', 'Васильева', 'Игоревна', 'Екатеринбург', 'alena.vasilieva@example.com', 'Модельный', 'link', 'Детская', 'Модельный', 'portfolio_alena.ru', 5);
+INSERT INTO photographers (photographer_id, tel_number_ph, name_ph, surname_ph, patronymic_ph, main_city_ph, email_ph, type_ph, price_list, calendar_ph, style_ph, portfolio, rating_ph) VALUES 
+(1, '+1234567891', 'Иван', 'Смирнов', 'Андреевич', 'Москва', 'ivan.smirnov@example.com', '{"Фотограф"}', 'link', 'family', '{"Портрет"}', 'portfolio_ivan.com', 5),
+(2, '+2345678901', 'Ольга', 'Кузнецова', 'Дмитриевна', 'Санкт-Петербург', 'olga.kuznetsova@example.com', '{"Семейный"}', 'link', 'Семейная', '{"чб"}', 'portfolio_olga.ru', 4),
+(3, '+3456789012', 'Алена', 'Васильева', 'Игоревна', 'Екатеринбург', 'alena.vasilieva@example.com', '{"Модельный"}', 'link', 'Детская', '{"Модельный"}', 'portfolio_alena.ru', 5);
 
 INSERT INTO orders (order_id, client_id, photographer_id, order_location, duration, type_order, style_order, summary_price, prepayment) VALUES
 (1, 1, 1,  'Питер, Невский, 3', '2 hours', 'Событие', 'modern', 5000.00, 2500.00),
