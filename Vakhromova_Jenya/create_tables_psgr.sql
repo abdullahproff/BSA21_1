@@ -71,13 +71,13 @@ INSERT INTO photographers (photographer_id, tel_number_ph, name_ph, surname_ph, 
 INSERT INTO orders (order_id, client_id, photographer_id, order_location, duration, type_order, style_order, summary_price, prepayment) VALUES
 (1, 1, 1,  'Питер, Невский, 3', '2 hours', 'Событие', 'modern', 5000.00, 2500.00),
 (2, 2, 2, 'Москва, Тверская, 17', '1.5 hours', 'Свадьба', NULL, 7000.00, 3500.00),
-(3, 3, 3, 'Нижний Новгород, Ленина, 39/4', '3 hours', 'Портрет', 'чб', 10000.00, 5000.00),
-(4, 3, 'Россия', 'NY', 'Ленина', '15', 56.83890000, 43.60570000);	
+(3, 3, 3, 'Нижний Новгород, Ленина, 39/4', '3 hours', 'Портрет', 'чб', 10000.00, 5000.00);	
 
-INSERT INTO locations (photographer_id, ph_country, ph_city, ph_street, ph_building, ph_latitude, ph_longitude) VALUES
-(1, 1, 'Россия', 'Москва', 'Тверская', '1', 55.7558, 37.6173),
-(2, 2, 'Россия', 'Санкт-Петербург', 'Невский проспект', '10', 59.9343, 30.3351),
-(3, 1, 'Россия', 'Екатеринбург', 'Ленина', '5', 56.8389, 60.6057);
+INSERT INTO locations (loc_id, photographer_id, ph_country, ph_city, ph_street, ph_building, ph_latitude, ph_longitude) VALUES
+(1, 1, 'Россия', 'Москва', 'Тверская', '1', 55.75580000, 37.61730000),
+(2, 2, 'Россия', 'Санкт-Петербург', 'Невский проспект', '10', 59.93430000, 30.33510000),
+(3, 1, 'Россия', 'Екатеринбург', 'Ленина', '5', 56.83890000, 60.60570000),	
+(4, 3, 'Россия', 'NY', 'Ленина', '15', 56.83890000, 43.60570000);	
 
 -- пример фильтрации списка фотографа по локации
 select distinct ph.photographer_id, tel_number_ph, name_ph, surname_ph, patronymic_ph, main_city_ph, email_ph, 
