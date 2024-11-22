@@ -49,7 +49,6 @@ CREATE TABLE carts
 (
     cart_id SERIAL PRIMARY KEY,
     user_id INT NOT NULL,
-    is_paid BOOLEAN DEFAULT FALSE,
     CONSTRAINT fk_carts_users FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE
 );
 
@@ -109,7 +108,8 @@ VALUES (1, 1, '+', 1),
 
 INSERT INTO carts(user_id)
 VALUES (1),
-       (2);
+       (2),
+       (3);
 
 INSERT INTO cart_items(cart_id, product_id, item_quantity)
 VALUES (1, 1, 2),
@@ -117,99 +117,29 @@ VALUES (1, 1, 2),
        (2, 3, 1);
 
 
--- СОЗДАНИЕ ФУНКЦИИ И ТРИГГЕРА ДЛЯ ОБРАБОТКИ ИЗМЕНЕНИЯ СТАТУСА ОПЛАТЫ КОРЗИНЫ НА "TRUE"
-CREATE OR REPLACE FUNCTION handle_paid_cart()
-    RETURNS TRIGGER AS
-$$
-DECLARE
-    item RECORD;
-BEGIN
-    IF NEW.is_paid = TRUE AND OLD.is_paid = FALSE THEN
-        FOR item IN
-            SELECT cart_items.product_id,
-                   item_quantity,
-                   warehouse_id
-            FROM cart_items
-                     INNER JOIN warehouse_stocks ON cart_items.product_id = warehouse_stocks.product_id
-            WHERE cart_id = NEW.cart_id
-              AND warehouse_id = 1
-            LOOP
-                INSERT INTO warehouse_stocks(warehouse_id,
-                                             product_id,
-                                             operation_type,
-                                             operation_quantity)
-                VALUES (item.warehouse_id,
-                        item.product_id,
-                        '-',
-                        item.item_quantity * -1);
-            END LOOP;
-    END IF;
-
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER trigger_paid_cart
-    AFTER UPDATE OF is_paid
-    ON carts
-    FOR EACH ROW
-EXECUTE FUNCTION handle_paid_cart();
-
-
--- ПРИМЕР СЦЕНАРИЯ С ОПЛАТОЙ КОРЗИНЫ ЧЕРЕЗ ПРОВЕРКУ НАЛИЧИЯ НА СКЛАДЕ
-UPDATE carts
-SET is_paid = TRUE
-WHERE user_id = 2
-  AND NOT EXISTS (SELECT 1
-                  FROM carts
-                           INNER JOIN cart_items ON carts.cart_id = cart_items.cart_id
-                           LEFT JOIN (SELECT product_id,
-                                             warehouse_id,
-                                             SUM(operation_quantity) AS total_quantity
-                                      FROM warehouse_stocks
-                                      WHERE warehouse_id = 1
-                                      GROUP BY 1, 2) AS w
-                                     ON w.product_id = cart_items.product_id
-                  WHERE user_id = 2
-                    AND is_paid = FALSE
-                    AND (total_quantity IS NULL OR total_quantity < item_quantity));
-
-
 -- ПРОСМОТР КОРЗИНЫ ПОЛЬЗОВАТЕЛЯ
-SELECT surname                              AS Фамилия,
-       name                                 AS Имя,
-       patronymic                           AS Отчество,
-       email                                AS Эл_почта,
-       product_name                         AS Товар,
-       product_unit                         AS Ед_изм,
-       item_quantity                        AS Количество,
-       product_price                        AS Цена_за_ед,
-       product_price * item_quantity        AS Сумма,
-       COALESCE(SUM(operation_quantity), 0) AS В_наличии,
+SELECT surname                                               AS Фамилия,
+       name                                                  AS Имя,
+       patronymic                                            AS Отчество,
+       email                                                 AS Эл_почта,
+       product_name                                          AS Товар,
+       product_unit                                          AS Ед_изм,
+       item_quantity                                         AS Количество,
+       product_price                                         AS Цена_за_ед,
+       product_price * item_quantity                         AS Сумма,
+       COALESCE(SUM(operation_quantity), 0)                  AS В_наличии,
        CASE
            WHEN COALESCE(SUM(operation_quantity), 0) < item_quantity THEN 'Нет'
            WHEN COALESCE(SUM(operation_quantity), 0) >= item_quantity THEN 'Да'
-           END                              AS Достаточно_для_заказа
+           END                                               AS Достаточно_для_заказа,
+       SUM(cart_items.item_quantity) OVER ()                 AS Количество_Общее,
+       SUM(product_price * cart_items.item_quantity) OVER () AS Сумма_Общая
 FROM products
          INNER JOIN cart_items ON products.product_id = cart_items.product_id
          INNER JOIN carts ON cart_items.cart_id = carts.cart_id
          INNER JOIN users ON carts.user_id = users.user_id
          LEFT JOIN warehouse_stocks ON products.product_id = warehouse_stocks.product_id
          LEFT JOIN warehouses ON warehouse_stocks.warehouse_id = warehouses.warehouse_id
-WHERE is_paid = FALSE
-  AND users.user_id = 1
+WHERE users.user_id = 1
   AND warehouses.warehouse_id = 1
 GROUP BY 1, 2, 3, 4, 5, 6, 7, 8, 9;
-
-
--- ПОДСЧЁТ СТАТИСТИКИ ПОЛЬЗОВАТЕЛЯ: ОПЛАЧЕНО / НЕ ОПЛАЧЕНО
-SELECT username                           AS Имя_пользователя,
-       SUM(item_quantity)                 AS Количество_Товаров_Итого,
-       SUM(product_price * item_quantity) AS Сумма_Товаров_Итого,
-       is_paid                            AS Оплачено
-FROM products
-         INNER JOIN cart_items ON products.product_id = cart_items.product_id
-         INNER JOIN carts ON cart_items.cart_id = carts.cart_id
-         INNER JOIN users ON carts.user_id = users.user_id
-GROUP BY username, is_paid
-HAVING username = 'user1';
