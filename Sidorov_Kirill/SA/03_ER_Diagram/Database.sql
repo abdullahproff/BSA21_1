@@ -23,7 +23,7 @@ CREATE TABLE products (
     description TEXT,
     price_rub DECIMAL(16, 4) CHECK(price_rub > 0) NOT NULL,
     quantity INT CHECK(quantity >= 0) NOT NULL,
-    link VARCHAR(255) NOT NULL,
+    link VARCHAR(255) UNIQUE NOT NULL,
     rating DECIMAL(3, 2) CHECK(rating BETWEEN 1 AND 5) DEFAULT NULL,
     created_at TIMESTAMPTZ
 );
@@ -35,9 +35,9 @@ CREATE TABLE purchases (
     customer_id INT NOT NULL,
     product_id INT NOT NULL,
     amount SMALLINT CHECK(amount >= 0) NOT NULL,
-    score SMALLINT CHECK(score BETWEEN 1 AND 5),
+    score SMALLINT CHECK(score BETWEEN 1 AND 5) DEFAULT NULL,
     added_at TIMESTAMPTZ,
-    updated_at TIMESTAMPTZ,
+    scored_at TIMESTAMPTZ DEFAULT NULL,
     CONSTRAINT fk_purchases_customers FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE,
     CONSTRAINT fk_purchases_products FOREIGN KEY (product_id) REFERENCES products(product_id) ON DELETE CASCADE
 );
@@ -96,7 +96,7 @@ VALUES
 
 -- Вставка данных в таблицу Покупки
 
-INSERT INTO purchases (customer_id, product_id, amount, score, added_at, updated_at)
+INSERT INTO purchases (customer_id, product_id, amount, score, added_at, scored_at)
 VALUES
     (1, 1, 2, 4, '2023-04-01T12:00:00+03', '2023-04-01T12:00:00+03'),
     (2, 2, 1, 5, '2023-04-02T13:30:00+03', '2023-04-02T13:30:00+03'),
@@ -107,7 +107,7 @@ VALUES
     (2, 7, 1, 5, '2023-04-07T19:45:00+03', '2023-04-07T19:45:00+03'),
     (3, 8, 3, 3, '2023-04-08T21:00:00+03', '2023-04-08T21:00:00+03'),
     (4, 9, 2, 4, '2023-04-09T22:15:00+03', '2023-04-09T22:15:00+03'),
-    (1, 10, 1, NULL, '2023-04-10T23:30:00+03', '2023-04-10T23:30:00+03'),
+    (1, 10, 1, NULL, '2023-04-10T23:30:00+03', NULL),
     (1, 1, 2, 3, '2023-04-11T12:00:00+03', '2023-04-11T12:00:00+03'),
     (2, 2, 1, 5, '2023-04-12T13:30:00+03', '2023-04-12T13:30:00+03'),
     (3, 3, 3, 4, '2023-04-13T14:45:00+03', '2023-04-13T14:45:00+03'),
@@ -117,7 +117,7 @@ VALUES
     (2, 7, 1, 4, '2023-04-17T19:45:00+03', '2023-04-17T19:45:00+03'),
     (3, 9, 3, 2, '2023-04-18T21:00:00+03', '2023-04-18T21:00:00+03'),
     (4, 9, 2, 3, '2023-04-19T22:15:00+03', '2023-04-19T22:15:00+03'),
-    (1, 10, 1, NULL, '2023-04-20T23:30:00+03', '2023-04-20T23:30:00+03');
+    (1, 10, 1, NULL, '2023-04-20T23:30:00+03', NULL);
 
 -- Вывод информации о покупках первого покупателя
 
