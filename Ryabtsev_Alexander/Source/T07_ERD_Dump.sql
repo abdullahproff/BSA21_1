@@ -54,12 +54,12 @@ CREATE TABLE carts
 
 CREATE TABLE cart_items
 (
-    cart_item_id  SERIAL PRIMARY KEY,
     cart_id       INT            NOT NULL,
     product_id    INT            NOT NULL,
     item_quantity DECIMAL(17, 4) NOT NULL,
     CONSTRAINT fk_cart_items_carts FOREIGN KEY (cart_id) REFERENCES carts (cart_id) ON DELETE CASCADE,
-    CONSTRAINT fk_cart_items_products FOREIGN KEY (product_id) REFERENCES products (product_id) ON DELETE CASCADE
+    CONSTRAINT fk_cart_items_products FOREIGN KEY (product_id) REFERENCES products (product_id) ON DELETE CASCADE,
+    CONSTRAINT pk_cart_items PRIMARY KEY (cart_id, product_id)
 );
 
 CREATE TABLE warehouses
@@ -70,16 +70,22 @@ CREATE TABLE warehouses
     CONSTRAINT fk_warehouses_addresses FOREIGN KEY (warehouse_address_id) REFERENCES addresses (address_id) ON DELETE SET NULL
 );
 
+CREATE TYPE reservation_status_enum AS ENUM ('active', 'paid', 'cancelled', 'expired');
+
 CREATE TABLE warehouse_stocks
 (
-    warehouse_stock_id  SERIAL PRIMARY KEY,
-    warehouse_id        INT                                               NOT NULL,
-    product_id          INT                                               NOT NULL,
-    operation_type      VARCHAR(1) CHECK ( operation_type IN ('+', '-') ) NOT NULL,
-    operation_timestamp TIMESTAMPTZ DEFAULT NOW()                         NOT NULL,
-    operation_quantity  DECIMAL(17, 4)                                    NOT NULL,
-    CONSTRAINT fk_warehouse_stocks_warehouses FOREIGN KEY (warehouse_id) REFERENCES warehouses (warehouse_id) ON DELETE SET NULL,
-    CONSTRAINT fk_warehouse_stocks_products FOREIGN KEY (product_id) REFERENCES products (product_id) ON DELETE CASCADE
+    warehouse_stock_id   SERIAL PRIMARY KEY,
+    cart_id              INT,
+    product_id           INT                                               NOT NULL,
+    warehouse_id         INT                                               NOT NULL,
+    operation_type       VARCHAR(1) CHECK ( operation_type IN ('+', '-') ) NOT NULL,
+    operation_quantity   DECIMAL(17, 4)                                    NOT NULL,
+    updated_at           TIMESTAMPTZ DEFAULT NOW()                         NOT NULL,
+    reservation_status   reservation_status_enum,
+    reservation_interval INTERVAL,
+    CONSTRAINT fk_warehouse_stocks_carts FOREIGN KEY (cart_id) REFERENCES carts (cart_id) ON DELETE NO ACTION,
+    CONSTRAINT fk_warehouse_stocks_products FOREIGN KEY (product_id) REFERENCES products (product_id) ON DELETE CASCADE,
+    CONSTRAINT fk_warehouse_stocks_warehouses FOREIGN KEY (warehouse_id) REFERENCES warehouses (warehouse_id) ON DELETE NO ACTION
 );
 
 
@@ -101,15 +107,17 @@ VALUES ('Основной', '101000', 'г. Москва');
 INSERT INTO warehouses(warehouse_address_id, warehouse_name)
 VALUES (1, 'МегаМаркет');
 
-INSERT INTO warehouse_stocks(warehouse_id, product_id, operation_type, operation_quantity)
+INSERT INTO warehouse_stocks(product_id, warehouse_id, operation_type, operation_quantity)
 VALUES (1, 1, '+', 1),
-       (1, 2, '+', 2),
-       (1, 3, '+', 3);
+       (2, 1, '+', 2),
+       (3, 1, '+', 3);
 
 INSERT INTO carts(user_id)
 VALUES (1),
        (2),
        (3);
+
+-- TODO: Добавить функции и триггеры проверки наличия на складе
 
 INSERT INTO cart_items(cart_id, product_id, item_quantity)
 VALUES (1, 1, 2),
@@ -138,6 +146,7 @@ FROM products
          INNER JOIN cart_items ON products.product_id = cart_items.product_id
          INNER JOIN carts ON cart_items.cart_id = carts.cart_id
          INNER JOIN users ON carts.user_id = users.user_id
+    -- TODO: Изменить логику присоединений после добавления триггеров:
          LEFT JOIN warehouse_stocks ON products.product_id = warehouse_stocks.product_id
          LEFT JOIN warehouses ON warehouse_stocks.warehouse_id = warehouses.warehouse_id
 WHERE users.user_id = 1
