@@ -1,3 +1,11 @@
+CREATE TABLE users (
+    user_id SERIAL PRIMARY KEY,            -- Уникальный идентификатор пользователя
+    username VARCHAR(50) NOT NULL,         -- Никнейм пользователя
+    full_name VARCHAR(150) NOT NULL,       -- Полное имя (ФИО)
+    created_at TIMESTAMP DEFAULT now(),    -- Дата и время создания профиля
+    description TEXT                       -- Краткая информация о профиле
+);
+
 INSERT INTO myfirstschema.users (username, full_name, created_at, description)
 VALUES
 ('userlog', 'User Logout', now(), 'Test user account'),
