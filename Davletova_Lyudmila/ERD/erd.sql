@@ -7,13 +7,11 @@ CREATE TABLE users (
     phone_number VARCHAR(20)
 );
 
--- Создание таблицы треков
-CREATE TABLE tracs (
+-- Создание таблицы артистов
+CREATE TABLE artists (
     id INT PRIMARY KEY,
-    title VARCHAR(255),
-    album_id INT,
-    duration TIME,
-    FOREIGN KEY (album_id) REFERENCES albums(id)
+    name VARCHAR(255),
+    genre VARCHAR(255)
 );
 
 -- Создание таблицы альбомов
@@ -25,22 +23,25 @@ CREATE TABLE albums (
     FOREIGN KEY (artist_id) REFERENCES artists(id)
 );
 
+-- Создание таблицы треков
+CREATE TABLE tracs (
+    id INT PRIMARY KEY,
+    title VARCHAR(255),
+    album_id INT,
+    duration TIME,
+    FOREIGN KEY (album_id) REFERENCES albums(id)
+);
+
 -- Создание таблицы истории прослушиваний
 CREATE TABLE histories_listening (
     id INT PRIMARY KEY,
-    listening_date DATETIME,
+    listening_date TIMESTAMP,
     user_id INT,
     track_id INT,
     FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (track_id) REFERENCES tracs(id)
 );
 
--- Создание таблицы артистов
-CREATE TABLE artists (
-    id INT PRIMARY KEY,
-    name VARCHAR(255),
-    genre VARCHAR(255)
-);
 
 -- Создание таблицы связи артистов и треков
 CREATE TABLE artists_tracks (
