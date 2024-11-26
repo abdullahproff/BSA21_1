@@ -22,8 +22,8 @@ CREATE TABLE Notes (
 -- Создание таблицы Tags
 CREATE TABLE Tags (
     tag_id INT PRIMARY KEY,
-    tag_name VARCHAR(100),
-    color VARCHAR(30) CHECK (color IN ('red', 'green', 'blue', 'yellow', 'orange')),
+    tag_name VARCHAR(100) not NULL,
+    color VARCHAR(30) CHECK (color IN ('red', 'green', 'blue', 'yellow', 'orange')) not NULL,
     user_id INT,
     FOREIGN KEY (user_id) REFERENCES Users(user_id)  -- Установка внешнего ключа на user_id
 );
