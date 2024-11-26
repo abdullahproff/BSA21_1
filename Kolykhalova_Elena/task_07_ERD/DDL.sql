@@ -29,8 +29,7 @@ CREATE TABLE activities (
 -- Создание таблицы участников
 CREATE TABLE users_activities (
                                   activity_id INT REFERENCES activities(activity_id) ON DELETE CASCADE,  -- Внешний ключ на активность
-                                  user_id INT REFERENCES users(user_id) ON DELETE CASCADE,              -- Внешний ключ на пользователя
-                                  status VARCHAR(20)             -- Статус участия (confirmed, pending, declined)
+                                  user_id INT REFERENCES users(user_id) ON DELETE cascade                -- Внешний ключ на пользователя
 );
 
 
@@ -43,15 +42,15 @@ VALUES
 -- Вставка активностей
 INSERT INTO activities (creator_id, activity_name, activity_date, activity_time, city, street, max_participants, description)
 VALUES
-(1, 'Велопрогулка в парке', '2024-07-01', '10:00:00', 'Москва', 'Северный парк', 10, 'Присоединяйтесь к увлекательной велопрогулке!'),
-(2, 'Киносеанс "Звёздные войны"', '2024-07-02', '19:30:00', 'Санкт-Петербург', 'Кинотеатр "Мир"', 20, 'Посмотрим новый фильм вместе!');
+    (1, 'Велопрогулка в парке', '2024-07-01', '10:00:00', 'Москва', 'Северный парк', 10, 'Присоединяйтесь к увлекательной велопрогулке!'),
+    (2, 'Киносеанс "Звёздные войны"', '2024-07-02', '19:30:00', 'Санкт-Петербург', 'Кинотеатр "Мир"', 20, 'Посмотрим новый фильм вместе!');
 
 -- Вставка участников
-INSERT INTO users_activities (activity_id, user_id, status)
+INSERT INTO users_activities (activity_id, user_id)
 VALUES
-    (1, 1, 'confirmed'),
-    (1, 2, 'pending'),
-    (2, 1, 'confirmed');
+    (1, 1),
+    (1, 2),
+    (2, 1);
 
 -- Выборка по участнику id = 1
 SELECT a.*
