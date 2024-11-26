@@ -9,7 +9,7 @@ SET SEARCH_PATH TO redavero;
 CREATE TABLE addresses
 (
     address_id      SERIAL PRIMARY KEY,
-    name    VARCHAR(127),
+    name            VARCHAR(127),
     postcode        VARCHAR(31),
     city            VARCHAR(127) NOT NULL,
     street          VARCHAR(127),
@@ -37,7 +37,7 @@ CREATE TABLE users
 
 CREATE TABLE products
 (
-    product_id          SERIAL PRIMARY KEY,
+    product_id  SERIAL PRIMARY KEY,
     name        VARCHAR(255)   NOT NULL,
     unit        VARCHAR(31)    NOT NULL,
     price       DECIMAL(17, 4) NOT NULL,
@@ -65,9 +65,9 @@ CREATE TABLE cart_items
 
 CREATE TABLE warehouses
 (
-    warehouse_id         SERIAL PRIMARY KEY,
-    address_id INT                 NOT NULL,
-    name       VARCHAR(255) UNIQUE NOT NULL,
+    warehouse_id SERIAL PRIMARY KEY,
+    address_id   INT                 NOT NULL,
+    name         VARCHAR(255) UNIQUE NOT NULL,
     CONSTRAINT fk_warehouses_addresses FOREIGN KEY (address_id) REFERENCES addresses (address_id) ON DELETE SET NULL
 );
 
@@ -127,21 +127,21 @@ VALUES (1, 1, 2),
 
 
 -- ПРОСМОТР КОРЗИНЫ ПОЛЬЗОВАТЕЛЯ
-SELECT surname                                               AS Фамилия,
-       users.name                                                  AS Имя,
-       patronymic                                            AS Отчество,
-       email                                                 AS Эл_почта,
+SELECT surname                                                AS Фамилия,
+       users.name                                             AS Имя,
+       patronymic                                             AS Отчество,
+       email                                                  AS Эл_почта,
        products.name                                          AS Товар,
        products.unit                                          AS Ед_изм,
-       item_quantity                                         AS Количество,
+       item_quantity                                          AS Количество,
        products.price                                         AS Цена_за_ед,
        products.price * item_quantity                         AS Сумма,
-       COALESCE(SUM(operation_quantity), 0)                  AS В_наличии,
+       COALESCE(SUM(operation_quantity), 0)                   AS В_наличии,
        CASE
            WHEN COALESCE(SUM(operation_quantity), 0) < item_quantity THEN 'Нет'
            WHEN COALESCE(SUM(operation_quantity), 0) >= item_quantity THEN 'Да'
-           END                                               AS Достаточно_для_заказа,
-       SUM(cart_items.item_quantity) OVER ()                 AS Количество_Общее,
+           END                                                AS Достаточно_для_заказа,
+       SUM(cart_items.item_quantity) OVER ()                  AS Количество_Общее,
        SUM(products.price * cart_items.item_quantity) OVER () AS Сумма_Общая
 FROM products
          INNER JOIN cart_items ON products.product_id = cart_items.product_id
