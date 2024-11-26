@@ -10,7 +10,7 @@
      - owner в таблице activities — это внешний ключ, который ссылается на user_id в таблице users.
 
    ```users.user_id (PK) <--- activities.owner (FK)```
-2. #### Активность (activities) и Участники (participants):
+2. #### Активность (activities) и Участники (users_activities):
 
 
    - Связь: Один к многим (One-to-Many)
@@ -20,8 +20,8 @@
      - activity_id в таблице participants — это внешний ключ,
        который ссылается на activity_id в таблице activities.
 
-   ```activities.activity_id (PK) <--- participants.activity_id (FK)```
-3. #### Пользователь (users) и Список участников (participants):
+   ```activities.activity_id (PK) <--- users_activities.activity_id (FK)```
+3. #### Пользователь (users) и Участники (users_activities):
 
 
    - Связь: Один к многим (One-to-Many)
@@ -30,4 +30,4 @@
    - Внешний ключ в таблице участников:
      - user_id в таблице participants — это внешний ключ, который ссылается на user_id в таблице users.
 
-   ```users.user_id (PK) <--- participants.user_id (FK)```
+   ```users.user_id (PK) <--- users_activities.user_id (FK)```
