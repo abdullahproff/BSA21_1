@@ -41,6 +41,7 @@ CREATE TABLE products
     product_name        VARCHAR(255)   NOT NULL,
     product_unit        VARCHAR(31)    NOT NULL,
     product_price       DECIMAL(17, 4) NOT NULL,
+    product_photo       VARCHAR(255),
     product_description TEXT,
     product_category    VARCHAR(255) -- TODO: Иерархическая структура
 );
