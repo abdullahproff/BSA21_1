@@ -1,6 +1,6 @@
 -- Создание таблицы пользователей
 CREATE TABLE users (
-                       user_id SERIAL PRIMARY KEY,
+                       user_id SERIAL PRIMARY KEY NOT NULL,
                        username VARCHAR(50) NOT NULL,
                        email VARCHAR(100) UNIQUE NOT NULL,
                        password VARCHAR(100) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE users (
 
 -- Создание таблицы активностей
 CREATE TABLE activities (
-                            activity_id SERIAL PRIMARY KEY,
+                            activity_id SERIAL PRIMARY KEY NOT NULL,
                             owner INT NOT NULL REFERENCES users(user_id) ON DELETE CASCADE,  -- Внешний ключ на пользователя
                             activity_name VARCHAR(100) NOT NULL,
                             activity_date DATE NOT NULL,
@@ -26,7 +26,6 @@ CREATE TABLE activities (
 
 -- Создание таблицы участников
 CREATE TABLE users_activities (
-                                  participant_id SERIAL PRIMARY KEY,
                                   activity_id INT REFERENCES activities(activity_id) ON DELETE CASCADE,  -- Внешний ключ на активность
                                   user_id INT REFERENCES users(user_id) ON DELETE CASCADE,              -- Внешний ключ на пользователя
                                   status VARCHAR(20)             -- Статус участия (confirmed, pending, declined)
