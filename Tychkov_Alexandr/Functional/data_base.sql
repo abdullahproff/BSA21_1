@@ -17,6 +17,7 @@ CREATE TABLE users (
 CREATE TABLE playlists (
 	playlist_id int4 NOT NULL,
 	user_id int4 NOT NULL,
+	playlist_title varchar NOT NULL,
 	CONSTRAINT fk_playlists_users FOREIGN KEY (user_id) REFERENCES users(user_id),
 	CONSTRAINT playlists_pkey PRIMARY KEY (playlist_id)
 );
@@ -43,10 +44,10 @@ INSERT INTO users (user_id, login, email) VALUES
 (3, 'user3', 'user3@example.com');
 
 -- Вставка плейлистов
-INSERT INTO playlists (playlist_id, user_id) VALUES
-(1, 1),
-(2, 2),
-(3, 3);
+INSERT INTO playlists (playlist_id, user_id, playlist_title) VALUES
+(1, 1,'relax'),
+(2, 2, 'aim'),
+(3, 3, 'swim');
 
 -- Вставка треков в плейлисты
 INSERT INTO playlist_tracks (playlist_id, track_id) VALUES
@@ -57,8 +58,7 @@ INSERT INTO playlist_tracks (playlist_id, track_id) VALUES
 (3, 1);  -- Плейлист 3 содержит трек 1
 
 
-SELECT pl.playlist_id, t.song_title, t.artist_name
+SELECT pl.playlist_title, t.song_title, t.artist_name
 FROM playlist_tracks pt
 JOIN playlists pl ON pt.playlist_id = pl.playlist_id
 JOIN tracks t ON pt.track_id = t.track_id;
-

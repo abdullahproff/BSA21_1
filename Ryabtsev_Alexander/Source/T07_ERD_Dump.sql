@@ -9,7 +9,7 @@ SET SEARCH_PATH TO redavero;
 CREATE TABLE addresses
 (
     address_id      SERIAL PRIMARY KEY,
-    address_name    VARCHAR(127),
+    name            VARCHAR(127),
     postcode        VARCHAR(31),
     city            VARCHAR(127) NOT NULL,
     street          VARCHAR(127),
@@ -37,12 +37,13 @@ CREATE TABLE users
 
 CREATE TABLE products
 (
-    product_id          SERIAL PRIMARY KEY,
-    product_name        VARCHAR(255)   NOT NULL,
-    product_unit        VARCHAR(31)    NOT NULL,
-    product_price       DECIMAL(17, 4) NOT NULL,
-    product_description TEXT,
-    product_category    VARCHAR(255) -- TODO: Иерархическая структура
+    product_id  SERIAL PRIMARY KEY,
+    name        VARCHAR(255)   NOT NULL,
+    unit        VARCHAR(31)    NOT NULL,
+    price       DECIMAL(17, 4) NOT NULL,
+    photo       VARCHAR(255),
+    description TEXT,
+    category    VARCHAR(255) -- TODO: Иерархическая структура
 );
 
 CREATE TABLE carts
@@ -64,10 +65,10 @@ CREATE TABLE cart_items
 
 CREATE TABLE warehouses
 (
-    warehouse_id         SERIAL PRIMARY KEY,
-    warehouse_address_id INT                 NOT NULL,
-    warehouse_name       VARCHAR(255) UNIQUE NOT NULL,
-    CONSTRAINT fk_warehouses_addresses FOREIGN KEY (warehouse_address_id) REFERENCES addresses (address_id) ON DELETE SET NULL
+    warehouse_id SERIAL PRIMARY KEY,
+    address_id   INT                 NOT NULL,
+    name         VARCHAR(255) UNIQUE NOT NULL,
+    CONSTRAINT fk_warehouses_addresses FOREIGN KEY (address_id) REFERENCES addresses (address_id) ON DELETE SET NULL
 );
 
 CREATE TYPE reservation_status_enum AS ENUM ('active', 'paid', 'cancelled', 'expired');
@@ -95,16 +96,16 @@ VALUES ('user1', 'Р.', 'Александр', 'Анатольевич', 'M', '+9
        ('user2', NULL, NULL, NULL, NULL, NULL, 'user2@mail.ru'),
        ('user3', NULL, NULL, NULL, NULL, NULL, 'user3@mail.ru');
 
-INSERT INTO products(product_name, product_unit, product_price, product_description, product_category)
+INSERT INTO products(name, unit, price, description, category)
 VALUES ('Кефир', 'шт', 50, '500 гр', 'Продукты / Молочные'),
        ('Полбатона', 'шт', 20, '200 гр', 'Продукты / Хлеб'),
        ('Икарус', 'шт', 3333, '1 шт', 'Игрушки / Транспорт'),
        ('Кефир', 'шт', 80, '900 гр', 'Продукты / Молочные');
 
-INSERT INTO addresses(address_name, postcode, city)
+INSERT INTO addresses(name, postcode, city)
 VALUES ('Основной', '101000', 'г. Москва');
 
-INSERT INTO warehouses(warehouse_address_id, warehouse_name)
+INSERT INTO warehouses(address_id, name)
 VALUES (1, 'МегаМаркет');
 
 INSERT INTO warehouse_stocks(product_id, warehouse_id, operation_type, operation_quantity)
@@ -126,22 +127,22 @@ VALUES (1, 1, 2),
 
 
 -- ПРОСМОТР КОРЗИНЫ ПОЛЬЗОВАТЕЛЯ
-SELECT surname                                               AS Фамилия,
-       name                                                  AS Имя,
-       patronymic                                            AS Отчество,
-       email                                                 AS Эл_почта,
-       product_name                                          AS Товар,
-       product_unit                                          AS Ед_изм,
-       item_quantity                                         AS Количество,
-       product_price                                         AS Цена_за_ед,
-       product_price * item_quantity                         AS Сумма,
-       COALESCE(SUM(operation_quantity), 0)                  AS В_наличии,
+SELECT surname                                                AS Фамилия,
+       users.name                                             AS Имя,
+       patronymic                                             AS Отчество,
+       email                                                  AS Эл_почта,
+       products.name                                          AS Товар,
+       products.unit                                          AS Ед_изм,
+       item_quantity                                          AS Количество,
+       products.price                                         AS Цена_за_ед,
+       products.price * item_quantity                         AS Сумма,
+       COALESCE(SUM(operation_quantity), 0)                   AS В_наличии,
        CASE
            WHEN COALESCE(SUM(operation_quantity), 0) < item_quantity THEN 'Нет'
            WHEN COALESCE(SUM(operation_quantity), 0) >= item_quantity THEN 'Да'
-           END                                               AS Достаточно_для_заказа,
-       SUM(cart_items.item_quantity) OVER ()                 AS Количество_Общее,
-       SUM(product_price * cart_items.item_quantity) OVER () AS Сумма_Общая
+           END                                                AS Достаточно_для_заказа,
+       SUM(cart_items.item_quantity) OVER ()                  AS Количество_Общее,
+       SUM(products.price * cart_items.item_quantity) OVER () AS Сумма_Общая
 FROM products
          INNER JOIN cart_items ON products.product_id = cart_items.product_id
          INNER JOIN carts ON cart_items.cart_id = carts.cart_id

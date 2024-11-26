@@ -7,13 +7,11 @@ CREATE TABLE users (
     phone_number VARCHAR(20)
 );
 
--- Создание таблицы треков
-CREATE TABLE tracs (
+-- Создание таблицы артистов
+CREATE TABLE artists (
     id INT PRIMARY KEY,
-    title VARCHAR(255),
-    album_id INT,
-    duration TIME,
-    FOREIGN KEY (album_id) REFERENCES albums(id)
+    name VARCHAR(255),
+    genre VARCHAR(255)
 );
 
 -- Создание таблицы альбомов
@@ -25,22 +23,25 @@ CREATE TABLE albums (
     FOREIGN KEY (artist_id) REFERENCES artists(id)
 );
 
+-- Создание таблицы треков
+CREATE TABLE tracks (
+    id INT PRIMARY KEY,
+    title VARCHAR(255),
+    album_id INT,
+    duration TIME,
+    FOREIGN KEY (album_id) REFERENCES albums(id)
+);
+
 -- Создание таблицы истории прослушиваний
 CREATE TABLE histories_listening (
     id INT PRIMARY KEY,
-    listening_date DATETIME,
+    listening_date TIMESTAMP,
     user_id INT,
     track_id INT,
     FOREIGN KEY (user_id) REFERENCES users(id),
-    FOREIGN KEY (track_id) REFERENCES tracs(id)
+    FOREIGN KEY (track_id) REFERENCES tracks(id)
 );
 
--- Создание таблицы артистов
-CREATE TABLE artists (
-    id INT PRIMARY KEY,
-    name VARCHAR(255),
-    genre VARCHAR(255)
-);
 
 -- Создание таблицы связи артистов и треков
 CREATE TABLE artists_tracks (
@@ -48,7 +49,7 @@ CREATE TABLE artists_tracks (
     track_id INT,
     PRIMARY KEY (artist_id, track_id),
     FOREIGN KEY (artist_id) REFERENCES artists(id),
-    FOREIGN KEY (track_id) REFERENCES tracs(id)
+    FOREIGN KEY (track_id) REFERENCES tracks(id)
 );
 
 -- Вставка данных в таблицу пользователей
@@ -79,7 +80,7 @@ INSERT INTO albums (id, title, release_date, artist_id) VALUES
 (6, 'Sweetener', '2018-08-17', 6);
 
 -- Вставка данных в таблицу треков
-INSERT INTO tracs (id, title, album_id, duration) VALUES
+INSERT INTO tracks (id, title, album_id, duration) VALUES
 (1, 'Come Together', 1, '00:04:19'),
 (2, 'Hello', 2, '00:04:55'),
 (3, 'Группа крови', 3, '00:04:50'),
