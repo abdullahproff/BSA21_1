@@ -78,5 +78,5 @@ where tags.tag_name = 'work';
 INSERT INTO Tags (tag_id, tag_name, color, user_id) 
 VALUES ('6', 'personal', 'green', 2);
 
-select * from tags 
+select * from tags
 
