@@ -15,7 +15,7 @@ CREATE TABLE Notes (
     date DATE NOT NULL,
     tag_id INT,
     user_id INT,
-    content TEXT,
+    content TEXT not NULL,
     FOREIGN KEY (user_id) REFERENCES Users(user_id)  -- Установка внешнего ключа на user_id
 );
 
