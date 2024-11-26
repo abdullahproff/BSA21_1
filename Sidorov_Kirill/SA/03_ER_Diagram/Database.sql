@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS customers, products, ratings, purchases CASCADE;
+DROP TABLE IF EXISTS customers, products, purchases CASCADE;
 
 -- Таблица покупателей
 
@@ -34,7 +34,7 @@ CREATE TABLE purchases (
     purchase_id SERIAL PRIMARY KEY,
     customer_id INT NOT NULL,
     product_id INT NOT NULL,
-    amount SMALLINT CHECK(amount >= 0) NOT NULL,
+    amount SMALLINT CHECK(amount > 0) NOT NULL,
     score SMALLINT CHECK(score BETWEEN 1 AND 5) DEFAULT NULL,
     added_at TIMESTAMPTZ,
     scored_at TIMESTAMPTZ DEFAULT NULL,
@@ -132,12 +132,10 @@ ORDER BY "Date" DESC;
 
 -- Вывод информации о рейтинге и общем количестве проданных товаров
 
-SELECT
-    products.title AS "Product",
-    COALESCE(SUM(purchases.amount)::TEXT, '0') AS "Total purchased",
-    COALESCE(products.rating::TEXT, 'N/A') AS "Rating"
+SELECT products.title AS "Product",
+       COALESCE(SUM(purchases.amount)::TEXT, '0') AS "Total purchased",
+       COALESCE(products.rating::TEXT, 'N/A') AS "Rating"
 FROM products
-LEFT JOIN
-    purchases ON products.product_id = purchases.product_id
+LEFT JOIN purchases ON products.product_id = purchases.product_id
 GROUP BY products.product_id
 ORDER BY products.product_id

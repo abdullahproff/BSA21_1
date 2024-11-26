@@ -4,8 +4,8 @@ CREATE TABLE Users (
 
     user_id INT PRIMARY KEY,
     e_mail VARCHAR(255) NOT NULL UNIQUE,
-    gender VARCHAR(10),
-    tag_id VARCHAR,
+    gender VARCHAR(10) CHECK (gender IN ('Male', 'Female')),
+    tag_id INT,
     note_id INT
 );
 
@@ -13,17 +13,17 @@ CREATE TABLE Users (
 CREATE TABLE Notes (
     note_id INT PRIMARY KEY,
     date DATE NOT NULL,
-    tag_id VARCHAR,
+    tag_id INT,
     user_id INT,
-    content VARCHAR,
+    content TEXT not NULL,
     FOREIGN KEY (user_id) REFERENCES Users(user_id)  -- Установка внешнего ключа на user_id
 );
 
 -- Создание таблицы Tags
 CREATE TABLE Tags (
-    tag_id VARCHAR PRIMARY KEY,
-    tag_name VARCHAR(100),
-    color VARCHAR(30),
+    tag_id INT PRIMARY KEY,
+    tag_name VARCHAR(100) not NULL,
+    color VARCHAR(30) CHECK (color IN ('red', 'green', 'blue', 'yellow', 'orange')) not NULL,
     user_id INT,
     FOREIGN KEY (user_id) REFERENCES Users(user_id)  -- Установка внешнего ключа на user_id
 );
@@ -57,18 +57,15 @@ INSERT INTO Notes (note_id, date, tag_id, user_id, content) VALUES
 
 
 -- выбор тега
-
 select * from tags 
-where color = 'red'
+where color = 'red';
 
 -- поиск заметок по цвету тега
-
 select content from notes 
 join tags on tags.tag_id = notes.tag_id
 where tags.color = 'red';
 
 -- поиск заметок по названию тега
-
 select content from notes 
 join tags on tags.tag_id = notes.tag_id
 where tags.tag_name = 'work';
@@ -78,5 +75,4 @@ where tags.tag_name = 'work';
 INSERT INTO Tags (tag_id, tag_name, color, user_id) 
 VALUES ('6', 'personal', 'green', 2);
 
-select * from tags
-
+select * from tags 
