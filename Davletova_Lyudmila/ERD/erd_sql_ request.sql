@@ -3,14 +3,14 @@ SELECT * FROM users;
 
 -- Просмотр всех треков с указанием их альбомов
 SELECT 
-    tracs.id AS track_id, 
-    tracs.title AS track_title, 
+    tracks.id AS track_id, 
+    tracks.title AS track_title, 
     albums.title AS album_title, 
-    tracs.duration 
+    tracks.duration 
 FROM 
-    tracs
+    tracks
 JOIN 
-    albums ON tracs.album_id = albums.id;
+    albums ON tracks.album_id = albums.id;
 
 -- Список всех артистов с их жанрами
 SELECT 
