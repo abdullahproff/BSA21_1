@@ -131,6 +131,6 @@ JOIN
 JOIN 
     Connections con ON con.Character_id = c.character_id
 JOIN
-	Spells s ON s.Spell_id = con.Spell_id
+	Spells s ON s.Spell_id = con.Spell_id;
 
-SELECT * FROM CHARACTERS
+SELECT * FROM CHARACTERS;
