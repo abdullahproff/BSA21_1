@@ -13,7 +13,9 @@ CREATE TABLE Users (
 CREATE TABLE Products (
     product_id INT PRIMARY KEY,
     product_name VARCHAR,
-    price DECIMAL
+	description TEXT,
+    price DECIMAL,
+    available_stock INT
 );
 
 -- Таблица заказов
@@ -26,6 +28,7 @@ CREATE TABLE Orders (
     total_amount DECIMAL,
     delivery_time_start TIMESTAMP,
     delivery_time_end TIMESTAMP,
+	delivery_status VARCHAR,
     FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
 
