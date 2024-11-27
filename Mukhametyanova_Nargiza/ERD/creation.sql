@@ -1,9 +1,9 @@
 -- Удаление таблиц и типов данных
-DROP TABLE IF EXISTS basket_to_products CASCADE;
-DROP TABLE IF EXISTS buyer_to_products CASCADE;
-DROP TABLE IF EXISTS buyer_to_actions CASCADE;
-DROP TABLE IF EXISTS product_to_categories CASCADE;
-DROP TABLE IF EXISTS product_to_actions CASCADE;
+DROP TABLE IF EXISTS baskets_to_products CASCADE;
+DROP TABLE IF EXISTS buyers_to_products CASCADE;
+DROP TABLE IF EXISTS buyers_to_actions CASCADE;
+DROP TABLE IF EXISTS products_to_categories CASCADE;
+DROP TABLE IF EXISTS products_to_actions CASCADE;
 DROP TABLE IF EXISTS baskets CASCADE;
 DROP TABLE IF EXISTS products CASCADE;
 DROP TABLE IF EXISTS categories CASCADE;
@@ -66,11 +66,12 @@ CREATE TABLE baskets (
     basket_payment VARCHAR(50),
     basket_delivery VARCHAR(50),
     basket_cost INT,
+    basket_quantity INT NOT NULL,
     FOREIGN KEY (buyer_id) REFERENCES buyers(buyer_id)
 );
 
 -- Промежуточная таблица для связи покупателей и товаров
-CREATE TABLE buyer_to_products (
+CREATE TABLE buyers_to_products (
     buyer_id INT NOT NULL,
     product_id INT NOT NULL,
     PRIMARY KEY (buyer_id, product_id),
@@ -79,7 +80,7 @@ CREATE TABLE buyer_to_products (
 );
 
 -- Промежуточная таблица для связи покупателей и акций
-CREATE TABLE buyer_to_actions (
+CREATE TABLE buyers_to_actions (
     buyer_id INT NOT NULL,
     best_action_id INT NOT NULL,
     PRIMARY KEY (buyer_id, best_action_id),
@@ -88,7 +89,7 @@ CREATE TABLE buyer_to_actions (
 );
 
 -- Промежуточная таблица для связи товаров и категорий
-CREATE TABLE product_to_categories (
+CREATE TABLE products_to_categories (
     product_id INT NOT NULL,
     category_id INT NOT NULL,
     PRIMARY KEY (product_id, category_id),
@@ -97,7 +98,7 @@ CREATE TABLE product_to_categories (
 );
 
 -- Промежуточная таблица для связи товаров и акций
-CREATE TABLE product_to_actions (
+CREATE TABLE products_to_actions (
     product_id INT NOT NULL,
     best_action_id INT NOT NULL,
     PRIMARY KEY (product_id, best_action_id),
@@ -106,10 +107,9 @@ CREATE TABLE product_to_actions (
 );
 
 -- Промежуточная таблица для связи корзин и товаров
-CREATE TABLE basket_to_products (
+CREATE TABLE baskets_to_products (
     basket_id INT NOT NULL,
     product_id INT NOT NULL,
-    quantity INT NOT NULL,
     PRIMARY KEY (basket_id, product_id),
     FOREIGN KEY (basket_id) REFERENCES baskets(basket_id),
     FOREIGN KEY (product_id) REFERENCES products(product_id)
@@ -147,7 +147,7 @@ VALUES
 (4, 'Лосьон увлажняющий', 'moisturizing_lotion.jpg', 1500, '150ml');
 
 -- Связь товаров с категориями
-INSERT INTO product_to_categories (product_id, category_id)
+INSERT INTO products_to_categories (product_id, category_id)
 VALUES
 (1, 1),
 (2, 2),
@@ -155,7 +155,7 @@ VALUES
 (4, 4);
 
 -- Связь товаров с акциями
-INSERT INTO product_to_actions (product_id, best_action_id)
+INSERT INTO products_to_actions (product_id, best_action_id)
 VALUES
 (1, 1),
 (2, 2),
@@ -163,7 +163,7 @@ VALUES
 (4, 1);
 
 -- Связь покупателей и акций
-INSERT INTO buyer_to_actions (buyer_id, best_action_id)
+INSERT INTO buyers_to_actions (buyer_id, best_action_id)
 VALUES
 (1, 1),
 (2, 2),
@@ -171,7 +171,7 @@ VALUES
 (4, 1);
 
 -- Связь покупателей и товаров
-INSERT INTO buyer_to_products (buyer_id, product_id)
+INSERT INTO buyers_to_products (buyer_id, product_id)
 VALUES
 (1, 1),
 (2, 2),
@@ -179,17 +179,17 @@ VALUES
 (4, 4);
 
 -- Вставка нескольких записей в корзину
-INSERT INTO baskets (basket_id, buyer_id, basket_status, basket_payment, basket_delivery, basket_cost)
+INSERT INTO baskets (basket_id, buyer_id, basket_status, basket_payment, basket_delivery, basket_cost, basket_quantity)
 VALUES
-(1, 1, 'активная', 'При получении', 'Курьером', 7500),
-(2, 2, 'оформлена', 'При получении', 'Самовывоз', 11000),
-(3, 3, 'ожидает подтверждения', 'СБП', 'Курьером', 2200),
-(4, 4, 'отменена', 'Банковская карта', 'Постамат', 1500);
+(1, 1, 'активная', 'При получении', 'Курьером', 7500, 1),
+(2, 2, 'оформлена', 'При получении', 'Самовывоз', 11000, 2),
+(3, 3, 'ожидает подтверждения', 'СБП', 'Курьером', 2200, 1),
+(4, 4, 'отменена', 'Банковская карта', 'Постамат', 1500, 1);
 
 -- Связь корзин и товаров
-INSERT INTO basket_to_products (basket_id, product_id, quantity)
+INSERT INTO baskets_to_products (basket_id, product_id)
 VALUES
-(1, 1, 1),
-(2, 2, 2),
-(3, 3, 1),
-(4, 4, 1);
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4);
