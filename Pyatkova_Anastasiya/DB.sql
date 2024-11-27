@@ -3,18 +3,18 @@
 -- Таблица пользователей
 CREATE TABLE Users (
     user_id INT PRIMARY KEY,
-    user_name VARCHAR(255),
-    email VARCHAR(255),
-    phone_number VARCHAR(255),
-    address VARCHAR(255)
+    user_name VARCHAR,
+    email VARCHAR,
+    phone_number VARCHAR,
+    address VARCHAR
 );
 
 -- Таблица продуктов
 CREATE TABLE Products (
     product_id INT PRIMARY KEY,
-    product_name VARCHAR(255),
+    product_name VARCHAR,
 	description TEXT,
-    price DECIMAL(10, 2),
+    price DECIMAL,
     available_stock INT
 );
 
@@ -22,15 +22,12 @@ CREATE TABLE Products (
 CREATE TABLE Orders (
     order_id INT PRIMARY KEY,
     user_id INT,
-    order_name VARCHAR(255),
+    order_name VARCHAR,
 	main_order INT,
-    order_status VARCHAR(255),
-    total_amount DECIMAL(10, 2),
-    payment_method VARCHAR(255),
-    delivery_address VARCHAR(255),
-	delivery_status VARCHAR(255),
-    delivery_time_start TIMESTAMP,
-    delivery_time_end TIMESTAMP,
+    order_status VARCHAR,
+    total_amount DECIMAL,
+	delivery_status VARCHAR,
+    delivery_date TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
 
@@ -40,7 +37,7 @@ CREATE TABLE Order_Items (
     order_id INT,
     product_id INT,
     quantity INT,
-    price DECIMAL(10, 2),
+    price DECIMAL,
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (product_id) REFERENCES Products(product_id)
 );
@@ -68,11 +65,11 @@ INSERT INTO Users (user_id, user_name, email, phone_number, address) VALUES
 -- Создание заказов
 
 -- Создание основного заказа
-INSERT INTO Orders (order_id, user_id, order_name, order_status, total_amount, payment_method, delivery_address, delivery_time_start, delivery_time_end, delivery_status) VALUES
-(121253, 1, 'Основной заказ', 'в процессе сборки', 300, 'карта', 'Минская 3ж', '2024-11-27 21:00:00', '2024-11-27 21:30:00','В процессе сборки'),
-(121257, 1, 'Основной заказ', 'передан на доставку', 300, 'карта', 'Минская 2ж', '2024-11-27 21:00:00', '2024-11-27 21:30:00', 'В процессе доставки'),
-(121258, 1, 'Основной заказ', 'передан на доставку', 300, 'карта', 'Минская 37ж', '2024-11-27 21:00:00', '2024-11-27 21:30:00','В процессе доставки'),
-(121259, 1, 'Основной заказ', 'передан на доставку', 300, 'карта', 'Минская 7ж', '2024-11-27 21:00:00', '2024-11-27 21:30:00', 'В процессе доставки');
+INSERT INTO Orders (order_id, user_id, order_name, order_status, total_amount, delivery_date,  delivery_status) VALUES
+(121253, 1, 'Основной заказ', 'в процессе сборки', 300, '2024-11-27 21:00:00', 'В процессе сборки'),
+(121257, 1, 'Основной заказ', 'передан на доставку', 300, '2024-11-27 21:00:00', 'В процессе доставки'),
+(121258, 1, 'Основной заказ', 'передан на доставку', 300, '2024-11-27 21:00:00', 'В процессе доставки'),
+(121259, 1, 'Основной заказ', 'передан на доставку', 300, '2024-11-27 21:00:00','В процессе доставки');
 
 -- Заполнение товаров в основной заказ
 INSERT INTO Order_Items (order_item_id, order_id, product_id, quantity, price) VALUES
@@ -81,8 +78,8 @@ INSERT INTO Order_Items (order_item_id, order_id, product_id, quantity, price) V
 (3, 121253, 3, 1, 100);  -- Груша сезонная
 
 -- Создание дополнительного заказа
-INSERT INTO Orders (order_id, user_id, order_name, order_status, total_amount, payment_method, delivery_address, delivery_time_start, delivery_time_end, main_order) VALUES
-(121253 + 1000, 1, 'Дополнительный заказ', 'в процессе сборки', 500, 'карта', 'Минская 3ж', '2024-11-27 22:00:00', '2024-11-27 23:00:00', 121253);
+INSERT INTO Orders (order_id, user_id, order_name, order_status, total_amount, delivery_date, main_order) VALUES
+(121253 + 1000, 1, 'Дополнительный заказ', 'в процессе сборки', 500, '2024-11-27 22:00:00', 121253);
 
 -- Заполнение позиций дополнительного заказа
 INSERT INTO Order_Items (order_item_id, order_id, product_id, quantity, price) VALUES
@@ -99,5 +96,4 @@ SELECT o.order_id,
 	   o.delivery_status,
        main_order.order_id AS main_order_id
 FROM Orders o
-LEFT JOIN Orders main_order ON o.main_order = main_order.order_id;  -- Связь с основным заказом
-
+LEFT JOIN Orders main_order ON o.main_order = main_order.order_id;  
