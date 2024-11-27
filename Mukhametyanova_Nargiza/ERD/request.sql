@@ -3,8 +3,8 @@ SELECT
     products.product_name AS Товары,
     best_actions.action_name AS Акции,
     baskets.basket_status AS Статус_корзины,
-    baskets.basket_quantity AS Количество_товаров,
-    (products.product_cost * baskets.basket_quantity) AS Стоимость_товаров,
+    baskets.basket_quantity AS Количество_товаров, -- Используем basket_quantity из таблицы baskets
+    (products.product_cost * baskets.basket_quantity) AS Стоимость_товаров, -- Умножаем на basket_quantity
     baskets.basket_cost AS Общая_стоимость_корзины
 FROM 
     baskets

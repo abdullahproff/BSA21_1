@@ -66,7 +66,7 @@ CREATE TABLE baskets (
     basket_payment VARCHAR(50),
     basket_delivery VARCHAR(50),
     basket_cost INT,
-    basket_quantity INT NOT NULL,
+    basket_quantity INT NOT NULL, -- Указываем количество товаров в корзине
     FOREIGN KEY (buyer_id) REFERENCES buyers(buyer_id)
 );
 
