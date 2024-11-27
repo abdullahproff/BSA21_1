@@ -13,7 +13,7 @@ CREATE TABLE Users (
 CREATE TABLE Products (
     product_id INT PRIMARY KEY,
     product_name VARCHAR,
-	description TEXT,
+    description TEXT,
     price DECIMAL,
     available_stock INT
 );
