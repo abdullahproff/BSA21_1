@@ -1,0 +1,117 @@
+DROP TABLE IF EXISTS Users, Characters, Spells, Connections, Descriptions CASCADE;
+
+CREATE TABLE Users (
+  User_id SERIAL PRIMARY KEY NOT NULL,
+  User_email VARCHAR(40)
+);
+
+CREATE TABLE Characters (
+  Character_id SERIAL PRIMARY KEY NOT NULL,
+  User_id INT,
+  FOREIGN KEY (User_id) REFERENCES Users(User_id) ON DELETE CASCADE,
+  -- FOREIGN KEY (Spell__id) REFERENCES Spells(Spell_id) ON DELETE CASCADE,
+  Character_name VARCHAR(100)
+);
+
+CREATE TABLE Spells (
+  Spell_id SERIAL PRIMARY KEY NOT NULL,
+  Spell_name VARCHAR(40)
+  -- FOREIGN KEY (User_id) REFERENCES Users(User_id) ON DELETE CASCADE,
+  -- FOREIGN KEY (Spell_id) REFERENCES Spells(Spell_id) ON DELETE CASCADE,
+  -- UNIQUE (Spell_id, Article_id)
+);
+
+CREATE TABLE Connections (
+    Connection_id INT PRIMARY KEY NOT NULL,
+    Character_id INT,
+    Spell_id INT,
+    UNIQUE (Character_id, Spell_id),
+    FOREIGN KEY (Character_id) REFERENCES Characters(Character_id),
+    FOREIGN KEY (Spell_id) REFERENCES Spells(Spell_id)
+);
+
+CREATE TABLE Descriptions (
+  Article_id SERIAL PRIMARY KEY NOT NULL,
+  Article_spellrange VARCHAR(20),
+  Article_spellduration TEXT,
+  Article_spellshape VARCHAR(20),
+  Article_spellcondition TEXT,
+  Article_spellpoint INT,
+  Article_spellarticle TEXT,
+  Spell_id INT,
+  FOREIGN KEY (Spell_id) REFERENCES Spells(Spell_id)
+--   UNIQUE (Spell_id, Article_id)
+);
+
+INSERT INTO Users (User_id, User_email)
+VALUES 
+  (1, 'alex-a-nyan@yandex.ru'),
+  (2, 'myfakeaccount@fake.com'),
+  (3, 'angelinaer1965@mail.ru');
+
+INSERT INTO Characters (Character_id, User_id, Character_name) -- INSERT INTO Characters (Character_id, User_id, Spell_id, Character_name)
+VALUES 
+  (1, 1, 'Фламрига Финис'),
+  (2, 1, 'Келгот Калас Аркхеннельд'),
+  (3, 1, 'Яков Монах'),
+  (4, 2, 'Борис Златов');
+
+INSERT INTO Spells (Spell_id, Spell_name) VALUES
+  (1, 'Пылающий шар'),
+  (2, 'Ледяной кинжал'),
+  (3, 'Фокусы'),
+  (4, 'Туманный шаг'),
+  (5, 'Воскрешение'),
+  (6, 'Гадание'),
+  (7, 'Защита от оружия');
+
+INSERT INTO Connections (Connection_id, Character_id, Spell_id) VALUES
+  (1, 1, 1),
+  (2, 1, 2),
+  (3, 1, 4),
+  (4, 2, 1),
+  (5, 2, 2),
+  (6, 2, 3),
+  (7, 2, 4),
+  (8, 2, 5),
+  (9, 2, 6),
+  (10, 3, 5),
+  (11, 3, 6),
+  (12, 3, 7);
+  
+INSERT INTO Descriptions (Article_id, Article_spellrange, Article_spellduration, Article_spellshape, Article_spellcondition, Article_spellpoint, Article_spellarticle) VALUES
+  (1, 60, '1 действие', 'сфера', 'Концентрация', 2,
+  'В свободном пространстве на ваш выбор в пределах дистанции появляется шар из огня с диаметром 5 футов, существующий, пока активно заклинание. Все существа, оканчивающие ход в пределах 5 футов от шара, должны совершать спасбросок Ловкости. Существа получают 2к6 урона огнём при провале или половину этого урона при успехе.'
+        ),
+  (2, 60, '1 действие', 'сфера', 'Мгновенно', 1,
+  'Вы создаёте осколок льда и метаете его в одно существо, находящееся в пределах дистанции заклинания. Совершите по цели дальнобойную атаку заклинанием. При попадании цель получает 1к10 колющего урона. После этого, вне зависимости от попадания или промаха, осколок взрывается. Цель и все существа в пределах 5 футов от места взрыва осколка должны преуспеть в спасброске Ловкости, иначе получат 2к6 урона холодом.'
+        ),
+  (3, 60, '1 час', 'точка', 'без специальных условий', 0,
+  'Это заклинание — небольшой магический трюк, на котором практикуются начинающие заклинатели.'
+        ),
+  (4, 60, '1 бонусное действие', 'на себя', 'Мгновенно', 2,
+  'Окутавшись серебристым туманом, вы телепортируетесь на 30 футов в свободное пространство, видимое вами.'
+        ),
+  (5, 60, '1 час', 'касание', 'бриллианты, стоимостью 1000 ЗМ', 7,
+  'Вы касаетесь существа, мёртвого не больше ста лет, умершего не от старости, и не являющегося нежитью. Если его душа свободна и согласна, цель возвращается к жизни с полными хитами. Это заклинание нейтрализует все яды и исцеляет немагические болезни, бывшие у существа в момент смерти. Однако это заклинание не снимает магические болезни, проклятья и подобные эффекты; если их не снять до накладывания этого заклинания, они снова начнут действовать, когда существо оживёт. Это заклинание исцеляет все раны и восстанавливает отсутствующие части тела.'
+        ),
+  (6, 60, '1 минута', 'на себя', '25% шанс провала', 2,
+  'Подбрасывая инкрустированные камнями палочки, драконьи кости, раскладывая карты или используя другие инструменты для ворожбы, вы получаете знамение от иномировой сущности о результатах особого действия, которое вы планируете совершить в течение следующих 30 минут. Заклинание не принимает в расчёт обстоятельства, способные изменить исход, такие как накладывание дополнительных заклинаний или потерю или обретение спутников.'
+        ),
+  (7, 60, '1 раунд', 'на себя', 'без специальных условий', 0,
+  'Вы протягиваете руку и рисуете в воздухе ограждающий знак. Вы получаете до конца своего следующего хода сопротивление к дробящему, колющему и рубящему урону, причинённому атаками оружием.'
+        );
+
+SELECT * FROM Users;
+SELECT * FROM Characters;
+SELECT * FROM Spells;
+SELECT * FROM Connections;
+
+SELECT connection_id, character_name, spell_name
+FROM Connections l
+JOIN 
+    Characters c ON c.Character_id = l.Character_id
+JOIN 
+    Spells s ON s.Spell_id = l.Spell_id;
+
+SELECT * FROM Descriptions;
