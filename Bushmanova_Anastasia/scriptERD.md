@@ -1,24 +1,33 @@
--- Создание таблицы пользователей
+-- Создание таблицы users
 CREATE TABLE users (
-    user_id SERIAL PRIMARY KEY,
-    login varchar
+    user_id INT PRIMARY KEY,
+    login VARCHAR NOT NULL,
+    favorite_item_id INT
 );
 
--- Создание таблицы товаров
+-- Создание таблицы items
 CREATE TABLE items (
-    item_id SERIAL PRIMARY KEY,
-    item_name varchar,
-    item_description text,
-    price decimal
+    item_id INT PRIMARY KEY,
+    item_name VARCHAR NOT NULL,
+    item_desc TEXT,
+    price DECIMAL
 );
 
--- Создание таблицы избранных товаров
+-- Создание таблицы favorite_items
 CREATE TABLE favorite_items (
-    favorite_item_id SERIAL PRIMARY KEY,
-    date_add date,
-    user_id int,
-    item_id int,
-    CONSTRAINT fk_favorite_items_users FOREIGN KEY (user_id) REFERENCES users (user_id),
-    CONSTRAINT fk_favorite_items_items FOREIGN KEY (item_id) REFERENCES items (item_id),
-    CONSTRAINT unique_user_item UNIQUE (user_id, item_id) -- Уникальная пара user_id и item_id
+    favorite_item_id INT PRIMARY KEY,
+    date_add TIMESTAMP WITH TIME ZONE,
+    user_id INT,
+    item_id INT,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (item_id) REFERENCES items(item_id)
 );
+
+-- Очистка данных и удаление таблиц
+DELETE FROM favorite_items;
+DELETE FROM items;
+DELETE FROM users;
+
+DROP TABLE IF EXISTS favorite_items;
+DROP TABLE IF EXISTS items;
+DROP TABLE IF EXISTS users;
