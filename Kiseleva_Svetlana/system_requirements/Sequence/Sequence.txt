@@ -1,0 +1,31 @@
+@startuml
+
+autonumber
+
+actor User as User
+participant "MA" as Front
+participant "Backend" as Backend
+database "DB" as Server
+
+activate User
+User -> Front: Нажать на иконку выбора стикеров
+
+activate Front
+Front -> Front: Отобразить всплывающее окно выбора стикеров
+User -> Front: Клик по стикеру
+Front -> Backend: HTTP-запрос на отправку стикера
+
+activate Backend
+Backend -> Server: Запрос данных стикера
+
+activate Server
+Server --> Backend: Ответ с данными стикера
+deactivate Server
+
+Backend --> Front: Возвращает JSON с подтверждением
+deactivate Backend
+Front -> User: Отображает отправленный стикер
+deactivate Front
+deactivate User
+
+@enduml
