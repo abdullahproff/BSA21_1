@@ -1,4 +1,4 @@
-Drop Table Users,Groups;
+
 CREATE TABLE Users (
     name VARCHAR(255) PRIMARY KEY,
     groups JSONB,  -- Массив имен групп, хранится в формате JSONB
