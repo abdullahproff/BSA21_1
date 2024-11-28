@@ -22,7 +22,7 @@ DataBase --> Backend: Cписок стикеров
 deactivate DataBase
 
 Backend --> Frontend: Ответ с данными стикеров JSON
-Frontend -> Frontend: Отобразить всплывающее окно выбора стикеров
+Frontend -> User: Отобразить всплывающее окно выбора стикеров
 User -> Frontend: Клик по стикеру
 Frontend -> Backend: HTTP запрос на отправку стикера
 Backend -> Backend: Сохранение информации о стикере
