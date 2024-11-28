@@ -11,22 +11,25 @@ activate User
 User -> Frontend: Нажать на иконку выбора стикеров
 
 activate Frontend
-Frontend -> Frontend: Отобразить всплывающее окно выбора стикеров
-User -> Frontend: Клик по стикеру
-Frontend -> Backend: HTTP-запрос на отправку стикера
+Frontend -> Backend: HTTP запрос списка стикеров
 
 activate Backend
 Backend -> Backend: Валидация запроса
-Backend -> DataBase: Запрос данных стикера
+Backend -> DataBase: SQL запрос списка стикеров
 
 activate DataBase
-DataBase --> Backend: Ответ с данными стикера
+DataBase --> Backend: Cписок стикеров
 deactivate DataBase
 
-Backend --> Frontend: Возвращает JSON с подтверждением
+Backend --> Frontend: Ответ с данными стикеров JSON
+Frontend -> Frontend: Отобразить всплывающее окно выбора стикеров
+User -> Frontend: Клик по стикеру
+Frontend -> Backend: HTTP запрос на отправку стикера
+Backend -> Backend: Сохранение информации о стикере
+Backend --> Frontend: Ответ о подтверждение отправки JSON
 deactivate Backend
-Frontend -> User: Отображает отправленный стикер
+
+Frontend -> User: Отобразить отправленный стикер
 deactivate Frontend
-deactivate User
 
 @enduml
