@@ -1,0 +1,22 @@
+-- Удаление данных из таблицы продуктов
+DELETE FROM products WHERE product_id IN (1, 2, 3, 4);
+
+-- Удаление данных из таблицы размеров
+DELETE FROM sizes WHERE size_id IN (10, 11, 12, 13, 14);
+
+-- Удаление данных из таблицы цветов
+DELETE FROM colours WHERE colour_id IN (1, 2, 3, 4, 5, 6);
+
+-- Удаление таблиц
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS sizes;
+DROP TABLE IF EXISTS colours;
+
+-- Удаление типов данных
+DROP TYPE IF EXISTS gender_size_type;
+DROP TYPE IF EXISTS clothing_size_chart_type;
+DROP TYPE IF EXISTS size_type;
+DROP TYPE IF EXISTS category_type;
+DROP TYPE IF EXISTS season_type;
+DROP TYPE IF EXISTS style_type;
+DROP TYPE IF EXISTS colour_type;
