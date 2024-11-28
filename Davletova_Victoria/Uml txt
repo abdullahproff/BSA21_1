@@ -1,0 +1,25 @@
+@startuml
+
+skin rose
+
+autonumber
+
+actor User
+participant MA
+participant Server
+Database DB
+activate User
+User -> MA: Открыть "История прослушивания"
+activate MA
+MA -> Server: Запрос истории (GET /listening_history?user_id=123)
+activate Server
+Server -> Server: Валидация запроса 
+Server -> DB: SELECT * FROM listening_histories WHERE user_id=123 ORDER BY listening_date DESC
+activate DB
+DB --> Server: Результаты истории прослушивания
+deactivate DB
+Server --> MA: JSON с данными треков
+deactivate Server
+MA --> User: Отображение истории треков
+deactivate MA
+@enduml
