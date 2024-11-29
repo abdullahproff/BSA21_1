@@ -119,7 +119,7 @@ VALUES (1),
        (3);
 
 
--- ФУНКЦИЯ ПРОВЕРКИ АКТУАЛЬНОСТИ РЕЗЕРВА
+-- ПРОЦЕДУРА ПРОВЕРКИ АКТУАЛЬНОСТИ РЕЗЕРВА
 CREATE OR REPLACE PROCEDURE status_check(p_id INT, wh_id INT)
 AS
 $$
