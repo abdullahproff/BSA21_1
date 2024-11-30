@@ -1,0 +1,35 @@
+@startuml
+
+skin rose
+
+autonumber
+
+actor User
+participant "Mobile App" as App
+participant "Backend" as Backend
+database "Database" as DB
+
+activate User
+User -> App : Нажимает на иконку "плюс" 
+
+activate App
+App -> App : Открывает страницу выбора фото
+App --> User : Показывает всплывающее окно с запросом доступа к галерее 
+User -> App : Предоставляет доступ 
+App -> App : Открывает галерею
+User -> App : Пользователь выбирает фото
+App -> Backend : Приложение отправляет HTTP-запрос на сервер с выбранным фото
+
+activate Backend
+Backend -> DB : Сохраняет фото в базе данных 
+
+activate DB
+DB --> Backend : Подтверждение сохранения
+deactivate DB
+Backend --> App : возвращает URL сохраненного аватара в формате JSON
+deactivate Backend
+App -> App : Закрывает вкладку галереи 
+deactivate App
+App --> User : Обновляет фото профиля на первоначальной странице
+deactivate User
+@enduml
