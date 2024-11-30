@@ -8,6 +8,7 @@ CREATE TABLE "image" (
     id SERIAL PRIMARY KEY,
     upload_date DATE NOT NULL,
     user_id INT NOT NULL,
+    path TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES "user"(id) ON DELETE CASCADE
 );
