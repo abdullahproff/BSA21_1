@@ -121,10 +121,10 @@ LIMIT 1;
 --Посмотреть таблицу с созданными поездками
 SELECT * FROM Trips;
 
---Посмотреть таблицу с автомобилями, которые находятся в г. Казань
+--Посмотреть таблицу с автомобилями, которые находятся в г. Москва
 SELECT * 
 FROM Cars
-WHERE last_adress LIKE '%Казань%';
+WHERE last_adress LIKE '%Москва%';
 
 --Посмотреть все доступные автомобили для пользователя Алексей Голубкин
 SELECT c.*
@@ -134,7 +134,3 @@ WHERE u.user_name = 'Алексей Голубкин'
   AND c.is_reserved = false;
  
  
-
-drop TABLE Trips
-drop TABLE Cars 
-drop TABLE Users
