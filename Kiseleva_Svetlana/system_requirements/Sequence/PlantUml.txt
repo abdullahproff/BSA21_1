@@ -3,7 +3,7 @@
 autonumber
 
 actor User as User
-participant "MA" as Frontend
+participant "Frontend" as Frontend
 participant "Backend" as Backend
 database "DB" as DataBase
 
@@ -11,25 +11,35 @@ activate User
 User -> Frontend: Нажать на иконку выбора стикеров
 
 activate Frontend
-Frontend -> Backend: HTTP запрос списка стикеров
+Frontend -> Backend: GET /stickers (Запрос списка стикеров)
 
 activate Backend
 Backend -> Backend: Валидация запроса
 Backend -> DataBase: SQL запрос списка стикеров
 
 activate DataBase
-DataBase --> Backend: Cписок стикеров
+DataBase --> Backend: Список стикеров
 deactivate DataBase
 
-Backend --> Frontend: Ответ с данными стикеров JSON
-Frontend -> User: Отобразить всплывающее окно выбора стикеров
-User -> Frontend: Клик по стикеру
-Frontend -> Backend: HTTP запрос на отправку стикера
-Backend -> Backend: Сохранение информации о стикере
-Backend --> Frontend: Ответ о подтверждение отправки JSON
+Backend --> Frontend: Ответ с данными стикеров
 deactivate Backend
 
-Frontend -> User: Отобразить отправленный стикер
+Frontend --> User: Отобразить всплывающее окно выбора стикеров
+User -> Frontend: Клик стикера
+
+Frontend -> Backend: POST /messages (Отправка сообщения)
+
+activate Backend
+Backend -> DataBase: Сохранение сообщения
+activate DataBase 
+DataBase --> Backend: Подтверждение сохранения
+deactivate DataBase 
+
+Backend --> Frontend: Ответ с подтверждением отправки
+deactivate Backend
+
+Frontend --> User: Отобразить отправленное сообщение
 deactivate Frontend
+deactivate User
 
 @enduml
