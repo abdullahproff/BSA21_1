@@ -1,0 +1,26 @@
+@startuml
+
+autonumber
+
+actor User
+participant Frontend
+participant Backend
+database DB
+
+activate User
+User -> Frontend: Нажимает кнопку "Добавить"
+activate Frontend
+Frontend -> Backend: Https-запрос на добавление видео в избранное
+activate Backend
+Backend -> Backend: Валидация запроса
+Backend -> DB: SQL запрос на добаваление видео в список "Избранное"\n INSERT INTO favorites (User_id, Video_id, Number_of_Videos)\n VALUES (user_id, video_id, number_of_videos)\n ON CONFLICT (User_id, Video_id) DO NOTHING;                           
+activate DB
+DB --> Backend: Возвращает подтверждение
+deactivate DB
+Backend -> Backend: Формирование json
+Backend --> Frontend: Возвращает json с ответом 
+deactivate Backend
+Frontend --> User: Меняет цвет кнопки на зеленый
+
+
+@enduml
