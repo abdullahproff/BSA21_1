@@ -1,0 +1,63 @@
+@startuml
+
+skin rose
+
+actor User
+participant ProgressiveWebApp
+participant backend
+participant DB
+
+activate User
+
+User -> ProgressiveWebApp: 1.нажимает кнопку "Кадры-Онлайн"
+activate ProgressiveWebApp
+ProgressiveWebApp -> backend: 2.http-запрос на выбор страницы
+activate  backend
+backend ->  backend: 3.валидация запроса
+backend -> DB: 4.SQL-запрос возможность пользования
+activate  DB
+DB --> backend: 5.нет, недоступно
+deactivate  DB
+backend --> ProgressiveWebApp: 6.отобразить окно покупки сервиса
+deactivate  backend
+ProgressiveWebApp -> ProgressiveWebApp: 7.отображает окно покупки сервиса
+deactivate ProgressiveWebApp
+
+User -> ProgressiveWebApp: 8.выбрает период пользования 
+activate ProgressiveWebApp
+ProgressiveWebApp -> backend: 9.http-запрос на выбор страницы
+activate  backend
+backend ->  backend: 10.валидация запроса
+backend -> DB: 11.SQL-запрос возможность пользования
+activate  DB
+DB --> backend: 12.да, разрешено
+deactivate  DB
+backend --> ProgressiveWebApp: 13.отобразить окно настроек
+deactivate  backend
+ProgressiveWebApp -> ProgressiveWebApp: 14.отображает окно настроек
+deactivate ProgressiveWebApp
+
+User -> ProgressiveWebApp: 15.заполняет настройки и нажимает "Применить"
+activate ProgressiveWebApp
+ProgressiveWebApp -> backend: 16.http-запрос сохранить и проверить настройки
+activate  backend
+backend ->  backend: 17.валидация запроса
+backend -> DB: 18.SQL-запрос записать настройки
+activate  DB
+DB --> backend: 19.настройки сохранены
+deactivate  DB
+backend ->  backend: 20.валидация запроса
+backend -> DB: 21.SQL-запрос проверить заполнение настроек
+activate  DB
+DB --> backend: 22.все настройки заполнены
+deactivate  DB
+backend --> ProgressiveWebApp: 23.отобразить стартовое окно
+deactivate  backend
+ProgressiveWebApp -> ProgressiveWebApp: 24.отображает стартовое окно
+deactivate  ProgressiveWebApp
+
+note right of User
+    Сценарий выполнен успешно: Пользователь приступил к работе в сервисе Кадры-Онлайн.
+end note
+
+@enduml
