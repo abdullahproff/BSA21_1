@@ -22,7 +22,9 @@ deactivate DB
 User -> Frontend: Запросить список продуктов
 Frontend -> Backend: GET /products
 Backend -> DB: SELECT * FROM product
+activate DB
 DB --> Backend: Список продуктов
+deactivate DB
 Backend --> Frontend: JSON: продукты
 Frontend --> User: Отобразить список продуктов
 
