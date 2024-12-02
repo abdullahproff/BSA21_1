@@ -14,7 +14,6 @@ activate Frontend
 Frontend -> Backend: Запрос списка стикеров
 
 activate Backend
-Backend -> Backend: Валидация запроса
 Backend -> DataBase: Запрос списка стикеров
 
 activate DataBase
