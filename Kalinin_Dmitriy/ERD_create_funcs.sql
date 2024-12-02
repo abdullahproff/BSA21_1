@@ -76,7 +76,11 @@ DECLARE
 BEGIN
 	IF NOT EXISTS (SELECT l.list_name FROM Lists l WHERE l.user_id = user_id_ AND l.list_name = list_name_) THEN
     	RAISE EXCEPTION 'Списока с таким именем не существует';
-	END IF;	
+	END IF;
+	
+-- 	IF (SELECT l.number_of_items FROM Lists l WHERE l.user_id = user_id_ AND l.list_name = list_name_) = 0 THEN
+--     	RAISE EXCEPTION 'Список пустой';
+-- 	END IF;	
 	
 	RETURN QUERY
 	SELECT s.share_name, s.last_price FROM Shares s
@@ -129,4 +133,69 @@ LANGUAGE plpgsql;
 
 
 SELECT ('Functions created') AS Message;
+
+-------------------------------
+-- Обновление списков раз в день
+
+CREATE OR REPLACE FUNCTION update_lists_every_day()
+RETURNS void AS $$
+BEGIN
+
+	DROP TABLE IF EXISTS temp_list_items;
+	CREATE TEMP TABLE temp_list_items
+	(
+		list_items_id BIGSERIAL PRIMARY KEY,
+		list_id BIGINT NOT NULL,
+		share_id BIGINT NOT NULL
+	-- 	FOREIGN KEY (list_id) REFERENCES Lists(list_id),
+	-- 	FOREIGN KEY (share_id) REFERENCES Shares(share_id)
+	);
+	
+	INSERT INTO temp_list_items(list_id, share_id)
+	(
+		SELECT 
+			l.list_id,  -- Идентификатор списка из таблицы List
+			t.share_id   -- Идентификатор акции
+		FROM 
+			Lists l
+		JOIN 
+			Shares s ON s.issuer_id IN (SELECT issuer_id FROM Issuers WHERE economy_sector_id = l.economy_sector_id)
+		JOIN 
+			Transactions t ON t.share_id = s.share_id
+		WHERE 
+			CAST(t.created_at AS date) = current_date - 1  -- Дата предыдущего торгового дня
+	-- 		CAST(t.created_at AS date) = TO_DATE('2024-11-25', 'YYYY-MM-DD')  -- Дата транзакции
+		GROUP BY 
+			l.list_id, t.share_id
+		HAVING 
+			SUM(t.volume) >= l.daily_turnover_from AND SUM(t.volume) <= l.daily_turnover_to  -- Объем из списка
+			AND l.economy_sector_id = l.economy_sector_id  -- Фильтрация по сектору экономики
+	);
+
+	-- Запись обновленного количества акций в Списки	
+	LOCK TABLE Lists IN SHARE MODE;  -- https://sql-ex.ru/blogs/?/PostgreSQL_kak_obnovlJat_bolshie_tablicy.html
+	UPDATE Lists l
+	SET number_of_items = COALESCE(t.share_count, 0)
+	FROM (
+		SELECT l.list_id, COUNT(t.share_id) AS share_count
+		FROM Lists l
+		LEFT JOIN temp_list_items t ON l.list_id = t.list_id
+		GROUP BY l.list_id
+	) t
+	WHERE l.list_id = t.list_id;
+
+	-- удаление данных в list_items
+	TRUNCATE list_items;
+	-- изменение list_items
+	LOCK TABLE List_items IN SHARE MODE;
+	INSERT INTO List_items
+	SELECT * FROM temp_list_items; -- обратная вставка строк
+
+END; $$
+LANGUAGE plpgsql;
+
+
+
+
+
 
