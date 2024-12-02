@@ -11,11 +11,11 @@ activate User
 User -> Frontend: Нажать на иконку выбора стикеров
 
 activate Frontend
-Frontend -> Backend: GET /stickers (Запрос списка стикеров)
+Frontend -> Backend: Запрос списка стикеров
 
 activate Backend
 Backend -> Backend: Валидация запроса
-Backend -> DataBase: SQL запрос списка стикеров
+Backend -> DataBase: Запрос списка стикеров
 
 activate DataBase
 DataBase --> Backend: Список стикеров
@@ -27,7 +27,7 @@ deactivate Backend
 Frontend --> User: Отобразить всплывающее окно выбора стикеров
 User -> Frontend: Клик стикера
 
-Frontend -> Backend: POST /messages (Отправка сообщения)
+Frontend -> Backend: Отправка сообщения
 
 activate Backend
 Backend -> DataBase: Сохранение сообщения
