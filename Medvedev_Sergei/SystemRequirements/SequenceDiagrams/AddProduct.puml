@@ -1,0 +1,33 @@
+@startuml
+title Добавление товара в Избранное
+skin rose
+autonumber
+
+actor User
+participant MA
+participant backend
+database PostgreSQL
+
+activate User
+User->MA: нажать на кнопку\n"добавить в Избранное"
+
+activate MA
+MA->backend: http-запрос
+
+activate backend
+backend->backend: валидация запроса
+backend->PostgreSQL: SQL-запрос на добавление\
+                     \nстроки в таблицу и проверку успешности вставки\
+                     \nINSERT INTO Favourites VALUES(UserId, ShoesId)\nRETURNING FavouritesId, UserId, ShoesId;
+activate PostgreSQL
+
+PostgreSQL-->backend: ответ успешности вставки
+deactivate PostgreSQL
+backend->backend: создание json
+backend-->MA: json-ответ успеха операции
+deactivate backend
+MA-->User: Отобразить добавленение\nтовара
+deactivate MA
+deactivate User
+
+@enduml

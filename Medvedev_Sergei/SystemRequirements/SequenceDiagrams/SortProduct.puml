@@ -1,0 +1,36 @@
+@startuml
+title Сортировка товаров в Избранном
+skin rose
+autonumber
+
+actor User
+participant MA
+participant backend
+database PostgreSQL
+
+activate User
+User->MA: нажать на кнопку\n"нажать на кнопку Избранное"
+
+activate MA
+MA->backend: http-запрос
+
+activate backend
+backend->backend: валидация запроса
+backend->PostgreSQL: SQL-запрос на извлечение всех товаров в Избранном\
+                     \nSELECT Price, Discount, SaleStatus FROM Shoes WHERE Shoes.ShoesId IN (\
+                     \nSELECT Favourites.ShoesId FROM Favourites WHERE Favourites.userId = 1);\
+                     \nORDER BY Discount DESC; 
+                     
+activate PostgreSQL
+PostgreSQL-->backend: возврат данных о товарах
+deactivate PostgreSQL
+
+backend->backend: создание json
+
+backend-->MA: json-ответ с\nданными о товарах\nи их порядке отображения
+deactivate backend
+MA-->User: Отобразить товары в порядке\nразмера скидкок
+deactivate MA
+deactivate User
+
+@enduml
