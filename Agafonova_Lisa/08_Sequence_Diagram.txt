@@ -1,0 +1,50 @@
+@startuml
+
+skin rose 
+title Дневник питания с аналитикой: Добавление приема пищи
+autonumber
+actor Пользователь as User
+participant "Мобильное приложение" as Frontend
+participant "Сервер" as Backend
+database "База данных" as DB
+
+activate User
+
+User -> Frontend: Нажимает кнопку "Добавить прием пищи"
+activate Frontend
+Frontend -> Backend: POST /add-meal (meal_date, meal_time, meal_type)
+activate Backend
+Backend -> DB: INSERT INTO meal (user_id, meal_date, meal_time, meal_type)
+activate DB
+DB --> Backend: meal_id создан
+deactivate DB
+
+User -> Frontend: Запросить список продуктов
+Frontend -> Backend: GET /products
+Backend -> DB: SELECT * FROM product
+DB --> Backend: Список продуктов
+Backend --> Frontend: JSON: продукты
+Frontend --> User: Отобразить список продуктов
+
+User -> Frontend: Выбрать продукт для приема пищи
+Frontend -> Backend: POST /add-meal-item (meal_id, product_id, quantity)
+Backend -> DB: INSERT INTO meal_items (meal_id, product_id, quantity)
+
+activate DB
+DB --> Backend: meal_item добавлен
+deactivate DB
+Backend -> DB: Обновить аналитику
+activate DB
+DB -> DB: Пересчитать суммарные калории, белки, жиры, углеводы
+DB --> Backend: Аналитика обновлена
+deactivate DB
+
+
+Backend --> Frontend: Ответ: Успех
+deactivate Backend
+
+Frontend --> User: Прием пищи добавлен, аналитика обновлена
+deactivate Frontend
+deactivate User
+
+@enduml
