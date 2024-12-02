@@ -1,0 +1,30 @@
+@startuml
+
+autonumber
+
+actor Student
+participant WebApp
+
+box "Server" #LightGray
+participant Backend
+database "DB (PgSQL)" as DB
+end box
+
+activate Student
+Student->WebApp: создать задачу
+
+activate WebApp
+WebApp->Backend: https-запрос
+
+activate Backend
+Backend->DB: SQL-запрос на запись данных
+
+activate DB
+DB-->Backend: возвращает набор данных \n(id созданной задачи)
+deactivate DB
+Backend-->WebApp: возвращает json с ответом
+deactivate Backend
+WebApp-->Student: информация \nчто задача создана успешно
+deactivate WebApp
+
+@enduml
