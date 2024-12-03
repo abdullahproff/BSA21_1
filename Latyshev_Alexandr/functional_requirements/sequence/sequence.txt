@@ -1,0 +1,34 @@
+User Story
+Я, как пользователь приложения БериЗаряд, хочу иметь возможность
+знать количество доступных пауэрбанков в постамате, для того 
+чтобы не приходить к постамату если он пустой
+
+
+@startuml Sequence
+
+    Actor Client
+    participant MobileApp
+    participant Back
+    database DataBase
+    autonumber
+    activate Client
+        Client -> MobileApp: выбирает постамат
+
+    activate MobileApp
+        MobileApp -> Back: отправляем http-запрос
+    
+    activate Back
+        Back -> DataBase: отправляем SQL-запрос о количсестве повербанков
+
+    activate DataBase
+        DataBase --> Back: SQL-ответ
+    deactivate DataBase
+
+    Back --> MobileApp: http-ответ по запрошенным данным
+    deactivate Back
+
+    MobileApp --> Client: отображает количество оставшихся повербанков
+    deactivate MobileApp
+    deactivate Client
+
+@enduml
