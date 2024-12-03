@@ -1,0 +1,30 @@
+@startuml
+
+skin rose
+
+autonumber
+
+actor User
+participant "Mobile App (MA)" as MA
+participant "Backend Server" as Server
+participant "Database" as DB
+
+User -> MA: Запрос на получение данных
+activate User
+activate MA
+MA -> Server: HTTP запрос для получения данных (JSON формат)
+activate Server
+Server -> Server: Валидация запроса
+Server -> DB: SQL запрос на получение данных
+activate DB
+DB --> Server: Ответ с данными (табличный формат)
+deactivate DB
+Server --> MA: Ответ с данными (JSON формат)
+deactivate Server
+MA --> User: Отображение данных пользователю
+deactivate MA
+deactivate User
+
+@enduml
+
+
