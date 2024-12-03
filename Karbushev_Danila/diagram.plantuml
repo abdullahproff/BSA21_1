@@ -1,0 +1,40 @@
+@startuml
+autonumber
+actor User
+participant MA
+participant BackEnd
+database DB
+
+activate User
+User -> MA: Открыть настройки - запросить список виджетов
+activate MA
+MA -> BackEnd: GET api/v1/widgets
+activate BackEnd
+
+BackEnd -> BackEnd: Верификация пользователя/проверка токена
+BackEnd -> DB: SQL запрос 
+activate DB
+DB --> BackEnd: JSON {"widgets": [{ "widgetId": 1 , "widgetParams" : {} , "ApiParams" : {} }, ... ], "selectedWidgets" : [] }
+deactivate DB
+
+BackEnd -> BackEnd: Запросы к различным api виджетов и формирование отображаемой информации 
+BackEnd --> MA: JSON {"widgets": [{"widget": "WidgetID", "isActive": 1, "data": {}}, ... ]}
+deactivate BackEnd
+
+User -> MA: Выбор виджета
+MA -> MA: Проверка местоположения/Сохранение настроек виджета (Position_x, Position_y, Width, Height, Color_scheme, Widget_size)
+
+MA -> BackEnd: POST api/v1/put-new-widget
+activate BackEnd
+
+BackEnd -> DB: INSERT INTO SETTINGS (User_id, WIDGET_id, Position_x, Position_y, Width, Height, Color_scheme, Widget_size)
+activate DB
+DB --> BackEnd: Код запроса (setting_id)
+deactivate DB
+
+BackEnd --> MA: Подтверждение сохранения настроек
+deactivate BackEnd
+
+MA -> User: Успешное добавление виджета и сохранение настроек
+deactivate MA
+@enduml
