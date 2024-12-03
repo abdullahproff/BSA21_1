@@ -14,7 +14,7 @@ source "$VENV_PATH/bin/activate"
 
 # Устанавливаем зависимости
 pip install --upgrade pip
-pip install requests streamlit
+pip install requests 
 
 echo "Запуск Streamlit..."
 streamlit run easy.py
