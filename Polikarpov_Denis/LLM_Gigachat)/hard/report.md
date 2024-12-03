@@ -32,15 +32,17 @@ https://developers.sber.ru/studio/
 Дальше вам необходимо добавить Сертификаты Минцифры
 либо по инструкции 
 
-    https://www.gosuslugi.ru/crt
+https://www.gosuslugi.ru/crt
 
 Но можно и воспользоваться и прямой сслыкой на файл .pem
-    https://gu-st.ru/content/Other/doc/russiantrustedca.pem
+
+https://gu-st.ru/content/Other/doc/russiantrustedca.pem
 
 Сохранить файл и прописать путь до него в файле hard.py
 
 Документация по сертификатам
-    https://developers.sber.ru/docs/ru/gigachat/certificates
+
+https://developers.sber.ru/docs/ru/gigachat/certificates
 
 Теперь все должно заработать.
 Наверное.
