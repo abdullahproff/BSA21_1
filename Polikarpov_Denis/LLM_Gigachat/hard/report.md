@@ -1,6 +1,8 @@
 
 Видеозапись с запуском https://youtu.be/WATnBJxmCks
 
+повторная запись экрана с запуском https://youtu.be/Vg9fVIyvNu0
+
 Я делал все под WINDOWS и WSL
 
 запуск с помощью файла
