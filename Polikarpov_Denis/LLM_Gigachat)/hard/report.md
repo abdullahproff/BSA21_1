@@ -22,7 +22,7 @@ https://github.com/ai-forever/gigachain/blob/master/README.md
 
 Для того что бы все корректно работало нужно зарегистрироваться на сайте 
 
-    https://developers.sber.ru/studio/
+https://developers.sber.ru/studio/
 
 создаете Мой GigaChat API
 Берете оттуда Client ID, Scope и генерируете Ключ авторизации
