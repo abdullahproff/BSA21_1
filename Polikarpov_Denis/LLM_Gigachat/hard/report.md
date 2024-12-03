@@ -24,12 +24,16 @@ https://github.com/ai-forever/gigachain/blob/master/README.md
 
 https://developers.sber.ru/studio/
 
-создаете Мой GigaChat API
+создаете Мой GigaChat API 
+
 Берете оттуда Client ID, Scope и генерируете Ключ авторизации
+
 И добавляете все в ваш скрипт
+
 Ключ авторизации действует полчаса.
 
 Дальше вам необходимо добавить Сертификаты Минцифры
+
 либо по инструкции 
 
 https://www.gosuslugi.ru/crt
