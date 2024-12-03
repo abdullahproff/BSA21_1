@@ -18,7 +18,7 @@ pip install requests streamlit langchain-gigachat
 
 
 echo "Запуск Streamlit..."
-streamlit run hard2.py
+streamlit run LLM_Gigachat.py
 
 
 # Деактивируем виртуальное окружение после выполнения
