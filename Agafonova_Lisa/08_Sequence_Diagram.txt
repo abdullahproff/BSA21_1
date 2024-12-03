@@ -1,6 +1,6 @@
 @startuml
 
-skin rose 
+skin rose
 title Дневник питания с аналитикой: Добавление приема пищи
 autonumber
 actor Пользователь as User
@@ -8,44 +8,23 @@ participant "Мобильное приложение" as Frontend
 participant "Сервер" as Backend
 database "База данных" as DB
 
+User -> Frontend: Нажимает "Сохранить прием пищи"
 activate User
-
-User -> Frontend: Нажимает кнопку "Добавить прием пищи"
 activate Frontend
-Frontend -> Backend: POST /add-meal (meal_date, meal_time, meal_type)
+Frontend -> Backend: http-запрос на получение данных
 activate Backend
-Backend -> DB: INSERT INTO meal (user_id, meal_date, meal_time, meal_type)
+Backend -> DB: SQL-запроc сохранение meal-id
 activate DB
-DB --> Backend: meal_id создан
+DB --> Backend: SQL-ответ на сохранение meal-id
 deactivate DB
-
-User -> Frontend: Запросить список продуктов
-Frontend -> Backend: GET /products
-Backend -> DB: SELECT * FROM product
+Backend -> DB: SQL-запрос на обновление аналитики
 activate DB
-DB --> Backend: Список продуктов
+DB -> DB: Пересчет аналитики\nза текущую дату
+DB --> Backend: SQL-ответ с обновленной аналитикой
 deactivate DB
-Backend --> Frontend: JSON: продукты
-Frontend --> User: Отобразить список продуктов
-
-User -> Frontend: Выбрать продукт для приема пищи
-Frontend -> Backend: POST /add-meal-item (meal_id, product_id, quantity)
-Backend -> DB: INSERT INTO meal_items (meal_id, product_id, quantity)
-
-activate DB
-DB --> Backend: meal_item добавлен
-deactivate DB
-Backend -> DB: Обновить аналитику
-activate DB
-DB -> DB: Пересчитать суммарные калории, белки, жиры, углеводы
-DB --> Backend: Аналитика обновлена
-deactivate DB
-
-
-Backend --> Frontend: Ответ: Успех
+Backend --> Frontend: http-ответ на получение данных
 deactivate Backend
-
-Frontend --> User: Прием пищи добавлен, аналитика обновлена
+Frontend --> User: Отображение экрана \nс обновленной аналитикой
 deactivate Frontend
 deactivate User
 
