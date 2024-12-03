@@ -42,32 +42,34 @@ CREATE TABLE best_actions (
     buyer_id INT NOT NULL,
     action_name VARCHAR(255),
     action_description TEXT,
-    action_start DATE,
-    action_end DATE,
+    action_start TIMESTAMPTZ,
+    action_end TIMESTAMPTZ,
     FOREIGN KEY (buyer_id) REFERENCES buyers(buyer_id)
 );
 
 CREATE TABLE products (
     product_id SERIAL PRIMARY KEY,
     category_id INT NOT NULL,
+    buyer_id INT NOT NULL,
     product_name VARCHAR(255) NOT NULL,
     product_photo TEXT,
-    product_cost INT NOT NULL,
+    product_cost NUMERIC(10, 2),
     product_color VARCHAR(50),
     product_size VARCHAR(50),
+    FOREIGN KEY (buyer_id) REFERENCES buyers(buyer_id),
     FOREIGN KEY (category_id) REFERENCES categories(category_id)
 );
 
 -- Таблица корзин
 CREATE TABLE baskets (
     basket_id SERIAL PRIMARY KEY,
-    buyer_id INT NOT NULL,
+    buyer_id INT UNIQUE NOT NULL,
     basket_status basket_status_enum NOT NULL,
     basket_payment VARCHAR(50),
     basket_delivery VARCHAR(50),
-    basket_cost INT,
+    basket_cost NUMERIC(10, 2),
     basket_quantity INT NOT NULL,
-    FOREIGN KEY (buyer_id) REFERENCES buyers(buyer_id)
+    FOREIGN KEY (buyer_id) REFERENCES buyers(buyer_id) ON DELETE CASCADE
 );
 
 -- Промежуточная таблица для связи корзин и товаров
@@ -103,28 +105,28 @@ VALUES
 ('Женщины', 'Красота', 'Для волос');
 
 -- Вставка данных в таблицу products
-INSERT INTO products (category_id, product_name, product_photo, product_cost, product_color, product_size)
+INSERT INTO products (buyer_id, category_id, product_name, product_photo, product_cost, product_color, product_size)
 VALUES
-(1, 'Платье вечернее', 'coctail_dress.jpg', 7500, 'Красный', 'M'),
-(2, 'Зимние ботинки', 'winter_shoes.jpg', 5500, 'Коричневый', '43'),
-(3, 'Зонт с бусами', 'umbrella_wbeads.jpg', 2200, 'Желтый', 'M'),
-(4, 'Лосьон увлажняющий', 'moisturizing_lotion.jpg', 1500, 'Белый', '150ml');
+(1, 1, 'Платье вечернее', 'coctail_dress.jpg', 7500.00, 'Красный', 'M'),
+(2, 2, 'Зимние ботинки', 'winter_shoes.jpg', 5500.50, 'Коричневый', '43'),
+(3, 3, 'Зонт с бусами', 'umbrella_wbeads.jpg', 2200.00, 'Желтый', 'M'),
+(4, 4, 'Лосьон увлажняющий', 'moisturizing_lotion.jpg', 1500.75, 'Белый', '150ml');
 
 -- Вставка данных в таблицу best_actions
 INSERT INTO best_actions (buyer_id, action_name, action_description, action_start, action_end)
 VALUES
-(1, 'Скидки до 50%', 'Скидки на все товары бренда Mossmore до 50%', '2024-11-01', '2024-11-30'),
-(2, 'Зимняя распродажа', 'Скидки на зимнюю одежду до 40%', '2024-12-01', '2024-12-20'),
-(3, 'Чёрная пятница', 'Скидки до 70% на уходовые средства', '2024-11-25', '2024-12-03'),
-(4, 'Всё по 1500', 'Все товары по низкой цене', '2024-12-02', '2024-12-17');
+(1, 'Скидки до 50%', 'Скидки на все товары бренда Mossmore до 50%', '2024-11-01 12:00:00', '2024-11-30 12:00:00'),
+(2, 'Зимняя распродажа', 'Скидки на зимнюю одежду до 40%', '2024-12-01 17:00:00', '2024-12-20 23:00:00'),
+(3, 'Чёрная пятница', 'Скидки до 70% на уходовые средства', '2024-11-25 06:00:00', '2024-12-03 23:59:59'),
+(4, 'Всё по 1500', 'Все товары по низкой цене', '2024-12-02 15:30:00', '2024-12-17 17:10:00');
 
 -- Вставка данных в таблицу baskets
 INSERT INTO baskets (buyer_id, basket_status, basket_payment, basket_delivery, basket_cost, basket_quantity)
 VALUES
-(1, 'активная', 'При получении', 'Курьером', 7500, 1),
-(2, 'оформлена', 'При получении', 'Самовывоз', 11000, 2),
-(3, 'ожидает подтверждения', 'СБП', 'Курьером', 2200, 1),
-(4, 'отменена', 'Банковская карта', 'Постамат', 1500, 1);
+(1, 'активная', 'При получении', 'Курьером', 7500.00, 1),
+(2, 'оформлена', 'При получении', 'Самовывоз', 11001.00, 2),
+(3, 'ожидает подтверждения', 'СБП', 'Курьером', 2200.00, 1),
+(4, 'отменена', 'Банковская карта', 'Постамат', 1500.75, 1);
 
 -- Вставка данных в таблицу baskets_to_products
 INSERT INTO baskets_to_products (basket_id, product_id)
