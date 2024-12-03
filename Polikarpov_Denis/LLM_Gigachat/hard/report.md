@@ -7,16 +7,13 @@
 
 запуск с помощью файла
 
-    gigachain.sh
+    LLM_Gigachat.sh
 
 Запускаем файл, он создает окружение для запуска скрипта, скачивает нужные библиотеки 
 
     pip install --upgrade pip
-    pip install requests streamlit
+    pip install requests streamlit langchain-gigachat
 
- другие нужные у нас уже должны быть установлены или их можно самим добавить сюда
-
-    pip install langchain-gigachat
 
 Ссылка на документацмию 
 
@@ -44,7 +41,7 @@ https://www.gosuslugi.ru/crt
 
 https://gu-st.ru/content/Other/doc/russiantrustedca.pem
 
-Сохранить файл и прописать путь до него в файле hard.py
+Сохранить файл и прописать путь до него в файле LLM_Gigachat.py
 
 Документация по сертификатам
 
