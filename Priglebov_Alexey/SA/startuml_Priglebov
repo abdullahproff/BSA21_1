@@ -1,0 +1,27 @@
+@startuml
+
+autonumber
+
+actor User
+participant Frontend
+participant Backend
+database DB
+
+activate User
+User -> Frontend: Устанавливает желаемый диапазон цен и нажимает кнопку "Сохранить"
+activate Frontend
+Frontend -> Backend: HTTP-запрос на сохранение установленного диапазона цен
+activate Backend
+Backend -> Backend: Валидация запроса
+Backend -> DB: SQL-запрос на сохранение диапазона цен
+activate DB
+DB --> Backend: Возвращает подтверждение
+deactivate DB
+Backend --> Frontend: HTTP-ответ на запрос по сохранению диапазона цен 
+deactivate Backend
+Frontend --> User: Отображает экран поиска недвижимости с установленным диапазоном цен
+
+deactivate Frontend
+deactivate User
+
+@enduml
