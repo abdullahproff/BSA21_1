@@ -1,0 +1,26 @@
+@startuml
+
+skin rose
+
+autonumber
+
+actor User
+participant MA
+participant backend
+database DB
+
+activate User
+User->MA: Клиент выбирает игредиенты для поиска
+activate MA
+MA->backend: http-запрос на получение данных
+activate backend
+backend->DB: SQL-запрос на получение данных
+activate DB
+DB-->backend: SQL-ответ
+deactivate DB
+backend-->MA: http-ответ на запрос о получении данных
+deactivate backend
+MA-->User: Отображение экрана с количеством найденных продуктов
+deactivate MA
+
+@enduml
