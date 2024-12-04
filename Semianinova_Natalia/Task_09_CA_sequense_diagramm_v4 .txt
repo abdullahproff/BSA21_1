@@ -1,0 +1,29 @@
+@startuml
+
+skin rose
+
+actor User
+participant ProgressiveWebApp
+participant backend
+participant DB
+
+activate User
+
+User -> ProgressiveWebApp: 1.заполняет настройки и нажимает "Применить"
+activate ProgressiveWebApp
+ProgressiveWebApp -> backend: 2.http-запрос сохранить и проверить настройки
+activate  backend
+backend -> DB: 3.SQL-запрос записать и проверить все настройки
+activate  DB
+DB --> backend: 4.все настройки заполнены
+deactivate  DB
+backend --> ProgressiveWebApp: 5.отобразить стартовое окно
+deactivate  backend
+ProgressiveWebApp --> User: 6.отображает стартовое окно
+deactivate  ProgressiveWebApp
+deactivate User
+note right of User
+    Сценарий выполнен успешно: Пользователь приступил к работе в сервисе Кадры-Онлайн.
+end note
+
+@enduml
