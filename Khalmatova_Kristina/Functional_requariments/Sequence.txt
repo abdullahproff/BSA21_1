@@ -1,0 +1,31 @@
+@startuml music
+
+skin rose
+autonumber
+
+actor User
+
+participant MA
+participant backend
+database DB
+
+activate User
+User->MA: Нажать кнопку "like"
+activate MA
+MA->backend: Отправить http-запрос
+activate backend
+backend->DB: Отправить SQL запрос на изменение данных
+activate DB
+DB-->backend:Вернуть ответ
+deactivate DB
+backend->DB: Отправить SQL запрос на получение данных
+activate DB
+DB-->backend: Вернуть набор данных
+deactivate DB
+backend-->MA: Вернуть json c ответом
+deactivate backend
+MA-->User: Обновить интерфейс
+deactivate MA
+
+@enduml
+
