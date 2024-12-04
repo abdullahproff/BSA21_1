@@ -10,14 +10,9 @@ participant "Backend" as Backend
 database "Database" as DB
 
 activate User
-User -> App : Нажимает на иконку "плюс" 
+User -> App : Пользователь выбирает фото
 
 activate App
-App -> App : Открывает страницу выбора фото
-App --> User : Показывает всплывающее окно с запросом доступа к галерее 
-User -> App : Предоставляет доступ 
-App -> App : Открывает галерею
-User -> App : Пользователь выбирает фото
 App -> Backend : Приложение отправляет HTTP-запрос на сервер с выбранным фото
 
 activate Backend
@@ -30,6 +25,6 @@ Backend --> App : возвращает URL сохраненного аватар
 deactivate Backend
 App -> App : Закрывает вкладку галереи 
 deactivate App
-App --> User : Обновляет фото профиля на первоначальной странице
+App --> User : Обновляет фото профиля
 deactivate User
 @enduml
