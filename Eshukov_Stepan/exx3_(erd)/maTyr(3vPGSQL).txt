@@ -1,0 +1,70 @@
+CREATE DATABASE matyr;
+\c matyr
+
+
+
+
+CREATE TYPE user_status AS ENUM ('пользователь', 'оператор');
+
+
+CREATE TABLE people (
+    id_people SERIAL PRIMARY KEY,
+    name VARCHAR(30),
+    last_name VARCHAR(30),
+    data_reg DATE,
+    status user_status
+);
+
+
+CREATE TABLE conversations (
+    id_conversations SERIAL PRIMARY KEY,
+    time_convers TIMESTAMP,
+    topic VARCHAR(30)
+);
+
+
+CREATE TABLE conv_peop (
+    id_conversations INT REFERENCES conversations(id_conversations),
+    id_people INT REFERENCES people(id_people),
+    PRIMARY KEY (id_conversations, id_people)
+);
+
+
+CREATE TABLE message (
+    id_message SERIAL PRIMARY KEY,
+    id_conv INT REFERENCES conversations(id_conversations),
+    id_people INT REFERENCES people(id_people),
+    time_mess TIMESTAMP,
+    status_mess VARCHAR(30),
+    txt_mess TEXT
+);
+
+
+INSERT INTO people (name, last_name, data_reg, status) VALUES
+('Иван', 'Иванов', '2023-01-15', 'пользователь'),
+('Мария', 'Петрова', '2023-02-22', 'пользователь'),
+('Сергей', 'Сидоров', '2023-01-12', 'оператор');
+
+
+INSERT INTO conversations (time_convers, topic) VALUES
+('2023-01-16 10:05:00', 'тур в Испанию'),
+('2023-02-23 11:20:00', 'вопрос про тур');
+
+
+INSERT INTO conv_peop (id_people, id_conversations) VALUES
+(1, 1),
+(2, 2),
+(3, 1),
+(3, 2);
+
+
+INSERT INTO message (id_conv, time_mess, txt_mess, status_mess,id_people) VALUES
+(1, '2023-01-16 10:05:00', 'Какие достопримечательности будем смотреть во время тура в Испании', 'да',1),
+(2, '2023-01-16 11:20:00', 'Расскажите возможна ли оплата частями ?', 'да',2),
+(1, '2023-01-16 12:35:00', 'Во время тура рассмотрим данные достопримечательности: ...', 'да',3),
+(2, '2023-01-16 12:37:00', 'Да, оплата частями возможна', 'да',3);
+
+
+SELECT * FROM people;
+SELECT * FROM conversations;
+SELECT * FROM message;
