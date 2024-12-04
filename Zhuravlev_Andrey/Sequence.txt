@@ -23,8 +23,8 @@ DB --> Backend : Подтверждение сохранения
 deactivate DB
 Backend --> App : возвращает URL сохраненного аватара в формате JSON
 deactivate Backend
-App -> App : Закрывает вкладку галереи 
-deactivate App
+
 App --> User : Обновляет фото профиля
+deactivate App
 deactivate User
 @enduml
