@@ -3,6 +3,8 @@
 
 повторная запись экрана с запуском https://youtu.be/Vg9fVIyvNu0
 
+повторная запись экрана со звуком https://www.youtube.com/watch?v=0nTdCwW2N8I
+
 Я делал все под WINDOWS и WSL
 
 запуск с помощью файла
