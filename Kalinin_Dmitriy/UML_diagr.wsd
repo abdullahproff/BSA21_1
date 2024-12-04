@@ -1,7 +1,0 @@
-@@startuml
-actor User
-participant Website
-participant Backend
-database DataBase
-activate User
-@@enduml
