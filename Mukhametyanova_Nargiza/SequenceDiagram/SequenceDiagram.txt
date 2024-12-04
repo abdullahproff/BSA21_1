@@ -1,4 +1,5 @@
 @startuml
+
 actor Покупатель as cus #yellow
 participant "Мобильное приложение" as f
 participant Бэкенд as b
