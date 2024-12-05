@@ -14,7 +14,7 @@ activate Student
 Student->WebApp: создать задачу
 
 activate WebApp
-WebApp->Backend: https-запрос
+WebApp->Backend: https-запрос на добавление задачи
 
 activate Backend
 Backend->DB: SQL-запрос на запись данных
@@ -22,9 +22,10 @@ Backend->DB: SQL-запрос на запись данных
 activate DB
 DB-->Backend: возвращает набор данных \n(id созданной задачи)
 deactivate DB
-Backend-->WebApp: возвращает json с ответом
+Backend-->WebApp: возвращает json с ответом \n(Статус 200 ОК)
 deactivate Backend
 WebApp-->Student: информация \nчто задача создана успешно
 deactivate WebApp
+deactivate Student
 
 @enduml
