@@ -11,20 +11,15 @@ database "База данных" as DB
 User -> Frontend: Нажимает "Сохранить прием пищи"
 activate User
 activate Frontend
-Frontend -> Backend: http-запрос на получение данных
+Frontend -> Backend: http-запрос сохранение приема пищи
 activate Backend
-Backend -> DB: SQL-запроc сохранение meal-id
+Backend -> DB: SQL-запроc на сохранение приема пищи
 activate DB
-DB --> Backend: SQL-ответ на сохранение meal-id
+DB --> Backend: SQL-ответ сохранение приема пищи
 deactivate DB
-Backend -> DB: SQL-запрос на обновление аналитики
-activate DB
-DB -> DB: Пересчет аналитики\nза текущую дату
-DB --> Backend: SQL-ответ с обновленной аналитикой
-deactivate DB
-Backend --> Frontend: http-ответ на получение данных
+Backend --> Frontend: http-ответ на сохранение приема пищи
 deactivate Backend
-Frontend --> User: Отображение экрана \nс обновленной аналитикой
+Frontend --> User: Прием пищи успешно сохранен
 deactivate Frontend
 deactivate User
 
