@@ -1,0 +1,25 @@
+@startuml Sequence
+
+skinparam monochrome true
+autonumber
+
+activate User
+User -> MobileApp: Отмечает плей-листы и нажимает кнопку "Готово"
+activate MobileApp
+MobileApp -> Back: Отправляет http запрос
+activate Back
+Back -> DataBase: SQL запрос на изменение данных
+activate DataBase
+DataBase --> Back: Возвращает ответ
+deactivate DataBase
+Back -> DataBase: SQL запрос на получение данных
+activate DataBase
+DataBase --> Back: Возвращает набор данных
+deactivate DataBase
+Back --> MobileApp: Возвращает json с ответом
+deactivate Back
+MobileApp --> User: Обновляет интерфейс
+deactivate MobileApp
+deactivate User
+
+@enduml 
