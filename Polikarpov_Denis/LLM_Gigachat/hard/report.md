@@ -49,6 +49,25 @@ https://gu-st.ru/content/Other/doc/russiantrustedca.pem
 
 https://developers.sber.ru/docs/ru/gigachat/certificates
 
+Для хранения секретов создаем файл 
+
+.streamlit/sekrets.toml
+
+Добавляем туда
+
+```
+# .streamlit/secrets.toml
+
+[authentication]
+AUTH_KEY = ""
+
+[SCOPE]
+scope = "GIGACHAT_API_PERS"
+```
+
+В AUTH_KEY = "" добавим наш Ключ авторизации
+
+
 Теперь все должно заработать.
 Наверное.
 
