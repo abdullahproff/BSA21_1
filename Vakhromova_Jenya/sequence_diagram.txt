@@ -1,0 +1,47 @@
+@startuml
+
+skin rose
+
+autonumber
+
+actor User
+participant MobApp
+participant backend
+database DB
+
+activate User
+User->MobApp: нажимает кнопку фильтра
+activate MobApp
+MobApp-->User: отображает перечень\n фильтров
+User->MobApp: нажимает кнопку "location"
+MobApp-->User: отображает поля\n для ввода значений
+User->MobApp: вводит параметры, \nнажимает кнопку "Apply"
+
+MobApp->backend: валидация параметров фильтрации
+activate backend
+backend-->MobApp: возвращает положительный\n ответ
+deactivate backend
+
+MobApp-->User: отображает перечень\n фильтров
+User->MobApp: нажимает кнопку "Apply"
+
+MobApp->backend: http запрос
+
+activate backend
+backend->backend: валидация запроса
+backend->DB: sql-запрос на получение данных
+
+activate DB
+DB-->backend: возвращает отфильтрованные \nданные по параметрам
+deactivate DB
+
+backend-->MobApp: возвращает json \nс ответом
+deactivate backend
+
+MobApp-->User: отображает отфильтрованных\n фотографов
+deactivate MobApp
+
+deactivate User
+
+
+@enduml
