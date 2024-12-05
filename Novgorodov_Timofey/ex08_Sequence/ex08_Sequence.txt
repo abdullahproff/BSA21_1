@@ -1,5 +1,7 @@
 @startuml
 
+title Создание задачи студентом
+
 autonumber
 
 actor Student
