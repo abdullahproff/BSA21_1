@@ -10,21 +10,9 @@ participant backend
 database DB
 
 activate User
-User->MobApp: нажимает кнопку фильтра
-activate MobApp
-MobApp-->User: отображает перечень\n фильтров
-User->MobApp: нажимает кнопку "location"
-MobApp-->User: отображает поля\n для ввода значений
-User->MobApp: вводит параметры, \nнажимает кнопку "Apply"
-
-MobApp->backend: валидация параметров фильтрации
-activate backend
-backend-->MobApp: возвращает положительный\n ответ
-deactivate backend
-
-MobApp-->User: отображает перечень\n фильтров
 User->MobApp: нажимает кнопку "Apply"
 
+activate MobApp
 MobApp->backend: http запрос
 
 activate backend
