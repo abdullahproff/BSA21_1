@@ -13,18 +13,18 @@ database "DB (PgSQL)" as DB
 end box
 
 activate Student
-Student->WebApp: создать задачу
+Student->WebApp: нажимает кнопку создать задачу
 
 activate WebApp
-WebApp->Backend: https-запрос на добавление задачи
+WebApp->Backend: запрос на добавление задачи
 
 activate Backend
-Backend->DB: SQL-запрос на запись данных
+Backend->DB: создание задачи
 
 activate DB
-DB-->Backend: возвращает набор данных \n(id созданной задачи)
+DB-->Backend: запись прошла успешно
 deactivate DB
-Backend-->WebApp: возвращает json с ответом \n(Статус 200 ОК)
+Backend-->WebApp: задача создана
 deactivate Backend
 WebApp-->Student: информация \nчто задача создана успешно
 deactivate WebApp
