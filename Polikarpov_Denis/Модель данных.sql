@@ -21,10 +21,10 @@ CREATE TABLE AvailableSlots (
     FOREIGN KEY (psychologist_id) REFERENCES Psychologists(id)
 );
 
-CREATE TABLE BookedSlots (
+CREATE TABLE BookedClients (
     id SERIAL PRIMARY KEY,
-    slot_id INTEGER NOT NULL,
-    client_id INTEGER NOT NULL,
+    slot_id INTEGER UNIQUE NOT NULL,
+    client_id INTEGER UNIQUE NOT NULL,
     FOREIGN KEY (slot_id) REFERENCES AvailableSlots(id),
     FOREIGN KEY (client_id) REFERENCES Clients(id)
 );
