@@ -1,0 +1,42 @@
+@startuml T08_Sequence
+
+skin rose
+title [МегаМаркет]: Удаление товара из корзины
+autonumber "<font color=blue><b>"
+
+
+actor Пользователь as User
+participant "Мобильное приложение" as Frontend
+
+box Сервер
+participant "Серверная логика" as Backend
+database "База данных" as DB
+end box
+
+
+activate User
+User->Frontend: Нажимает кнопку "Урна"
+
+activate Frontend
+Frontend->Backend: HTTP-запрос на удаление из Корзины
+
+activate Backend
+Backend->DB: SQL-запрос на удаление из Корзины
+
+activate DB
+DB-->Backend: SQL-ответ на запрос из п.3 (DELETE 1)
+deactivate DB
+
+
+Backend->DB: SQL-запрос на содержимое обновлённой Корзины
+activate DB
+DB-->Backend: SQL-ответ на запрос из п.5
+deactivate DB
+
+Backend-->Frontend: HTTP-ответ с обновлённой Корзиной
+deactivate Backend
+
+Frontend-->User: Отображает обновлённую Корзину
+deactivate Frontend
+
+@enduml
