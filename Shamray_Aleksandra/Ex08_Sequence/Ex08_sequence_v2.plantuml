@@ -1,0 +1,34 @@
+@startuml
+
+skin rose
+
+autonumber
+
+actor User
+participant MA
+participant Backend
+database DB
+
+activate User
+User -> MA: Нажимает кнопку "подключить eSIM"
+
+activate MA
+MA -> Backend: Запрос на возможность создания eSIM
+
+activate Backend
+Backend -> Backend: Валидация
+Backend -> DB: Генерация eSIM-профиля
+
+activate DB
+DB --> Backend: Запись данных eSIM прошла успешно 
+deactivate DB
+
+Backend --> MA: json-response с данными eSIM-профиля  
+deactivate Backend 
+ 
+MA --> User: информация о созданной eSIM 
+deactivate MA 
+ 
+deactivate User 
+
+@enduml
