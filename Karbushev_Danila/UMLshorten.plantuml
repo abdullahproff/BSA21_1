@@ -1,0 +1,27 @@
+@startuml
+autonumber
+actor User
+participant MA
+participant BackEnd
+database DB
+
+activate User
+User -> MA: Выбор виджета
+
+activate MA
+MA -> MA: Проверка логики местоположения виджета
+MA -> BackEnd: http запрос на добавление виджета пользователю
+activate BackEnd
+
+BackEnd->BackEnd: проверка токена
+BackEnd -> DB: SQL запрос на добавление виджета пользователю
+activate DB
+DB --> BackEnd: Код запроса (setting_id)
+deactivate DB
+
+BackEnd --> MA: Подтверждение сохранения настроек
+deactivate BackEnd
+
+MA -> User: Успешное добавление виджета и сохранение настроек
+deactivate MA
+@enduml
