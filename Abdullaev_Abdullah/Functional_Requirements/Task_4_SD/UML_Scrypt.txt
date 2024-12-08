@@ -1,0 +1,33 @@
+@startuml
+
+skin rose
+autonumber
+
+actor Client
+participant MA
+participant BE
+database DB
+
+activate Client
+Client -> MA: Заходит в раздел "Диалоги" и нажимает "Старт"/"Тема"
+
+activate MA
+MA -> BE: Запрос на получение данных урока и инициализирующего аудиосообщения
+
+activate BE
+BE -> BE: Валидация SQL запроса
+BE -> DB: SQL запрос
+
+activate DB
+DB --> BE: SQL ответ
+deactivate DB
+
+BE --> MA: Данные урока и инициализирующее аудиосообщение
+deactivate BE
+
+MA --> Client: Отображение данных урока и инициализирующего аудиосообщения
+deactivate MA
+
+deactivate Client
+
+@enduml
