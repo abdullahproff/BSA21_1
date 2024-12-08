@@ -1,0 +1,27 @@
+@startuml
+
+autonumber
+
+actor User
+participant Frontend
+participant Backend
+database DB
+
+activate User
+User -> Frontend: Нажимает кнопку "Показать объявления"
+activate Frontend
+Frontend -> Backend: HTTP-запрос списка объектов недвижимости
+activate Backend
+Backend -> Backend: Валидация запроса
+Backend -> DB: SQL-запрос списка объектов недвижимости
+activate DB
+DB --> Backend: Возвращает список объектов недвижимости
+deactivate DB
+Backend --> Frontend: HTTP-ответ со списком объектов недвижимости
+deactivate Backend
+Frontend --> User: Отображает список объектов недвижимости
+
+deactivate Frontend
+deactivate User
+
+@enduml
