@@ -1,0 +1,33 @@
+@startuml
+
+skin rose
+
+autonumber
+
+skinparam MaxMessageSize 250
+
+actor User
+participant MA
+participant backend
+participant DB
+
+activate User
+User -> MA : Вводит описание неисправности и подтверждает завершение поездки
+
+activate MA
+MA -> backend : Http-запрос на добавление неисправности
+
+activate backend
+backend -> DB : SQL-запрос на внесение неисправности
+
+activate DB
+DB --> backend : SQL-ответ на запрос внесения неисправности
+deactivate DB
+
+backend --> MA : Http-ответ на запрос добавления неисправности
+deactivate backend
+
+MA --> User : Выводит сообщение о завершении поездки и снятии самоката с линии
+deactivate MA
+
+@enduml
