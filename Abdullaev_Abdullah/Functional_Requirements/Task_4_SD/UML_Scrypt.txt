@@ -1,32 +1,32 @@
 @startuml
 
 skin rose
+
 autonumber
 
 actor Client
-participant MA
-participant BE
-database DB
+participant MobileApp
+participant Backend
+database DataBase
 
 activate Client
-Client -> MA: Заходит в раздел "Диалоги" и нажимает "Старт"/"Тема"
+Client -> MobileApp: Заходит в раздел "Диалоги" и нажимает "Старт"/"Тема"
 
-activate MA
-MA -> BE: Запрос на получение данных урока и инициализирующего аудиосообщения
+activate MobileApp
+MobileApp -> Backend: Запрос на получение данных урока и инициализирующего аудиосообщения
 
-activate BE
-BE -> BE: Валидация SQL запроса
-BE -> DB: SQL запрос
+activate Backend
+Backend -> DataBase: SQL запрос
 
-activate DB
-DB --> BE: SQL ответ
-deactivate DB
+activate DataBase
+DataBase --> Backend: SQL ответ
+deactivate DataBase
 
-BE --> MA: Данные урока и инициализирующее аудиосообщение
-deactivate BE
+Backend --> MobileApp: Данные урока и инициализирующее аудиосообщение
+deactivate Backend
 
-MA --> Client: Отображение данных урока и инициализирующего аудиосообщения
-deactivate MA
+MobileApp --> Client: Отображение данных урока и инициализирующего аудиосообщения
+deactivate MobileApp
 
 deactivate Client
 
