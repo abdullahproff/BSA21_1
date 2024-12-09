@@ -24,16 +24,16 @@ activate Backend
 Backend->DB: SQL-запрос на удаление из Корзины
 
 activate DB
-DB-->Backend: SQL-ответ на запрос из п.3 (DELETE 1)
+DB-->Backend: Результат запроса на удаление (DELETE 1)
 deactivate DB
 
 
 Backend->DB: SQL-запрос на содержимое обновлённой Корзины
 activate DB
-DB-->Backend: SQL-ответ на запрос из п.5
+DB-->Backend: Содержимое обновлённой Корзины
 deactivate DB
 
-Backend-->Frontend: HTTP-ответ с обновлённой Корзиной
+Backend-->Frontend: Содержимое обновлённой Корзины
 deactivate Backend
 
 Frontend-->User: Отображает обновлённую Корзину
