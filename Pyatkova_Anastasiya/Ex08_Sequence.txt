@@ -1,0 +1,45 @@
+@startuml
+
+actor User
+participant MobileApp
+participant backend
+participant DB
+
+autonumber
+
+activate User
+User -> MobileApp: Нажимает "Добавить товар к заказу"
+
+activate MobileApp
+MobileApp-> backend: HTTP-запрос на отображение каталога товаров
+
+activate backend
+backend -> DB: SQL-запрос на получение каталога товаров
+
+activate DB
+DB --> backend: Возвращает данные товаров
+backend -> MobileApp: Отправка данных для отображения каталога
+
+User -> MobileApp: Выбирает товары
+MobileApp -> backend: Отправка данных о выбранных товарах
+backend -> DB: SQL-запрос на добавление товаров в корзину
+
+DB --> backend: Обновление состава корзины
+backend -> MobileApp: Обновление состава корзины
+
+User -> MobileApp: Переход в корзину
+User -> MobileApp: Нажимает "Оплатить добавленные товары"
+
+MobileApp -> backend: Отправка данных об оплате
+backend -> DB: SQL-запрос на подтверждение оплаты и обновление времени доставки
+DB --> backend: Подтверждение оплаты
+backend -> MobileApp: Подтверждение покупки и новое время доставки
+
+MobileApp -> User: Уведомление об успешной оплате и новом времени доставки
+
+deactivate DB
+deactivate backend
+deactivate MobileApp
+deactivate User
+
+@enduml
