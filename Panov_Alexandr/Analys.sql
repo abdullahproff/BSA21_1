@@ -1,3 +1,7 @@
+Drop Table users CASCADE;
+Drop Table groups CASCADE;
+Drop Table Relations CASCADE;
+
 -- Таблица Users
 CREATE TABLE Users (
     name VARCHAR(255) PRIMARY KEY,  -- Имя пользователя (ключ)
@@ -39,5 +43,5 @@ INSERT INTO Relations (user_name, group_name, relation_type)
 VALUES 
     ('Alice45', 'Group A', 'admin'),
     ('Bob45', 'Group A', 'member'),
-    ('Charlie44', 'Group B', 'admin');
-	('Bob45', 'Group B', 'blocked');
+    ('Charlie44', 'Group B', 'admin'),
+    ('Bob45', 'Group B', 'blocked'); 
