@@ -1,6 +1,4 @@
-Drop Table users CASCADE;
-Drop Table groups CASCADE;
-Drop Table Relations CASCADE;
+
 
 -- Таблица Users
 CREATE TABLE Users (
