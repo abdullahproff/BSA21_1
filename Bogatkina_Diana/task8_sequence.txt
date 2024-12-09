@@ -1,0 +1,36 @@
+@startuml
+title Добавление локации в список раздела Избранное
+skin rose
+autonumber
+
+actor User
+participant Frontend
+participant Backend
+database DB
+
+activate User
+User -> Frontend: Нажимает кнопку добавления в избранное
+
+activate Frontend
+Frontend --> User: Выводит окно с доступными списками
+User -> Frontend: Нажмает на кнопку добавления в список
+Frontend -> Backend: https-запрос на добавление локации в список
+
+activate Backend
+Backend -> DB: SQL-запрос на добаваление локации в список
+
+activate DB
+DB --> Backend: Возвращает подтверждение
+deactivate DB
+
+Backend -> Backend: Формирование json
+Backend --> Frontend: Возвращает json с информацией о добавлении
+deactivate Backend
+
+Frontend --> User: Меняет цвет кнопок добавления в список\
+                    \nи добавления в избранное
+
+deactivate Frontend
+deactivate User
+
+@enduml
