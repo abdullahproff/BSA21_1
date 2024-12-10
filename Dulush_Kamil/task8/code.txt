@@ -9,9 +9,13 @@ autonumber
 User -> MA : Нажимает на кнопку "Заказать"
 activate User
 activate MA
-MA -> backend : https запрос  на поиск водителя
+MA -> backend : https-запрос передачи данных заказа
 activate backend
-backend -> backend :  Обработка заказа
+
+backend -> DB: Сохранение данных заказа
+activate DB
+DB --> backend : Успешное сохранение
+deactivate DB
 
 backend --> MA : Возврат json-ответа  с принятым заказом
 deactivate backend
