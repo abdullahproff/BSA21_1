@@ -5,32 +5,7 @@ participant frontend
 participant backend
 database DB
 autonumber
-User -> frontend  : Ввод города и даты
-activate frontend 
-frontend   -> backend :  Передача данных
-activate backend
-backend -> DB : SQL- запрос, \nподбор подходящих вилл
-activate DB
-DB --> backend : Возвращение списка \nподходящих вилл
-deactivate DB
-backend --> frontend  : Возвращает json-ответ
-frontend --> User : Отображение списка вилл
-deactivate backend
-User -> frontend  : Выбор виллы
-frontend   -> backend :  Запрос данных
-activate backend
-backend -> DB : SQL- запрос, получение \nинформации о вилле
-activate DB
-DB --> backend : Возвращение информации
-deactivate DB
-backend --> frontend  : Возвращает json-ответ
-frontend --> User : Отображение информации о вилле
-deactivate backend
-User -> frontend  : Нажимает на кнопку "Бронировать"
-frontend  -> frontend  : Валидация данных формы
-frontend --> User : Отображение формы для \nзаполнения данных
 
-User -> frontend  : Ввод данных бронирования
 User -> frontend  : Нажимает на кнопку "Оформить"
 frontend  -> backend :  Передача данных
 activate backend
