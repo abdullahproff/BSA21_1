@@ -1,0 +1,19 @@
+@startuml
+
+actor user
+
+participant Mobile_Application
+participant beckend
+database BD
+
+autonumber
+
+
+user --> Mobile_Application: Пользователь вводит все данные для создания группы
+Mobile_Application --> beckend: https-запрос к серверу на создание новой группы и связи
+beckend --> BD: SQL-запрос к базе данных на создание и сохранение новой связи и группы
+BD --> beckend: SQL-ответ с результатом операции
+beckend --> Mobile_Application: https-ответ с выводом результата запроса
+Mobile_Application --> user: Приложение выводит пользователю результат операции
+
+@enduml
