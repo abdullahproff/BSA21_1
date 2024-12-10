@@ -1,11 +1,12 @@
 @startuml
 actor User
-activate User
+
 participant frontend 
 participant backend
 database DB
 autonumber
 
+activate User
 User -> frontend  : Нажимает на кнопку "Забронировать"
 activate frontend
 frontend  -> backend : Отправляет данные бронирования 
