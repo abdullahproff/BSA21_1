@@ -1,0 +1,29 @@
+﻿@startuml
+
+
+title "MA - tyr"
+
+
+actor Пользователь as User
+participant       "Мобильное приложение" as MA
+participant       "Сервер" as SC
+database          "База данных" as database
+
+
+User -> MA :       1. Запрос c вопросом
+activate MA
+MA ->  SC :        2. HTTP Запрос на передачу информации    
+activate SC
+SC ->  database:   3. SQL-запрос  на получение данных ответа
+activate database
+
+
+SC  <-  database:  4. Отправка SQL-ответа 
+deactivate database
+MA <-  SC :        5. сформированный HTTP ответ на запрашиваемые данных  
+deactivate SC
+User <- MA :       6. Отображение ответа
+deactivate MA
+
+
+@enduml

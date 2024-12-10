@@ -1,4 +1,3 @@
-
 @startuml
 actor User
 participant frontend 
@@ -6,7 +5,9 @@ participant backend
 database DB
 autonumber
 
+
 User -> frontend  : Нажимает на кнопку "Забронировать"
+activate User
 activate frontend
 frontend  -> backend : Отправляет данные бронирования 
 activate backend
@@ -15,7 +16,8 @@ activate DB
 DB --> backend : Успешное сохранение бронирования
 deactivate DB
 backend --> frontend  :  Возвращает json-ответ
-frontend --> User : Отображение подтверждения бронирования
 deactivate backend
+frontend --> User : Отображение подтверждения бронирования
+
 deactivate frontend 
-@enduml
+deactivate User
