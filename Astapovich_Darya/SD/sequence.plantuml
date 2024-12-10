@@ -7,6 +7,7 @@ database DB
 autonumber
 
 User -> frontend  : Нажимает на кнопку "Забронировать"
+activate frontend
 frontend  -> backend : Отправляет данные бронирования 
 activate backend
 backend -> DB : SQL- запрос, \nсохранение данных бронирования
@@ -17,5 +18,4 @@ backend --> frontend  :  Возвращает json-ответ
 frontend --> User : Отображение подтверждения бронирвания
 deactivate backend
 deactivate frontend 
-@enduml
 @enduml
