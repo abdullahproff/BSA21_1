@@ -1,0 +1,33 @@
+﻿@startuml
+
+
+title "Мобильное приложение тур агенство - поддержка"
+
+
+actor Пользователь as User
+participant       "Мобильное приложение" as MA
+participant       "Сервер" as SC
+database         "База данных" as database
+
+
+
+
+User -> MA :       1. запрос c вопросом
+activate User
+activate MA
+MA ->  SC :        2. http-запрос на передачу информации    
+activate SC
+SC ->  database:   3. sql-запрос  на получение данных ответа
+activate database
+
+
+SC  <--  database:  4. отправка SQL-ответа 
+deactivate database
+MA <--  SC :        5. сформированный http-ответ на запрашиваемые данных  
+deactivate SC
+User <-- MA :       6. отображение ответа
+deactivate MA
+deactivate User
+
+
+@enduml
