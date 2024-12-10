@@ -16,7 +16,8 @@ activate DB
 DB --> backend : Успешное сохранение бронирования
 deactivate DB
 backend --> frontend  :  Возвращает json-ответ
-frontend --> User : Отображение подтверждения бронирования
 deactivate backend
+frontend --> User : Отображение подтверждения бронирования
+
 deactivate frontend 
 deactivate User
