@@ -1,0 +1,22 @@
+@startuml
+actor User
+participant MA 
+participant backend
+database DB
+autonumber
+User -> MA : Ввод адреса и типа машины
+activate MA
+MA  -> backend :  Передача данных
+activate backend
+backend -> DB : SQL- запрос, \nсохранение данных
+activate DB
+DB --> backend : Успешное сохранение
+deactivate DB
+backend --> MA : Подтверждение успешного сохранения
+User -> MA : Нажимает на кнопку "Заказать"
+MA -> backend :  Поиск водителя
+backend -> backend :  Передача заказа водителю
+backend --> MA : Подтверждение принятия заказа
+deactivate backend
+deactivate MA
+@enduml
