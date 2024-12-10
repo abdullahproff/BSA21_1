@@ -1,5 +1,7 @@
 @startuml
 
+title Просмотр покупателем личного раздела Покупки
+
 skin rose
 
 autonumber
