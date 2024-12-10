@@ -1,0 +1,26 @@
+@startuml
+
+autonumber
+
+actor User
+participant Frontend
+participant Backend
+database DB
+
+activate User
+User -> Frontend: Нажимает кнопку "Подтвердить бронь"
+activate Frontend
+Frontend -> Backend: HTTP-запрос на создание брони столика
+activate Backend
+Backend -> DB: SQL-запрос на сохранение брони
+activate DB
+DB --> Backend: Возвращает подтверждение сохранения
+deactivate DB
+Backend --> Frontend: HTTP-ответ с подтверждением брони
+deactivate Backend
+Frontend --> User: Отображает подтверждение успешной брони столика
+
+deactivate Frontend
+deactivate User
+
+@enduml

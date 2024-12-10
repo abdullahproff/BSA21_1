@@ -1,0 +1,27 @@
+@startuml
+
+skin rose 
+
+autonumber 
+
+actor User
+participant MA
+participant backend
+database DB
+
+activate User
+User->MA: Пользователь выбирает планету
+activate MA
+MA->backend: http-запрос
+activate backend
+backend->backend: валидация запроса
+backend->DB: SQL-запрос на получение данных
+activate DB
+DB-->backend: Возвращает набор данных
+deactivate DB 
+backend-->MA: Возвращает json с ответом
+deactivate backend
+MA-->User: Отображается карточка планеты
+deactivate MA
+
+@enduml

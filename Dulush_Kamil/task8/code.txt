@@ -1,0 +1,20 @@
+@startuml
+actor User
+participant MA 
+participant backend
+database DB
+autonumber
+
+
+User -> MA : Нажимает на кнопку "Заказать"
+activate MA
+MA -> backend : https запрос  на поиск водителя
+activate backend
+backend -> backend :  Обработка заказа
+
+backend --> MA : Возврат json-ответа  с принятым заказом
+deactivate backend
+MA --> User : Отображение принятого заказа
+
+deactivate MA
+@enduml

@@ -1,0 +1,30 @@
+@startuml newsequence
+
+autonumber
+
+actor User1
+participant MA
+participant backend
+database DB
+    
+User1 -> MA: Нажимает на кнопку история просмотров\n(выбирает период: 01.12.2024 - 07.12.2024)
+
+activate MA
+MA -> backend: http-запрос с параметрами периода\n(01.12.2024 - 07.12.2024)
+activate backend
+backend -> backend: Валидация запроса и параметров
+backend -> DB: Запрос данных за указанный период
+
+activate DB
+DB -> DB: Обработка запроса и выборка данных
+DB --> backend: Возвращает набор данных
+deactivate DB
+
+backend -> backend: Формирование ответа
+backend --> MA: Возвращает json с ответом
+deactivate backend
+
+MA --> User1: Отображает историю просмотров\nза указанный период
+deactivate MA
+
+@enduml

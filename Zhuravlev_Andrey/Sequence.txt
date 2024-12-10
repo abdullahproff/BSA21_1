@@ -1,0 +1,43 @@
+@startuml
+
+skin rose
+
+autonumber
+
+actor User
+participant "Mobile App" as App
+participant "Backend" as Backend
+database "Database" as DB
+
+activate User
+User -> App : Пользователь выбирает фото
+
+activate App
+App -> Backend : Загрузка фото
+
+activate Backend
+Backend -> Backend : Валидация фото
+Backend -> DB : Сохранение фото
+
+activate DB
+DB --> Backend : Подтверждение сохранения
+Backend -> DB : Сохранение метаданных
+DB --> Backend : Подтверждение сохранения
+
+deactivate DB
+Backend --> App : Возвращает URL
+deactivate Backend
+
+App -> Backend : Запрос для получения актуального профиля
+activate Backend
+Backend -> DB : Получение данных профиля
+activate DB
+DB --> Backend : Возвращает данные профиля
+deactivate DB
+Backend --> App : Возвращает обновленные данные профиля
+deactivate Backend
+
+App --> User : Обновляет фото профиля
+deactivate App
+deactivate User
+@enduml

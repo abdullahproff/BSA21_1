@@ -1,0 +1,47 @@
+@startuml
+
+autonumber
+
+actor User
+participant MobileApp 
+participant backend 
+database DB
+database S3
+
+activate User
+User->MobileApp:Выбирает фото/видео
+
+activate MobileApp
+MobileApp->S3: Загрузка фото/видео
+activate S3
+S3-->MobileApp: Загрузка успешна
+deactivate S3
+MobileApp-->User: Загрузка фото/видео прошла успешно
+
+User->MobileApp: Нажимает кнопку "Отправить отзыв"
+MobileApp->backend: Передача данных об отзыве
+
+activate backend
+backend->DB: Сохранение данных
+
+activate DB
+DB-->backend: ОК, успешно
+deactivate DB
+
+
+
+
+backend-->MobileApp: ОК, успешно
+deactivate backend
+MobileApp-->User: Отображение окна пользователю об успешной отправке отзыва
+deactivate MobileApp
+deactivate User
+
+@enduml
+
+backend-->MobileApp: возвращает json с ответом
+deactivate backend
+MobileApp-->User: Что-то отбражает
+deactivate MobileApp
+
+@enduml

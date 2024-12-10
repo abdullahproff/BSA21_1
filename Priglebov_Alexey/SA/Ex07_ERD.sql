@@ -28,8 +28,8 @@ CREATE TABLE Locations (
 CREATE TABLE Real_estates (
     real_estate_id SERIAL PRIMARY KEY,
     user_id INTEGER REFERENCES Users(user_id) ON DELETE CASCADE,
-    price NUMERIC(15, 2) NOT NULL,
-    area NUMERIC(10, 2) NOT NULL,
+    price DECIMAL(15, 2) NOT NULL,
+    area DECIMAL(10, 2) NOT NULL,
     category_id INTEGER REFERENCES Categories(category_id),
     location_id INTEGER REFERENCES Locations(location_id)
 );

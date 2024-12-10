@@ -1,0 +1,27 @@
+@startuml
+autonumber
+actor User
+participant MA
+participant BackEnd
+database DB
+
+activate User
+User -> MA: Выбор виджета
+
+activate MA
+MA -> MA: Проверка логики местоположения виджета
+MA -> BackEnd: http запрос на добавление виджета пользователю
+activate BackEnd
+
+
+BackEnd -> DB: SQL запрос на добавление виджета пользователю
+activate DB
+DB --> BackEnd: Sql-ответ на запрос добавления виджета
+deactivate DB
+
+BackEnd --> MA: Ответ(код) сервера на запрос
+deactivate BackEnd
+
+MA -> User: Приложение отображает новый виджет на экране.
+deactivate MA
+@enduml

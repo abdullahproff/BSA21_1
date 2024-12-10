@@ -229,17 +229,17 @@
         <mxCell id="-_8xSM2bTVe2GGrsesYv-33" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" parent="-_8xSM2bTVe2GGrsesYv-28" vertex="1">
           <mxGeometry y="47" width="520" height="46" as="geometry" />
         </mxCell>
-        <mxCell id="-_8xSM2bTVe2GGrsesYv-34" value="Real_estate" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="-_8xSM2bTVe2GGrsesYv-33" vertex="1">
+        <mxCell id="-_8xSM2bTVe2GGrsesYv-34" value="Category" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="-_8xSM2bTVe2GGrsesYv-33" vertex="1">
           <mxGeometry width="173" height="46" as="geometry">
             <mxRectangle width="173" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-_8xSM2bTVe2GGrsesYv-35" value="Связь с объектом Недвижимость" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="-_8xSM2bTVe2GGrsesYv-33" vertex="1">
+        <mxCell id="-_8xSM2bTVe2GGrsesYv-35" value="---" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="-_8xSM2bTVe2GGrsesYv-33" vertex="1">
           <mxGeometry x="173" width="174" height="46" as="geometry">
             <mxRectangle width="174" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-_8xSM2bTVe2GGrsesYv-36" value="" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="-_8xSM2bTVe2GGrsesYv-33" vertex="1">
+        <mxCell id="-_8xSM2bTVe2GGrsesYv-36" value="Объект категории" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="-_8xSM2bTVe2GGrsesYv-33" vertex="1">
           <mxGeometry x="347" width="173" height="46" as="geometry">
             <mxRectangle width="173" height="46" as="alternateBounds" />
           </mxGeometry>
@@ -247,7 +247,7 @@
         <mxCell id="-_8xSM2bTVe2GGrsesYv-37" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" parent="-_8xSM2bTVe2GGrsesYv-28" vertex="1">
           <mxGeometry y="93" width="520" height="47" as="geometry" />
         </mxCell>
-        <mxCell id="-_8xSM2bTVe2GGrsesYv-38" value="Category" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="-_8xSM2bTVe2GGrsesYv-37" vertex="1">
+        <mxCell id="-_8xSM2bTVe2GGrsesYv-38" value="" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="-_8xSM2bTVe2GGrsesYv-37" vertex="1">
           <mxGeometry width="173" height="47" as="geometry">
             <mxRectangle width="173" height="47" as="alternateBounds" />
           </mxGeometry>
@@ -325,17 +325,17 @@
         <mxCell id="l0QcBsjx6Cfjp8KnzXEa-2" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" parent="l0QcBsjx6Cfjp8KnzXEa-1" vertex="1">
           <mxGeometry width="520" height="47" as="geometry" />
         </mxCell>
-        <mxCell id="l0QcBsjx6Cfjp8KnzXEa-3" value="" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="l0QcBsjx6Cfjp8KnzXEa-2" vertex="1">
+        <mxCell id="l0QcBsjx6Cfjp8KnzXEa-3" value="Category" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="l0QcBsjx6Cfjp8KnzXEa-2" vertex="1">
           <mxGeometry width="173" height="47" as="geometry">
             <mxRectangle width="173" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="l0QcBsjx6Cfjp8KnzXEa-4" value="Category" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="l0QcBsjx6Cfjp8KnzXEa-2" vertex="1">
+        <mxCell id="l0QcBsjx6Cfjp8KnzXEa-4" value="Связь с объектом&amp;nbsp;&lt;div&gt;Категория&lt;/div&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="l0QcBsjx6Cfjp8KnzXEa-2" vertex="1">
           <mxGeometry x="173" width="174" height="47" as="geometry">
             <mxRectangle width="174" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="l0QcBsjx6Cfjp8KnzXEa-5" value="Категория объекта недвижимости (Дом/ квартира/ ...)" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="l0QcBsjx6Cfjp8KnzXEa-2" vertex="1">
+        <mxCell id="l0QcBsjx6Cfjp8KnzXEa-5" value="Категория недвижимости" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="l0QcBsjx6Cfjp8KnzXEa-2" vertex="1">
           <mxGeometry x="347" width="173" height="47" as="geometry">
             <mxRectangle width="173" height="47" as="alternateBounds" />
           </mxGeometry>
@@ -343,17 +343,17 @@
         <mxCell id="l0QcBsjx6Cfjp8KnzXEa-10" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" parent="l0QcBsjx6Cfjp8KnzXEa-1" vertex="1">
           <mxGeometry y="47" width="520" height="47" as="geometry" />
         </mxCell>
-        <mxCell id="l0QcBsjx6Cfjp8KnzXEa-11" value="" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="l0QcBsjx6Cfjp8KnzXEa-10" vertex="1">
+        <mxCell id="l0QcBsjx6Cfjp8KnzXEa-11" value="Location" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="l0QcBsjx6Cfjp8KnzXEa-10" vertex="1">
           <mxGeometry width="173" height="47" as="geometry">
             <mxRectangle width="173" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="l0QcBsjx6Cfjp8KnzXEa-12" value="Location" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="l0QcBsjx6Cfjp8KnzXEa-10" vertex="1">
+        <mxCell id="l0QcBsjx6Cfjp8KnzXEa-12" value="Связь с объектом&amp;nbsp;&lt;div&gt;Локация&lt;/div&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="l0QcBsjx6Cfjp8KnzXEa-10" vertex="1">
           <mxGeometry x="173" width="174" height="47" as="geometry">
             <mxRectangle width="174" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="l0QcBsjx6Cfjp8KnzXEa-13" value="Адрес объекта недвижимости" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="l0QcBsjx6Cfjp8KnzXEa-10" vertex="1">
+        <mxCell id="l0QcBsjx6Cfjp8KnzXEa-13" value="Локация нахождения недвижимости" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="l0QcBsjx6Cfjp8KnzXEa-10" vertex="1">
           <mxGeometry x="347" width="173" height="47" as="geometry">
             <mxRectangle width="173" height="47" as="alternateBounds" />
           </mxGeometry>
@@ -368,7 +368,7 @@
           <mxGeometry x="160" y="1770" width="200" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-2" value="" style="childLayout=tableLayout;recursiveResize=0;shadow=0;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="160" y="1803" width="520" height="140" as="geometry" />
+          <mxGeometry x="160" y="1800" width="520" height="140" as="geometry" />
         </mxCell>
         <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-3" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" parent="6aFhZ4E6GZLZ5ZTFyYZK-2" vertex="1">
           <mxGeometry width="520" height="47" as="geometry" />
@@ -391,17 +391,17 @@
         <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" parent="6aFhZ4E6GZLZ5ZTFyYZK-2" vertex="1">
           <mxGeometry y="47" width="520" height="46" as="geometry" />
         </mxCell>
-        <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-8" value="Real_estate" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="6aFhZ4E6GZLZ5ZTFyYZK-7" vertex="1">
+        <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-8" value="Location" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="6aFhZ4E6GZLZ5ZTFyYZK-7" vertex="1">
           <mxGeometry width="173" height="46" as="geometry">
             <mxRectangle width="173" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-9" value="Связь с объектом Недвижимость" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="6aFhZ4E6GZLZ5ZTFyYZK-7" vertex="1">
+        <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-9" value="---" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="6aFhZ4E6GZLZ5ZTFyYZK-7" vertex="1">
           <mxGeometry x="173" width="174" height="46" as="geometry">
             <mxRectangle width="174" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-10" value="" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="6aFhZ4E6GZLZ5ZTFyYZK-7" vertex="1">
+        <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-10" value="Объект локации" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="6aFhZ4E6GZLZ5ZTFyYZK-7" vertex="1">
           <mxGeometry x="347" width="173" height="46" as="geometry">
             <mxRectangle width="173" height="46" as="alternateBounds" />
           </mxGeometry>
@@ -409,7 +409,7 @@
         <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" parent="6aFhZ4E6GZLZ5ZTFyYZK-2" vertex="1">
           <mxGeometry y="93" width="520" height="47" as="geometry" />
         </mxCell>
-        <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-12" value="Location" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="6aFhZ4E6GZLZ5ZTFyYZK-11" vertex="1">
+        <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-12" value="" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="6aFhZ4E6GZLZ5ZTFyYZK-11" vertex="1">
           <mxGeometry width="173" height="47" as="geometry">
             <mxRectangle width="173" height="47" as="alternateBounds" />
           </mxGeometry>
@@ -425,7 +425,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-15" value="" style="childLayout=tableLayout;recursiveResize=0;shadow=0;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="160" y="1990" width="520" height="140" as="geometry" />
+          <mxGeometry x="160" y="1987" width="520" height="140" as="geometry" />
         </mxCell>
         <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-16" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" parent="6aFhZ4E6GZLZ5ZTFyYZK-15" vertex="1">
           <mxGeometry width="520" height="47" as="geometry" />
@@ -482,7 +482,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-28" value="" style="childLayout=tableLayout;recursiveResize=0;shadow=0;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="160" y="1943" width="520" height="47" as="geometry" />
+          <mxGeometry x="160" y="1940" width="520" height="47" as="geometry" />
         </mxCell>
         <mxCell id="6aFhZ4E6GZLZ5ZTFyYZK-29" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" parent="6aFhZ4E6GZLZ5ZTFyYZK-28" vertex="1">
           <mxGeometry width="520" height="47" as="geometry" />
@@ -502,38 +502,38 @@
             <mxRectangle width="173" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HGOjfTmoYwn3BLE7qvEv-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" vertex="1" parent="1">
+        <mxCell id="HGOjfTmoYwn3BLE7qvEv-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" parent="1" vertex="1">
           <mxGeometry x="160" y="1140" width="520" height="46" as="geometry" />
         </mxCell>
-        <mxCell id="HGOjfTmoYwn3BLE7qvEv-3" value="Real_estate" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="HGOjfTmoYwn3BLE7qvEv-2">
+        <mxCell id="HGOjfTmoYwn3BLE7qvEv-3" value="Real_estate" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="HGOjfTmoYwn3BLE7qvEv-2" vertex="1">
           <mxGeometry width="173" height="46" as="geometry">
             <mxRectangle width="173" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HGOjfTmoYwn3BLE7qvEv-4" value="---" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="HGOjfTmoYwn3BLE7qvEv-2">
+        <mxCell id="HGOjfTmoYwn3BLE7qvEv-4" value="---" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="HGOjfTmoYwn3BLE7qvEv-2" vertex="1">
           <mxGeometry x="173" width="174" height="46" as="geometry">
             <mxRectangle width="174" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HGOjfTmoYwn3BLE7qvEv-5" value="Объект недвижимости" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="HGOjfTmoYwn3BLE7qvEv-2">
+        <mxCell id="HGOjfTmoYwn3BLE7qvEv-5" value="Объект недвижимости" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="HGOjfTmoYwn3BLE7qvEv-2" vertex="1">
           <mxGeometry x="347" width="173" height="46" as="geometry">
             <mxRectangle width="173" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HGOjfTmoYwn3BLE7qvEv-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" vertex="1" parent="1">
+        <mxCell id="HGOjfTmoYwn3BLE7qvEv-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;" parent="1" vertex="1">
           <mxGeometry x="160" y="930" width="520" height="46" as="geometry" />
         </mxCell>
-        <mxCell id="HGOjfTmoYwn3BLE7qvEv-8" value="" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="HGOjfTmoYwn3BLE7qvEv-7">
+        <mxCell id="HGOjfTmoYwn3BLE7qvEv-8" value="" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="HGOjfTmoYwn3BLE7qvEv-7" vertex="1">
           <mxGeometry y="-30" width="173" height="80" as="geometry">
             <mxRectangle width="173" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HGOjfTmoYwn3BLE7qvEv-10" value="Продаваемый объект недвижимости&lt;div&gt;&amp;nbsp;(В случаях, когда Пользователь будет являться продавцом недвижимости)&lt;/div&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="HGOjfTmoYwn3BLE7qvEv-7">
+        <mxCell id="HGOjfTmoYwn3BLE7qvEv-10" value="Продаваемый объект недвижимости&lt;div&gt;&amp;nbsp;(В случаях, когда Пользователь будет являться продавцом недвижимости)&lt;/div&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="HGOjfTmoYwn3BLE7qvEv-7" vertex="1">
           <mxGeometry x="347" y="-30" width="173" height="80" as="geometry">
             <mxRectangle width="173" height="46" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="HGOjfTmoYwn3BLE7qvEv-9" value="Связь с объектом Недвижимость" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="HGOjfTmoYwn3BLE7qvEv-9" value="Связь с объектом Недвижимость" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="333" y="900" width="174" height="80" as="geometry">
             <mxRectangle width="174" height="46" as="alternateBounds" />
           </mxGeometry>

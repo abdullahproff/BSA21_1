@@ -1,0 +1,30 @@
+@startuml
+
+skin rose
+
+autonumber
+
+actor Client
+participant MobileApp 
+participant Backend 
+Database DB
+
+activate Client
+
+Client -> MobileApp: Открывает экран с транскрибацией трека
+activate MobileApp
+MobileApp -> Backend: http-запрос на получение данных транскрибации
+activate Backend
+
+Backend -> DB: SQL-запрос на получение данных
+activate DB
+DB --> Backend: SQL-ответ
+deactivate DB
+
+Backend --> MobileApp: http ответ на запрос по получению данных с транскрибацией
+deactivate Backend
+
+MobileApp --> Client: Отображение экрана с транскрибацией трека
+deactivate MobileApp
+
+@enduml

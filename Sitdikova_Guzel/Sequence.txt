@@ -1,0 +1,29 @@
+@startuml
+
+skin rose
+
+autonumber
+
+actor User
+participant MobileApp 
+participant Backend 
+Database DB
+
+activate User
+
+User -> MobileApp: Нажимает отправить корзину с товарами  другому пользователю
+activate MobileApp
+MobileApp -> Backend: http- запрос со списком товаров в корзине
+activate Backend
+Backend -> DB:  сохраняет снепшот корзины
+activate DB
+DB --> Backend: ответ с id снепшота
+deactivate DB
+
+Backend --> MobileApp:ответ с id снепшота
+deactivate Backend
+
+MobileApp --> User:  Отображение ссылки на список товаров
+deactivate MobileApp 
+
+@enduml

@@ -1,0 +1,32 @@
+@startuml
+
+actor User
+participant Frontend
+box "Server" #LightGray
+    participant Backend 
+    database "DB (PostgreSQL)" as DB
+    database "Storage (S3)" as S3
+end box
+
+autonumber
+
+User -> Frontend: Вводит данные в строку
+activate User
+activate Frontend
+Frontend -> Backend: HTTP-запрос на поиск изображений 
+activate Backend
+Backend -> DB: Поиск изображений по тегам
+activate DB
+DB --> Backend: Данные изображений 
+deactivate DB
+Backend --> Frontend: HTTP-ответ с данными изображений
+deactivate Backend
+Frontend -> S3: Запрос на получение файлов изображений 
+activate S3
+S3 --> Frontend: Изображения (.png, .jpg)
+deactivate S3
+Frontend --> User: Отображает найденные изображения
+deactivate Frontend
+deactivate User
+
+@enduml

@@ -1,0 +1,21 @@
+@startuml Sequence
+
+skinparam monochrome true
+autonumber
+
+activate User
+User -> MobileApp: Отмечает в какие плей-листы добавить трек
+activate MobileApp
+MobileApp -> Back: Отправляет http запрос
+activate Back
+Back -> DataBase: SQL запрос на изменение данных
+activate DataBase
+DataBase --> Back: Возвращает ответ
+deactivate DataBase
+Back --> MobileApp: Возвращает json с ответом
+deactivate Back
+MobileApp --> User: Обновляет интерфейс
+deactivate MobileApp
+deactivate User
+
+@enduml 

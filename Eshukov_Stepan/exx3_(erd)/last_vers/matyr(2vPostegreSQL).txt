@@ -1,0 +1,53 @@
+﻿CREATE DATABASE matyr;
+\c matyr;
+
+
+CREATE TABLE people (
+    id_people SERIAL PRIMARY KEY,
+    name VARCHAR(30),
+    last_name VARCHAR(30),
+    data_reg DATE,
+    status VARCHAR(15)
+);
+
+
+CREATE TABLE conversations (
+    id_conversations SERIAL PRIMARY KEY,
+    id_people INT,
+    time_convers TIMESTAMP,
+    topic VARCHAR(30),
+    FOREIGN KEY (id_people) REFERENCES people(id_people)
+);
+
+
+CREATE TABLE message (
+    id_message SERIAL PRIMARY KEY,
+    id_conv INT,
+    time_mess TIMESTAMP,
+    status_mess VARCHAR(30),
+    txt_mess TEXT,
+    FOREIGN KEY (id_conv) REFERENCES conversations(id_conversations)
+);
+
+
+INSERT INTO people (name, last_name, data_reg, status) VALUES
+('Иван', 'Иванов', '2023-01-15', 'пользователь'),
+('Мария', 'Петрова', '2023-02-22', 'пользователь'),
+('Сергей', 'Сидоров', '2023-03-30', 'оператор');
+
+
+INSERT INTO conversations (id_people, time_convers, topic) VALUES
+(1, '2023-01-16 10:05:00', 'тур в Испанию'),
+(2, '2023-02-23 11:20:00', 'вопрос про тур');
+
+
+INSERT INTO message (id_conv, time_mess, txt_mess, status_mess) VALUES
+(1, '2023-01-16 10:05:00', 'Какие достопремечательности будем смотреть во время тура в Испании', 'да'),
+(2, '2023-01-16 11:20:00', 'Расскажите, возможна ли оплата частями?', 'да'),
+(1, '2023-01-16 12:35:00', 'Во время тура рассмотрим данные достопримечательности: ...', 'да'),
+(2, '2023-01-16 12:37:00', 'Да, оплата частями возможна', 'да');
+
+
+SELECT * FROM people;
+SELECT * FROM conversations;
+SELECT * FROM message;

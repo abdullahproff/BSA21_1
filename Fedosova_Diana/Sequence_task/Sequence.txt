@@ -1,0 +1,36 @@
+@startuml
+
+autonumber
+
+actor User
+participant MobileApp 
+participant backend 
+database DB
+database S3
+
+activate User
+User->MobileApp
+
+activate MobileApp
+MobileApp->backend: http-запрос
+
+activate backend
+backend->backend: валидация запроса 
+backend->DB: SQL-запрос на получение даных
+
+activate DB
+DB-->backend: возвращает набор данных
+deactivate DB
+
+backend->S3: Сохранение данных
+
+activate S3
+S3-->backend: Получение данных
+deactivate S3
+
+backend-->MobileApp: возвращает json с ответом
+deactivate backend
+MobileApp-->User: Что-то отбражает
+deactivate MobileApp
+
+@enduml

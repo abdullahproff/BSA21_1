@@ -1,0 +1,27 @@
+@startuml
+
+autonumber
+skinparam MaxMessageSize 200
+
+actor User
+participant MobileApp
+participant Backend
+database DB
+
+activate User
+User -> MobileApp: Нажимает кнопку "Забронировать авто"
+activate MobileApp
+MobileApp -> Backend: HTTP-запрос на создание поездки
+activate Backend
+Backend -> DB: SQL-запрос на сохранение поездки
+activate DB
+DB --> Backend: Возвращает подтверждение сохранения
+deactivate DB
+Backend --> MobileApp: HTTP-ответ с подтверждением поездки
+deactivate Backend
+MobileApp --> User: Отображает подтверждение успешной брони автомобиля для поездки
+
+deactivate MobileApp
+deactivate User
+
+@enduml

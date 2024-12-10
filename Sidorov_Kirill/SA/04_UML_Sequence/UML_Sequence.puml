@@ -1,0 +1,36 @@
+@startuml
+
+title Просмотр покупателем личного раздела Покупки
+
+skin rose
+
+autonumber
+
+actor Customer
+participant "Web/Mobile" as Frontend
+participant Backend
+database "Relational DB" as Database
+
+activate Customer
+Customer -> Frontend: Нажимает на кнопку Покупки
+
+activate Frontend
+Frontend -> Backend: HTTPS-запрос
+
+activate Backend
+Backend -> Backend: Валидация запроса
+Backend -> Database: JDBC-запрос
+
+activate Database
+Database --> Backend: JDBC-ответ
+deactivate Database
+
+Backend --> Frontend: HTTPS-ответ
+deactivate Backend
+
+Frontend --> Customer: Отображается каталог Покупки
+deactivate Frontend
+
+deactivate Customer
+
+@enduml

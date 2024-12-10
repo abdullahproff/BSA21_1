@@ -1,28 +1,38 @@
-CREATE TABLE clients (
+CREATE TABLE Psychologists (
     id SERIAL PRIMARY KEY,
-    full_name VARCHAR NOT NULL,
-    email VARCHAR UNIQUE NOT NULL,
-    phone VARCHAR,
-    child_age INT
+    psiholog_name VARCHAR(255) NOT NULL,
+    specialization VARCHAR(255),
+    contact_mail VARCHAR(255) UNIQUE
 );
 
-CREATE TABLE psychologists (
+CREATE TABLE Clients (
     id SERIAL PRIMARY KEY,
-    psiholog_name VARCHAR NOT NULL,
-    specialization VARCHAR,
-    contact_mail VARCHAR
+    user_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE,
+    phone VARCHAR(20),
+    child_age INTEGER
 );
 
-CREATE TABLE slots (
+CREATE TABLE AvailableSlots (
     id SERIAL PRIMARY KEY,
-    client_id INT REFERENCES clients(id),
-    psychologist_id INT REFERENCES psychologists(id),
+    psychologist_id INTEGER NOT NULL,
     slot_time TIMESTAMP NOT NULL,
-    is_available BOOLEAN DEFAULT TRUE
+    is_available BOOLEAN DEFAULT TRUE,
+    FOREIGN KEY (psychologist_id) REFERENCES Psychologists(id)
 );
 
-CREATE TABLE waitlist (
+CREATE TABLE BookedClients (
     id SERIAL PRIMARY KEY,
-    client_id INT REFERENCES clients(id),
-    psychologist_id INT REFERENCES psychologists(id)
+    slot_id INTEGER UNIQUE NOT NULL,
+    client_id INTEGER UNIQUE NOT NULL,
+    FOREIGN KEY (slot_id) REFERENCES AvailableSlots(id),
+    FOREIGN KEY (client_id) REFERENCES Clients(id)
+);
+
+CREATE TABLE WaitingList (
+    id SERIAL PRIMARY KEY,
+    client_id INTEGER UNIQUE NOT NULL,
+    psychologist_id INTEGER NOT NULL,
+    FOREIGN KEY (client_id) REFERENCES Clients(id),
+    FOREIGN KEY (psychologist_id) REFERENCES Psychologists(id)
 );

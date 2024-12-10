@@ -1,0 +1,31 @@
+@startuml
+
+title Добавление пользователем заклинания в лист персонажа
+autonumber
+
+actor User
+participant Website
+participant Backend
+database Database
+
+activate User
+User -> Website: нажатие кнопки
+
+activate Website
+Website -> Backend: http-запрос
+
+activate Backend
+Backend -> Backend: валидация запроса
+Backend -> Database: SQL-запрос на изменение и/или получение данных
+activate Database
+Database --> Backend: возвращает ответ на запрос
+deactivate Database
+
+Backend --> Website: возвращает json-файл с ответом
+deactivate Backend
+
+Website --> User: отображение изменений
+deactivate Website
+deactivate User
+
+@enduml

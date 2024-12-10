@@ -1,0 +1,26 @@
+@startuml
+
+skin rose
+title Дневник питания с аналитикой: Добавление приема пищи
+autonumber
+actor Пользователь as User
+participant "Мобильное приложение" as Frontend
+participant "Сервер" as Backend
+database "База данных" as DB
+
+User -> Frontend: Нажимает "Сохранить прием пищи"
+activate User
+activate Frontend
+Frontend -> Backend: http-запрос сохранение приема пищи
+activate Backend
+Backend -> DB: SQL-запроc на сохранение приема пищи
+activate DB
+DB --> Backend: SQL-ответ сохранение приема пищи
+deactivate DB
+Backend --> Frontend: http-ответ на сохранение приема пищи
+deactivate Backend
+Frontend --> User: Прием пищи успешно сохранен
+deactivate Frontend
+deactivate User
+
+@enduml
