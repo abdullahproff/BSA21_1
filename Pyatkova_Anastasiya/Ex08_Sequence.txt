@@ -8,43 +8,25 @@ participant DB
 autonumber
 
 activate User
-User -> MobileApp: Нажимает "Добавить товар к заказу"
+User -> MobileApp: Переходит в корзину
 
 activate MobileApp
-MobileApp -> backend: HTTP-запрос на отображение каталога товаров
+MobileApp --> User: Отображение корзины
+User -> MobileApp: Нажимает "Оформить заказ"
+MobileApp -> backend: HTTP-запрос на оформление заказа
 
 activate backend
-backend -> DB: SQL-запрос на получение каталога товаров
+backend -> DB: SQL-запрос на обновление заказа и времени доставки
 
 activate DB
-DB --> backend: Результат SQL-запроса с данными товаров
-backend --> MobileApp: Каталог товаров
-MobileApp --> User: Отображение каталога
-
-User -> MobileApp: Выбирает товары
-MobileApp -> backend: HTTP-запрос на добавление товаров в корзину
-
-backend -> DB: SQL-запрос на добавление товаров в корзину
-DB --> backend: Подтверждение обновления корзины
-
-backend --> MobileApp: Обновление состава корзины
-MobileApp --> User: Обновление корзины
-
-User -> MobileApp: Переход в корзину
-MobileApp --> User: Отображение корзины
-
-User -> MobileApp: Нажимает "Оплатить добавленные товары"
-MobileApp -> backend: HTTP-запрос на оплату заказа
-
-backend -> DB: SQL-запрос Обновление оплаты и времени доставки
-DB --> backend: Подтверждение оплаты
-
-backend --> MobileApp: Ответ с подтверждением заказа и временем доставки
-MobileApp --> User: Уведомление об успешной оплате
-
+DB --> backend: SQL-ответ с подтверждением оформления заказа
 deactivate DB
+
+backend --> MobileApp: HTTP-ответ с подтверждением заказа и временем доставки
 deactivate backend
+
+MobileApp --> User: Уведомление об успешном оформлении заказа
+
 deactivate MobileApp
-deactivate User
 
 @enduml
