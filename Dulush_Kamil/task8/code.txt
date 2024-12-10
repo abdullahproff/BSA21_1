@@ -3,20 +3,23 @@ actor User
 participant MA 
 participant backend
 database DB
-autonumber
 User -> MA : Ввод адреса и типа машины
 activate MA
-MA  -> backend :  Передача данных
+MA  -> backend :  https запрос передачи данных
 activate backend
 backend -> DB : SQL- запрос, \nсохранение данных
 activate DB
 DB --> backend : Успешное сохранение
 deactivate DB
-backend --> MA : Подтверждение успешного сохранения
+backend --> MA : Возврат json-ответ
+MA --> User : Подтверждение успешного сохранения
 User -> MA : Нажимает на кнопку "Заказать"
 MA -> backend :  Поиск водителя
 backend -> backend :  Передача заказа водителю
-backend --> MA : Подтверждение принятия заказа
+
+backend --> MA : Возврат json-ответ
 deactivate backend
+MA --> User : Отображение принятия заказа
+
 deactivate MA
 @enduml
