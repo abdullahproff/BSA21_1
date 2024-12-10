@@ -6,12 +6,12 @@ participant backend
 database DB
 autonumber
 
-User -> frontend  : Нажимает на кнопку "Оформить"
-frontend  -> backend :  Передача данных
+User -> frontend  : Нажимает на кнопку "Забронировать"
+frontend  -> backend : Отправляет данные бронирования 
 activate backend
-backend -> DB : SQL- запрос, \nсохранение данных
+backend -> DB : SQL- запрос, \nсохранение данных бронирования
 activate DB
-DB --> backend : Успешное сохранение
+DB --> backend : Успешное сохранение бронирование
 deactivate DB
 backend --> frontend  :  Возвращает json-ответ
 frontend --> User : Отображение подтверждения бронирвания
