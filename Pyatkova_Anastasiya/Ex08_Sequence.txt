@@ -8,11 +8,9 @@ participant DB
 autonumber
 
 activate User
-User -> MobileApp: Переходит в корзину
+User -> MobileApp: Нажимает "Оформить заказ"
 
 activate MobileApp
-MobileApp --> User: Отображение корзины
-User -> MobileApp: Нажимает "Оформить заказ"
 MobileApp -> backend: HTTP-запрос на оформление заказа
 
 activate backend
