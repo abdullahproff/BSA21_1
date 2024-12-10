@@ -1,0 +1,38 @@
+@startuml
+actor User
+participant MA 
+participant backend
+database DB
+User -> MA : Ввод города и даты
+activate MA
+MA  -> backend :  Передача данных
+activate backend
+backend -> DB : SQL- запрос, \nподбор подходящих вилл
+activate DB
+DB --> backend : Возвращение списка \nподходящих вилл
+deactivate DB
+backend --> MA : Отображение списка вилл
+deactivate backend
+User -> MA : Выбор виллы
+MA  -> backend :  Запрос данных
+activate backend
+backend -> DB : SQL- запрос, получение \nинформации о вилле
+activate DB
+DB --> backend : Возвращение информации
+deactivate DB
+backend --> MA : Отображение информации о вилле
+deactivate backend
+User -> MA : Нажимает на кнопку "Бронировать"
+MA -> MA : Отображение формы для \nзаполнения данных
+User -> MA : Ввод данных бронирования
+User -> MA : Нажимает на кнопку "Оформить"
+MA -> backend :  Передача данных
+activate backend
+backend -> DB : SQL- запрос, \nсохранение данных
+activate DB
+DB --> backend : Успешное сохранение
+deactivate DB
+backend --> MA : Подтверждение успешного \nбронирования
+deactivate backend
+deactivate MA
+@enduml
