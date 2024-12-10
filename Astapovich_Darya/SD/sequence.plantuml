@@ -1,6 +1,6 @@
-
 @startuml
 actor User
+activate User
 participant frontend 
 participant backend
 database DB
@@ -18,4 +18,5 @@ backend --> frontend  :  Возвращает json-ответ
 frontend --> User : Отображение подтверждения бронирования
 deactivate backend
 deactivate frontend 
+deactivate User
 @enduml
