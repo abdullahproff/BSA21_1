@@ -1,0 +1,26 @@
+@startuml
+
+participant User as U
+participant MobileApp as MA
+participant Backend as B
+participant Database as DB
+
+U -> MA : 1. Указание конечного адреса
+activate MA
+
+MA -> B : 2. Отправление HTTPS запроса
+activate B
+
+B -> DB : 3. Формирование SQL запроса
+activate DB
+
+DB -> B : 4. Получение данных о маршруте
+deactivate DB
+
+B -> MA : 5. Формирование ответа JSON
+deactivate B
+
+MA -> U : 6. Отображение информации о маршруте
+deactivate MA
+
+@enduml
