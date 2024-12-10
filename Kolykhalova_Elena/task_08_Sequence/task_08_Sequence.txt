@@ -1,0 +1,27 @@
+@startuml
+
+autonumber
+
+actor User
+participant MA
+participant backend
+database DB
+
+activate User
+User -> MA : Нажимает кнопку "ПРЕДЛОЖИТЬ АКТИВНОСТЬ"
+
+activate MA
+MA -> backend : http-запрос на создание "АКТИВНОСТЬ"
+
+activate backend
+backend -> DB: SQL-запрос на создание "АКТИВНОСТЬ"
+activate DB
+DB -> backend: SQL-ответ, что создана "АКТИВНОСТЬ"
+deactivate DB
+backend-> MA: http-ответ с подтверждением создания "АКТИВНОСТЬ"
+
+deactivate backend
+MA->User: Уведомление об успешном создании "АКТИВНОСТЬ"
+deactivate MA
+
+@enduml
