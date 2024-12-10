@@ -11,31 +11,36 @@ activate User
 User -> MobileApp: Нажимает "Добавить товар к заказу"
 
 activate MobileApp
-MobileApp-> backend: HTTP-запрос на отображение каталога товаров
+MobileApp -> backend: HTTP-запрос на отображение каталога товаров
 
 activate backend
 backend -> DB: SQL-запрос на получение каталога товаров
 
 activate DB
-DB --> backend: Возвращает данные товаров
-backend -> MobileApp: Отправка данных для отображения каталога
+DB --> backend: Результат SQL-запроса с данными товаров
+backend --> MobileApp: Каталог товаров
+MobileApp --> User: Отображение каталога
 
 User -> MobileApp: Выбирает товары
-MobileApp -> backend: Отправка данных о выбранных товарах
-backend -> DB: SQL-запрос на добавление товаров в корзину
+MobileApp -> backend: HTTP-запрос на добавление товаров в корзину
 
-DB --> backend: Обновление состава корзины
-backend -> MobileApp: Обновление состава корзины
+backend -> DB: SQL-запрос на добавление товаров в корзину
+DB --> backend: Подтверждение обновления корзины
+
+backend --> MobileApp: Обновление состава корзины
+MobileApp --> User: Обновление корзины
 
 User -> MobileApp: Переход в корзину
+MobileApp --> User: Отображение корзины
+
 User -> MobileApp: Нажимает "Оплатить добавленные товары"
+MobileApp -> backend: HTTP-запрос на оплату заказа
 
-MobileApp -> backend: Отправка данных об оплате
-backend -> DB: SQL-запрос на подтверждение оплаты и обновление времени доставки
+backend -> DB: SQL-запрос Обновление оплаты и времени доставки
 DB --> backend: Подтверждение оплаты
-backend -> MobileApp: Подтверждение покупки и новое время доставки
 
-MobileApp -> User: Уведомление об успешной оплате и новом времени доставки
+backend --> MobileApp: Ответ с подтверждением заказа и временем доставки
+MobileApp --> User: Уведомление об успешной оплате
 
 deactivate DB
 deactivate backend
