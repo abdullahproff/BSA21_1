@@ -1,7 +1,7 @@
 @startuml
 
 autonumber
-skinparam MaxMessageSize 200
+skinparam MaxMessageSize 220
 
 actor User
 participant MobileApp
@@ -15,9 +15,9 @@ MobileApp -> Backend: HTTP-запрос на создание поездки
 activate Backend
 Backend -> DB: SQL-запрос на сохранение поездки
 activate DB
-DB --> Backend: Возвращает подтверждение сохранения
+DB --> Backend: SQL-ответ с подтверждением сохранения
 deactivate DB
-Backend --> MobileApp: HTTP-ответ с подтверждением поездки
+Backend --> MobileApp: HTTP-ответ с подтверждением создания поездки
 deactivate Backend
 MobileApp --> User: Отображает подтверждение успешной брони автомобиля для поездки
 
@@ -25,3 +25,4 @@ deactivate MobileApp
 deactivate User
 
 @enduml
+
