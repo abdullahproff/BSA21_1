@@ -7,6 +7,7 @@ autonumber
 
 
 User -> MA : Нажимает на кнопку "Заказать"
+activate User
 activate MA
 MA -> backend : https запрос  на поиск водителя
 activate backend
@@ -15,6 +16,6 @@ backend -> backend :  Обработка заказа
 backend --> MA : Возврат json-ответа  с принятым заказом
 deactivate backend
 MA --> User : Отображение принятого заказа
-
+deactivate User
 deactivate MA
 @enduml
