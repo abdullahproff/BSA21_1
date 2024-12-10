@@ -5,22 +5,22 @@ participant MobileApp as MA
 participant Backend as B
 participant Database as DB
 
-U -> MA : 1. Указание конечного адреса
+U -> MA : 1. Указание конечного адреса маршрута
 activate MA
 
-MA -> B : 2. Отправление HTTPS запроса
+MA -> B : 2. Отправление HTTPS запроса информации о мршруте
 activate B
 
 B -> DB : 3. Формирование SQL запроса
 activate DB
 
-DB -> B : 4. Получение данных о маршруте
+DB --> B : 4. Получение данных о маршруте
 deactivate DB
 
-B -> MA : 5. Формирование ответа JSON
+B --> MA : 5. Формирование ответа JSON с информацией о маршруте
 deactivate B
 
-MA -> U : 6. Отображение информации о маршруте
+MA --> U : 6. Отображение информации о маршруте
 deactivate MA
 
 @enduml
