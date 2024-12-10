@@ -15,7 +15,7 @@ activate DB
 DB --> backend : Успешное сохранение бронирование
 deactivate DB
 backend --> frontend  :  Возвращает json-ответ
-frontend --> User : Отображение подтверждения бронирвания
+frontend --> User : Отображение подтверждения бронирования
 deactivate backend
 deactivate frontend 
 @enduml
