@@ -1,6 +1,5 @@
 @startuml
 actor User
-
 participant frontend 
 participant backend
 database DB
