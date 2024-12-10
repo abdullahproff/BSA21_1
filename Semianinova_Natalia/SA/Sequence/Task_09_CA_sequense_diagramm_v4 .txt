@@ -13,13 +13,15 @@ User -> ProgressiveWebApp: 1.заполняет настройки и нажим
 activate ProgressiveWebApp
 ProgressiveWebApp -> backend: 2.http-запрос сохранить и проверить настройки
 activate  backend
-backend -> DB: 3.SQL-запрос записать и проверить все настройки
+backend -> backend: 3. валидация запроса
+backend -> DB: 4.SQL-запрос записать и выгрузить настройки из БД
 activate  DB
-DB --> backend: 4.все настройки заполнены
+DB --> backend: 5.выгрузка настроек из БД
 deactivate  DB
-backend --> ProgressiveWebApp: 5.отобразить стартовое окно
+backend -> backend: 6. проверка заполнения всех настроек
+backend --> ProgressiveWebApp: 7.http: ответ все настройки заполнены
 deactivate  backend
-ProgressiveWebApp --> User: 6.отображает стартовое окно
+ProgressiveWebApp --> User: 8.отображает стартовое окно
 deactivate  ProgressiveWebApp
 deactivate User
 note right of User
