@@ -2,7 +2,7 @@
 autonumber
 skinparam responseMessageBelowArrow true
 
-title Диаграммы последовательностей
+title Диаграммы последовательностей создания нового списка
 
 actor User #EFD334
 participant Website #336699
@@ -16,12 +16,12 @@ activate Website
 User <-- Website : Отображает форму с параметрами
 ||10||
 User -> Website : Заполняет параметры
-Website ->Backend : https запрос\nна получение списка
+Website ->Backend : https запрос на получение списка\nпо заданным параметрам
 activate Backend
 Backend -> DataBase : SQL запрос на\nформирование списка
 activate DataBase
-DataBase -> DataBase : Формирование и\nсохранение списка
-return Ответ SQL
+DataBase -> DataBase : Сохранение списка
+return Ответ из БД со\nсписком акций
 Website <-- Backend : JSON со сформированным списком
 deactivate Backend
 User <-- Website : Отображение списка на сайте
