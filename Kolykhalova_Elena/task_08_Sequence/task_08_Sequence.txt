@@ -8,7 +8,7 @@ participant backend
 database DB
 
 activate User
-User -> MA : Нажимает кнопку "ПРЕДЛОЖИТЬ АКТИВНОСТЬ"
+User -> MA : Нажимает кнопку "СОЗДАТЬ АКТИВНОСТЬ"
 
 activate MA
 MA -> backend : http-запрос на создание "АКТИВНОСТЬ"
