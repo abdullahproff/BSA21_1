@@ -9,11 +9,9 @@ participant Backend
 database DB
 
 activate User
-User -> Frontend: Нажимает кнопку добавления в избранное
+User -> Frontend: Нажмает на кнопку добавления в список
 
 activate Frontend
-Frontend --> User: Выводит окно с доступными списками
-User -> Frontend: Нажмает на кнопку добавления в список
 Frontend -> Backend: https-запрос на добавление локации в список
 
 activate Backend
@@ -27,8 +25,7 @@ Backend -> Backend: Формирование json
 Backend --> Frontend: Возвращает json с информацией о добавлении
 deactivate Backend
 
-Frontend --> User: Меняет цвет кнопок добавления в список\
-                    \nи добавления в избранное
+Frontend --> User: Меняет цвет кнопки добавления в список
 
 deactivate Frontend
 deactivate User
