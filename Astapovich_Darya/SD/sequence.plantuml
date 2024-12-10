@@ -5,8 +5,9 @@ participant backend
 database DB
 autonumber
 
-activate User
+
 User -> frontend  : Нажимает на кнопку "Забронировать"
+activate User
 activate frontend
 frontend  -> backend : Отправляет данные бронирования 
 activate backend
@@ -19,4 +20,3 @@ frontend --> User : Отображение подтверждения брони
 deactivate backend
 deactivate frontend 
 deactivate User
-@enduml
