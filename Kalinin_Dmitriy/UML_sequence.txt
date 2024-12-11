@@ -20,7 +20,6 @@ Website ->Backend : https запрос на получение списка\nп�
 activate Backend
 Backend -> DataBase : SQL запрос на\nформирование списка
 activate DataBase
-DataBase -> DataBase : Сохранение списка
 return Ответ из БД со\nсписком акций
 Website <-- Backend : JSON со сформированным списком
 deactivate Backend
