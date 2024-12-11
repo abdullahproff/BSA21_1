@@ -19,9 +19,13 @@ activate  DB
 DB --> backend: 5.выгрузка настроек из БД
 deactivate  DB
 backend -> backend: 6. проверка заполнения всех настроек
-backend --> ProgressiveWebApp: 7.http: ответ все настройки заполнены
+backend -> DB: 7.SQL-запрос сделать доступным сервис и выгрузить инф. для начала работы 
+activate  DB
+DB --> backend: 8.выгрузка инф.для начала работы
+deactivate  DB
+backend --> ProgressiveWebApp: 9.http-ответ: все настройки заполнены и информация для начала работы
 deactivate  backend
-ProgressiveWebApp --> User: 8.отображает стартовое окно
+ProgressiveWebApp --> User: 10.отображает стартовое окно
 deactivate  ProgressiveWebApp
 deactivate User
 note right of User
