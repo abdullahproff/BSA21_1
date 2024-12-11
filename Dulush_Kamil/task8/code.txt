@@ -5,9 +5,8 @@ participant backend
 database DB
 autonumber
 
-
-User -> MA : Нажимает на кнопку "Заказать"
 activate User
+User -> MA : Нажимает на кнопку "Заказать"
 activate MA
 MA -> backend : https-запрос передачи данных заказа
 activate backend
