@@ -11,7 +11,7 @@ autonumber
 activate user
 user -> Mobile_Application: Пользователь вводит все данные для создания группы и нажимает кнопку "Создать группу"
 activate Mobile_Application
-Mobile_Application -> backend: https-запрос к серверу на создание новой группы и связи
+Mobile_Application -> backend: https-запрос к серверу для создания новой группы 
 activate backend
 backend -> Data_Base: SQL-запрос к базе данных на создание и сохранение новой связи и группы
 activate Data_Base
