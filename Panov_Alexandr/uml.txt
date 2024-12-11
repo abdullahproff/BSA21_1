@@ -3,17 +3,23 @@
 actor user
 
 participant Mobile_Application
-participant beckend
+participant backend
 database BD
 
 autonumber
 
-
-user --> Mobile_Application: Пользователь вводит все данные для создания группы
-Mobile_Application --> beckend: https-запрос к серверу на создание новой группы и связи
-beckend --> BD: SQL-запрос к базе данных на создание и сохранение новой связи и группы
-BD --> beckend: SQL-ответ с результатом операции
-beckend --> Mobile_Application: https-ответ с выводом результата запроса
-Mobile_Application --> user: Приложение выводит пользователю результат операции
+activate user
+user -> Mobile_Application: Пользователь вводит все данные для создания группы
+activate Mobile_Application
+Mobile_Application -> backend: https-запрос к серверу на создание новой группы и связи
+activate backend
+backend -> BD: SQL-запрос к базе данных на создание и сохранение новой связи и группы
+activate BD
+BD -> backend: SQL-ответ с результатом операции
+deactivate BD
+backend -> Mobile_Application: https-ответ с выводом результата запроса
+deactivate backend
+Mobile_Application -> user: Приложение выводит пользователю результат операции
+deactivate Mobile_Application
 
 @enduml
