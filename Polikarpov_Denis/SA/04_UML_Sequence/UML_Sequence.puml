@@ -7,7 +7,7 @@ actor Клиент as C
 participant "Фронтенд" as FE
 participant "Бэкенд" as BE
 database "База данных" as DB
-
+activate C
 C -> FE: 1. Запросить свободные слоты
 activate FE
 FE -> BE: 2. HTTP-запрос: Получить доступные слоты
@@ -41,4 +41,5 @@ deactivate BE
 
 FE --> C: 15. Сообщение об успешной записи
 deactivate FE
+deactivate C
 @enduml
