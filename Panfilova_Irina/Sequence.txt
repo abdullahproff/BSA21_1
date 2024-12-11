@@ -10,20 +10,19 @@ participant backend
 database DB
 
 activate User
-User -> frontend: 1. нажать кнопку "добавить тег"
+User -> frontend: 1. нажать кнопку с названием тега
 activate frontend
-frontend -> backend: 2. HTTP-запрос на добавление тега
+frontend -> backend: 2. HTTP-запрос на присвоение тега заметке
 activate backend
 backend -> backend: 3. валидация запроса
-backend -> DB: 4. SQL - запрос на получение данных
+backend -> DB: 4. SQL - запрос на связь сущностей тега и заметки
 activate DB
-DB --> backend: 5. SQL - ответ со списком доступных тегов
+DB --> backend: 5. SQL - ответ со связанными сущностями тега и заметки
 deactivate DB
-backend --> frontend: 6. возвращает json со списком тегов
+backend --> frontend: 6. возвращает HTTP-ответ о присвоении тега заметке
 deactivate backend
-frontend --> User: 7. отображает список доступных тегов
+frontend --> User: 7. отображает заметку с привсвоенным ей тегом
 
 deactivate frontend
-deactivate user
 
 @enduml
