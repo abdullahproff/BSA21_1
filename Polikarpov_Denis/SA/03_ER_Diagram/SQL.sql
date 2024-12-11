@@ -36,3 +36,37 @@ CREATE TABLE WaitingList (
     FOREIGN KEY (client_id) REFERENCES Clients(id),
     FOREIGN KEY (psychologist_id) REFERENCES Psychologists(id)
 );
+
+-- Вставка данных в таблицу Psychologists
+INSERT INTO Psychologists (psiholog_name, specialization, contact_mail)
+VALUES
+('Др. Иван Петров', 'Детская психология', 'ivan.petrov@example.com'),
+('Др. Мария Смирнова', 'Клиническая психология', 'maria.smirnova@example.com'),
+('Др. Алексей Тихонов', 'Когнитивная терапия', 'alexey.tikhonov@example.com');
+
+-- Вставка данных в таблицу Clients
+INSERT INTO Clients (user_name, email, phone, child_age)
+VALUES
+('Анна Иванова', 'anna.ivanova@example.com', '1234567890', 12),
+('Борис Петров', 'boris.petrov@example.com', '0987654321', 15),
+('Виктор Сидоров', 'viktor.sidorov@example.com', '5678901234', 10);
+
+-- Вставка данных в таблицу AvailableSlots
+INSERT INTO AvailableSlots (psychologist_id, slot_time, is_available)
+VALUES
+(1, '2024-12-11 10:00:00', TRUE),
+(1, '2024-12-11 11:00:00', TRUE),
+(2, '2024-12-12 09:00:00', TRUE),
+(3, '2024-12-13 14:00:00', TRUE);
+
+-- Вставка данных в таблицу BookedClients
+INSERT INTO BookedClients (slot_id, client_id)
+VALUES
+(1, 1),  -- Анна Иванова бронирует слот у Др. Иван Петров
+(2, 2);  -- Борис Петров бронирует другой слот у Др. Иван Петров
+
+-- Вставка данных в таблицу WaitingList
+INSERT INTO WaitingList (client_id, psychologist_id)
+VALUES
+(3, 1),  -- Виктор Сидоров добавляется в лист ожидания к Др. Иван Петров
+(2, 2);  -- Борис Петров добавляется в лист ожидания к Др. Мария Смирнова
