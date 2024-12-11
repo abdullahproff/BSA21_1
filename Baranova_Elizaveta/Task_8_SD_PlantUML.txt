@@ -1,0 +1,27 @@
+@startuml
+actor User
+participant Frontend 
+participant Backend
+database DB
+autonumber
+
+User -> Frontend  : Нажимает кнопку "Заказать"
+activate User
+activate Frontend
+
+Frontend  -> Backend : Запрос на создание заказа 
+activate Backend
+Backend -> Backend : Проверка доступности товара 
+
+Backend -> DB : Создание нового ресурса
+activate DB
+DB --> Backend : Успешное создание ресурса
+deactivate DB
+
+Backend --> Frontend  :  Возвращение ответа на запрос
+deactivate Backend
+Frontend --> User : Отображение подтверждения заказа
+
+deactivate Frontend 
+deactivate User
+@enduml
