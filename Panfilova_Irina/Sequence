@@ -1,0 +1,32 @@
+@startuml
+
+skin rose
+
+actor User
+participant frontend
+participant backend
+database DB
+
+activate User
+User -> frontend: нажать кнопку "добавить тег"
+activate frontend
+
+frontend -> backend: HTTP-запрос на добавление тега
+activate backend
+
+backend -> backend: валидация запроса
+backend -> DB: SQL - запрос на получение данных
+
+activate DB
+DB -> backend: SQL - ответ со списком доступных тегов
+deactivate DB
+
+backend -> frontend: возвращает json со списком тегов
+deactivate backend
+
+frontend -> User: отображает список доступных тегов
+deactivate frontend
+
+deactivate user
+
+@enduml
