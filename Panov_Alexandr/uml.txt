@@ -4,19 +4,19 @@ actor user
 
 participant Mobile_Application
 participant backend
-database BD
+database Data_Base
 
 autonumber
 
 activate user
-user -> Mobile_Application: Пользователь вводит все данные для создания группы
+user -> Mobile_Application: Пользователь вводит все данные для создания группы и нажимает кнопку "Создать группу"
 activate Mobile_Application
 Mobile_Application -> backend: https-запрос к серверу на создание новой группы и связи
 activate backend
-backend -> BD: SQL-запрос к базе данных на создание и сохранение новой связи и группы
-activate BD
-BD --> backend: SQL-ответ с результатом операции
-deactivate BD
+backend -> Data_Base: SQL-запрос к базе данных на создание и сохранение новой связи и группы
+activate Data_Base
+Data_Base --> backend: SQL-ответ с результатом операции
+deactivate Data_Base
 backend --> Mobile_Application: https-ответ с выводом результата запроса
 deactivate backend
 Mobile_Application --> user: Приложение выводит пользователю результат операции
