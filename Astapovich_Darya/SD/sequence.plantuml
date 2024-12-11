@@ -9,13 +9,16 @@ autonumber
 User -> frontend  : Нажимает на кнопку "Забронировать"
 activate User
 activate frontend
+
 frontend  -> backend : Отправляет данные бронирования 
 activate backend
-backend -> DB : SQL- запрос, \nсохранение данных бронирования
+backend -> backend : Проверка доступности виллы 
+
+backend -> DB : Сохранение данных бронирования
 activate DB
 DB --> backend : Успешное сохранение бронирования
 deactivate DB
-backend --> frontend  :  Возвращает json-ответ
+backend --> frontend  :  Подтверждение бронирования
 deactivate backend
 frontend --> User : Отображение подтверждения бронирования
 
