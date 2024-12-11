@@ -1,0 +1,31 @@
+@startuml
+title Просмотр расходов по категориям
+skin rose
+autonumber
+
+actor User
+participant Frontend
+participant Backend
+database DB
+
+activate User
+User -> Frontend: Пользователь нажимает кнопку "Расходы"
+
+activate Frontend
+Frontend -> Backend: Запрос на список расходов и категории расходов
+
+activate Backend
+Backend -> DB: SQL-запрос на формирование списка расходов и категорий
+activate DB
+DB --> Backend: Возвращает список расходов и категорий
+
+deactivate DB
+
+Backend --> Frontend: Возвращает ответ со списком расходов и категорий
+deactivate Backend
+
+Frontend --> User: Отображает категории и список расходов
+deactivate Frontend
+
+
+@enduml
