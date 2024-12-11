@@ -13,9 +13,9 @@ Frontend  -> Backend : Запрос на создание заказа
 activate Backend
 Backend -> Backend : Проверка доступности товара 
 
-Backend -> DB : Создание нового ресурса
+Backend -> DB : Создание нового заказа
 activate DB
-DB --> Backend : Успешное создание ресурса
+DB --> Backend : Успешное создание заказа
 deactivate DB
 
 Backend --> Frontend  :  Возвращение ответа на запрос
