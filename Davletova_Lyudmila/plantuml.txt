@@ -1,0 +1,21 @@
+@startuml
+actor User
+box "Mobile App (MA)" #F5F5DC
+    participant MobileApp
+end box
+box "Backend Server" #F5F5DC
+    participant Backend
+end box
+box "Database" #F5F5DC
+    participant Database
+end box
+
+User -> MobileApp : 1. Запрос на получение истории прослушивания
+MobileApp -> Backend : 2. GET запрос для получения данных
+Backend -> Backend : 3. Валидация запроса
+Backend -> Database : 4. SQL запрос на получение данных
+Database --> Backend: 5. Ответ с данными
+Backend --> MobileApp : 6. Ответ с данными
+MobileApp -> User : 7. Отображение данных пользователю
+
+@enduml
