@@ -1,4 +1,5 @@
 @startuml
+
 actor User
 box "Mobile App (MA)" #F5F5DC
     participant MobileApp
@@ -10,18 +11,26 @@ box "Database" #F5F5DC
     participant Database
 end box
 
+activate User
 User -> MobileApp : 1. Запрос на получение истории прослушивания
+
 activate MobileApp
 MobileApp -> Backend : 2. GET запрос для получения данных
+
 activate Backend
 Backend -> Backend : 3. Валидация запроса
 Backend -> Database : 4. SQL запрос на получение данных
+
 activate Database
 Database --> Backend: 5. Ответ с данными
 deactivate Database
+
 Backend --> MobileApp : 6. Ответ с данными
 deactivate Backend
+
 MobileApp --> User : 7. Отображение данных пользователю
 deactivate MobileApp
+
+deactivate User
 
 @enduml
