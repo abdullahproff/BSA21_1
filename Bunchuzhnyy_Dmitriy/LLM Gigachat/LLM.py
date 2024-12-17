@@ -14,7 +14,7 @@ def main():
     else:
         print("Authorization key уже установлен.")
     
-    # Запрашиваем вопрос у пользователя
+    # Задаем вопрос пользователю
     brainstorm_question = input("Введите задание: \n")
     
     # Формируем запрос для GigaChat
