@@ -1,0 +1,40 @@
+<mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- Row 1: GET /psychologists -->
+    <mxCell id="rest1" value="GET /psychologists&#10;&#10;Описание: Получение списка всех психологов" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="50" y="50" width="300" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="rest1_params" value="Параметры запроса:&#10;- (нет)" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="rest1">
+      <mxGeometry x="50" y="50" width="300" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="rest1_response" value="Параметры ответа:&#10;- id (int, да)&#10;- psiholog_name (string, да)&#10;- specialization (string, нет)&#10;- contact_mail (string, да)" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="rest1">
+      <mxGeometry x="50" y="150" width="300" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Row 2: POST /psychologists -->
+    <mxCell id="rest2" value="POST /psychologists&#10;&#10;Описание: Добавление нового психолога" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="400" y="50" width="300" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="rest2_params" value="Параметры запроса:&#10;- psiholog_name (string, да)&#10;- specialization (string, нет)&#10;- contact_mail (string, да)" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="rest2">
+      <mxGeometry x="400" y="50" width="300" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="rest2_response" value="Параметры ответа:&#10;- code (int, да)&#10;- description (string, да)&#10;- psychologist_id (int, да)" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="rest2">
+      <mxGeometry x="400" y="150" width="300" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Row 3: GET /clients -->
+    <mxCell id="rest3" value="GET /clients&#10;&#10;Описание: Получение списка всех клиентов" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+      <mxGeometry x="50" y="250" width="300" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="rest3_params" value="Параметры запроса:&#10;- (нет)" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="rest3">
+      <mxGeometry x="50" y="250" width="300" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="rest3_response" value="Параметры ответа:&#10;- id (int, да)&#10;- user_name (string, да)&#10;- email (string, да)&#10;- phone (string, нет)&#10;- child_age (int, нет)" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="rest3">
+      <mxGeometry x="50" y="350" width="300" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Row 4: POST /booked-clients -->
+    <mxCell id="rest4" value="POST /booked-cli
