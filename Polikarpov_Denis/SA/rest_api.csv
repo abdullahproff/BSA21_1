@@ -1,6 +1,0 @@
-"ID","Название","Описание","Тип данных","Обязательность"
-"1","GET /psychologists","Получение списка всех психологов","N/A","-"
-"2","POST /psychologists","Добавление нового психолога","psiholog_name (string), specialization (string), contact_mail (string)","Да,Нет,Да"
-"3","GET /clients","Получение списка всех клиентов","N/A","-"
-"4","POST /booked-clients","Бронирование слота клиентом","slot_id (int), client_id (int)","Да,Да"
-"5","GET /available-slots","Получение доступных слотов","N/A","-"
