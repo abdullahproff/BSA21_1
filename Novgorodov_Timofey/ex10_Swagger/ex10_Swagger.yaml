@@ -4,7 +4,7 @@ info:
   description: API для получения и создания задач студентов
   version: 1.0.0
 servers:
-  - url: https://studpanner.swagger.io/api/v1
+  - url: https://studplanner.swagger.io/api/v1
     description: Основной сервер API
 
 tags:
