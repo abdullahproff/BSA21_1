@@ -136,7 +136,7 @@ components:
           enum: 
             - text
             - sticker
-          description: Тип содержимого, который может быть одним из перечисленных значений ("text"/"sticker")
+          description: Тип содержимого, который может быть одним из перечисленных значений
           example: text
         sticker_id:
           type: integer
