@@ -136,7 +136,7 @@ components:
           enum: 
             - text
             - sticker
-          description: Тип содержимого, который может быть одним из перечисленных значений ("text"/"sticker")
+          description: Тип содержимого, который может быть одним из перечисленных значений
           example: text
         sticker_id:
           type: integer
@@ -160,7 +160,11 @@ components:
           example: 456
         status:
           type: string
-          description: Статус сообщения "sent"
+          enum: 
+            - sent
+            - pending
+            - blocked
+          description: Статус сообщения, который может быть одним из перечисленных значений
           example: sent
         created_at:
           type: string
