@@ -39,15 +39,16 @@ components:
       type: object
       required:
         - products
-        - productId
-        - productName
-        - brand
         - productsAmount
       properties:
         products:
           type: array
           items:
             type: object
+            required:
+              - productId
+              - productName
+              - brand
             properties:
               productId:
                 type: integer
