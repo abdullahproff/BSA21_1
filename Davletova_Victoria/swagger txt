@@ -1,0 +1,80 @@
+openapi: 3.0.0
+info:
+  title: Music Listening History API
+  description: API для управления историей прослушивания музыки за последний месяц.
+  version: 1.0.0
+paths:
+  /v1/music/history:
+    get:
+      summary: Получение истории прослушивания музыки за последний месяц
+      description: Возвращает массив объектов с информацией о треках, прослушанных за последний месяц.
+      parameters:
+        - name: userId
+          in: query
+          description: Уникальный идентификатор пользователя
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: Успешный ответ
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  userId:
+                    type: integer
+                    example: 123
+                  tracks:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        title:
+                          type: string
+                          example: "Imagine"
+                        artist:
+                          type: string
+                          example: "John Lennon"
+                        listenDate:
+                          type: string
+                          format: date-time
+                          example: "2024-12-22T15:30:00Z"
+    post:
+      summary: Добавление информации о прослушивании трека
+      description: Добавляет новый трек в историю пользователя.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: integer
+                  example: 123
+                track:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                      example: "Imagine"
+                    artist:
+                      type: string
+                      example: "John Lennon"
+                    listenDate:
+                      type: string
+                      format: date-time
+                      example: "2024-12-22T15:30:00Z"
+      responses:
+        201:
+          description: Трек успешно добавлен
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Track successfully added."
