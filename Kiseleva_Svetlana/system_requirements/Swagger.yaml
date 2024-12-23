@@ -136,7 +136,7 @@ components:
           enum: 
             - text
             - sticker
-          description: Тип содержимого, который может быть одним из перечисленных значений
+          description: Тип содержимого, который может быть одним из перечисленных значений ("text"/"sticker")
           example: text
         sticker_id:
           type: integer
@@ -165,5 +165,5 @@ components:
         created_at:
           type: string
           format: date-type
-          description: Время отправки в формате "HH.MM DD.MM.YYYY"
-          example: 12.00 23.12.2024
+          description: Время отправки
+          example: 2024-12-23T15:47:38.654Z
