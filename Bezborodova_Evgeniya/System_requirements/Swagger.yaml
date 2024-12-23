@@ -37,6 +37,12 @@ components:
 
     Products_response:
       type: object
+      required:
+        - products
+        - productId
+        - productName
+        - brand
+        - productsAmount
       properties:
         products:
           type: array
