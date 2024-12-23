@@ -70,39 +70,56 @@ components:
   
     stickers_response:
       type: object
+      required:
+        - stickers
+        - pagination
       properties:
         stickers:
           type: array
           items:
-            type: object
-            properties:
-              sticker_id:
-                type: integer
-                description: Уникальный признак объекта «стикер»
-                example: 1
-              sticker_url:
-                type: string
-                description: Путь к изображению стикера
-                example: "https://example.com/sticker1.png"
-              tag:
-                type: string
-                description: Данные для удобства поиска
-                example: "funny"
+            $ref: '#/components/schemas/sticker'
         pagination:
-          type: object
-          properties:
-            page:
-              type: integer
-              description: Текущая страница
-              example: 1
-            total_items:
-              type: integer
-              description: Общее количество стикеров
-              example: 100
-            limit:
-              type: integer
-              description: Установленный лимит
-              example: 10
+          $ref: '#/components/schemas/pagination'
+    
+    sticker:
+      type: object
+      required:
+        - sticker_id
+        - sticker_url
+        - tag
+      properties:
+        sticker_id:
+          type: integer
+          description: Уникальный признак объекта «стикер»
+          example: 1
+        sticker_url:
+          type: string
+          description: Путь к изображению стикера
+          example: https://example.com/sticker1.png
+        tag:
+          type: string
+          description: Данные для удобства поиска
+          example: funny
+    
+    pagination:
+      type: object
+      required:
+        - page
+        - total_items
+        - limit
+      properties:
+        page:
+          type: integer
+          description: Текущая страница
+          example: 1
+        total_items:
+          type: integer
+          description: Общее количество стикеров
+          example: 100
+        limit:
+          type: integer
+          description: Установленный лимит
+          example: 10
 
     messages_request:
       type: object
@@ -116,8 +133,11 @@ components:
           example: 123
         content_type:
           type: string
-          description: Тип содержимого ("text"/"sticker")
-          example: "text"
+          enum: 
+            - text
+            - sticker
+          description: Тип содержимого, который может быть одним из перечисленных значений ("text"/"sticker")
+          example: text
         sticker_id:
           type: integer
           description: Уникальный признак объекта «стикер»
@@ -125,10 +145,14 @@ components:
         content:
           type: string
           description: Содержание текстового сообщения
-          example: "Привет, как дела?"
+          example: Привет, как дела?
 
     messages_response:
       type: object
+      required:
+        - message_id
+        - status
+        - created_at
       properties:
         message_id:
           type: integer
@@ -137,8 +161,9 @@ components:
         status:
           type: string
           description: Статус сообщения "sent"
-          example: "sent"
+          example: sent
         created_at:
           type: string
+          format: date-type
           description: Время отправки в формате "HH.MM DD.MM.YYYY"
-          example: "12.00 23.12.2024"
+          example: 12.00 23.12.2024
