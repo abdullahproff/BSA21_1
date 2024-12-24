@@ -1,0 +1,61 @@
+openapi: 3.0.3
+info:
+  title: Music
+  version: 1.0.0
+  description: Сервис для прослушивания музыки
+servers:
+  - url: https://music.swagger.io/api/v1
+paths:
+  /favorite_playlists/{playlist_id}/tracks:
+    post:
+      tags:
+        - tracks
+      summary: Добавить трек в плейлист
+      description: Добавить трек в плейлист
+      parameters:
+        - name: playlist_id
+          in: path
+          required: true
+          description: Уникальный идентификатор плейлиста
+          schema:
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/addTrackRq'
+        required: true
+        description: Уникальный идентификатор трека
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/addTrackRs'
+      
+components:
+  schemas:
+    addTrackRq:
+      required:
+        - track_id
+      properties:
+        track_id:
+          description: Уникальный идентификатор трека
+          type: integer
+    addTrackRs:
+      description: Трек успешно добавлен
+      required:
+        - code
+        - message
+      properties:
+        code:
+          description: Код сообщения
+          type: integer
+          example: 0
+        message:
+          description: Описание сообщения
+          type: string
+          example: success
+          
+        
