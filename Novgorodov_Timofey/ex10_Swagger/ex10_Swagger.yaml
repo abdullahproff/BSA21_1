@@ -33,16 +33,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Список задач успешно получен
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  tasks:
-                    type: array
-                    items:
-                      $ref: '#/components/schemas/Task'
+          $ref: '#/components/responses/StudentTasks200'
         '400':
           description: Неверный запрос
         '404':
@@ -82,6 +73,12 @@ components:
   schemas:
     Task:
       type: object
+      required:
+      - task_id
+      - title
+      - task_status
+      - priority
+      - subject
       properties:
         task_id:
           type: integer
@@ -106,6 +103,11 @@ components:
           $ref: '#/components/schemas/Subject'
     NewTask:
       type: object
+      required:
+        - subject_id
+        - title
+        - task_status
+        - priority
       properties:
         subject_id:
           type: integer
@@ -126,13 +128,12 @@ components:
         description:
           type: string
           description: Подробное описание задачи
+    Subject:
+      type: object
       required:
         - subject_id
         - title
-        - task_status
-        - priority
-    Subject:
-      type: object
+        - workload
       properties:
         subject_id:
           type: integer
@@ -143,7 +144,16 @@ components:
         workload:
           type: integer
           description: Нагрузка по дисциплине в часах
-      required:
-        - subject_id
-        - title
-        - workload
+
+  responses:
+    StudentTasks200:
+      description: Список задач успешно получен
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              tasks:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
