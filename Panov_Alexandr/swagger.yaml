@@ -31,32 +31,14 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              properties:
-                group_name:
-                  type: string
-                  description: Unique group name
-                  example: My Group32
-                group_description:
-                  type: string
-                  description: Description of the group
-                  example: This is a sample group
-                user_id:
-                  type: string 
-                  description: Unique user identifier
-                  example: ALEx56
+              $ref: '#/components/schemas/GroupCreationRequest'
       responses:
         '201':
           description: Successful operation
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  group_id:
-                    type: integer
-                    description: Unique group identifier
-                    example: 78910
+                $ref: '#/components/schemas/GroupCreationResponse'
         '400':
           description: Invalid input
         '422':
@@ -77,32 +59,63 @@ paths:
             type: string
             example: ALEx56
       responses:
-              '200':
-                description: Successful operation
-                content:
-                  application/json:
-                    schema:
-                      type: object
-                      properties:
-                        groups:
-                          type: array
-                          items:
-                            type: object
-                            properties:
-                              group_id:
-                                type: integer
-                                description: Unique identifier of the group
-                                example: 78910
-                              group_name:
-                                type: string
-                                description: Name of the group
-                                example: My Group32
-                              group_description:
-                                type: string
-                                description: Description of the group
-                                example: This is a sample group
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserGroupsResponse'
 
 
+components:
+  schemas:
+    GroupCreationRequest:
+      type: object
+      properties:
+        group_name:
+          type: string
+          description: Unique group name
+          example: My Group32
+        group_description:
+          type: string
+          description: Description of the group
+          example: This is a sample group
+        user_id:
+          type: string
+          description: Unique user identifier
+          example: ALEx56
+
+    GroupCreationResponse:
+      type: object
+      properties:
+        group_id:
+          type: integer
+          description: Unique group identifier
+          example: 78910
+
+    Group:
+      type: object
+      properties:
+        group_id:
+          type: integer
+          description: Unique identifier of the group
+          example: 78910
+        group_name:
+          type: string
+          description: Name of the group
+          example: My Group32
+        group_description:
+          type: string
+          description: Description of the group
+          example: This is a sample group
+    
+    UserGroupsResponse:
+      type: object
+      properties:
+        groups:
+          type: array
+          items:
+            $ref: '#/components/schemas/Group'
 
 
 
