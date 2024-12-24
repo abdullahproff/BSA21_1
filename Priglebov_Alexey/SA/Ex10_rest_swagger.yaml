@@ -1,0 +1,85 @@
+openapi: 3.0.3
+info:
+  title: Swagger  - OpenAPI 3.0
+  description: примеры методов
+  version: 1.0.0
+servers:
+  - url: https://petstore3.swagger.io/api/v3
+  
+tags:
+  - name: real_estates
+    description: запросы для работы с объектами недвижимости
+
+    
+paths:
+  /real_estates:
+    get:
+      tags:
+        - real_estates
+      summary: фильтрация объектов недвижимости по цене
+      description: получить список объектов недвижимости в установленном диапазоне цен
+      parameters:
+        - name: min_price
+          in: query
+          description: минимальная цена объекта недвижимости
+          required: false
+          schema:
+            type: integer
+        - name: max_price 
+          in: query
+          description: максимальная цена объекта недвижимости
+          required: false
+          schema:
+            type: integer
+      responses:
+       '200':
+         description: Success
+         content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Real_estates'
+
+              
+components:
+  schemas:
+      
+    Real_estates:
+      type: object
+      properties:
+        total_count:
+          type: integer
+          example: 117
+          description: общее количество найденных объектов недвижимости
+        real_estates:
+          type: array
+          items:
+            type: object
+            properties:
+              price:
+                type: integer
+                example: 8000000
+                description: общая цена объекта недвижимости
+              area:
+                type: integer
+                example: 75
+                description: площадь объекта недвижимости
+              country:
+                type: string
+                example: РФ
+                description: страна
+              region:
+                type: string
+                example: NULL
+                description: область
+              locality:
+                type: string
+                example: Москва
+                description: населенный пункт
+              street:
+                type: string
+                example: Рождественская
+                description: улица
+              house_number:
+                type: string
+                example: 1А
+                description: номер дома
