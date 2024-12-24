@@ -26,17 +26,17 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/request'
+              $ref: '#/components/schemas/AvatarFile'
       responses:
         '201':
           description: Аватар успешно загружен
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/responses'
+                $ref: '#/components/schemas/AvatarUploadResponse'
 components:
   schemas:
-    request:
+    AvatarFile:
       type: object
       properties:
         avatar:
@@ -45,7 +45,7 @@ components:
           description: Изображение (файл фотографии)
       required:
         - avatar
-    responses:
+    AvatarUploadResponse:
       type: object
       properties:
         message:
