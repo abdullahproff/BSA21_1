@@ -4,7 +4,7 @@ info:
   description: описание методов API для работы с объектами недвижимости
   version: 1.0.0
 servers:
-  - url: https://petstore3.swagger.io/api/v3
+  - url: https://domclick.com/api/v3
   
 tags:
   - name: real_estates
