@@ -53,38 +53,6 @@ paths:
                   userId: 123
                   productId: 456
                   message: "Товар добавлен в избранное."
-        '400':
-          description: Неверный запрос
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  errorCode:
-                    type: string
-                    description: Код ошибки
-                  message:
-                    type: string
-                    description: Сообщение об ошибке
-                example:
-                  errorCode: "BAD_REQUEST"
-                  message: "userId и productId обязательны."
-        '404':
-          description: Пользователь или товар не найдены
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  errorCode:
-                    type: string
-                    description: Код ошибки
-                  message:
-                    type: string
-                    description: Сообщение об ошибке
-                example:
-                  errorCode: "NOT_FOUND"
-                  message: "Пользователь не найден."
   /v1/favorites/{userId}:
     get:
       summary: Получение списка избранных товаров
@@ -133,35 +101,3 @@ paths:
                   productName: "Ноутбук"
                   price: 1299.99
                   description: "Мощный ноутбук для работы и игр."
-        '400':
-          description: Неверный запрос
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  errorCode:
-                    type: string
-                    description: Код ошибки
-                  message:
-                    type: string
-                    description: Сообщение об ошибке
-                example:
-                  errorCode: "BAD_REQUEST"
-                  message: "userId обязателен."
-        '404':
-          description: Пользователь не найден
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  errorCode:
-                    type: string
-                    description: Код ошибки
-                  message:
-                    type: string
-                    description: Сообщение об ошибке
-                example:
-                  errorCode: "NOT_FOUND"
-                  message: "Пользователь не найден."
