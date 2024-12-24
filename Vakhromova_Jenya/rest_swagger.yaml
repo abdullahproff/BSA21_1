@@ -17,7 +17,7 @@ paths:
       tags:
         - photographer
       summary: фильтрация фотографов
-      description: получить список фотографов по выьранной ползователем локации
+      description: получить список фотографов по выбранной пользователем локации
       parameters:
         - name: radius
           in: query
