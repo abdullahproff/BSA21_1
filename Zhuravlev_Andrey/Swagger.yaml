@@ -70,3 +70,12 @@ components:
         mimeType:
           type: string
           description: MIME-тип загруженного файла
+        
+      required:
+        - message
+        - userId
+        - avatarUrl
+        - timestamp
+        - filename
+        - sizeMb
+        - mimeType
