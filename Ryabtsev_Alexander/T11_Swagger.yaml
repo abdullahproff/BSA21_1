@@ -1,0 +1,133 @@
+openapi: 3.0.3
+info:
+  title: МегаМаркет API
+  description: API для управления содержимым Корзины Пользователя
+  version: 1.0.0
+servers:
+  - url: https://api.megamarket.com/v1
+
+paths:
+  /users/{userId}/cart:
+    get:
+      tags:
+        - Управление Корзиной
+      summary: Получение содержимого Корзины Пользователя
+      description: Позволяет получить список Товаров в Корзине Пользователя
+      parameters:
+        - name: userId
+          in: path
+          description: Уникальный ID Пользователя
+          example: 111
+          required: true
+          schema:
+            type: number
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cart'
+
+  /users/{userId}/cart/item:
+    post:
+      tags:
+        - Управление Корзиной
+      summary: Добавление Товара в Корзину
+      description: Позволяет добавить выбранный Товар в Корзину Пользователя
+      parameters:
+        - name: userId
+          in: path
+          description: Уникальный ID Пользователя
+          example: 111
+          required: true
+          schema:
+            type: number
+      requestBody:
+        description: Данные Товара для добавления в Корзину
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                productId:
+                  type: number
+                  description: Уникальный ID Товара
+                  example: 888
+                itemQuantity:
+                  type: number
+                  description: Количество добавляемого Товара
+                  example: 0.333
+              required:
+                - productId
+                - itemQuantity
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: Сообщение о результате выполнения
+                    example: Товар успешно добавлен в Корзину
+                required:
+                  - message
+
+components:
+  schemas:
+    Cart:
+      type: object
+      properties:
+        cartId:
+          type: number
+          example: 123
+          description: Уникальный ID Корзины
+        cartItems:
+          type: array
+          items:
+            type: object
+            properties:
+              productId:
+                type: number
+                description: Уникальный ID Товара
+                example: 777
+              name:
+                type: string
+                description: Наименование Товара
+                example: Кефир
+              unit:
+                type: string
+                description: Единица измерения Товара
+                example: шт.
+              price:
+                type: number
+                description: Цена за единицу Товара
+                example: 49.99
+              photo:
+                type: string
+                description: Изображение Товара
+                example: https://bucket-name.s3.site.com/folder/kefir-500.png
+              description:
+                type: string
+                description: Описание Товара
+                example: 500 гр.
+              category:
+                type: string
+                description: Категория Товара
+                example: Продукты / Молочные
+              itemQuantity:
+                type: number
+                description: Количество Товара в Корзине
+                example: 1
+            required:
+              - productId
+              - name
+              - unit
+              - price
+              - itemQuantity
+      required:
+        - cartId
