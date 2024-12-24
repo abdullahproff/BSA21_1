@@ -1,0 +1,81 @@
+openapi: 3.0.3
+info:
+  title: Swagger
+  description: Описание методов API для загрузки фотографии на сервер
+  version: 1.0.11
+servers:
+  - url: https://telegram.com/api/v1 
+tags:
+  - name: avatar
+    description: Метод для работы с фотографиями
+paths:
+  /users/{userId}/avatar:
+    post:
+      tags:
+        - avatar
+      summary: Загрузить аватар пользователя
+      description: Загружает аватар для указанного пользователя
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          schema:
+            type: integer
+          description: Идентификатор пользователя
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AvatarFile'
+      responses:
+        '201':
+          description: Аватар успешно загружен
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AvatarUploadResponse'
+components:
+  schemas:
+    AvatarFile:
+      type: object
+      properties:
+        avatar:
+          type: string
+          format: binary
+          description: Изображение (файл фотографии)
+      required:
+        - avatar
+    AvatarUploadResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          description: Сообщение о результате выполнения операции
+        userId:
+          type: integer
+          description: Идентификатор пользователя, для которого был загружен аватар
+        avatarUrl:
+          type: string
+          description: Ссылка на загруженный аватар
+        timestamp:
+          type: string
+          description: Время загрузки аватара в формате ISO 8601
+        filename:
+          type: string
+          description: Исходное имя файла
+        sizeMb:
+          type: number
+          format: double
+          description: Размер загруженного файла в мегабайтах
+        mimeType:
+          type: string
+          description: MIME-тип загруженного файла
+        
+      required:
+        - message
+        - userId
+        - avatarUrl
+        - timestamp
+        - filename
+        - sizeMb
+        - mimeType

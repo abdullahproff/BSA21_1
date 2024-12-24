@@ -1,0 +1,148 @@
+openapi: 3.0.0
+
+info:
+  title: Swagger - Open API
+  description: Примеры методов. <hr/><p> **Дополнительная информация доступна по ссылке:** <p> [Документация по API](https://localhost:8080) <p>
+  version: 1.0.11
+
+servers:
+  - url: https://{domain}:{port}
+    description: URL для подключения
+    variables:
+      domain:
+        default: localhost
+        description: api domain
+      port:
+        # enum:
+        #   - '9093'
+        #   - '9092'
+        default: '9093'
+
+tags:
+- name: &actionValue 'Action'
+  description: "Запрос/получение данных"
+
+paths:
+  /planets:
+    get:
+      tags:
+      - *actionValue
+      summary: Получить карточку планеты
+      responses:
+        default:
+          description: Ответ на запрос успешно получен
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PLANETCARD'
+
+  /planetsSystem:
+    get:
+      tags:
+      - *actionValue
+      summary: Получить карточку планетной системы
+      responses:
+        default:
+          description: Ответ на запрос успешно получен
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SYSTEMCARD'
+ 
+   
+  # /planets/dzoevent:
+  #   post:
+  #     tags:
+  #     - *actionValue
+  #     summary: Создать новую карточку планеты
+  #     description: Пользователь должен быть авторизирован
+  #     operationId: Создать карточку планеты
+  #     requestBody:
+  #       description: Новая карточка планеты, которую нужно создать
+  #       required: true
+  #       content:
+  #         application/json:
+  #           schema:
+  #             $ref: '#/components/schemas/EVENT'
+  #     responses:
+  #       200:
+  #         description: OK
+  #       400:
+  #         description: Bad request
+
+
+components:
+  schemas:
+
+    # EVENT:
+    #   type: object
+    #   properties:
+    #     ctl_validfrom:
+    #       type: string
+    #       description: Дата загрузки записи
+    #       example: "2024-09-20T00:00:00.756+03:00"
+    #     planet_id:
+    #       type: integer
+    #       description: Идентификатор 
+    #       example: 501
+    #     planet_name:
+    #       type: string
+    #       description: Наименование 
+    #       example: "Планета_501"
+       
+    PLANETCARD:
+      type: object
+      required:
+        - planet_id
+        - planet_name
+        - author_id
+      properties:
+        planet_id:
+          type: integer
+          description: Уникальный идентификатор планеты
+          example: 786
+        planet_name:
+          type: string
+          description: Название планеты
+          example: "Марс"
+        description:
+          type: string
+          description: Краткое описание планеты
+          example: "Планета Марс, Млечный путь"
+        details:
+          type: string
+          description: Детальная информация о планете
+          example: "Планета Марс, находиться на следующей орбите после...."
+        author_id:
+          type: integer
+          description: Уникальный идентификатор автора
+          example: 786786
+    
+    SYSTEMCARD:
+      type: object
+      required:
+        - system_id
+        - system_name
+        - author_id
+      properties:
+        system_id:
+          type: integer
+          description: Уникальный идентификатор планетой системы
+          example: 786
+        system_name:
+          type: string
+          description: Название планетой системы
+          example: "Марс"
+        description:
+          type: string
+          description: Краткое описание планетной системы
+          example: "Планета Марс, Млечный путь"
+        details:
+          type: string
+          description: Детальная информация о планетой системе
+          example: "Планета Марс, находиться на следующей орбите после...."
+        author_id:
+          type: integer
+          description: Уникальный идентификатор автора
+          example: 786786
+                        

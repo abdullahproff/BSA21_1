@@ -1,0 +1,122 @@
+openapi: 3.0.3
+info:
+  title: Diet diary (features for group)
+  description: |-
+    Made for SA course
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.11
+servers:
+  - url: https://my_food.ru
+tags:
+  - name: user 
+    description: Everything about  User
+
+  - name: group
+    description: Users groups
+    externalDocs:
+      description: Find out more about groups
+      url: https://my_food.ru/groups
+
+paths:
+  /group:
+    post:
+      tags:
+        - group
+      summary: Make a new group
+      description: User creates a new group and receives a new group ID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GroupCreationRequest'
+      responses:
+        '201':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GroupCreationResponse'
+        '400':
+          description: Invalid input
+        '422':
+          description: Validation exception
+
+  /group/{user_id}:
+    get:
+      tags:
+        - user
+      summary: Get groups by user
+      description: Returns groups associated with a specific user
+      parameters:
+        - name: user_id
+          in: path
+          required: true
+          description: Unique identifier of the user
+          schema:
+            type: string
+            example: ALEx56
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserGroupsResponse'
+
+
+components:
+  schemas:
+    GroupCreationRequest:
+      type: object
+      properties:
+        group_name:
+          type: string
+          description: Unique group name
+          example: My Group32
+        group_description:
+          type: string
+          description: Description of the group
+          example: This is a sample group
+        user_id:
+          type: string
+          description: Unique user identifier
+          example: ALEx56
+
+    GroupCreationResponse:
+      type: object
+      properties:
+        group_id:
+          type: integer
+          description: Unique group identifier
+          example: 78910
+
+    Group:
+      type: object
+      properties:
+        group_id:
+          type: integer
+          description: Unique identifier of the group
+          example: 78910
+        group_name:
+          type: string
+          description: Name of the group
+          example: My Group32
+        group_description:
+          type: string
+          description: Description of the group
+          example: This is a sample group
+    
+    UserGroupsResponse:
+      type: object
+      properties:
+        groups:
+          type: array
+          items:
+            $ref: '#/components/schemas/Group'
+
+
+
+    

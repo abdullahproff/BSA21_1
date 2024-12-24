@@ -1,0 +1,159 @@
+openapi: 3.0.3
+info:
+  title: API для управления задачами студентов
+  description: API для получения и создания задач студентов
+  version: 1.0.0
+servers:
+  - url: https://studplanner.swagger.io/api/v1
+    description: Основной сервер API
+
+tags:
+  - name: Student tasks
+    description: Методы для работы с задачами студентов
+
+paths:
+  /students/{student_id}/tasks:
+    get:
+      tags:
+        - Student tasks
+      summary: Получить список задач студента
+      description: Возвращает список задач для указанного студента. Можно фильтровать по статусу задачи.
+      parameters:
+        - name: student_id
+          in: path
+          required: true
+          description: Уникальный идентификатор студента
+          schema:
+            type: integer
+        - name: task_status
+          in: query
+          required: false
+          description: Фильтр по статусу задачи
+          schema:
+            type: string
+      responses:
+        '200':
+          $ref: '#/components/responses/StudentTasks200'
+        '400':
+          description: Неверный запрос
+        '404':
+          description: Студент не найден
+    post:
+      tags:
+        - Student tasks
+      summary: Создать новую задачу для студента
+      description: Создает новую задачу для указанного студента.
+      parameters:
+        - name: student_id
+          in: path
+          required: true
+          description: Уникальный идентификатор студента
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        description: Данные новой задачи
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewTask'
+      responses:
+        '201':
+          description: Задача успешно создана
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '400':
+          description: Неверный запрос
+        '404':
+          description: Студент не найден
+
+components:
+  schemas:
+    Task:
+      type: object
+      required:
+      - task_id
+      - title
+      - task_status
+      - priority
+      - subject
+      properties:
+        task_id:
+          type: integer
+          description: Уникальный идентификатор задачи
+        title:
+          type: string
+          description: Название задачи
+        task_status:
+          type: string
+          description: Статус задачи
+        priority:
+          type: integer
+          description: Приоритет задачи (1 - низкий, 3 - высокий)
+        deadline:
+          type: string
+          format: date
+          description: Дата дедлайна в формате YYYY-MM-DD
+        description:
+          type: string
+          description: Подробное описание задачи
+        subject:
+          $ref: '#/components/schemas/Subject'
+    NewTask:
+      type: object
+      required:
+        - subject_id
+        - title
+        - task_status
+        - priority
+      properties:
+        subject_id:
+          type: integer
+          description: Уникальный идентификатор дисциплины
+        title:
+          type: string
+          description: Название задачи
+        task_status:
+          type: string
+          description: Статус задачи
+        priority:
+          type: integer
+          description: Приоритет задачи (1 - низкий, 3 - высокий)
+        deadline:
+          type: string
+          format: date
+          description: Дата дедлайна в формате YYYY-MM-DD
+        description:
+          type: string
+          description: Подробное описание задачи
+    Subject:
+      type: object
+      required:
+        - subject_id
+        - title
+        - workload
+      properties:
+        subject_id:
+          type: integer
+          description: Уникальный идентификатор дисциплины
+        title:
+          type: string
+          description: Название дисциплины
+        workload:
+          type: integer
+          description: Нагрузка по дисциплине в часах
+
+  responses:
+    StudentTasks200:
+      description: Список задач успешно получен
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              tasks:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
