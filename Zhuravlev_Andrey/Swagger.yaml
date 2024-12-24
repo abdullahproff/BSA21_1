@@ -42,6 +42,7 @@ components:
         avatar:
           type: string
           format: binary
+          description: Изображение (файл фотографии)
       required:
         - avatar
     responses:
