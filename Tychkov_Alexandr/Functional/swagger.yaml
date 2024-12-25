@@ -1,0 +1,106 @@
+
+openapi: 3.0.3
+info:
+  title: Swagger  - OpenAPI 3.0
+  description: примеры методов
+  version: 1.0.0
+servers:
+  - url: https://soundworld/api/v1
+  
+tags:
+  - name: playlist
+    description: группа методов для работы с плей-листами
+    
+paths:
+  /playlist_traks:
+    post:
+      tags:
+      - playlist
+      summary: Добавление трека в плей-листы
+      description: Добавление трека в плей-листы выбранные пользователем
+      requestBody:
+        description: Параметры метода для добавления трека в плей-листы
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/playlist_traks_request'
+      responses:
+        '200':
+         description: OK
+         content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/playlist_traks_response'
+              
+  /playlists/{user_id}:
+    get:
+      tags:
+      - playlist
+      summary: Получить список плей-листов
+      description: Получить список плей-листов по уникальному идентификатору пользователя
+      parameters:
+        - name: user_id
+          in: path
+          description: уникальномый идентификатор пользователя
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/get_playlists_response'
+        
+            
+      
+              
+components:
+  schemas:
+    playlist_traks_request:
+      type: object
+      properties:
+        user_id:
+          type: integer
+          example: 1
+        track_id:
+          type: integer
+          example: 3
+        arr_playlist_id:
+          type: array
+          items:
+            type: integer
+            example: 3
+            
+            
+    playlist_traks_response:
+      type: object
+      properties:
+        add_playlist_obj_arr:
+          type: array
+          items:
+            type: object
+            properties:
+              playlist_id:
+                type: integer
+                example: 3
+              code:
+                type: integer
+                description: 1 - трек успещно добавлен в плей-лист, 2 - ошибка
+                example: 1
+    
+    get_playlists_response:
+      type: object
+      properties:
+        arr_playlist_obj:
+          type: array
+          items:
+            type: object
+            properties:
+              playlist_id:
+                type: integer
+                example: 1
+              playlist_name:
+                type: string
+                example: favorite
