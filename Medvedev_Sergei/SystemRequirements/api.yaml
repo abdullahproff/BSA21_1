@@ -1,0 +1,107 @@
+openapi: 3.0.3
+info:
+  title: Добавления товаров в раздел избранное
+  description: Методы, необходимые для добавления пользователем товаров в раздел Избранное
+  version: 1.0.11
+servers:
+  - url: http://Alpin_GOAT.ru
+tags:
+  - name: favourites
+    description: Группа методов, необходимых для реализации фичи раздела Избранное
+
+paths:
+  /v1/favourites/:
+    post:
+      tags:
+        - favourites
+      summary: добавить товар в раздел избранное
+      description: метод для отправки на сервер информации о пользователе и товаре ,который он добавил в Избранное
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FavouritesRequestPost'
+      responses:
+        '200':
+          description: Успешная операция
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FavouritesResponcePost'
+
+  /v1/favourites/{user_id}:
+    get:
+      tags:
+        - favourites
+      summary: метод запроса пользователем информации о товарах, которые он добавил в Избранное 
+      description: получить характеристики избранных товаров пользователем по его id
+      parameters:
+        - name: user_id
+          in: path
+          required: true
+          description: id пользователя
+          schema:
+            type: integer
+            example: 1111
+      responses:
+        '200':
+          description: Успешная операция
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FavouritesResponceGet'
+
+
+components:
+  schemas:
+    FavouritesResponcePost:
+      type: object
+      properties:
+        code:
+          type: integer
+          description: код результата операции
+          example: 200
+        
+
+    FavouritesRequestPost:
+      type: object
+      properties:
+        UserId:
+          type: integer
+          description: уникальный id пользователя
+          example: 1111
+        ShoesId:
+          type: integer
+          description: уникальный id товара
+          example: 2222
+
+
+    
+    FavouritesResponceGet:
+      type: object
+      properties:
+        Items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Shoes'
+    
+    Shoes:
+      type: object
+      properties:
+        saleStatus:
+          type: boolean
+          description:  true товар - со скидной, иначе false
+          example: true
+        price:
+          type: integer
+          description: цена до скидки
+          example: 10000
+        price_after_sale:
+          type: integer
+          description: цена после скидки, если saleStatus='false', то этот параметр равен параметру price
+          example: 8000
+
+
+
+    
