@@ -92,5 +92,6 @@ components:
               - house_number
           required:
           - total_count
+          - real_estates
               
               
