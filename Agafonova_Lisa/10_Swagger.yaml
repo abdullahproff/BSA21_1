@@ -1,0 +1,86 @@
+openapi: 3.0.0
+info:
+  title: API для приема пищи
+  description: Описание API для создания и анализа приемов пищи
+  version: 1.0.0
+paths:
+  /meal:
+    post:
+      summary: Создание приема пищи
+      description: Пользователь создает прием пищи
+      operationId: createMeal
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                mealDate:
+                  type: string
+                  format: date
+                  description: Установленная пользователем дата (по умолчанию - текущая)
+                mealType:
+                  type: string
+                  enum: ["Завтрак", "Обед", "Ужин", "Перекус"]
+                  description: Тип приема пищи
+                mealItems:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      productId:
+                        type: integer
+                        description: Уникальный идентификатор продукта
+                      productQuantity:
+                        type: number
+                        format: float
+                        description: Количество продукта в граммах
+      responses:
+        '201':
+          description: Создание приема пищи успешно
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Прием пищи успешно сохранен"
+  /meal/analytics:
+    get:
+      summary: Получение аналитики по приемам пищи
+      description: Клиент запрашивает аналитику за текущую дату
+      operationId: getMealAnalytics
+      parameters:
+        - in: query
+          name: mealDate
+          required: false
+          schema:
+            type: string
+            format: date
+          description: Установленная пользователем дата приема пищи (по умолчанию - текущая)
+      responses:
+        '200':
+          description: Актуальная аналитика за текущую дату
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  summKcal:
+                    type: number
+                    format: float
+                    description: Суммарное количество потребленных килокалорий за день
+                  summProteins:
+                    type: number
+                    format: float
+                    description: Суммарное количество потребленных белков за день
+                  summFats:
+                    type: number
+                    format: float
+                    description: Суммарное количество потребленных жиров за день
+                  summCarbos:
+                    type: number
+                    format: float
+                    description: Суммарное количество потребленных углеводов за день
