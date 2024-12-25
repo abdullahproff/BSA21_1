@@ -11,7 +11,7 @@ tags:
     description: Персонажи пользователя
 
 paths:
-  /v1/newcharacter:
+  /v1/character_id:
     post:
       tags:
         - character
