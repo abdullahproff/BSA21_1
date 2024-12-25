@@ -2,7 +2,7 @@ openapi: 3.0.3
 
 info:
   title: Управление списком заклинаний персонажа в DnD
-  description: sdfdsdfd
+  description: API для просмотра списка персонажа пользователя и его управления через утилиту на сайте ttg.club
   version: 1.0.11
 servers:
   - url: https://ttg.swagger.io/api/v1
