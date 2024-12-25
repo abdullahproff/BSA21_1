@@ -1,0 +1,73 @@
+openapi: 3.0.3
+info:
+  title: API для управления психологами и клиентами
+  description: API для работы с психологами, клиентами и их записями.
+  version: 1.0.0
+servers:
+  - url: http://api.example.com/v1
+
+  /slots/getAvaliable:
+    get:
+      summary: Получение слота для записи к психологу
+      responses:
+        '200':
+          description: Успешный ответ с данными доступных слотов
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      example: 1
+                    psychologist_id:
+                      type: integer
+                      example: 1
+                    slot_time:
+                      type: string
+                      format: date-time
+                      example: "2024-12-11T10:00:00Z"
+                    is_available:
+                      type: boolean
+                      example: true
+
+  /slots/book:
+   post:
+      summary: Забронировать слот для клиента
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                slot_id:
+                  type: integer
+                client_id:
+                  type: integer
+                phone:
+                  type: string
+                email:
+                  type: string
+                  format: email
+                child_age:
+                  type: integer
+                is_avaliable:
+                  type: boolean            
+      responses:
+        '201':
+          description: Слот успешно забронирован
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  slot_id:
+                    type: integer
+                    example: 1
+                  client_id:
+                    type: integer
