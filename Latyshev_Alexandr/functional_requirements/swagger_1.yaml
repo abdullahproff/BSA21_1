@@ -1,0 +1,62 @@
+openapi: 3.0.3
+info:
+  title: Swagger Example - OpenAPI 3.0
+  description: Документирование REST-вызовов беризаряд в Swagger
+  version: 1.0.1
+servers:
+  - url: https://berizaryad.swagger.io/api/v3
+tags:
+  - name: postamat
+    description: постаматы
+  - name: user
+    description: пользователь
+  - name: address
+    description: адрес
+paths:
+  /postamats/{postamat_id}:
+    get:
+      tags:
+        - postamat
+      summary: количество повербанков
+      description: возвращает количество поврбанков, адрес постамата, и его id
+      parameters:
+        - name: postamat_id
+          in: path
+          description: уникальный идентификатор постамата
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/postamats'
+        '400':
+          description: Uncorrecred id
+        '500':
+          description: Server Error
+components:
+  schemas:
+    postamats:
+      type: object
+      properties:
+        postamat_id:
+          type: integer
+          example: 1
+        count_power:
+          type: integer
+          example: 3
+        street_name:
+          type: string
+          example: Pushkina
+        index_home:
+          type: integer
+          example: 12a
+        code:
+          type: integer
+          example: 200
+        description:
+          type: string
+          example: complete
