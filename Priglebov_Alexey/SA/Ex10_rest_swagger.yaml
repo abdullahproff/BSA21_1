@@ -83,3 +83,14 @@ components:
                 type: string
                 example: 1А
                 description: номер дома
+              required:
+              - price
+              - area
+              - country
+              - locality
+              - street
+              - house_number
+          required:
+          - total_count
+              
+              
