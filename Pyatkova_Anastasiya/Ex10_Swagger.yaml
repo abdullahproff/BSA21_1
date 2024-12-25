@@ -1,0 +1,84 @@
+openapi: 3.0.0
+info:
+  title: Add Products to Order API
+  description: Добавление товаров в новый заказ. Текущий заказ оплачен и передан на сборку, система создает новый заказ
+  version: 1.0.0
+servers:
+  - url: https://mystore.com
+tags:  
+  - name: orders
+    description: Методы для работы с заказами
+
+paths:
+  /orders:
+    post:
+      tags:
+        - orders    
+      summary: Добавить товары в новый заказ, не изменяя текущий
+      description: При добавлении товаров в заказ, который оплачен и передан на сборку, создается новый заказ, содержащий добавленные товары
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                mainOrderId:
+                  type: integer
+                  description: Идентификатор текущего оплаченного заказа, к которому привязывается новый заказ
+                  example: 121253
+                products:
+                  type: array
+                  description: Массив товаров, которые нужно добавить в новый заказ
+                  items:
+                    $ref: '#/components/schemas/Product'
+              example:
+                mainOrderId: 121253
+                products:
+                  - productId: 101
+                    quantity: 3
+                  - productId: 102
+                    quantity: 1
+                  - productId: 103
+                    quantity: 2
+      responses:
+        '201':
+          description: Новый заказ создан
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  secondaryOrderId:
+                    type: integer
+                    description: Уникальный идентификатор созданного нового заказа содержащий добавленные товары
+                    example: 25000
+                  products:
+                    type: array
+                    description: Список добавленных товаров
+                    items:
+                      $ref: '#/components/schemas/Product'
+              example:
+                secondaryOrderId: 25000
+                products:
+                  - productId: 101
+                    quantity: 3
+                  - productId: 102
+                    quantity: 1
+                  - productId: 103
+                    quantity: 2
+
+components:
+  schemas:
+    Product:
+      type: object
+      description: Объект содержащий информацию о товарах
+      properties:
+        productId:
+          type: integer
+          description: Уникальный идентификатор товара
+          example: 101
+        quantity:
+          type: integer
+          description: Количество единиц товара
+          example: 3
