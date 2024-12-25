@@ -1,0 +1,155 @@
+openapi: 3.0.3
+
+info:
+  title: Управление списком заклинаний персонажа в DnD
+  description: sdfdsdfd
+  version: 1.0.11
+servers:
+  - url: https://ttg.swagger.io/api/v1
+tags:
+  - name: character
+    description: Персонажи пользователя
+
+paths:
+  /v1/newcharacter:
+    post:
+      tags:
+        - character
+      summary: Создание нового персонажа пользователя
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RequestPost'
+      responses:
+        '201':
+          description: Персонаж создан успешно
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseSuccessPost'
+  /v1/{user_id}/{character_id}:
+    get:
+      tags:
+      - character
+      summary: Получение списка заклинаний персонажа пользователя
+      parameters:
+        - name: user_id
+          in: path
+          required: true
+          description: Идентификационный номер пользователя
+          schema:
+            type: integer
+            example: 21397561
+        - name: character_id
+          in: path
+          required: true
+          description: Идентификационный номер персонажа
+          schema:
+            type: integer
+            example: 2
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseSuccessGet'
+
+                  
+components:
+  schemas:
+    RequestPost:
+      required:
+        - used_id
+        - character
+      type: object
+      properties:
+        used_id:
+          type: integer
+          format: int64
+          description: Идентификационный номер пользователя
+          example: 21598672
+        character:
+          required:
+          - character_id
+          type: object
+          description: Техническое описание пользователя
+          properties:
+            character_id:
+              type: integer
+              format: int64
+              description: Идентификационный номер персонажа
+              example: 3
+            character_name:
+              type: string
+              description: Наименование персонажа
+              example: Фламрига Финис
+    ResponseSuccessPost:
+      required:
+        - code
+        - description
+      type: object
+      properties:
+        code:
+          type: integer
+          description: Код статуса запроса
+          example: 201
+        description:
+          type: string
+          description: Человекочитаемое описание кода статуса запроса
+          example: Создано
+        technical_description:
+          type: string
+          description: Дополнительная информация
+          example: Персонаж Фламрига Финис создан успешно
+    ResponseSuccessGet:
+      required:
+        - code
+        - list
+      type: object
+      properties:
+        code:
+          type: integer
+          description: Код статуса запроса
+          example: 200
+        list:
+          type: object
+          description: Массив заклинаний, закрепленных за персонажем
+          required:
+            - spell
+          properties:
+            spell:
+              type: object
+              description: Подробная информация о заклинании
+              required:
+                - spell_id
+              properties:
+                spell_id:
+                  type: integer
+                  description: Идентификационный номер заклинания
+                  example: 32
+                spell_range:
+                  type: string
+                  description: Дальность действия заклинания
+                  example: 60 футов
+                spell_duraation:
+                  type: integer
+                  description: Продолжительность действия заклинания
+                  example: 1
+                spell_shape:
+                  type: string
+                  description: Геометрическая форма заклинания
+                  example: Сфера, диаметром в 5 футов
+                spell_contidion:
+                  type: string
+                  description: Специальные условия использования заклинания
+                  example: Нет
+                spell_point:
+                  type: integer
+                  description: Стоимость заклинания
+                  example: 3
+                spell_article:
+                  type: string
+                  description: Текстовое описание заклинания
+                  example: Яркий луч вылетает из вашего указательного пальца в точку, выбранную вами в пределах дистанции, где и происходит взрыв пламени с гулким рёвом. Все существа в пределах сферы с радиусом 20 футов с центром в этой точке должны совершить спасбросок Ловкости. Цель получает 8к6 урона огнём при провале или половину этого урона при успехе. Этот огонь огибает углы. Он воспламеняет горючие предметы, которые никто не несёт и не носит.
