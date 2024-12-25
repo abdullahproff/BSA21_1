@@ -1,0 +1,109 @@
+openapi: 3.0.3
+
+info:
+  title: Swagger Example - OpenAPI 3.0
+  description: Документирование REST-вызовов в Swagger
+  version: 1.0.0
+  
+servers:
+  - url: https://lamoda_demo.swagger.io/api/v3
+
+tags:
+  - name: basket
+    description: Группа методов для работы с корзиной
+  - name: buyer
+    description: Группа методов для работы с покупателем
+
+paths:
+  /baskets/{basket_id}:
+    get:
+      tags:
+        - basket
+      summary: Получить стоимость корзины
+      description: Получение стоимости корзины по её идентификатору
+      parameters:
+        - name: basket_id
+          in: path
+          description: Уникальный идентификатор корзины
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Basket'
+        '400':
+          description: Bad Request
+        '500':
+          description: Internal Server Error
+
+  /buyers:
+    post:
+      tags:
+        - buyer
+      summary: Создать покупателя
+      description: Создание нового покупателя в системе
+      requestBody:
+        description: Параметры для создания покупателя
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Buyer'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+        '400':
+          description: Bad Request
+        '409':
+          description: Conflict
+        '500':
+          description: Internal Server Error
+
+components:
+  schemas:
+  
+    Basket:
+      type: object
+      properties:
+        basket_id:
+          type: integer
+          format: int32
+        basket_cost:
+          type: number
+          format: float
+
+    Buyer:
+      type: object
+      properties:
+        surname:
+          type: string
+          example: Власова
+        name:
+          type: string
+          example: Белла
+        telephone_num:
+          type: string
+          example: '+7-999-321-32-21'
+        email:
+          type: string
+          example: bellavl@gmail.com
+        personal_sale:
+          type: number
+          format: float
+          example: 10.25
+
+    Response:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        description:
+          type: string
