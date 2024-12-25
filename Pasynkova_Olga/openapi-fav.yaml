@@ -30,7 +30,7 @@ paths:
               schema:
                 type: object
                 properties:
-                  product_array:
+                  products:
                     type: array
                     items:
                       type: object
