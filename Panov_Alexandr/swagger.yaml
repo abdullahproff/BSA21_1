@@ -20,7 +20,7 @@ tags:
       url: https://my_food.ru/groups
 
 paths:
-  /group:
+  /groups:
     post:
       tags:
         - group
@@ -44,7 +44,7 @@ paths:
         '422':
           description: Validation exception
 
-  /group/{user_id}:
+  /groups/{user_id}:
     get:
       tags:
         - user
