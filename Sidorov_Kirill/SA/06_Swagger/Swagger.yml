@@ -1,0 +1,146 @@
+openapi: 3.0.3
+info:
+  title: Swagger Marketplace - OpenAPI 3.0
+  description: This is a sample Marketplace Server based on the OpenAPI 3.0 specification.
+  version: 1.0.0
+servers:
+  - url: https://marketplace.com/api/v3
+
+tags:
+  - name: purchase
+    description: Методы, описывающие покупки и оценки купленных товаров
+
+paths:
+  /purchases/{customerId}:
+    get:
+      tags:
+        - purchase
+      summary: Запрос списка покупок покупателя по его id
+      description: Возвращает все товары, купленные данным покупателем
+      operationId: getPurchasesById
+      parameters:
+        - name: customerId
+          in: path
+          description: id покупателя
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful Operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Purchases'
+        '400':
+          description: Invalid id supplied
+        '404':
+          description: Customer not found
+  /purchases/{customerId}/{productId}:
+    post:
+      tags:
+        - purchase
+      summary: Оценка покупателем купленного товара
+      description: ''
+      operationId: setScoreByCustomer
+      parameters:
+        - name: customerId
+          in: path
+          description: id покупателя, оценивающего товар
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: productId
+          in: path
+          description: id оцениваемого товара
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: score
+          in: query
+          description: Оценка купленного товара (1, 2, 3, 4, 5)
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '201':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: Invalid input
+components:
+  schemas:
+    Purchase:
+      type: object
+      description: Купленный товар с необходимыми атрибутами
+      properties:
+        name:
+          type: string
+          description: Название товара
+          example: Super-Puper Good
+        description:
+          type: string
+          description: Описание товара
+          example: Товар, не имеющий аналогов в мире
+        price:
+          type: number
+          description: Цена товара
+          format: float
+          example: 999999.99
+        link:
+          type: string
+          description: Ссылка на товар
+          example: https://marketplace.com/product/1234567
+        amount:
+          type: integer
+          description: Количество купленного товара
+          format: int32
+          example: 7
+        date:
+          type: string
+          description: Время последней покупки товара
+          format: date-time
+          example: 2024-12-22T22:22:22Z
+        score:
+          type: integer
+          description: Оценка купленного товара (1, 2, 3, 4, 5)
+          format: int32
+          example: 5
+        favorites:
+          type: boolean
+          description: Присутствие товара в Избранном
+          example: true
+        basket:
+          type: boolean
+          description: Присутствие товара в Корзине
+          example: false
+      required:
+        - name
+        - description
+        - price
+        - link
+        - amount
+        - date
+        - score
+        - favorites
+        - basket
+    Purchases:
+      type: array
+      description: Список купленных товаров
+      items:
+        $ref: '#/components/schemas/Purchase'
+    ApiResponse:
+      type: object
+      description: Коды ответов сервера с описанием
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
