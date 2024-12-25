@@ -44,20 +44,20 @@ paths:
         '422':
           description: Validation exception
 
-  /groups/{user_id}:
+  /groups/{userID}:
     get:
       tags:
         - user
       summary: Get groups by user
       description: Returns groups associated with a specific user
       parameters:
-        - name: user_id
+        - name: userID
           in: path
           required: true
           description: Unique identifier of the user
           schema:
-            type: string
-            example: ALEx56
+            type: integer
+            example: 4575858
       responses:
         '200':
           description: Successful operation
@@ -80,10 +80,10 @@ components:
           type: string
           description: Description of the group
           example: This is a sample group
-        user_id:
-          type: string
+        userID:
+          type: integer
           description: Unique user identifier
-          example: ALEx56
+          example: 4575858
 
     GroupCreationResponse:
       type: object
