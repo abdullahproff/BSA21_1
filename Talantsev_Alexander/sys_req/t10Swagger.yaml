@@ -71,7 +71,7 @@ components:
       type: object
       required:
         - track_name
-        - track_album
+        - track_artist
         - track_number
         - track_id
       properties:
