@@ -5,13 +5,13 @@ info:
   description: API для просмотра списка персонажа пользователя и его управления через утилиту на сайте ttg.club
   version: 1.0.11
 servers:
-  - url: https://ttg.swagger.io/api
+  - url: https://ttg.swagger.io/api/v1
 tags:
   - name: character
     description: Персонажи пользователя
 
 paths:
-  /v1/character_id:
+  /characters:
     post:
       tags:
         - character
@@ -28,7 +28,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ResponseSuccessPost'
-  /v1/{user_id}/{character_id}:
+  /{user_id}/{character_id}:
     get:
       tags:
       - character
