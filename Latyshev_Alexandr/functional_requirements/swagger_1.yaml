@@ -6,7 +6,7 @@ info:
 servers:
   - url: https://berizaryad.swagger.io/api/v3
 tags:
-  - name: postamat
+  - name: postamats
     description: постаматы
   - name: user
     description: пользователь
@@ -16,7 +16,7 @@ paths:
   /postamats/{postamat_id}:
     get:
       tags:
-        - postamat
+        - postamats
       summary: количество повербанков
       description: возвращает количество повербанков, адрес постамата, и его id
       parameters:
@@ -32,15 +32,18 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/postamats'
-        '400':
-          description: Uncorrecred id
-        '500':
-          description: Server Error
+                $ref: '#/components/schemas/postamat'
 components:
   schemas:
-    postamats:
+    postamat:
       type: object
+      required:
+        - postamat_id
+        - count_power
+        - street_name
+        - index_home
+        - code
+        - description
       properties:
         postamat_id:
           type: integer
@@ -52,7 +55,7 @@ components:
           type: string
           example: Pushkina
         index_home:
-          type: integer
+          type: string
           example: 12a
         code:
           type: integer
