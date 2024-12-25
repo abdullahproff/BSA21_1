@@ -18,7 +18,7 @@ paths:
       tags:
         - postamat
       summary: количество повербанков
-      description: возвращает количество поврбанков, адрес постамата, и его id
+      description: возвращает количество повербанков, адрес постамата, и его id
       parameters:
         - name: postamat_id
           in: path
