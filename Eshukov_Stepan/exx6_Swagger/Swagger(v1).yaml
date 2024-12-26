@@ -1,0 +1,130 @@
+openapi: 3.0.3
+info:
+  title: Swagger - Tyrchat 
+  description: Для возможности вернуться к ранее заданному вопросу
+  version: 1.0.0
+servers:
+  - url: https://tyr.app.demo.com/api/v1/conversations
+
+tags:
+  - name: conversations
+    description: Запрос для возврата к диалогу на выбранную тему
+
+paths:
+  /conversations/{id_conversations}:
+    get:
+      tags:
+        - conversations
+      summary: Получение необходимой беседы 
+      description: Возвращает данные о диалоге по его уникальному идентификатору диалога, уникальному идентификатору пользователя и теме беседы
+      parameters:
+      
+        - name: id_conversations
+          in: path
+          description: уникальный идентификатор диалога
+          required: true
+          schema:
+            type: integer
+          example: 1  
+          
+        - name: id_people
+          in: query
+          description: уникальный идентификатор человека
+          required: false
+          schema:
+            type: integer
+          example: 2
+          
+        - name: topic
+          in: query
+          description: Тема диалога
+          required: false
+          schema:
+            type: string
+          example: 'Тур в Мадрид - маршрут'
+      responses:
+        '200':
+          description: Успешная операция
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/conversations_response'  
+
+components:
+  schemas:
+  
+    conversations_response:
+      type: object
+      required:
+        - object_convers
+        
+      properties:
+        array_convers:
+          type: array
+          items:
+            $ref: '#/components/schemas/object_convers'
+          
+    object_convers:
+      type: object
+      required:
+        - id_conversations
+        - topic
+        - time_mess
+        - status
+        - txt_mess
+      properties:
+        id_conversations:
+          type: integer
+          description: Уникальный идентификатор диалога
+          example: 1
+        
+        topic:
+          type: string
+          description: Тема диалога
+          example: 'Тур в Мадрид - маршрут'
+          
+        time_convers:
+          type: string
+          description: Дата начала диалога в формате YYYY-MM-DD HH:MM:SS
+          example: 2024-12-31 23:59:59
+        
+        time_mess:
+          type: string
+          description: Дата сообщения в формате YYYY-MM-DD HH:MM:SS
+          example: 2024-12-31 23:59:59
+        
+        status:
+          type: string
+          enum: 
+            - 'пользователь'
+            - 'оператор'
+          description: Статус для определения отправителя
+          example: 'пользователь'  
+          
+        txt_mess:
+          type: string
+          description: Текст сообщения
+          example: 'Напишите описание маршрута в туре на n дату в Испанию - Мадрид'   
+          
+      
+    conversations_request:
+      type: object
+      required:
+        - id_conversations
+      properties:
+        id_conversations:
+          type: integer
+          description: Уникальный идентификатор диалога
+          example: 1
+          
+        id_people:
+          type: integer
+          description: Уникальный идентификатор человека
+          example: 2
+          
+        topic:
+          type: string
+          description: Тема диалога
+          example: 'Тур в Мадрид - маршрут'
+
+    
