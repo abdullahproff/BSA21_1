@@ -71,31 +71,47 @@ components:
   
     Basket:
       type: object
+      required:
+        - basket_id
+        - basket_cost
       properties:
         basket_id:
           type: integer
           format: int32
+          description: Уникальный идентификатор корзины
+          example: 4
         basket_cost:
           type: number
           format: float
+          description: Стоимость корзины
+          example: 1110.5
 
     Buyer:
       type: object
+      required:
+        - surname
+        - name
+        - telephone_num
       properties:
         surname:
           type: string
-          example: Власова
+          description: Фамилия покупателя
+          example: 'Власова'
         name:
           type: string
-          example: Белла
+          description: Имя покупателя
+          example: 'Белла'
         telephone_num:
           type: string
+          description: Номер телефона покупателя
           example: '+7-999-321-32-21'
         email:
           type: string
-          example: bellavl@gmail.com
+          description: Электронная почта покупателя
+          example: 'bellavl@gmail.com'
         personal_sale:
           type: number
+          description: Персональная скидка покупателя
           format: float
           example: 10.25
 
@@ -104,6 +120,27 @@ components:
       properties:
         code:
           type: integer
+          description: Код ответа
           format: int32
+          example: 201
         description:
+          description: Описание ответа
           type: string
+          example: 'Created'
+        buyer_id:
+          type: integer
+          description: Уникальный идентификатор созданного покупателя
+          format: int32
+          example: 5
+        surname:
+          type: string
+          description: Фамилия покупателя
+          example: 'Власова'
+        name:
+          type: string
+          description: Имя покупателя
+          example: 'Белла'
+        telephone_num:
+          type: string
+          description: Номер телефона покупателя
+          example: '+7-999-321-32-21'
