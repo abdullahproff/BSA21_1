@@ -32,7 +32,7 @@ paths:
                     type: string
                     example: "Complete"
 
-  /Property:
+  /Properties:
     get:
       summary: Запрос доступных вариантов размещения по адресу
       description: Получение информации о доступных вариантах размещения соответствующих адресу
