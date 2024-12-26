@@ -44,13 +44,6 @@ paths:
           schema:
             type: string
             example: "London"
-        - name: Currency
-          in: query
-          required: false
-          description: Валюта ответа, согласно выбранной в настройках аккаунта
-          schema:
-            type: string
-            example: "ruble"
       responses:
         '200':
           description: Successful response
