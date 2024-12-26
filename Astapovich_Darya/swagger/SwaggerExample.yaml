@@ -1,0 +1,75 @@
+openapi: 3.0.3
+info:
+  title: Swagger
+  description: Описание методов API для работы с бронированием виллы
+  version: 1.1.0
+servers:
+  - url: https://booking.com/api/v1
+  
+tags:
+  - name: booking
+    description: Метод для работы с бронированием виллы
+
+paths:
+   /booking:
+    post:
+      tags:
+        - booking
+      summary: Создание заказа
+      description: Создает бронирование используя введенные данные пользователем
+      requestBody:
+        description: Параметры для создания заказа
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/bookings_request'
+      responses:
+        '200':
+          description: Заказ создан
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/bookings_response'
+        
+components:
+  schemas:
+  
+    bookings_response:
+      type: object
+      required:
+        - booking_id
+        - price
+      properties:
+        booking_id:
+          type: integer
+          description: Идентификатор бронирования
+          example: 1
+        price_total:
+          type: number
+          description: Итоговая стоимость бронирования виллы
+          example: 10000.00
+
+    bookings_request:
+      type: object
+      required:
+        - villa_id
+        - check_in_date
+        - depatrure_date
+        - number_guests
+      properties:
+        villa_id:
+          type: integer
+          description: Идентификатор виллы
+          example: 15664467
+        check_in_date:
+          type: string
+          description: Дата заезда 
+          example: "2024-11-09"
+        depatrure_date:
+          type: string
+          description: Дата выезда
+          example: "2024-11-19"
+        number_guests:
+          type: integer
+          description: Количество гостей
+          example: 3
