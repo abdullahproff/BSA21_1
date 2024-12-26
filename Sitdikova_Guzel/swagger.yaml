@@ -1,0 +1,119 @@
+openapi: 3.0.3
+info:
+  title: Swagger - OpenAPI 3.0
+  description: Создание и получение снепшота корзины
+  version: 1.0.0
+servers:
+  - url: https://5ka.ru.swagger.io/api/v1
+tags:
+  - name: snapshotbasket
+    description: методы для работы с корзинами товаров
+  - name: basketsnapshot
+    description: методы для получения снимка корзины
+
+paths:
+  /api/snapshotbasket:
+    post:
+      tags:
+        - snapshotbasket
+      summary: создание снимка корзины
+      description: создание снимка корзины, содержащего список товаров
+      requestBody:
+        description: параметры метода для создания снимка корзины
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SnapshotBasket'
+      responses:
+       '200':
+         description: успешное создание снепшота корзины
+         content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SnapshotBasketResponse'
+  /api/basketsnapshot/{basketSnapshotId}:
+    get:
+      tags:
+        - basketsnapshot
+      summary: получить снимок корзины по идентификатору
+      description: получить снимок корзины по идентификатору
+      parameters:
+        - name: basketSnapshotId
+          in: path
+          description: id снепшота
+          required: true
+          schema:
+            type: integer
+            example: 11
+      responses:
+       '200':
+         description: Success
+         content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BasketsnapshotResponse'
+
+components:
+  schemas:
+    
+    SnapshotBasket:
+      required:
+        - product
+        - productId
+        - name
+        - price
+        - quantity
+      type: object
+      properties:
+          product:
+            type: object
+            properties:
+              productId:
+                type: integer
+                example: 1
+              name:
+                type: string
+                example: Milk
+              price:
+                type: number
+                example: 70
+              quantity:
+                type: integer
+                example: 2
+                
+    SnapshotBasketResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+          description: код ответа
+        message:
+          type: string
+          description: сообщение об успешном выполнении операции
+          example: 'id снепшота создан'
+        basketSnapshotId:
+          type: integer
+          description: id снепшота
+          example: 456
+
+    BasketsnapshotResponse:
+      type: object
+      properties:
+        creationDate:
+          type: string
+          format: date
+          example: '2024-12-25'
+        productId:
+             type: integer
+             example: 12
+        name:
+              type: string
+              example: Milk
+        price:
+              type: number
+              example: 56
+        quantity:
+              type: integer
+              example: 2
+     
