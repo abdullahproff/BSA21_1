@@ -131,3 +131,4 @@ components:
               - itemQuantity
       required:
         - cartId
+        - cartItems
