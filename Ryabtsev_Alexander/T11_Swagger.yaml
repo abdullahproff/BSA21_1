@@ -2,7 +2,7 @@ openapi: 3.0.3
 info:
   title: МегаМаркет API
   description: API для управления содержимым Корзины Пользователя
-  version: 1.0.0
+  version: 1.1.1
 servers:
   - url: https://api.megamarket.com/v1
 
@@ -28,6 +28,24 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Cart'
+        '400':
+          description: Некорректный запрос. Проверьте параметры запроса.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Пользователь не найден.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Внутренняя ошибка сервера. Попробуйте позже.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
 
   /users/{userId}/cart/item:
     post:
@@ -76,6 +94,24 @@ paths:
                     example: Товар успешно добавлен в Корзину
                 required:
                   - message
+        '400':
+          description: Некорректный запрос. Проверьте параметры запроса.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Пользователь не найден.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Внутренняя ошибка сервера. Попробуйте позже.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
 
 components:
   schemas:
@@ -132,3 +168,18 @@ components:
       required:
         - cartId
         - cartItems
+
+    Error:
+      type: object
+      properties:
+        code:
+          type: number
+          description: Код ошибки
+          example: 418
+        message:
+          type: string
+          description: Сообщение об ошибке
+          example: Я - чайник
+      required:
+        - code
+        - message
