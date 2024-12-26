@@ -55,32 +55,39 @@ paths:
 
 components:
   schemas:
-    
     SnapshotBasket:
-      required:
-        - product
-        - productId
-        - name
-        - price
-        - quantity
       type: object
       properties:
-          product:
-            type: object
-            properties:
+        basketItems:
+          type: array
+          items:
+           type: object
+           properties:
               productId:
                 type: integer
+                description: Уникальный ID Товара
                 example: 1
               name:
                 type: string
+                description: Наименование Товара
                 example: Milk
               price:
                 type: number
-                example: 70
+                description: Цена за единицу Товара
+                example: 79.99
               quantity:
                 type: integer
+                description: Количество Товара
                 example: 2
-                
+           required:
+              - productId
+              - name
+              - price
+              - quantity
+      required:
+        - basketItems
+
+ 
     SnapshotBasketResponse:
       type: object
       properties:
@@ -104,16 +111,23 @@ components:
           type: string
           format: date
           example: '2024-12-25'
-        productId:
-             type: integer
-             example: 12
-        name:
+        basketItems:
+          type: array
+          items:
+           type: object
+           properties:
+             productId:
+              type: integer
+              example: 12
+             name:
               type: string
               example: Milk
-        price:
+             price:
               type: number
               example: 56
-        quantity:
+             quantity:
               type: integer
               example: 2
+        
+
      
