@@ -1,0 +1,102 @@
+openapi: 3.0.3
+info:
+  title: Swagger Booking - OpenAPI 3.0
+  description: This is a sample Booking Server based on the OpenAPI 3.0 specification.
+  version: 1.0.0
+paths:
+  /Account_settings:
+    get:
+      summary: Выбор валюты пользователем
+      description: Сохраняет выбранную валюту для отображения стоимости 
+      
+      parameters:
+        - name: Currency
+          in: query
+          required: false
+          description: Валюта пользователя
+          schema:
+            type: string
+            example: "ruble"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                    example: 200
+                  message:
+                    type: string
+                    example: "Complete"
+
+  /Property:
+    get:
+      summary: Запрос доступных вариантов размещения по адресу
+      description: Получение информации о доступных вариантах размещения соответствующих адресу
+      parameters:
+        - name: Address
+          in: query
+          required: false
+          description: Адрес размещения "London"
+          schema:
+            type: string
+            example: "London"
+        - name: Currency
+          in: query
+          required: false
+          description: Валюта ответа, согласно выбранной в настройках аккаунта
+          schema:
+            type: string
+            example: "ruble"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                    example: 200
+                  message:
+                    type: string
+                    example: "OK"
+                  properties:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        owner_id:
+                          type: integer
+                          description: Уникальный идентификатор владельца объекта размещения
+                        title:
+                          type: string
+                          description: Название объекта размещения
+                        price_per_night:
+                          type: number
+                          format: float
+                          description: Цена за ночь
+                        address:
+                          type: string
+                          description: Адрес размещения
+                        max_guest:
+                          type: integer
+                          description: Максимальное число гостей
+                        amenities:
+                          type: string
+                          description: Удобства
+                        status:
+                          type: string
+                          description: Статус
+                        created_at:
+                          type: string
+                          format: date-time
+                          description: Время создания
+                        updated_at:
+                          type: string
+                          format: date-time
+                          description: Время обновления
