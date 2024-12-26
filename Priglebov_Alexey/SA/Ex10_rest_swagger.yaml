@@ -25,12 +25,14 @@ paths:
           required: false
           schema:
             type: integer
+            example: 7000000
         - name: max_price 
           in: query
           description: максимальная цена объекта недвижимости
           required: false
           schema:
             type: integer
+            example: 14000000
       responses:
        '200':
          description: Success
@@ -42,19 +44,22 @@ paths:
               
 components:
   schemas:
-      
     Real_estates:
       type: object
       properties:
         total_count:
           type: integer
-          example: 117
+          example: 2
           description: общее количество найденных объектов недвижимости
         real_estates:
           type: array
           items:
             type: object
             properties:
+              real_estate_id:
+                type: integer
+                example: 41
+                description: Идентификационный номер объекта недвижимости
               price:
                 type: integer
                 example: 8000000
@@ -84,6 +89,7 @@ components:
                 example: 1А
                 description: номер дома
             required:
+              - real_estate_id
               - price
               - area
               - country
@@ -93,3 +99,22 @@ components:
       required:
         - total_count
         - real_estates
+      example:
+        total_count: 2
+        real_estates:
+          - real_estate_id: 41
+            price: 8000000
+            area: 75
+            country: РФ
+            region: NULL
+            locality: Москва
+            street: Рождественская
+            house_number: 1А
+          - real_estate_id: 52
+            price: 10000000
+            area: 85
+            country: РФ
+            region: Московская область
+            locality: Люберцы
+            street: Октябрьская
+            house_number: 10
