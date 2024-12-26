@@ -1,0 +1,75 @@
+openapi: 3.0.3
+info:
+  title: Swagger
+  description: Описание методов API для работы с заказами
+  version: 1.0.0
+servers:
+  - url: https://taxi.com/api/v1
+  
+tags:
+  - name: order
+    description: Метод для работы с заказами
+
+paths:
+  /order:
+    post:
+      tags:
+        - order
+      summary: Создание заказа
+      description: Создает заказ используя введенные данные пользователем
+      requestBody:
+        description: Параметры для создания заказа
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/orders_request'
+      responses:
+        '200':
+          description: Успешно созданный заказ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/orders_response'
+        
+components:
+  schemas:
+  
+    orders_response:
+      type: object
+      required:
+        - order_id
+        - price
+      properties:
+        order_id:
+          type: integer
+          description: Идентификатор заказа
+          example: 1
+        price:
+          type: number
+          description: Стоимость поездки
+          example: 1500.50
+
+    orders_request:
+      type: object
+      required:
+        - address_start
+        - address_finish
+        - rate
+        - payment_type
+      properties:
+        address_start:
+          type: string
+          description: Адрес подачи машины
+          example: "Москва.Чкаловский проспект 15а"
+        address_finish:
+          type: string
+          description: Адрес прибытия такси
+          example: "Москва. Кольцевая улица 18 д.11"
+        rate:
+          type: string
+          description: Класс обслуживания
+          example: эконом
+        payment_type:
+          type: boolean
+          description: Оплата онлайн
+          example: true
