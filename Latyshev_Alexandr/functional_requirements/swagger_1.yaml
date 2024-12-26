@@ -8,10 +8,6 @@ servers:
 tags:
   - name: postamats
     description: постаматы
-  - name: user
-    description: пользователь
-  - name: address
-    description: адрес
 paths:
   /postamats/{postamat_id}:
     get:
@@ -48,18 +44,24 @@ components:
         postamat_id:
           type: integer
           example: 1
+          description: уникальный id постамата
         count_power:
           type: integer
           example: 3
+          description: количество повербанков
         street_name:
           type: string
           example: Pushkina
+          description: название улицы
         index_home:
           type: string
           example: 12a
+          description: номер дома
         code:
           type: integer
           example: 200
+          description: код исполнения
         description:
           type: string
           example: complete
+          description: сообщение с расшифровкой кода исполнения
