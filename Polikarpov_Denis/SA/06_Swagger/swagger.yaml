@@ -6,9 +6,10 @@ info:
 servers:
   - url: http://api.example.com/v1
 
-  /slots/getAvaliable:
+paths:
+  /slots/getAvailable:
     get:
-      summary: Получение слота для записи к психологу
+      summary: Получение доступных слотов для записи к психологу
       responses:
         '200':
           description: Успешный ответ с данными доступных слотов
@@ -21,20 +22,24 @@ servers:
                   properties:
                     id:
                       type: integer
+                      description: Уникальный идентификатор слота
                       example: 1
                     psychologist_id:
                       type: integer
+                      description: Уникальный идентификатор психолога
                       example: 1
                     slot_time:
                       type: string
                       format: date-time
+                      description: Время слота
                       example: "2024-12-11T10:00:00Z"
                     is_available:
                       type: boolean
+                      description: Доступность слота
                       example: true
 
   /slots/book:
-   post:
+    post:
       summary: Забронировать слот для клиента
       requestBody:
         required: true
@@ -45,17 +50,25 @@ servers:
               properties:
                 slot_id:
                   type: integer
+                  description: Уникальный идентификатор слота
                 client_id:
                   type: integer
+                  description: Уникальный идентификатор клиента
                 phone:
                   type: string
+                  description: Номер телефона клиента
                 email:
                   type: string
                   format: email
+                  description: Электронная почта клиента
                 child_age:
                   type: integer
-                is_avaliable:
-                  type: boolean            
+                  description: Возраст ребёнка клиента
+              required:
+                - slot_id
+                - client_id
+                - phone
+                - email
       responses:
         '201':
           description: Слот успешно забронирован
@@ -66,8 +79,13 @@ servers:
                 properties:
                   id:
                     type: integer
+                    description: Уникальный идентификатор бронирования
+                    example: 1001
                   slot_id:
                     type: integer
+                    description: Уникальный идентификатор слота
                     example: 1
                   client_id:
                     type: integer
+                    description: Уникальный идентификатор клиента
+                    example: 5001
