@@ -2,9 +2,9 @@ openapi: 3.0.3
 info:
   title: Swagger
   description: Описание методов API для загрузки фотографии на сервер
-  version: 1.0.11
+  version: 1.0.12
 servers:
-  - url: https://telegram.com/api/v1 
+  - url: https://telegram.com/api/v1
 tags:
   - name: avatar
     description: Метод для работы с фотографиями
@@ -34,6 +34,30 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/AvatarUploadResponse'
+        '400':
+          description: Неправильный формат файла
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '413':
+          description: Превышен допустимый размер файла
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '415':
+          description: Неподдерживаемый тип файла
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Внутренняя ошибка сервера
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
 components:
   schemas:
     AvatarFile:
@@ -43,6 +67,9 @@ components:
           type: string
           format: binary
           description: Изображение (файл фотографии)
+          maxLength: 20971520  # Максимальный размер файла 20 МБ
+          minLength: 512      # Минимальный размер файла 512 байт
+          pattern: '^data:image/(png|jpeg|svg\+xml);base64,[a-zA-Z0-9+/=]*$'  # Проверяем, что файл имеет правильный MIME-тип
       required:
         - avatar
     AvatarUploadResponse:
@@ -51,26 +78,32 @@ components:
         message:
           type: string
           description: Сообщение о результате выполнения операции
+          example: "Аватар успешно загружен"
         userId:
           type: integer
           description: Идентификатор пользователя, для которого был загружен аватар
+          example: 42
         avatarUrl:
           type: string
           description: Ссылка на загруженный аватар
+          example: "https://example.com/avatars/user_42.png"
         timestamp:
           type: string
           description: Время загрузки аватара в формате ISO 8601
+          example: "2023-09-01T15:30:00Z"
         filename:
           type: string
           description: Исходное имя файла
+          example: "profile_pic.jpg"
         sizeMb:
           type: number
           format: double
           description: Размер загруженного файла в мегабайтах
+          example: 2.5
         mimeType:
           type: string
           description: MIME-тип загруженного файла
-        
+          example: "image/jpeg"
       required:
         - message
         - userId
@@ -79,3 +112,17 @@ components:
         - filename
         - sizeMb
         - mimeType
+    ErrorResponse:
+      type: object
+      properties:
+        Code:
+          type: number
+          description: Код ошибки
+          example: 400
+        Message:
+          type: string
+          description: Подробное сообщение об ошибке
+          example: "Неправильный формат файла"
+      required:
+        - Code
+        - Message
