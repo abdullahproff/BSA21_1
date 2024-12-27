@@ -8,16 +8,16 @@ servers:
     description: Основной сервер API
 
 tags:
-  - name: Get available
-    description: Получение доступных слотов для записи к психологу
+  - name: Slots
+    description: Управление слотами записи
 
 paths:
   /slots/getAvailable:
     get:
       tags:
-        - Get available
+        - Slots
       summary: Получение доступных слотов для записи к психологу
-      description: Возвращает список доступных слотов для записи к психологу.
+      description: Возвращает список доступных слотов для записи к указанному психологу.
       parameters:
         - name: psychologist_id
           in: query
@@ -42,7 +42,7 @@ paths:
                     psychologist_id:
                       type: integer
                       description: Уникальный идентификатор психолога
-                      example: 1
+                      example: 101
                     slot_time:
                       type: string
                       format: date-time
@@ -55,7 +55,9 @@ paths:
 
   /slots/book:
     post:
-      summary: Забронировать слот для клиента
+      tags:
+        - Slots
+      summary: Бронирование слота для записи к психологу
       description: Позволяет забронировать слот для указанного клиента.
       requestBody:
         required: true
@@ -73,13 +75,13 @@ paths:
                 user_name:
                   type: string
                   description: Имя и фамилия клиента
-                phone:
-                  type: string
-                  description: Номер телефона клиента
                 email:
                   type: string
                   format: email
                   description: Электронная почта клиента
+                phone:
+                  type: string
+                  description: Номер телефона клиента
                 child_age:
                   type: integer
                   description: Возраст ребёнка клиента
@@ -87,8 +89,8 @@ paths:
                 - slot_id
                 - client_id
                 - user_name
-                - phone
                 - email
+                - phone
       responses:
         '201':
           description: Слот успешно забронирован
@@ -97,15 +99,15 @@ paths:
               schema:
                 type: object
                 properties:
-                  id:
+                  booking_id:
                     type: integer
                     description: Уникальный идентификатор бронирования
-                    example: 1001
+                    example: 5001
                   slot_id:
                     type: integer
                     description: Уникальный идентификатор слота
-                    example: 1
+                    example: 101
                   client_id:
                     type: integer
                     description: Уникальный идентификатор клиента
-                    example: 5001
+                    example: 1001
