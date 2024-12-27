@@ -3,8 +3,6 @@ info:
   title: Swagger Petshop API 1.0
   description: Онлайн-магазин товаров для животных
   version: 1.0.0
-  servers:
-  - url: https://petshop.ru/api/v1
 
 tags:
   - name: order
