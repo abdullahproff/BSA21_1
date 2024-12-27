@@ -12,7 +12,7 @@ tags:
     description: методы для получения снимка корзины
 
 paths:
-  /api/snapshotbasket:
+  /snapshotbasket:
     post:
       tags:
         - snapshotbasket
