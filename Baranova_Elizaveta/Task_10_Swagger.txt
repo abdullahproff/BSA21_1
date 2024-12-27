@@ -1,0 +1,104 @@
+openapi: 3.0.3
+info:
+  title: Swagger Petshop API 1.0
+  description: Онлайн-магазин товаров для животных
+  version: 1.0.0
+  servers:
+  - url: https://petshop.ru/api/v1
+
+tags:
+  - name: order
+    description: Методы для работы с заказами
+
+paths:
+  /orders:
+    post:
+      tags:
+        - order
+      summary: Создание нового заказа
+      description: Метод позволяет создать заказ, используя введенные пользователем данные
+      operationId: addOrder
+      requestBody:
+        description: Body parameters
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/order_request'
+      responses:
+        '201':
+          description: Заказ успешно создан
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/order_responce'
+
+components:
+  schemas:
+    order_request:
+      type: object
+      properties:
+        products:
+          type: array
+          items:
+            $ref: '#/components/schemas/product'
+        address:
+            $ref: '#/components/schemas/address'
+        total_cost:
+          type: integer
+          description: Общая стоимость заказа
+          example: 1700
+    product: 
+      type: object
+      description: Объект, содержащий информацию о товаре
+      properties:
+        product_id:
+          type: integer
+          description: ID товара
+          example: 174
+        quantity:
+          type: integer
+          description: Количество единиц товара
+          example: 1
+        size:
+          type: string
+          description: Размер товара
+          example: '150 см'
+        weight:
+          type: integer
+          description: Вес товара
+          example: 200
+        price:
+          type: integer
+          description: Цена товара
+          example: 1700
+    address:
+      type: object
+      description: Объект, содержащий адрес доставки
+      properties:
+        city:
+          type: string
+          description: Размер товара
+          example: 'Москва'
+        street:
+          type: string
+          description: Размер товара
+          example: 'улица Ленина'
+        house:
+          type: string
+          description: Размер товара
+          example: '19'
+        apartment:
+          type: string
+          description: Размер товара
+          example: '26'
+    order_responce:
+      type: object
+      properties:
+        message:
+          type: string
+          description: Сообщение об успешном создании заказа
+          example: 'Заказ создан'
+        order_id:
+          type: integer
+          description: ID заказа
+          example: 394
