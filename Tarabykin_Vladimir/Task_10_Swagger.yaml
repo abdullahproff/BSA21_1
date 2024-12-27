@@ -1,0 +1,152 @@
+openapi: 3.0.3
+info:
+  title: Swagger
+  description: API для запросса данных транзакций
+  version: 1.0.11
+
+servers:
+  - url: https://bank.ru/api/v1
+
+tags:
+  - name: Transactions
+    description: Операции для получения данных о транзакциях
+
+paths:
+  /transactions:
+    get:
+      tags:
+        - Transactions
+      summary: Запрос списка транзакций за период времени 
+      operationId: getTransactions
+      parameters:
+        - in: query
+          name: date_from
+          schema:
+            type: string
+            format: date
+          description: Выбор от какой даты (ГГГГ-ММ-ДД)
+          required: false
+          example: "2024-11-01"
+        - in: query
+          name: date_to
+          schema:
+            type: string
+            format: date
+          description: Выбор до какой даты (ГГГГ-ММ-ДД)
+          required: false
+          example: "2024-12-27"
+        - in: query
+          name: page
+          schema:
+            type: integer
+          description: Номер текущей страницы
+          required: false
+          example: 1
+        - in: query
+          name: page_size
+          schema:
+            type: integer
+          description: Количество записей на странице
+          required: false
+          example: 10
+      responses:
+        '200':
+          description: Успешное выполнение операции.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TransactionResponse'
+        '204':
+          description: Успешное выполнение, пустой ответ.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EmptyResponse'
+        
+
+components:
+  schemas:
+    TransactionResponse:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/TransactionItem'
+        pagination:
+          $ref: '#/components/schemas/PaginationInfo'
+
+    TransactionItem:
+      type: object
+      required:
+        - transaction_id
+        - account_id
+        - date
+        - amount
+        - type
+        - name_id
+        - mcc_id
+      properties:
+        transaction_id:
+          type: integer
+          description: id транзакции
+          example: 123
+        account_id:
+          type: integer
+          description: id счета
+          example: 456
+        date:
+          type: string
+          format: date
+          description: дата транзакции (ГГГГ-ММ-ДД)
+          example: '2024-12-27'
+        amount:
+          type: number
+          format: float
+          description: сумма транзакции
+          example: 500
+        type:
+          type: string
+          description: тип транзакции
+          example: 'оплата'
+        name_id:
+          type: integer
+          description: id названия контрагента
+          example: 789
+        mcc_id:
+          type: integer
+          description: id mсс кода
+          example: 5411
+
+    PaginationInfo:
+      type: object
+      required:
+        - page
+        - page_size
+        - total_pages
+        - total_items
+      properties:
+        page:
+          type: integer
+          description: текущая страница
+          example: 1
+        page_size:
+          type: integer
+          description: количество записей на странице
+          example: 10
+        total_pages:
+          type: integer
+          description: общее количество страниц
+          example: 5
+        total_items:
+          type: integer
+          description: общее количество записей
+          example: 50
+
+    EmptyResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          description: Нет ранзакций за выбранный период
+          example: 'Нет ранзакций за выбранный период'
