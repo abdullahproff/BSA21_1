@@ -1,4 +1,4 @@
-openapi: 3.0.2
+openapi: 3.0.3
 info:
   title: Favorite Products API
   description: API для Избранных Товаров
@@ -44,12 +44,17 @@ paths:
                           format: double
                           description: Цена товара
                           example: 58,99
+                      required:
+                        - productName
+                        - price
+                required:
+                  - products
         '401':
-          description: Неавторизован. Токен не предоставлен или недействителен.
+          description: Неавторизован. Токен не предоставлен или недействителен
         '404':
-          description: Список избранных товаров не найден.
+          description: Список избранных товаров не найден
         '500':
-          description: Внутренняя ошибка сервера.
+          description: Внутренняя ошибка сервера
 
     post:
       tags:
@@ -66,6 +71,8 @@ paths:
                 productId:
                   type: integer
                   description: Идентификатор товара для добавления в избранное
+              required:
+                - productId
       responses:
         '201':
           description: Товар успешно добавлен в избранное
@@ -77,10 +84,14 @@ paths:
                   message:
                     type: string
                     example: "Товар успешно добавлен в избранное"
+                required:
+                  - message
+        '404':
+          description: Товар не найден для добавления в избранное
         '409':
-          description: Конфликт. Товар уже находится в избранном.
+          description: Конфликт. Товар уже находится в избранном
         '500':
-          description: Внутренняя ошибка сервера.
+          description: Внутренняя ошибка сервера
 
   /favorites/products/{productId}:
     delete:
@@ -105,11 +116,13 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: "Товар успешно удален из избранного."
+                    example: "Товар успешно удален из избранного"
+                required:
+                  - message
         '404':
-          description: Товар не найден в избранном.
+          description: Товар не найден в избранном
         '500':
-          description: Внутренняя ошибка сервера.
+          description: Внутренняя ошибка сервера
 
 components:
   securitySchemes:
