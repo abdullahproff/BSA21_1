@@ -147,7 +147,7 @@ components:
           description: Оценка купленного товара (1, 2, 3, 4, 5)
           format: int32
           example: 5
-        favorites:
+        favourites:
           type: boolean
           description: Присутствие товара в Избранном
           example: true
@@ -163,7 +163,7 @@ components:
         - amount
         - date
         - score
-        - favorites
+        - favourites
         - basket
     Purchases:
       type: array
