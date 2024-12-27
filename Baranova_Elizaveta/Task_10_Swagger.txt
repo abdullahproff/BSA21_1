@@ -77,19 +77,19 @@ components:
       properties:
         city:
           type: string
-          description: Размер товара
+          description: Город
           example: 'Москва'
         street:
           type: string
-          description: Размер товара
+          description: Улица
           example: 'улица Ленина'
         house:
           type: string
-          description: Размер товара
+          description: Дом
           example: '19'
         apartment:
           type: string
-          description: Размер товара
+          description: Квартира
           example: '26'
     order_responce:
       type: object
