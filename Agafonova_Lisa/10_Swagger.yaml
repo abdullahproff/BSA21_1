@@ -1,0 +1,126 @@
+openapi: 3.0.0
+info:
+  title: Swagger - OpenAPI 3.0
+  description: Описание API для создания и получения аналитики приемов пищи
+  version: 1.0.11
+  
+servers:
+  - url: https://health.com/api/v1
+  
+tags:
+  - name: meal
+    description: Метод для создания приемами пищи
+  - name: analytics
+    description: Метод для обновления аналитики
+    
+paths:
+  /meal:
+    post:
+      tags:
+        - meal
+      summary: Создание приема пищи
+      description: Пользователь создает прием пищи
+      operationId: createMeal
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MealRequest'
+              
+      responses:
+        '201':
+          description: Успешное создание приема пищи
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Прием пищи успешно сохранен"
+                
+  /meal/analytics:
+    get:
+      tags:
+        - analytics
+      summary: Получение аналитики по приемам пищи
+      description: Клиент запрашивает аналитику за текущую дату
+      operationId: getMealAnalytics
+      parameters:
+        - in: query
+          name: mealDate
+          required: false
+          schema:
+            type: string
+            format: date
+          description: Установленная пользователем дата приема пищи (по умолчанию - текущая)
+      responses:
+        '200':
+          description: Актуальная аналитика за текущую дату
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnalyticsResponse' 
+                
+components:
+  schemas:
+  
+    MealRequest:
+      required:
+        - mealType
+        - mealItems
+      type: object
+      properties:
+        mealDate:
+          type: string
+          format: date
+          description: Установленная пользователем дата (по умолчанию - текущая)
+        mealType:
+          type: string
+          enum: ["Завтрак", "Обед", "Ужин", "Перекус"]
+          description: Тип приема пищи
+        mealItems:
+          type: array
+          items:
+            type: object
+            required:
+              - productId
+              - productQuantity
+            properties:
+              productId:
+                type: integer
+                description: Уникальный идентификатор продукта
+                example: 10101
+              productQuantity:
+                type: number
+                format: float
+                description: Количество продукта в граммах
+                example: 130
+
+    AnalyticsResponse:
+      required:
+        - summKcal
+        - summProteins
+        - summFats
+        - summCarbos
+      type: object
+      properties:
+        summKcal:
+          type: number
+          format: float
+          description: Суммарное количество потребленных килокалорий за день
+        summProteins:
+          type: number
+          format: float
+          description: Суммарное количество потребленных белков за день
+        summFats:
+          type: number
+          format: float
+          description: Суммарное количество потребленных жиров за день
+        summCarbos:
+          type: number
+          format: float
+          description: Суммарное количество потребленных углеводов за день
+                    
+
