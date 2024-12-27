@@ -1,0 +1,112 @@
+openapi: 3.0.3
+info:
+  title: Swagger - OpenAPI 3.0
+  version: 1.0.0
+  description: Описание методов API для получения заказов, сгруппированных по датам доставки
+  
+servers:
+  - url: https://api.wildberries.ru/v1
+    
+tags:
+  - name: deliveries
+    description: Методы для группировки заказанных товаров по датам их доставки
+    
+paths:
+  /deliveries:
+    get:
+      summary: Получить сгруппированные заказы по датам доставки
+      description: Возвращает все заказанные товары, сгруппированные по дате доставки.
+      tags:
+        - deliveries
+      parameters:
+        - name: deliveries
+          in: query
+          required: true 
+          description: Запрос для получения сгруппированных заказов.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Успешный ответ с массивом доставок
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                    - delivery_date
+                    - orders
+                  properties:
+                    delivery_date:
+                      type: string
+                      format: date
+                      description: Дата доставки
+                    orders:
+                      type: array
+                      items:
+                        type: object
+                        required:
+                          - order_id
+                          - delivery_id
+                          - products
+                        properties:
+                          order_id:
+                            type: integer
+                            description: Идентификатор заказа
+                            example: 123
+                          delivery_id:
+                            type: integer
+                            description: Идентификатор доставки                           
+                            example: 456
+                          products:
+                            type: array
+                            items:
+                              type: object
+                              required:
+                                - product_id
+                                - product_name
+                                - quantity
+                                - price
+                              properties:
+                                product_id:
+                                  type: integer
+                                  description: Идентификатор товара
+                                  example: 1
+                                product_name:
+                                  type: string
+                                  description: Название товара
+                                  example: "Товар 1"
+                                quantity:
+                                  type: integer
+                                  description: Количество товара
+                                  example: 2
+                                price:
+                                  type: number
+                                  format: float
+                                  description: Цена товара
+                                  example: 999.99
+                example:
+                  - delivery_date: "2024-12-30"
+                    orders:
+                      - order_id: 123
+                        delivery_id: 456
+                        products:
+                          - product_id: 1
+                            product_name: "Товар 1"
+                            quantity: 2
+                            price: 999.99
+                          - product_id: 2
+                            product_name: "Товар 2"
+                            quantity: 1
+                            price: 499.50
+                  - delivery_date: "2024-12-31"
+                    orders:
+                      - order_id: 124
+                        delivery_id: 789
+                        products:
+                          - product_id: 3
+                            product_name: "Товар 3"
+                            quantity: 1
+                            price: 599.99
+
