@@ -18,6 +18,13 @@ paths:
         - Get available
       summary: Получение доступных слотов для записи к психологу
       description: Возвращает список доступных слотов для записи к психологу.
+      parameters:
+        - name: psychologist_id
+          in: query
+          required: true
+          description: Уникальный идентификатор психолога
+          schema:
+            type: integer
       responses:
         '200':
           description: Успешный ответ с данными доступных слотов
@@ -63,6 +70,9 @@ paths:
                 client_id:
                   type: integer
                   description: Уникальный идентификатор клиента
+                user_name:
+                  type: string
+                  description: Имя и фамилия клиента
                 phone:
                   type: string
                   description: Номер телефона клиента
@@ -76,6 +86,7 @@ paths:
               required:
                 - slot_id
                 - client_id
+                - user_name
                 - phone
                 - email
       responses:
