@@ -117,6 +117,13 @@ components:
 
     Response:
       type: object
+      required:
+        - code
+        - description
+        - buyer_id
+        - surname
+        - name
+        - telephone_num
       properties:
         code:
           type: integer
@@ -144,3 +151,12 @@ components:
           type: string
           description: Номер телефона покупателя
           example: '+7-999-321-32-21'
+        email:
+          type: string
+          description: Электронная почта покупателя
+          example: 'bellavl@gmail.com'
+        personal_sale:
+          type: number
+          description: Персональная скидка покупателя
+          format: float
+          example: 10.25
