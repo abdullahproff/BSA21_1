@@ -4,12 +4,20 @@ info:
   description: API для работы с психологами, клиентами и их записями.
   version: 1.0.0
 servers:
-  - url: http://api.example.com/v1
+  - url: https://psi.swagger.io/api/v1
+    description: Основной сервер API
+
+tags:
+  - name: Get available
+    description: Получение доступных слотов для записи к психологу
 
 paths:
   /slots/getAvailable:
     get:
+      tags:
+        - Get available
       summary: Получение доступных слотов для записи к психологу
+      description: Возвращает список доступных слотов для записи к психологу.
       responses:
         '200':
           description: Успешный ответ с данными доступных слотов
@@ -41,6 +49,7 @@ paths:
   /slots/book:
     post:
       summary: Забронировать слот для клиента
+      description: Позволяет забронировать слот для указанного клиента.
       requestBody:
         required: true
         content:
