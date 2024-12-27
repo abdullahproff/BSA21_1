@@ -109,8 +109,8 @@ components:
       properties:
         creationDate:
           type: string
-          format: date
-          example: '2024-12-25'
+          format: date-time
+          example: 2024-12-20T09:12Z
         basketItems:
           type: array
           items:
@@ -124,10 +124,9 @@ components:
               example: Milk
              price:
               type: number
-              example: 56
+              example: 79.99
              quantity:
               type: integer
               example: 2
-        
 
      
