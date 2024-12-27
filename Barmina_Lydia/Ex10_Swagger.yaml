@@ -1,0 +1,130 @@
+openapi: 3.0.3
+info:
+  title: Swagger - OpenAPI 3.0
+  description: Добавление неисправности арендованного самоката
+  version: 1.0.0
+servers:
+  - url: https://urent.ru/api/v1
+
+tags:
+  - name: defect
+    description: Методы для работы с неисправностями
+  - name: rental
+    description: Методы для работы с поездками
+
+paths:
+  /defect:
+    post:
+      tags:
+        - defect
+      summary: Добавление новой неисправности
+      description: Добавляет данные о неисправности в поездку по уникальному идентификатору самоката
+      requestBody:
+        description: Параметры метода для добавления неисправности
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Defects' 
+      responses:
+        '200':
+          description: Успешное получение данных о закрытой поездке
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Responses' 
+                    
+  /rentals/{rentalId}:
+    get:
+      tags:
+        - rental
+      summary: Получение информации о закрытой поездке
+      description: Возвращает данные о закрытой поездке по ее уникальному идентификатору
+      parameters:
+        - name: rentalId
+          in: path
+          description: Уникальный идентификатор поездки
+          required: true
+          schema:
+            type: integer
+            example: 1055
+      responses:
+        '200':
+          description: Успешное получение данных о закрытой поездке
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Rentals' 
+                
+                    
+components:
+  schemas:
+      
+    Defects:
+      required:
+        - scooterId
+        - defectType
+      type: object
+      properties:
+        scooterId:
+          type: integer
+          example: 115501
+        defectType:
+          type: string
+          example: 'Не реагирует курок газа'
+        description:
+          type: string
+          example: 'При нажатии курка газа и отталкивании от земли самокат не трогается'
+
+    Rentals:
+      required:
+        - scooterId
+        - startTime
+        - endTime
+        - duration
+        - distance
+        - cost
+      type: object
+      properties:
+        scooterId:
+          type: integer
+          description: Уникальный идентификатор самоката
+          example: 115501
+        startTime:
+          type: string
+          description: Время начала поездки
+          format: date-time
+          example: 2024-12-20T09:12Z
+        endTime:
+          type: string
+          description: Время окончания поездки
+          format: date-time
+          example: 2024-12-20T10:10Z
+        duration:
+          type: integer
+          description: Продолжительность поездки (в минутах)
+          example: 58
+        distance:
+          type: number
+          description: Расстояние поездки (в километрах)
+          example: 10
+        cost:
+          type: number
+          description: Стоимость поездки (в рублях)
+          example: 507.5
+          
+    Responses:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+          description: код ответа
+        message:
+          type: string
+          description: развернутое сообщение
+          example: 'Неисправность успешно добавлена'
+        defectId:
+          type: integer
+          description: Уникальный идентификатор добавленной неисправности
+          example: 3167
+                      
