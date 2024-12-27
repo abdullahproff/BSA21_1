@@ -7,12 +7,12 @@ servers:
   - url: https://5ka.ru.swagger.io/api/v1
 tags:
   - name: snapshotbasket
-    description: методы для работы с корзинами товаров
-  - name: basketsnapshot
+    description: методы для работы с корзинами товаров, создание снимка корзины
+  - name: snapshotid
     description: методы для получения снимка корзины
 
 paths:
-  /snapshotbasket:
+  /basketsnapshot/:
     post:
       tags:
         - snapshotbasket
@@ -23,18 +23,18 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/SnapshotBasket'
+              $ref: '#/components/schemas/BasketSnapshot'
       responses:
        '200':
          description: успешное создание снепшота корзины
          content:
           application/json:
             schema:
-              $ref: '#/components/schemas/SnapshotBasketResponse'
+              $ref: '#/components/schemas/BasketsnapshotIdResponse'
   /basketsnapshot/{basketSnapshotId}:
     get:
       tags:
-        - basketsnapshot
+        - snapshotid
       summary: получить снимок корзины по идентификатору
       description: получить снимок корзины по идентификатору
       parameters:
@@ -51,11 +51,11 @@ paths:
          content:
           application/json:
             schema:
-              $ref: '#/components/schemas/BasketsnapshotResponse'
+              $ref: '#/components/schemas/BasketSnapshotResponse' 
 
 components:
   schemas:
-    SnapshotBasket:
+    BasketSnapshot:
       type: object
       properties:
         basketItems:
@@ -88,7 +88,7 @@ components:
         - basketItems
 
  
-    SnapshotBasketResponse:
+    BasketsnapshotIdResponse:
       type: object
       properties:
         code:
@@ -104,7 +104,7 @@ components:
           description: id снепшота
           example: 456
 
-    BasketsnapshotResponse:
+    BasketSnapshotResponse:
       type: object
       properties:
         creationDate:
@@ -128,5 +128,7 @@ components:
              quantity:
               type: integer
               example: 2
+
+     
 
      
