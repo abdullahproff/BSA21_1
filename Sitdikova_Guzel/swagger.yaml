@@ -31,7 +31,7 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/SnapshotBasketResponse'
-  /api/basketsnapshot/{basketSnapshotId}:
+  /basketsnapshot/{basketSnapshotId}:
     get:
       tags:
         - basketsnapshot
