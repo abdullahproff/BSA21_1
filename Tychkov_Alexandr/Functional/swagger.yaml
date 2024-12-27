@@ -1,0 +1,131 @@
+
+openapi: 3.0.3
+info:
+  title: Swagger  - OpenAPI 3.0
+  description: примеры методов
+  version: 1.0.0
+servers:
+  - url: https://soundworld/api/v1
+  
+tags:
+  - name: playlist
+    description: группа методов для работы с плей-листами
+    
+paths:
+  /playlist_tracks:
+    post:
+      tags:
+      - playlist
+      summary: Добавление трека в плей-листы
+      description: Добавление трека в плей-листы выбранные пользователем
+      requestBody:
+        description: Параметры метода для добавления трека в плей-листы
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/playlist_traks_request'
+      responses:
+        '200':
+         description: Возвращает массив объектов, в объекте playlist_id и код ответа, по состоянию добавления трека в данный плей-лист
+         content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/playlist_traks_response'
+              
+  /playlists/{user_id}:
+    get:
+      tags:
+      - playlist
+      summary: Получить список плей-листов
+      description: Получить список плей-листов по уникальному идентификатору пользователя
+      parameters:
+        - name: user_id
+          in: path
+          description: уникальномый идентификатор пользователя
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Возвращает массив объектов, где в один объект входит playlist_id и playlist_title соответсвенно
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/get_playlists_response'
+        
+            
+      
+              
+components:
+  schemas:
+    playlist_traks_request:
+      type: object
+      required:
+      - user_id
+      - track_id
+      - arr_playlist_id
+      properties:
+        user_id:
+          type: integer
+          example: 1
+          description: уникальной идентификатор пользователя
+        track_id:
+          type: integer
+          example: 3
+          description: уникальной идентификатор трека
+        arr_playlist_id:
+          type: array
+          items:
+            type: integer
+            example: 3
+          description: массив уникальных идентификаторов плей-листа
+            
+            
+    playlist_traks_response:
+      type: object
+      required:
+      - add_playlist_obj_arr
+      - playlist_id
+      - code
+      properties:
+        add_playlist_obj_arr:
+          type: array
+          items:
+            type: object
+            properties:
+              playlist_id:
+                type: integer
+                example: 3
+                description:  уникальный идентификатор плей-листа
+              code:
+                type: integer
+                description: код ответа добавления трека в один плей-лист
+                example: 200
+               
+    
+    get_playlists_response:
+      type: object
+      required:
+      - arr_playlist_obj
+      - playlist_id
+      - playlist_name
+      - code
+      properties:
+        arr_playlist_obj:
+          type: array
+          items:
+            type: object
+            properties:
+              playlist_id:
+                type: integer
+                example: 1
+                description:  уникальный идентификатор плей-листа
+              playlist_title:
+                type: string
+                example: favorite
+                description:  навзвание плей-листа
+        code:
+          type: integer
+          example: 200
+          description: код ответа
+  
