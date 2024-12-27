@@ -54,7 +54,7 @@ components:
       required:
         - villa_id
         - check_in_date
-        - depatrure_date
+        - depature_date
         - number_guests
       properties:
         villa_id:
@@ -63,10 +63,12 @@ components:
           example: 15664467
         check_in_date:
           type: string
+          format: date
           description: Дата заезда 
           example: "2024-11-09"
-        depatrure_date:
+        depature_date:
           type: string
+          format: date
           description: Дата выезда
           example: "2024-11-19"
         number_guests:
