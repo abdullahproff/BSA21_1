@@ -1,0 +1,110 @@
+openapi: 3.0.3
+info:
+  title: Swagger - Tyrchat 
+  description: Для возможности вернуться к ранее заданному вопросу
+  version: 1.0.0
+servers:
+  - url: https://tyr.app.demo.com/api/v1/conversations
+
+tags:
+  - name: conversations
+    description: Запрос для возврата предыдущих сообщений по идентификатору диалога
+
+paths:
+  /conversations/{id_conversations}:
+    get:
+      tags:
+        - conversations
+      summary: Получение необходимой беседы 
+      description: Возвращает данные о диалоге по его уникальному идентификатору диалога
+      parameters:
+      
+        - name: id_conversations
+          in: path
+          description: уникальный идентификатор диалога
+          required: true
+          schema:
+            type: integer
+          example: 1  
+          
+      responses:
+        '200':
+          description: Успешная операция
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/conversation_response'  
+
+components:
+  schemas:
+  
+    conversation_response:
+      type: object
+      required:
+        - id_conversations
+        - topic
+        - time_convers
+        - object_mess
+        
+      properties:
+        id_conversations:
+          type: integer
+          description: Уникальный идентификатор диалога
+          example: 1
+          
+        topic:
+          type: string
+          description: Тема диалога
+          example: 'Тур в Мадрид - маршрут'
+
+        time_convers:
+          type: string
+          description: Дата начала диалога в формате YYYY-MM-DD HH:MM:SS
+          example: 2024-12-31 23:59:59
+
+        array_mess:
+          type: array
+          items:
+            $ref: '#/components/schemas/object_mess'
+          
+    object_mess:
+      type: object
+      required:
+        - id_conversations
+        - topic
+        - time_mess
+        - status
+        - txt_mess
+      properties:
+        status:
+          type: string
+          enum: 
+            - 'пользователь'
+            - 'оператор'
+          description: Статус для определения отправителя
+          example: 'пользователь' 
+        
+        time_mess:
+          type: string
+          description: Дата сообщения в формате YYYY-MM-DD HH:MM:SS
+          example: 2024-12-31 23:59:59
+          
+        txt_mess:
+          type: string
+          description: Текст сообщения
+          example: 'Напишите описание маршрута в туре на n дату в Испанию - Мадрид'   
+          
+      
+    conversation_request:
+      type: object
+      required:
+        - id_conversations
+      properties:
+        id_conversations:
+          type: integer
+          description: Уникальный идентификатор диалога
+          example: 1
+          
+        
+
+    
