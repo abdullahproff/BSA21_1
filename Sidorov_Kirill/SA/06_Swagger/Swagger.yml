@@ -8,7 +8,7 @@ servers:
 
 tags:
   - name: purchase
-    description: Методы, описывающие покупки и оценки купленных товаров
+    description: Методы, описывающие купленные товары и их оценки
 
 paths:
   /purchases/{customerId}:
@@ -35,8 +35,22 @@ paths:
                 $ref: '#/components/schemas/Purchases'
         '400':
           description: Invalid id supplied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
         '404':
           description: Customer not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
   /purchases/{customerId}/{productId}:
     post:
       tags:
@@ -63,17 +77,38 @@ paths:
           in: query
           description: Оценка купленного товара (1, 2, 3, 4, 5)
           schema:
-            type: integer
-            format: int32
+            type: string
+            enum:
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
       responses:
         '201':
-          description: successful operation
+          description: Successful operation
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/ApiResponse'
         '400':
           description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '404':
+          description: Customer/product not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
 components:
   schemas:
     Purchase:
@@ -141,6 +176,13 @@ components:
       properties:
         code:
           type: integer
+          description: Числовой код ответа
           format: int32
+          example: 418
         message:
           type: string
+          description: Краткое описание кода ответа
+          example: I'm a teapot
+      required:
+        - code
+        - message
