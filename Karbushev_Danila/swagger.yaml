@@ -1,0 +1,166 @@
+openapi: 3.0.0
+info:
+  title: API для виджетов
+  version: 1.0.0
+paths:
+  /widgets:
+    get:
+      summary: получение списка виджетов на экране пользователя
+      responses:
+        '200':
+          description: Успешный ответ с массивом виджетов
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  widgets:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        widgetID:
+                          type: integer
+                        widgetType:
+                          type: string
+                        widgetData:
+                          type: object
+                          description: Чисто дата контейнер
+                        settings:
+                          type: object
+                          properties:
+                            posX:
+                              type: integer
+                            posY:
+                              type: integer
+                            width:
+                              type: integer
+                            length:
+                              type: integer
+                            widgetSize:
+                              type: string
+                            colorScheme:
+                              type: string
+
+  /widgets/settings:
+    post:
+      summary: добавление виджета на экран пользователя
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                widget:
+                  type: object
+                  properties:
+                    widgetID:
+                      type: integer
+                    settings:
+                      type: object
+                      properties:
+                        posX:
+                          type: integer
+                        posY:
+                          type: integer
+                        width:
+                          type: integer
+                        length:
+                          type: integer
+                        widgetSize:
+                          type: string
+                        colorScheme:
+                          type: string
+      responses:
+        '200':
+          description: Успешное добавление виджета пользователей
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settingId:
+                    type: integer
+                  message:
+                    type: string
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        user_id:
+          type: integer
+        name:
+          type: string
+          maxLength: 100
+        surname:
+          type: string
+          maxLength: 100
+        inn:
+          type: string
+          maxLength: 12
+        passport_data:
+          type: string
+          maxLength: 50
+
+    DataSource:
+      type: object
+      properties:
+        data_source_id:
+          type: integer
+        source_name:
+          type: string
+          maxLength: 50
+        api_endpoint:
+          type: string
+        method:
+          type: string
+          enum:
+            - GET
+            - POST
+            - PUT
+            - DELETE
+        params:
+          type: string
+
+    Widgets:
+      type: object
+      properties:
+        widget_id:
+          type: integer
+        widget_name:
+          type: string
+          maxLength: 100
+        widget_type:
+          type: string 
+          maxLength: 20
+        data_source_id:
+          type: integer
+
+    Settings:
+      type: object
+      properties:
+        setting_id:
+          type: integer
+        user_id:
+          type: integer
+        widget_id:
+          type: integer
+        position_x:
+          type: integer
+        position_y:
+          type: integer
+        width:
+          type: integer
+        height:
+          type: integer
+        color_scheme:
+          type: string
+          maxLength: 50
+        widget_size:
+          type: string
+          enum:
+            - Small
+            - Medium
+            - Large
