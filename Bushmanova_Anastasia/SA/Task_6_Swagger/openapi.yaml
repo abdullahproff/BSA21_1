@@ -1,0 +1,119 @@
+openapi: 3.0.0
+info:
+  title: Item Favorites API
+  description: API для добавления и управления избранными товарами.
+  version: 1.0.0
+paths:
+  /users/{user_id}:
+    get:
+      summary: Получение информации о пользователе, включая список избранных товаров
+      parameters:
+        - name: user_id
+          in: path
+          required: true
+          description: Уникальный идентификатор пользователя
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Успешное получение информации о пользователе и его списка избранного
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - user_id
+                  - login
+                  - favorite_items
+                properties:
+                  user_id:
+                    type: integer
+                    description: Уникальный идентификатор пользователя
+                  login:
+                    type: string
+                    description: Логин пользователя
+                  favorite_items:
+                    type: array
+                    description: Массив объектов избранных товаров
+                    items:
+                      type: object
+                      required:
+                        - item_id
+                        - item_name
+                      properties:
+                        item_id:
+                          type: integer
+                          description: Уникальный идентификатор товара
+                        item_name:
+                          type: string
+                          description: Название товара
+                        date_add:
+                          type: string
+                          description: Дата добавления в избранное
+              example:
+                user_id: 10
+                login: "user_graham"
+                favorite_items:
+                  - item_id: 10101
+                    item_name: "Яблоки"
+                    date_add: "2024-12-12"
+                  - item_id: 10201
+                    item_name: "Молоко"
+                    date_add: "2024-12-15"
+
+  /favorites:
+    post:
+      summary: Добавление нового товара в список избранных
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - user_id
+                - item_id
+              properties:
+                user_id:
+                  type: integer
+                  description: Уникальный идентификатор пользователя
+                item_id:
+                  type: integer
+                  description: Уникальный идентификатор товара
+              example:
+                user_id: 10
+                item_id: 10103
+      responses:
+        '201':
+          description: Товар успешно добавлен в избранное
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - code
+                  - item_id
+                  - favorite_item_id
+                  - item_description
+                properties:
+                  code:
+                    type: integer
+                    description: Код ответа
+                  item_id:
+                    type: integer
+                    description: Уникальный идентификатор товара
+                  favorite_item_id:
+                    type: integer
+                    description: Уникальный идентификатор избранного товара
+                  item_description:
+                    type: string
+                    description: Описание товара
+                  date_add:
+                    type: string
+                    description: Дата добавления в избранное
+              example:
+                code: 201
+                item_id: 10103
+                favorite_item_id: 5001
+                item_description: "Красные яблоки сорта Гала"
+                date_add: "2024-12-28"
