@@ -1,0 +1,74 @@
+openapi: 3.0.3
+info:
+  title: Swagger - OpenAPI 3.0
+  description: Документирование REST-вызовов в Swagger
+  version: 1.0.0
+
+servers:
+  - url: https://Lamoda_demo.com/api/v1
+
+tags:
+  - name: clo
+    description: группа методов для работы с товарами 
+
+paths:
+    /product/{}:
+      get:
+        tags:
+           - clo
+        summary: получение товаров заданного цвета
+        description: Запрос возвращает товары заданного цвета
+        parameters:
+        - name: category
+          in: query
+          description: категория товара
+          required: true
+          schema:
+            type: string
+        - name: colour
+          in: query
+          description: цвет товара
+          required: false
+          schema:
+            type: string
+        responses:
+          '200':
+            description: Успешное получение товаров заданного цвета  
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Product'
+                
+          '400':         
+            description:  Invalid body   
+          '500':         
+            description:  Error 
+          
+components:
+   schemas:
+     Product:
+        type: object
+        required:
+          - code
+        properties:
+            Arr_colour_category:
+              type: array
+              items:
+                required:
+                - Product_id
+                type: object
+                properties:
+                  Product_id:
+                    type: integer
+                  Category:
+                    type: string
+                  Colour:
+                    type: string            
+                  Product:
+                    type: string 
+            code:
+              type: integer
+              example: 200
+              description: код ответа
+  
+  
