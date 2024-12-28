@@ -41,10 +41,6 @@ components:
             $ref: '#/components/schemas/product'
         address:
             $ref: '#/components/schemas/address'
-        total_cost:
-          type: integer
-          description: Общая стоимость заказа
-          example: 1700
     product: 
       type: object
       description: Объект, содержащий информацию о товаре
@@ -57,18 +53,6 @@ components:
           type: integer
           description: Количество единиц товара
           example: 1
-        size:
-          type: string
-          description: Размер товара
-          example: '150 см'
-        weight:
-          type: integer
-          description: Вес товара
-          example: 200
-        price:
-          type: integer
-          description: Цена товара
-          example: 1700
     address:
       type: object
       description: Объект, содержащий адрес доставки
@@ -100,3 +84,7 @@ components:
           type: integer
           description: ID заказа
           example: 394
+        total_cost:
+          type: integer
+          description: Общая стоимость заказа
+          example: 1700
