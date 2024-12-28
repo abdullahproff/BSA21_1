@@ -25,7 +25,10 @@ paths:
                           type: string
                         widgetData:
                           type: object
-                          description: Чисто дата контейнер
+                          description: дата контейнер
+                          properties: 
+                            dataSourceUrl:
+                              type: string
                         settings:
                           type: object
                           properties:
