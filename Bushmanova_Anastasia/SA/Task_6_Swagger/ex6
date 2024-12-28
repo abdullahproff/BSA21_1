@@ -21,6 +21,10 @@ paths:
             application/json:
               schema:
                 type: object
+                required:
+                  - user_id
+                  - login
+                  - favorite_items
                 properties:
                   user_id:
                     type: integer
@@ -33,6 +37,9 @@ paths:
                     description: Массив объектов избранных товаров
                     items:
                       type: object
+                      required:
+                        - item_id
+                        - item_name
                       properties:
                         item_id:
                           type: integer
@@ -63,6 +70,9 @@ paths:
           application/json:
             schema:
               type: object
+              required:
+                - user_id
+                - item_id
               properties:
                 user_id:
                   type: integer
@@ -80,6 +90,11 @@ paths:
             application/json:
               schema:
                 type: object
+                required:
+                  - code
+                  - item_id
+                  - favorite_item_id
+                  - item_description
                 properties:
                   code:
                     type: integer
@@ -102,3 +117,4 @@ paths:
                 favorite_item_id: 5001
                 item_description: "Красные яблоки сорта Гала"
                 date_add: "2024-12-28"
+
