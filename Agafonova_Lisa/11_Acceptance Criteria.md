@@ -4,7 +4,7 @@
 
 ## Номер кейса: 1.
 
-![Номер кейса: 1](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/11_1.PNG)
+<img src="https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/11_1.PNG" height="400">
 
 **Дано:** Пользователь находится на Экране 2: "Создание приема пищи".
 
@@ -16,7 +16,7 @@
 
 ## Номер кейса: 2.
 
-![Номер кейса: 2](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/11_2.PNG)
+<img src="https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/11_2.PNG" height="400">
 
 **Дано:** Пользователь находится на Экране 3: "Поиск продукта в базе данных".
 
@@ -27,7 +27,7 @@
 
 ## Номер кейса: 3.
 
-![Номер кейса: 3](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/11_3.PNG)
+<img src="https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/11_3.PNG" height="400">
 
 **Дано:** Пользователь находится на Экране 4: "Создание/редактирование продукта".
 
@@ -39,7 +39,7 @@
 
 ## Номер кейса: 4.
 
-![Номер кейса: 4](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/11_3.PNG)
+<img src="https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/11_3.PNG" height="400">
 
 **Дано:** Пользователь находится на Экране 4: "Создание/редактирование продукта".
 
