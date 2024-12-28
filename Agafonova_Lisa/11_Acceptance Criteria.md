@@ -4,7 +4,7 @@
 
 ## Номер кейса: 1.
 
-![Номер кейса: 1](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/02_%20Wireframe.drawio.png?raw=true)
+![Номер кейса: 1](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/11_1.PNG)
 
 **Дано:** Пользователь находится на Экране 2: "Создание приема пищи".
 
