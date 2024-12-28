@@ -1,0 +1,114 @@
+openapi: 3.0.0
+info:
+  title: Favorites API / leanorac
+  description: API для управления списком избранного пользователя
+  version: 1.0.0
+servers:
+  - url: http://sbi.ru/KadryOnline/api/v1/
+    description: DevelopServer
+
+paths:
+  /Users/{userId}/Settings:
+    post:
+      summary: Сохранение настроек сервиса для пользователя
+      description: Сохраняет настройки на календарный год для пользователя.
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          description: Уникальный идентификатор пользователя
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Settings"
+      responses:
+        '201':
+          description: Настройки сервиса успешно сохранены
+          
+
+  /v1/Users/{userId}:
+    get:
+      summary: Запрос доступности для работы сервиса Кадры-Онлайн
+      description: Проверяет, может ли пользователь работать в сервисе
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          description: Уникальный идентификатор пользователя
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Success (Операция выполнена успешно)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  is_user_valid_settings:
+                    type: boolean
+                    example: true
+                    description: Работа с сервисом разрешена (настройки сохранены)
+
+components:
+  schemas:
+    Settings:
+      type: object
+      required:
+        - setting_year
+        - date_advance
+        - date_salary
+        - reserv_money
+        - month_off
+        - date_send_pers
+        - date_send_6_ndfl
+        - date_send_efc_1
+        - date_send_rsv
+      properties:
+        setting_year:
+          type: integer
+          example: 2024
+          description: Календарный год, в отношении которого применяются сохраняемые настройки
+        date_advance:
+          type: integer
+          enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+          example: 25
+          description: Дата выплаты аванса
+        date_salary:
+          type: integer
+          enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+          example: 10
+          description: Дата выплаты зарплаты
+        reserv_money:
+          type: boolean
+          example: true
+          description: Наличие резервных средств
+        month_off:
+          type: integer
+          enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+          example: 5
+          description: Дата закрытия месяца (дата формирования проводок)
+        date_send_pers:
+          type: integer
+          enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+          example: 12
+          description: Дата отправки персональных данных
+        date_send_6_ndfl:
+          type: integer
+          enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+          example: 10
+          description: Дата отправки 6-НДФЛ
+        date_send_efc_1:
+          type: integer
+          enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+          example: 12
+          description: Дата отправки ЕФС-1
+        date_send_rsv:
+          type: integer
+          enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+          example: 12
+          description: Дата отправки РСВ
