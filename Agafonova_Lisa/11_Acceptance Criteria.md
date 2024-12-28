@@ -16,7 +16,7 @@
 
 ## Номер кейса: 2.
 
-![Номер кейса: 2](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/02_%20Wireframe.drawio.png?raw=true)
+![Номер кейса: 2](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/11_2.PNG)
 
 **Дано:** Пользователь находится на Экране 3: "Поиск продукта в базе данных".
 
@@ -27,7 +27,7 @@
 
 ## Номер кейса: 3.
 
-![Номер кейса: 3](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/02_%20Wireframe.drawio.png?raw=true)
+![Номер кейса: 3](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/11_3.PNG)
 
 **Дано:** Пользователь находится на Экране 4: "Создание/редактирование продукта".
 
@@ -39,7 +39,7 @@
 
 ## Номер кейса: 4.
 
-![Номер кейса: 4](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/02_%20Wireframe.drawio.png?raw=true)
+![Номер кейса: 4](https://github.com/abdullahproff/BSA21_1/blob/main/Agafonova_Lisa/11_3.PNG)
 
 **Дано:** Пользователь находится на Экране 4: "Создание/редактирование продукта".
 
