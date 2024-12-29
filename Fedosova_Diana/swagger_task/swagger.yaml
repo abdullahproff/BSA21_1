@@ -1,0 +1,80 @@
+openapi: 3.0.3
+info:
+  title: API для добавления отзывов о товаре
+  description: Методы, необходимые для добавления и просмотра отзывов на продукты
+  version: 1.0.0
+servers:
+  - url: http://marketplace.com
+tags:
+  - name: reviews
+    description: Методы для работы с отзывами о продуктах
+
+paths:
+  /v1/reviews/:
+    post:
+      tags:
+        - reviews
+      summary: Добавить отзыв о продукте
+      description: Метод для отправки отзыва о продукте пользователем.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReviewRequestPost'
+      responses:
+        '200':
+          description: Успешная операция
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReviewResponsePost'
+
+components:
+  schemas:
+    ReviewRequestPost:
+      type: object
+      properties:
+        user_id:
+          type: integer
+          description: Уникальный идентификатор пользователя
+          example: 101
+        product_id:
+          type: integer
+          description: Уникальный идентификатор продукта
+          example: 202
+        content:
+          type: string
+          description: Текст отзыва
+          example: "Отличный продукт, очень понравился!"
+        rating:
+          type: number
+          format: float
+          description: Оценка продукта
+          example: 4.5
+        mediaFiles:
+          type: array
+          items:
+            type: string
+          description: Список ссылок на медиафайлы
+          example: ["/images/review1.jpg", "/images/review2.jpg"]
+        mediaFilesPath:
+          type: string
+          description: Путь к файлам (обязательно, если указаны mediaFiles)
+          example: "/uploads/reviews/"
+        mediaFileType:
+          type: string
+          description: Тип файла (обязательно, если указаны mediaFiles)
+          example: "image/jpeg"
+
+    ReviewResponsePost:
+      type: object
+      properties:
+        code:
+          type: integer
+          description: Код результата операции
+          example: 200
+        message:
+          type: string
+          description: Сообщение о результате
+          example: "Отзыв успешно добавлен"
