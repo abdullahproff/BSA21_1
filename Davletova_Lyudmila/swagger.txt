@@ -12,6 +12,12 @@ paths:
       summary: Получение истории прослушивания
       description: Возвращает историю прослушивания с фильтрацией по датам и пагинацией.
       parameters:
+        - name: userId
+          in: query
+          description: Уникальный идентификатор пользователя.
+          required: true
+          schema:
+            type: integer
         - name: dateFrom
           in: query
           description: Начальная дата фильтрации.
@@ -47,11 +53,19 @@ paths:
             application/json:
               schema:
                 type: object
+                required:
+                  - tracks
+                  - pagination
                 properties:
                   tracks:
                     type: array
                     items:
                       type: object
+                      required:
+                        - id
+                        - title
+                        - listening_date
+                        - artist
                       properties:
                         id:
                           type: integer
@@ -79,6 +93,9 @@ paths:
                               description: Дата выпуска альбома.
                         artist:
                           type: object
+                          required:
+                            - id
+                            - name
                           properties:
                             id:
                               type: integer
@@ -91,6 +108,10 @@ paths:
                               description: Жанр исполнителя.
                   pagination:
                     type: object
+                    required:
+                      - page
+                      - pageSize
+                      - total_count
                     properties:
                       page:
                         type: integer
@@ -110,9 +131,18 @@ paths:
           application/json:
             schema:
               type: object
+              required:
+                - userId
+                - track
               properties:
+                userId:
+                  type: integer
+                  description: Уникальный идентификатор пользователя.
                 track:
                   type: object
+                  required:
+                    - id
+                    - listening_date
                   properties:
                     id:
                       type: integer
@@ -128,6 +158,8 @@ paths:
             application/json:
               schema:
                 type: object
+                required:
+                  - success
                 properties:
                   success:
                     type: boolean
