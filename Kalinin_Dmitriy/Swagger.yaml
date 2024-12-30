@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: API для создания навых списков акций и получения информации о них
+  title: API для создания новых списков акций и получения информации о них
   description: POST запрос создает новый список, GET запрос получает информацию о списке
   version: '1.0'
 servers:
@@ -67,7 +67,7 @@ components:
       properties:
         listName:
           type: string
-          example: Лукойл
+          example: List_1
         sectorOfEconomy:
           type: string
           example: Retail
@@ -90,7 +90,7 @@ components:
       properties:
         listName:
           type: string
-          example: Лукойл
+          example: List_1
         sharesList:
           type: array
           items:
