@@ -1,0 +1,138 @@
+openapi: 3.0.0
+info:
+  title: Music History API
+  description: API для работы с историей прослушивания музыки.
+  version: 1.0.0
+servers:
+  - url: https://api.example.com
+
+paths:
+  /v1/music/history:
+    get:
+      summary: Получение истории прослушивания
+      description: Возвращает историю прослушивания с фильтрацией по датам и пагинацией.
+      parameters:
+        - name: dateFrom
+          in: query
+          description: Начальная дата фильтрации.
+          required: false
+          schema:
+            type: string
+            format: date-time
+        - name: dateTo
+          in: query
+          description: Конечная дата фильтрации.
+          required: false
+          schema:
+            type: string
+            format: date-time
+        - name: page
+          in: query
+          description: Номер страницы (для пагинации).
+          required: false
+          schema:
+            type: integer
+            default: 1
+        - name: pageSize
+          in: query
+          description: Количество записей на странице.
+          required: false
+          schema:
+            type: integer
+            default: 20
+      responses:
+        '200':
+          description: Успешный запрос.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tracks:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          description: Уникальный идентификатор трека.
+                        title:
+                          type: string
+                          description: Название трека.
+                        listening_date:
+                          type: string
+                          format: date-time
+                          description: Дата и время прослушивания.
+                        album:
+                          type: object
+                          nullable: true
+                          properties:
+                            id:
+                              type: integer
+                              description: Уникальный идентификатор альбома.
+                            title:
+                              type: string
+                              description: Название альбома.
+                            release_date:
+                              type: string
+                              format: date-time
+                              description: Дата выпуска альбома.
+                        artist:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              description: Уникальный идентификатор исполнителя.
+                            name:
+                              type: string
+                              description: Имя исполнителя.
+                            genre:
+                              type: string
+                              description: Жанр исполнителя.
+                  pagination:
+                    type: object
+                    properties:
+                      page:
+                        type: integer
+                        description: Текущая страница.
+                      pageSize:
+                        type: integer
+                        description: Количество записей на странице.
+                      total_count:
+                        type: integer
+                        description: Общее количество записей.  
+    post:
+      summary: Добавление трека в историю
+      description: Добавляет запись в историю прослушивания.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                track:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      description: Уникальный идентификатор трека.
+                    listening_date:
+                      type: string
+                      format: date-time
+                      description: Дата и время прослушивания.
+      responses:
+        '201':
+          description: Успешное добавление трека.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    description: Успешность добавления записи.
+        '400':
+          description: Некорректный запрос.
+        '500':
+          description: Внутренняя ошибка сервера.
