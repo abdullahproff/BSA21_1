@@ -12,12 +12,6 @@ paths:
       summary: Получение истории прослушивания
       description: Возвращает историю прослушивания с фильтрацией по датам и пагинацией.
       parameters:
-        - name: userId
-          in: query
-          description: Уникальный идентификатор пользователя.
-          required: true
-          schema:
-            type: integer
         - name: dateFrom
           in: query
           description: Начальная дата фильтрации.
@@ -54,6 +48,7 @@ paths:
               schema:
                 type: object
                 required:
+                  - tracks
                   - pagination
                 properties:
                   tracks:
@@ -91,20 +86,20 @@ paths:
                               format: date-time
                               description: Дата выпуска альбома.
                         artist:
-                          type: object
-                          required:
-                            - id
-                            - name
-                          properties:
-                            id:
-                              type: integer
-                              description: Уникальный идентификатор исполнителя.
-                            name:
-                              type: string
-                              description: Имя исполнителя.
-                            genre:
-                              type: string
-                              description: Жанр исполнителя.
+                            type: object
+                            required:
+                             - id
+                             - name
+                            properties:
+                              id:
+                                type: integer
+                                description: Уникальный идентификатор исполнителя.
+                              name:
+                                type: string
+                                description: Имя исполнителя.
+                              genre:
+                                type: string
+                                description: Жанр исполнителя.
                   pagination:
                     type: object
                     required:
@@ -131,12 +126,8 @@ paths:
             schema:
               type: object
               required:
-                - userId
                 - track
               properties:
-                userId:
-                  type: integer
-                  description: Уникальный идентификатор пользователя.
                 track:
                   type: object
                   required:
