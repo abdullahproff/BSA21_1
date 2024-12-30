@@ -132,7 +132,3 @@ paths:
                   success:
                     type: boolean
                     description: Успешность добавления записи.
-        '400':
-          description: Некорректный запрос.
-        '500':
-          description: Внутренняя ошибка сервера.
