@@ -40,12 +40,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/AddWidgetResponse'
-              examples:
-                example-1:
-                  summary: Пример ответа
-                  value: 
-                    settingId: 123
-                    message: "Виджет успешно добавлен"
 
 components:
   schemas:
@@ -163,6 +157,9 @@ components:
 
     AddWidgetResponse:  # Схема для ответа на добавление виджета 
       type: object
+      required:
+        - settingId
+        - message
       properties:
         settingId:
           type: integer 
