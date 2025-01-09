@@ -1,0 +1,77 @@
+openapi: 3.0.3
+info:
+  title: Swagger - OpenAPI 3.0
+  description: Документирование REST-вызовов в Swagger
+  version: 1.0.0
+
+servers:
+  - url: https://Lamoda_demo.com/api/v1
+
+tags:
+  - name: clo
+    description: группа методов для работы с товарами 
+
+paths:
+    /product/:
+      get:
+        tags:
+           - clo
+        summary: получение товаров заданного цвета
+        description: Запрос возвращает товары заданного цвета
+        parameters:
+        - name: category
+          in: query
+          description: категория товара
+          required: false
+          schema:
+            type: string
+        - name: colour
+          in: query
+          description: цвет товара
+          required: false
+          schema:
+            type: string
+        responses:
+          '200':
+            description: Успешное получение товаров заданного цвета  
+            content: 
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Product'
+                
+          '400':         
+            description:  Ошибка на стороне клиента   
+          '500':         
+            description:  Error 
+          
+components:
+   schemas:
+     Product:
+        type: object
+        required:
+          - Arr_colour_category
+          - code
+        properties:
+          Arr_colour_category:
+            type: array
+            description: Массив одежды заданного цвета и категории
+            items:
+              properties:
+                Product_id:
+                  type: integer
+                  description: Уникальный идентификатор товара
+                Category:
+                  type: string
+                  description: Категория товара (рубашка,платье...) 
+                Colour:
+                  type: string            
+                  description: Цвет товара (одежды)  
+                Product:
+                  type: string 
+                  description: конкретная одежды 
+          code:
+            type: integer
+            example: 200
+            description: код ответа
+  
+  
