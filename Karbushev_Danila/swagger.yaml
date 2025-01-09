@@ -2,9 +2,17 @@ openapi: 3.0.0
 info:
   title: API для виджетов
   version: 1.0.0
+  description: Взаимодействие с виджетами на начальном экране
+servers:
+  - url: https://sbol.ru/api
+tags:
+  - name: WidgetsAPI
+    description: Методы для взаимодействия с виджетами
 paths:
   /widgets:
     get:
+      tags:
+        - WidgetsAPI
       summary: получение списка виджетов на экране пользователя
       responses:
         '200':
@@ -12,158 +20,155 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  widgets:
-                    type: array
-                    items:
-                      type: object
-                      properties:
-                        widgetID:
-                          type: integer
-                        widgetType:
-                          type: string
-                        widgetData:
-                          type: object
-                          description: дата контейнер
-                          properties: 
-                            dataSourceUrl:
-                              type: string
-                        settings:
-                          type: object
-                          properties:
-                            posX:
-                              type: integer
-                            posY:
-                              type: integer
-                            width:
-                              type: integer
-                            length:
-                              type: integer
-                            widgetSize:
-                              type: string
-                            colorScheme:
-                              type: string
-
+                $ref: '#/components/schemas/WidgetsResponse'
+                      
   /widgets/settings:
     post:
       summary: добавление виджета на экран пользователя
+      tags:
+        - WidgetsAPI
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              type: object
-              properties:
-                widget:
-                  type: object
-                  properties:
-                    widgetID:
-                      type: integer
-                    settings:
-                      type: object
-                      properties:
-                        posX:
-                          type: integer
-                        posY:
-                          type: integer
-                        width:
-                          type: integer
-                        length:
-                          type: integer
-                        widgetSize:
-                          type: string
-                        colorScheme:
-                          type: string
+              $ref: '#/components/schemas/AddWidgetRequest'
       responses:
         '200':
-          description: Успешное добавление виджета пользователей
+          description: Успешное добавление виджета пользователям
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  settingId:
-                    type: integer
-                  message:
-                    type: string
+                $ref: '#/components/schemas/AddWidgetResponse'
+              examples:
+                example-1:
+                  summary: Пример ответа
+                  value: 
+                    settingId: 123
+                    message: "Виджет успешно добавлен"
+
 components:
   schemas:
-    User:
+    WidgetsResponse:  # Схема для ответа о виджетах
       type: object
       properties:
-        user_id:
-          type: integer
-        name:
-          type: string
-          maxLength: 100
-        surname:
-          type: string
-          maxLength: 100
-        inn:
-          type: string
-          maxLength: 12
-        passport_data:
-          type: string
-          maxLength: 50
+        widgets:
+          type: array
+          items:
+            type: object
+            required:
+              - widgetID
+              - widgetType
+              - widgetData
+              - settings
+            properties:
+              widgetID:
+                type: integer
+                description: Идентификатор виджета
+                example: 1
+              widgetType:
+                type: string
+                description: Тип виджета
+                example: "PieChart"
+              widgetData:
+                type: object
+                required:
+                  - dataSourceUrl
+                properties: 
+                  dataSourceUrl:
+                    type: string
+                    description: URL для получения информации, отображаемой в виджете
+                    example: "https:/sbol.ru/api/expences"
+              settings:
+                type: object
+                required:
+                  - posX
+                  - posY
+                  - width
+                  - height
+                  - widgetSize
+                  - colorScheme
+                properties:
+                  posX:
+                    type: integer
+                    description: Позиция X
+                    example: 10
+                  posY:
+                    type: integer
+                    description: Позиция Y
+                    example: 20
+                  width:
+                    type: integer
+                    description: Ширина виджета
+                    example: 300
+                  height:
+                    type: integer
+                    description: Высота виджета
+                    example: 200
+                  widgetSize:
+                    type: string
+                    description: Размерность виджета
+                    example: "medium"
+                  colorScheme:
+                    type: string
+                    description: Цветовая схема
+                    example: "light"
 
-    DataSource:
+    AddWidgetRequest:  # Схема для запроса на добавление виджета 
       type: object
       properties:
-        data_source_id:
-          type: integer
-        source_name:
-          type: string
-          maxLength: 50
-        api_endpoint:
-          type: string
-        method:
-          type: string
-          enum:
-            - GET
-            - POST
-            - PUT
-            - DELETE
-        params:
-          type: string
+        widget:
+          type: object
+          required:
+            - widgetID 
+            - settings 
+          properties:
+            widgetID:
+              type: integer 
+              description: Идентификатор виджета
+              example: 1
+            settings:
+              type: object 
+              required:
+                - posX 
+                - posY 
+                - width 
+                - height 
+                - widgetSize 
+              properties:
+                posX:
+                  type: integer 
+                  description: Позиция X
+                  example: 10
+                posY:
+                  type: integer 
+                  description: Позиция Y
+                  example: 20
+                width:
+                  type: integer 
+                  description: Ширина виджета
+                  example: 300
+                height:
+                  type: integer 
+                  description: Высота виджета
+                  example: 200
+                widgetSize:
+                  type: string
+                  description: Размерность виджета
+                  example: "medium"
+                colorScheme:
+                  type: string
+                  description: Цветовая схема
+                  example: "light"
 
-    Widgets:
+    AddWidgetResponse:  # Схема для ответа на добавление виджета 
       type: object
       properties:
-        widget_id:
-          type: integer
-        widget_name:
+        settingId:
+          type: integer 
+          description: ID созданной связи виджет-пользователь с выбранными настройками
+          example: 123
+        message:
           type: string
-          maxLength: 100
-        widget_type:
-          type: string 
-          maxLength: 20
-        data_source_id:
-          type: integer
-
-    Settings:
-      type: object
-      properties:
-        setting_id:
-          type: integer
-        user_id:
-          type: integer
-        widget_id:
-          type: integer
-        position_x:
-          type: integer
-        position_y:
-          type: integer
-        width:
-          type: integer
-        height:
-          type: integer
-        color_scheme:
-          type: string
-          maxLength: 50
-        widget_size:
-          type: string
-          enum:
-            - Small
-            - Medium
-            - Large
+          description: Сообщение об успешной операции добавления виджета
+          example: "Виджет успешно добавлен"
