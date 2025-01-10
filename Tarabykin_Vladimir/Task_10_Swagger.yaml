@@ -16,7 +16,7 @@ paths:
     get:
       tags:
         - Transactions
-      summary: Запрос списка транзакций за период времени 
+      summary: Запрос списка транзакций за период времени
       operationId: getTransactions
       parameters:
         - in: query
@@ -24,7 +24,7 @@ paths:
           schema:
             type: string
             format: date
-          description: Выбор от какой даты (ГГГГ-ММ-ДД)
+          description: "Выбор от какой даты (ГГГГ-ММ-ДД). Если не указано, используется дата первого числа текущего месяца"
           required: false
           example: "2024-11-01"
         - in: query
@@ -32,13 +32,14 @@ paths:
           schema:
             type: string
             format: date
-          description: Выбор до какой даты (ГГГГ-ММ-ДД)
+          description: "Выбор до какой даты (ГГГГ-ММ-ДД). Если не указано, используется текущая дата."
           required: false
           example: "2024-12-27"
         - in: query
           name: page
           schema:
             type: integer
+            default: 1
           description: Номер текущей страницы
           required: false
           example: 1
@@ -46,6 +47,7 @@ paths:
           name: page_size
           schema:
             type: integer
+            default: 10
           description: Количество записей на странице
           required: false
           example: 10
@@ -56,13 +58,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/TransactionResponse'
-        '204':
-          description: Успешное выполнение, пустой ответ.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/EmptyResponse'
-        
 
 components:
   schemas:
@@ -109,6 +104,11 @@ components:
           type: string
           description: тип транзакции
           example: 'оплата'
+          enum:
+            - оплата
+            - снятие наличных
+            - денежный перевод
+            - списание
         name_id:
           type: integer
           description: id названия контрагента
@@ -142,11 +142,3 @@ components:
           type: integer
           description: общее количество записей
           example: 50
-
-    EmptyResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          description: Нет ранзакций за выбранный период
-          example: 'Нет ранзакций за выбранный период'
