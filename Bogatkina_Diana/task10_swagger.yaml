@@ -1,0 +1,149 @@
+openapi: 3.0.3
+info:
+  title: Swagger
+  description: Описание методов API для работы с локациями
+  version: 1.0.11
+servers:
+  - url: https://mapsya.ru/api/v3
+  
+tags:
+  - name: locations
+    description: Методы для работы с локациями
+  
+paths:
+  /favourites/{listId}:
+    get:
+      tags:
+        - locations
+      summary: Получение всех локаций в одном из списков раздела Избранное
+      description: Получение локаций списка по его id
+      parameters:
+        - name: listId
+          in: path
+          description: уникальный идентификатор списка избранного 
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Успешная операция
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/favourites_response_get'
+                
+  /favourites:
+    post:
+      tags:
+        - locations
+      summary: Добавление локации в список в разделе Избранное
+      description: Добавление записи о прикреплении локации в список в Избранном
+      requestBody:
+        description: Параметры метода для отправки сообщения
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/favourites_request_post'
+      responses:
+        '201':
+          description: Запись успешно создана
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/favourites_response_post'
+        
+components:
+  schemas:
+  
+    favourites_response_get:
+      type: object
+      required:
+        - code
+        - message
+        - locations
+      properties:
+        locations:
+          type: array
+          items:
+            $ref: '#/components/schemas/location'
+   
+    location:
+      type: object
+      required:
+        - location_name
+        - location_description
+        - category_name
+        - listId
+      properties:
+        location_name:
+          type: string
+          description: описание (карточка) локации
+          example: Клюква
+        location_description:
+          type: string
+          format: text
+          description: описание (карточка) локации
+          example: отличное кафе в центре города
+        category_name:
+          type: string
+          description: название списка избранного, в котором находится локация
+          example: кафе и рестораны
+        listId:
+          type: integer
+          description: уникальный идентификатор списка, в котором находится локация
+          example: 1
+
+    favourites_request_post:
+      type: object
+      required:
+        - userId
+        - locationId
+        - listId
+      properties:
+        userId:
+          type: integer
+          description: Уникальный идентификатор пользователя
+          example: 123
+        locationId:
+          type: integer
+          description: Уникальный идентификатор локации
+          example: 234
+        listId:
+          type: integer
+          description: Уникальный идентификатор списка
+          example: 6
+       
+    favourites_response_post:
+      type: object
+      required:
+        - favouritesId
+        - userId
+        - locationId
+        - listId
+        - code
+        - message
+      properties:
+        favouritesId:
+          type: integer
+          description: Unique identifier of the record
+          example: 180
+        userId:
+          type: integer
+          description: Уникальный идентификатор пользователя
+          example: 123
+        locationId:
+          type: integer
+          description: Уникальный идентификатор локации
+          example: 234
+        listId:
+          type: integer
+          description: Уникальный идентификатор списка
+          example: 6
+        code:
+          type: integer
+          description: код операции
+          example: 201
+        message:
+          type: string
+          description: Сообщение о создании записи
+          example: Запись успешно создана
