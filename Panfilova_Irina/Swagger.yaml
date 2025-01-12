@@ -1,0 +1,86 @@
+openapi: 3.0.3
+info:
+  title: Notes
+  description: |-
+    Made for SA course
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.11
+servers:
+  - url: https://notes.swagger.io/notes
+tags:
+  - name: notes 
+    description: Everything about notes
+
+
+paths:
+  /notes:
+    post:
+      tags:
+        - notes
+      summary: Tag a note
+      description: User assigns a tag to a note
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NotesTag'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreatenResponse'
+       
+
+
+
+components:
+  schemas:
+    NotesTag:
+      type: object
+      properties:
+        note_id:
+          type: integer
+          description: Unique note id
+          example: '5'
+        tags: 
+          type: array
+          items:
+            type: object  
+            properties:
+              tag_id:
+                type: integer
+                description: Unique tag identifier
+                example: 1
+              color:
+                type: string
+                description: Color of the tag
+                example: 'blue'
+              user_id:
+                type: integer
+                description: User identifier
+                example: 1
+              tag_name:
+                type: string
+                description: Category of the tag
+                example: 'work'
+          description: Array of tags with all parameters
+        tag_id:
+                type: integer
+                description: Unique tag identifier
+                example: 3
+
+
+    CreatenResponse:
+      type: string
+      properties:
+        code:
+          type: integer
+          description: Succsessfull created - without contetnt
+          example: { } 
+
+   
