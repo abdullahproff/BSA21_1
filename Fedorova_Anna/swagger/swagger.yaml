@@ -1,0 +1,88 @@
+openapi: 3.0.0
+info:
+  title: История просмотров видео
+  version: 1.0.0
+  description: API для работы с просмотренными видео пользователей в instagram.
+
+paths:
+  /getHistoryView/{userId}:
+    get:
+      summary: Получить список просмотренных видео
+      description: Возвращает список всех просмотренных видео пользователя, отсортированных по дате.
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: integer
+          description: Id пользователя, которому нужно вернуть просмотренные видео.
+      responses:
+        '200':
+          description: Успешный ответ
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  userId:
+                    type: integer
+                    description: Id пользователя
+                  reels:
+                    type: array
+                    description: Список просмотренных видео
+                    items:
+                      type: object
+                      properties:
+                        reelsId:
+                          type: string
+                          description: Id видео
+                        duration:
+                          type: number
+                          format: double
+                          description: Продолжительность видео
+                        title:
+                          type: string
+                          description: Заголовок видео
+                        description:
+                          type: string
+                          description: Описание видео
+                        viewedAt:
+                          type: string
+                          format: date-time
+                          description: Время просмотра видео
+
+  /reels/videos:
+    post:
+      summary: Добавить просмотренное видео
+      description: Добавляет информацию о просмотренном видео для пользователя.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: integer
+                  description: Id пользователя
+                reelsId:
+                  type: string
+                  description: Id рилса
+                viewedAt:
+                  type: string
+                  format: date-time
+                  description: Время просмотра видео
+      responses:
+        '200':
+          description: Успешный ответ
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Статус ответа
+                  message:
+                    type: string
+                    description: Сообщение об успехе
