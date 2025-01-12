@@ -8,9 +8,7 @@ servers:
 tags:
   - name: snapshotbasket
     description: методы для работы с корзинами товаров, создание снимка корзины
-  - name: snapshotid
-    description: методы для получения снимка корзины
-
+  
 paths:
   /basketsnapshot/:
     post:
@@ -35,7 +33,7 @@ paths:
   /basketsnapshot/{basketSnapshotId}:
     get:
       tags:
-        - snapshotid
+        - snapshotbasket
       summary: получить снимок корзины по идентификатору
       description: получить снимок корзины по идентификатору
       parameters:
@@ -140,6 +138,7 @@ components:
       required:
             - creationDate
       
+
 
      
      
