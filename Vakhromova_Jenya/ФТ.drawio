@@ -1637,21 +1637,465 @@
     </mxGraphModel>
   </diagram>
   <diagram id="bOSbffEU9hx-_EogiAGJ" name="Страница — 2">
-    <mxGraphModel dx="1323" dy="-4205" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="1222" dy="-4264" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="yG3Z2DxNzMkjgxHmgPzm-1" value="&lt;h1 style=&quot;margin-top: 0px; line-height: 160%;&quot;&gt;6. Критерии приёмки&amp;nbsp;&lt;/h1&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Критерии приёмки - это формализованные требования, которые описывают, каким образом система должна работать, чтобы&amp;nbsp; пользователь или заказчик признали функциональность выполненной. Критерии приёмки состоят из кейсов &quot;Дано - Когда- Тогда&quot;.&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; line-height: 19.2px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Шаблон описания кейса&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Функциональность&lt;/b&gt;: формулировка US&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;&lt;b&gt;Номер кейса&lt;/b&gt;: N&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Дано&lt;/b&gt;: предварительные условия или начальный контекст&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;font-size: 14px; background-color: initial;&quot;&gt;Когда&lt;/b&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;: событие или триггер&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;font-size: 14px; background-color: initial;&quot;&gt;Тогда&lt;/b&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;: ожидаемый результат.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="20" y="5000" width="1120" height="310" as="geometry" />
+        <mxCell id="yG3Z2DxNzMkjgxHmgPzm-1" value="&lt;h1 style=&quot;margin-top: 0px; line-height: 160%;&quot;&gt;6. Критерии приёмки&amp;nbsp;&lt;/h1&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Критерии приёмки - это формализованные требования, которые описывают, каким образом система должна работать, чтобы&amp;nbsp; пользователь или заказчик признали функциональность выполненной. Критерии приёмки состоят из кейсов &quot;Дано - Когда (событие или триггер) - Тогда (реакция системы, ожидаемый результат)&quot;. При составлении КП аналитик должен подумать, ч&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;то пользователь может &quot;сломать&quot; в процессе прохождения основного сценария, предусмотреть нестандартное поведение пользователя. В качестве кейсов рассматриваются альтернативные и исключительные сценарии. Основной потребитель этой документации - тестировщики.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; line-height: 19.2px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;Шаблон описания кейса&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Функциональность&lt;/b&gt;: формулировка US&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;&lt;b&gt;Номер кейса&lt;/b&gt;: N&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Дано&lt;/b&gt;: предварительные условия или начальный контекст&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;font-size: 14px; background-color: initial;&quot;&gt;Когда&lt;/b&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;: событие или триггер&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;font-size: 14px; background-color: initial;&quot;&gt;Тогда&lt;/b&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;: ожидаемый результат.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="5000" width="1120" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="XztgedI5juTjWfT1wa5j-2" value="&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Номер кейса&lt;/b&gt;: 1&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Дано&lt;/b&gt;: пользователь выбирает локацию для поиска фотографа&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial; font-size: 14px;&quot;&gt;Когда&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;: пользователь ввел несуществующую локацию&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial; font-size: 14px;&quot;&gt;Тогда&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;: приложение отображает сообщение об ошибке &quot;Введенной вами локации не существует, попробуйте ввести другую&quot;&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;spacingLeft=2;" vertex="1" parent="1">
-          <mxGeometry x="20" y="5320" width="980" height="80" as="geometry" />
+        <mxCell id="XztgedI5juTjWfT1wa5j-2" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;КП для приложения BestPhoto&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;&lt;b&gt;Функциональность:&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: initial; font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;поиск фотографов&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;(доступных в приложении) по фильтру города/локации&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Номер кейса&lt;/b&gt;: 1&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Дано&lt;/b&gt;: пользователь выбирает локацию для поиска фотографа&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;spacingLeft=2;" parent="1" vertex="1">
+          <mxGeometry x="20" y="5340" width="1130" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="sxTiQrYOIcRLdhwuE5oL-1" value="&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Номер кейса&lt;/b&gt;: 2&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Дано&lt;/b&gt;: пользователь выбирает локацию для поиска фотографа&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial; font-size: 14px;&quot;&gt;Когда&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;: пользователь ввел несуществующую локацию&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial; font-size: 14px;&quot;&gt;Тогда&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;: приложение отображает сообщение об ошибке &quot;Введенной вами локации не существует, попробуйте ввести другую&quot;&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;spacingLeft=2;" vertex="1" parent="1">
-          <mxGeometry x="20" y="5430" width="980" height="80" as="geometry" />
+        <mxCell id="sxTiQrYOIcRLdhwuE5oL-2" value="&lt;h1 style=&quot;margin-top: 0px; line-height: 160%;&quot;&gt;7. Нефункциональные требования&amp;nbsp;&lt;/h1&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;НФТ относятся к атрибутам качества системы, которые определяют, как она работает, а не что&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;она делает. В НФТ описывают требования к:&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;&lt;i&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- производительности&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- надежности&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- безопасности&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- удобству использования&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- масштабируемости&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="7001" width="1130" height="420" as="geometry" />
         </mxCell>
-        <mxCell id="sxTiQrYOIcRLdhwuE5oL-2" value="&lt;h1 style=&quot;margin-top: 0px; line-height: 160%;&quot;&gt;7. Нефункциональные требования&amp;nbsp;&lt;/h1&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;НФТ относятся к атрибутам качества системы, которые определяют, как она работает, а не что&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;она делает. В НФТ описывают требования к:&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;&lt;i&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- производительности&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- надежности&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- безопасности&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- удобству использования&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- масштабируемости&lt;/i&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Требования надежности:&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;1. Система должна быть доступна 99% времени.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Требования производительности:&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;1. Страница поиска фотографов должна открываться не более 2 секунд.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 19.2px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;2. Запрос поиска фотографов GET /photographers должен выдерживать нагрузку 1 rps.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="20" y="5750" width="1130" height="420" as="geometry" />
+        <mxCell id="Uvrn-2paqPItk0zC330Y-2" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: bold; background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Функциональность:&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;font style=&quot;font-weight: bold; background-color: initial; font-size: 14px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;поиск фотографов&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;(доступных в приложении) по фильтру города/локации&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Номер кейса&lt;/b&gt;: 2&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Дано&lt;/b&gt;: пользователь выбирает локацию для поиска фотографа&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;spacingLeft=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="5890" width="980" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Uvrn-2paqPItk0zC330Y-3" target="Uvrn-2paqPItk0zC330Y-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-3" value="" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="110" y="5490" width="170" height="289" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-4" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.user" vertex="1" parent="1">
+          <mxGeometry x="121" y="5751" width="17" height="18.09" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-5" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.looking_glass;" vertex="1" parent="1">
+          <mxGeometry x="152" y="5751" width="19" height="18.09" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-6" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/shopping-elements-6/64/03-Shopping_Busket-128.png" vertex="1" parent="1">
+          <mxGeometry x="178" y="5746.04" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-7" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essentials-72/24/029_-_Star-128.png" vertex="1" parent="1">
+          <mxGeometry x="209" y="5746.04" width="24.96" height="24.96" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-8" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.chat;" vertex="1" parent="1">
+          <mxGeometry x="242" y="5752.52" width="20" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-9" value="BestPhoto" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3399FF;labelBackgroundColor=#FFCCE6;fontStyle=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="163.96000000000004" y="5501" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-10" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Location&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="162" y="5523" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-11" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;enter location&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.searchBox;strokeColor=#999999;mainText=;strokeColor2=#008cff;fontColor=#666666;fontSize=17;align=left;spacingLeft=3;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="131" y="5552" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-12" value="Map" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=#0079D6;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;align=center;fontSize=12;outlineConnect=0;spacingTop=-6;fontColor=#FFFFFF;sketch=0;shape=mxgraph.sitemap.map;" vertex="1" parent="1">
+          <mxGeometry x="126.5" y="5582" width="139" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-13" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/ui-essential-17/32/UI_Essential_Outline_2_essential-app-ui-location-map-pin-22-128.png;imageBackground=none;" vertex="1" parent="1">
+          <mxGeometry x="146" y="5637" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-14" value="&lt;b&gt;radius&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="117" y="5695" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-15" value="" style="html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios7ui.slider;barPos=40.42;strokeColor=#0080f0;strokeColor2=#a0a0a0;" vertex="1" parent="1">
+          <mxGeometry x="179" y="5703.5" width="80" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-16" value="&lt;b style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;1km&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="166" y="5691.5" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-17" value="&lt;b style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;10km&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="242" y="5690.5" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-18" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;strokeColor=#9933FF;" vertex="1" parent="1">
+          <mxGeometry x="126" y="5617" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-19" value="&lt;b&gt;3.5&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="198" y="5713" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-20" value="apply" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="121" y="5725" width="49" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-21" value="cancel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="226" y="5725.04" width="49" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-22" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;fillColor=none;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="115.5" y="5720" width="63.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-23" value="&lt;b style=&quot;background-color: initial; font-size: 14px;&quot;&gt;Когда&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;: пользователь нажал кнопку &quot;cancel&quot;&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial; font-size: 14px;&quot;&gt;Тогда&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;: приложение сбрасывает введенные на данном экране данные и открывает экран с выбором фильтров&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="6330" width="950" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-24" value="" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="480.06" y="5487" width="169.94" height="296" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-25" value="BestPhoto" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3399FF;labelBackgroundColor=#FFCCE6;fontStyle=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="540.02" y="5499" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-26" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Location&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="538.06" y="5521" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-27" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.back;" vertex="1" parent="1">
+          <mxGeometry x="497.06" y="5503" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-28" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;enter location&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.searchBox;strokeColor=#999999;mainText=;strokeColor2=#008cff;fontColor=#666666;fontSize=17;align=left;spacingLeft=3;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="494.06" y="5550" width="143" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-29" value="Введенной вами локации не существует, попробуйте ввести другую" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="494.06" y="5590" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-30" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.user" vertex="1" parent="1">
+          <mxGeometry x="501.06" y="5747" width="17" height="18.09" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-31" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.looking_glass;" vertex="1" parent="1">
+          <mxGeometry x="532.06" y="5747" width="19" height="18.09" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-32" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/shopping-elements-6/64/03-Shopping_Busket-128.png" vertex="1" parent="1">
+          <mxGeometry x="558.06" y="5742.04" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-33" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essentials-72/24/029_-_Star-128.png" vertex="1" parent="1">
+          <mxGeometry x="589.06" y="5742.04" width="24.96" height="24.96" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-34" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.chat;" vertex="1" parent="1">
+          <mxGeometry x="622.06" y="5748.52" width="20" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Uvrn-2paqPItk0zC330Y-58" target="Uvrn-2paqPItk0zC330Y-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-58" value="" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="117" y="5985" width="170" height="289" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-59" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.user" vertex="1" parent="1">
+          <mxGeometry x="128" y="6246" width="17" height="18.09" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-60" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.looking_glass;" vertex="1" parent="1">
+          <mxGeometry x="159" y="6246" width="19" height="18.09" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-61" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/shopping-elements-6/64/03-Shopping_Busket-128.png" vertex="1" parent="1">
+          <mxGeometry x="185" y="6241.04" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-62" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essentials-72/24/029_-_Star-128.png" vertex="1" parent="1">
+          <mxGeometry x="216" y="6241.04" width="24.96" height="24.96" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-63" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.chat;" vertex="1" parent="1">
+          <mxGeometry x="249" y="6247.52" width="20" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-64" value="BestPhoto" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3399FF;labelBackgroundColor=#FFCCE6;fontStyle=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="170.96000000000004" y="5996" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-65" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Location&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="169" y="6018" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-66" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Москва, Школа 21&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.searchBox;strokeColor=#999999;mainText=;strokeColor2=#008cff;fontColor=#666666;fontSize=17;align=left;spacingLeft=3;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="138" y="6047" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-67" value="Map" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=#0079D6;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;align=center;fontSize=12;outlineConnect=0;spacingTop=-6;fontColor=#FFFFFF;sketch=0;shape=mxgraph.sitemap.map;" vertex="1" parent="1">
+          <mxGeometry x="133.5" y="6077" width="139" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-68" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/ui-essential-17/32/UI_Essential_Outline_2_essential-app-ui-location-map-pin-22-128.png;imageBackground=none;" vertex="1" parent="1">
+          <mxGeometry x="153" y="6132" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-69" value="&lt;b&gt;radius&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="124" y="6190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-70" value="" style="html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios7ui.slider;barPos=40.42;strokeColor=#0080f0;strokeColor2=#a0a0a0;" vertex="1" parent="1">
+          <mxGeometry x="186" y="6198.5" width="80" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-71" value="&lt;b style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;1km&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="173" y="6186.5" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-72" value="&lt;b style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;10km&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="249" y="6185.5" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-73" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;strokeColor=#9933FF;" vertex="1" parent="1">
+          <mxGeometry x="133" y="6112" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-74" value="&lt;b&gt;3.5&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="205" y="6208" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-75" value="apply" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="128" y="6220" width="49" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-76" value="cancel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="233" y="6220.04" width="49" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-77" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;fillColor=none;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="225" y="6215" width="63.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-78" value="" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="480.02" y="5984.5" width="170" height="289" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-79" value="BestPhoto" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3399FF;labelBackgroundColor=#FFCCE6;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="537.02" y="5995" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-80" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Filters&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="542.02" y="6017" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-81" value="Rating" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="499.02" y="6059" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-82" value="&amp;gt; Location&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26amp%3Bgt%3B%20Rating%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22250%22%20y%3D%22215%22%20width%3D%2260%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=none;strokeWidth=2;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="498.02" y="6091" width="108" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-83" value="Price" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="499.02" y="6109" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-84" value="has portfolio" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="499.02" y="6154" width="98" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-85" value="&amp;gt; style&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26amp%3Bgt%3B%20has%20portpholio%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22252%22%20y%3D%22300%22%20width%3D%2298%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="499.02" y="6174" width="98" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-86" value="&amp;gt; type" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="499.02" y="6194" width="98" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-87" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.user" vertex="1" parent="1">
+          <mxGeometry x="498.02" y="6246" width="17" height="18.09" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-88" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.looking_glass;" vertex="1" parent="1">
+          <mxGeometry x="529.02" y="6246" width="19" height="18.09" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-89" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/shopping-elements-6/64/03-Shopping_Busket-128.png" vertex="1" parent="1">
+          <mxGeometry x="555.02" y="6241.04" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-90" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essentials-72/24/029_-_Star-128.png" vertex="1" parent="1">
+          <mxGeometry x="586.02" y="6241.04" width="24.96" height="24.96" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-91" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.chat;" vertex="1" parent="1">
+          <mxGeometry x="619.02" y="6247.52" width="20" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-92" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.misc.rating;strokeColor=#999999;fillColor=#ffff00;emptyFillColor=#ffffff;grade=4;ratingScale=5;ratingStyle=star;" vertex="1" parent="1">
+          <mxGeometry x="558.02" y="6069" width="102" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-93" value="apply" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="490.52" y="6219" width="49" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-94" value="cancel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="594.02" y="6220.04" width="49" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-95" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="486.65" y="6215" width="58.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-97" value="&amp;gt; availiable dates" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="499.02" y="6133" width="98" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-98" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/boxicons-regular-vol-1/24/bx-check-square-128.png" vertex="1" parent="1">
+          <mxGeometry x="583.02" y="6151" width="24.5" height="24.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-99" value="" style="html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios7ui.slider;barPos=40.42;strokeColor=#0080f0;strokeColor2=#a0a0a0;" vertex="1" parent="1">
+          <mxGeometry x="548.02" y="6116.5" width="92" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-102" value="&lt;b style=&quot;background-color: initial; font-size: 14px;&quot;&gt;Когда&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;: пользователь ввел несуществующую локацию и нажал кнопку &quot;apply&quot;&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial; font-size: 14px;&quot;&gt;Тогда&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;: приложение отображает сообщение об ошибке &quot;Введенной вами локации не существует, попробуйте ввести другую&quot;&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="5800" width="950" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-103" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: bold; background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Функциональность:&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;font style=&quot;font-weight: bold; background-color: initial; font-size: 14px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;поиск фотографов&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;(доступных в приложении) по фильтру города/локации&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Номер кейса&lt;/b&gt;: 3&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;b&gt;Дано&lt;/b&gt;: пользователь ввел данные по локации и нажал кнопку &quot;apply&quot;, приложение отображает экран с фильтрами.&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;spacingLeft=2;" vertex="1" parent="1">
+          <mxGeometry x="17.06" y="6480" width="980" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-104" value="&lt;b style=&quot;background-color: initial; font-size: 14px;&quot;&gt;Когда&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;: пользователь снова&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;нажимает&amp;nbsp;&lt;/span&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;на поле &quot;Location&quot;&lt;/font&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial; font-size: 14px;&quot;&gt;Тогда&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;: приложение открывает экран, где отображаются введенные раннее данные.&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="6941" width="1130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Uvrn-2paqPItk0zC330Y-105" target="Uvrn-2paqPItk0zC330Y-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-105" value="" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="64" y="6630" width="170" height="289" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-106" value="BestPhoto" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3399FF;labelBackgroundColor=#FFCCE6;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="121" y="6640.5" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-107" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Filters&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="126" y="6662.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-108" value="Rating" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="83" y="6704.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-109" value="&amp;gt; Location&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26amp%3Bgt%3B%20Rating%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22250%22%20y%3D%22215%22%20width%3D%2260%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=#FF0000;strokeWidth=2;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="82" y="6730" width="98" height="26.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-110" value="Price" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="83" y="6754.5" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-111" value="has portfolio" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="83" y="6799.5" width="98" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-112" value="&amp;gt; style&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26amp%3Bgt%3B%20has%20portpholio%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22252%22%20y%3D%22300%22%20width%3D%2298%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="83" y="6819.5" width="98" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-113" value="&amp;gt; type" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="83" y="6839.5" width="98" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-114" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.user" vertex="1" parent="1">
+          <mxGeometry x="82" y="6891.5" width="17" height="18.09" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-115" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.looking_glass;" vertex="1" parent="1">
+          <mxGeometry x="113" y="6891.5" width="19" height="18.09" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-116" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/shopping-elements-6/64/03-Shopping_Busket-128.png" vertex="1" parent="1">
+          <mxGeometry x="139" y="6886.54" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-117" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essentials-72/24/029_-_Star-128.png" vertex="1" parent="1">
+          <mxGeometry x="170" y="6886.54" width="24.96" height="24.96" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-118" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.chat;" vertex="1" parent="1">
+          <mxGeometry x="203" y="6893.02" width="20" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-119" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.misc.rating;strokeColor=#999999;fillColor=#ffff00;emptyFillColor=#ffffff;grade=4;ratingScale=5;ratingStyle=star;" vertex="1" parent="1">
+          <mxGeometry x="142" y="6714.5" width="102" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-120" value="apply" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="74.5" y="6864.5" width="49" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-121" value="cancel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="178" y="6865.54" width="49" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-122" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="70.63" y="6860.5" width="58.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-123" value="&amp;gt; availiable dates" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="83" y="6778.5" width="98" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-124" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/boxicons-regular-vol-1/24/bx-check-square-128.png" vertex="1" parent="1">
+          <mxGeometry x="167" y="6796.5" width="24.5" height="24.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-125" value="" style="html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios7ui.slider;barPos=40.42;strokeColor=#0080f0;strokeColor2=#a0a0a0;" vertex="1" parent="1">
+          <mxGeometry x="132" y="6762" width="92" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-126" value="" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="420.77" y="6630" width="170" height="289" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-127" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.user" vertex="1" parent="1">
+          <mxGeometry x="431.77" y="6891" width="17" height="18.09" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-128" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.looking_glass;" vertex="1" parent="1">
+          <mxGeometry x="462.77" y="6891" width="19" height="18.09" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-129" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/shopping-elements-6/64/03-Shopping_Busket-128.png" vertex="1" parent="1">
+          <mxGeometry x="488.77" y="6886.04" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-130" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essentials-72/24/029_-_Star-128.png" vertex="1" parent="1">
+          <mxGeometry x="519.77" y="6886.04" width="24.96" height="24.96" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-131" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.chat;" vertex="1" parent="1">
+          <mxGeometry x="552.77" y="6892.52" width="20" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-132" value="BestPhoto" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3399FF;labelBackgroundColor=#FFCCE6;fontStyle=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="474.73" y="6641" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-133" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Location&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="472.77" y="6663" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-134" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Москва, Школа 21&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.searchBox;strokeColor=#999999;mainText=;strokeColor2=#008cff;fontColor=#666666;fontSize=17;align=left;spacingLeft=3;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="441.77" y="6692" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-135" value="Map" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=#0079D6;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;align=center;fontSize=12;outlineConnect=0;spacingTop=-6;fontColor=#FFFFFF;sketch=0;shape=mxgraph.sitemap.map;" vertex="1" parent="1">
+          <mxGeometry x="437.27" y="6722" width="139" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-136" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/ui-essential-17/32/UI_Essential_Outline_2_essential-app-ui-location-map-pin-22-128.png;imageBackground=none;" vertex="1" parent="1">
+          <mxGeometry x="456.77" y="6777" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-137" value="&lt;b&gt;radius&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="427.77" y="6835" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-138" value="" style="html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios7ui.slider;barPos=40.42;strokeColor=#0080f0;strokeColor2=#a0a0a0;" vertex="1" parent="1">
+          <mxGeometry x="489.77" y="6843.5" width="80" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-139" value="&lt;b style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;1km&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="476.77" y="6831.5" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-140" value="&lt;b style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;10km&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="552.77" y="6830.5" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-141" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;strokeColor=#9933FF;" vertex="1" parent="1">
+          <mxGeometry x="436.77" y="6757" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-142" value="&lt;b&gt;3.5&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="508.77" y="6853" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-143" value="apply" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="431.77" y="6865" width="49" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-144" value="cancel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="536.77" y="6865.04" width="49" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-145" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="528.77" y="6860" width="63.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-146" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="145" y="6734.5" width="8" height="15.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-148" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="17.060000000000002" y="7230" width="869.5" height="303" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-167" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-148">
+          <mxGeometry width="869.5" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-168" value="Нефункциональные требования" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;rowspan=1;colspan=2;fontStyle=1" vertex="1" parent="Uvrn-2paqPItk0zC330Y-167">
+          <mxGeometry width="870" height="48" as="geometry">
+            <mxRectangle width="238" height="48" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-169" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" visible="0" parent="Uvrn-2paqPItk0zC330Y-167">
+          <mxGeometry x="238" width="632" height="48" as="geometry">
+            <mxRectangle width="632" height="48" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-164" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-148">
+          <mxGeometry y="48" width="869.5" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-165" value="Производительность" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;fontStyle=1;align=left;spacingLeft=9;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-164">
+          <mxGeometry width="238" height="62" as="geometry">
+            <mxRectangle width="238" height="62" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-166" value="&lt;p style=&quot;font-size: 12px; line-height: 19.2px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;1. Страница поиска фотографов должна открываться не более 2 секунд.&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;2. Запрос поиска фотографов GET /photographers должен выдерживать нагрузку 1 rps.&lt;/span&gt;&lt;/p&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;spacingLeft=11;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-164">
+          <mxGeometry x="238" width="632" height="62" as="geometry">
+            <mxRectangle width="632" height="62" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-161" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-148">
+          <mxGeometry y="110" width="869.5" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-162" value="Надежность" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;fontStyle=1;align=left;spacingLeft=9;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-161">
+          <mxGeometry width="238" height="48" as="geometry">
+            <mxRectangle width="238" height="48" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-163" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;1. Система должна быть доступна 99% времени.&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;spacingLeft=11;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-161">
+          <mxGeometry x="238" width="632" height="48" as="geometry">
+            <mxRectangle width="632" height="48" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-149" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-148">
+          <mxGeometry y="158" width="869.5" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-150" value="Безопасность" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;fontStyle=1;align=left;spacingLeft=9;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-149">
+          <mxGeometry width="238" height="48" as="geometry">
+            <mxRectangle width="238" height="48" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-151" value="1. Личные данные пользователей должны быть защищены&lt;br&gt;2. Пользовательские пароли хранятся в зашифрованном виде" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;spacingLeft=11;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-149">
+          <mxGeometry x="238" width="632" height="48" as="geometry">
+            <mxRectangle width="632" height="48" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-153" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-148">
+          <mxGeometry y="206" width="869.5" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-154" value="Удобство использования" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;fontStyle=1;align=left;spacingLeft=9;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-153">
+          <mxGeometry width="238" height="49" as="geometry">
+            <mxRectangle width="238" height="49" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-155" value="1. Пользователь должен зарегистрироваться в системе не более чем за 2 минуты без использования инструкции" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;spacingLeft=11;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-153">
+          <mxGeometry x="238" width="632" height="49" as="geometry">
+            <mxRectangle width="632" height="49" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-157" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-148">
+          <mxGeometry y="255" width="869.5" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-158" value="Масштабируемость" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;fontStyle=1;align=left;spacingLeft=9;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-157">
+          <mxGeometry width="238" height="48" as="geometry">
+            <mxRectangle width="238" height="48" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uvrn-2paqPItk0zC330Y-159" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1. Система может поддерживать рост базы данных на 10% в год&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;spacingLeft=11;" vertex="1" parent="Uvrn-2paqPItk0zC330Y-157">
+          <mxGeometry x="238" width="632" height="48" as="geometry">
+            <mxRectangle width="632" height="48" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
