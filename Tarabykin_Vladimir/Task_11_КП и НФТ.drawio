@@ -1,0 +1,231 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Safari/605.1.15" version="26.0.5">
+  <diagram name="Страница — 1" id="QOnO2s9_DJnbQyLCVwD_">
+    <mxGraphModel dx="855" dy="576" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TuTyOI3v1py-L152ERck-27" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="70" y="440" width="396" height="381" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry width="200" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-2" value="" style="image;html=1;image=img/lib/clip_art/finance/Pie_Chart_128x128.png" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="65" y="34" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="90" y="14" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-4" value="Период:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;октябрь&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="25" y="9" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-5" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="320" as="sourcePoint" />
+            <mxPoint x="210" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Расходы&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;        -&lt;/span&gt;96&lt;span style=&quot;white-space: pre;&quot;&gt;00 р&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="11.5" y="131" width="165" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-7" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;супермаркеты 3000 р&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#FDF2D2;strokeColor=#d6b656;fillStyle=auto;align=center;verticalAlign=middle;horizontal=1;spacing=0;spacingBottom=5;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="21.960000000000036" y="104" width="71" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-8" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;развлечения 5000 р&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;spacing=0;spacingBottom=5;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="107.96000000000004" y="104" width="71" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-9" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;связь 600 р&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;spacing=0;spacingBottom=5;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="21.960000000000036" y="122" width="71" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-10" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;транспорт 1000 р&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;spacingBottom=5;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="107.96000000000004" y="122" width="71" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-11" value="Сегодня" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="8.5" y="150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-12" value="" style="html=1;whiteSpace=wrap;shape=isoCube2;backgroundOutline=1;isoAngle=15;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="21.5" y="180" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-13" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Четверочка&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="41.5" y="170" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-14" value="- 1200 р" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="131.5" y="175" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-15" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Интернет&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="41.5" y="227.34000000000015" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-16" value="- 600 р" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="131.5" y="232.34000000000015" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-17" value="28 октября" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="11.5" y="205" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-18" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Метро&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="41.5" y="257.34000000000015" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-19" value="- 1000 р" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="131.5" y="262.34000000000015" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-20" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Кино&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="41.5" y="287.6500000000001" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-21" value="- 500 р" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="131.5" y="292.6500000000001" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-22" value="" style="shape=mxgraph.signs.transportation.train_2;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="21.959999999999923" y="266.68000000000006" width="19.08" height="21.31" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-23" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/boxicons-regular-vol-3/24/bx-movie-play-128.png" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="20" y="296.1500000000001" width="23" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-24" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essential-app-1/16/mobile-phone-smart-screen-128.png" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="21.840000000000032" y="237.68000000000006" width="19.31" height="19.31" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-25" value="" style="shape=singleArrow;direction=west;whiteSpace=wrap;html=1;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="8.5" y="21.25" width="17.25" height="7.5" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-26" value="Экран 3" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="70" y="351" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-48" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.905;exitY=0.946;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="TuTyOI3v1py-L152ERck-27" source="TuTyOI3v1py-L152ERck-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="26.75" as="sourcePoint" />
+            <mxPoint x="160" y="26.59999999999991" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-49" value="Период можно выбирать&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="TuTyOI3v1py-L152ERck-27">
+          <mxGeometry x="230" y="-1.25" width="166" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-34" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="60" y="50" width="700" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-35" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="TuTyOI3v1py-L152ERck-34">
+          <mxGeometry width="700" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-36" value="&lt;b&gt;User story&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TuTyOI3v1py-L152ERck-35">
+          <mxGeometry width="278" height="110" as="geometry">
+            <mxRectangle width="278" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-37" value="&lt;div style=&quot;font-size: 14px; caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0);&quot;&gt;Я, как пользователь банковского приложения,&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px; caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0);&quot;&gt;хочу видеть категории своих трат за определенный промежуток времени&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px; caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0);&quot;&gt;для того,&amp;nbsp;чтобы более осознанно тратить деньги.&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=left;" vertex="1" parent="TuTyOI3v1py-L152ERck-35">
+          <mxGeometry x="278" width="422" height="110" as="geometry">
+            <mxRectangle width="422" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-39" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="TuTyOI3v1py-L152ERck-34">
+          <mxGeometry y="110" width="700" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-40" value="&lt;div&gt;&lt;b&gt;&lt;font&gt;Use case&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;font&gt;Основной сценарий&lt;/font&gt;&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TuTyOI3v1py-L152ERck-39">
+          <mxGeometry width="278" height="210" as="geometry">
+            <mxRectangle width="278" height="210" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-41" value="&lt;ol style=&quot;font-size: 12px;&quot;&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Система отображает экран с разбивкой на категории, список и сумму расходов за текущий месяц (по умолчанию) (Экран 3)&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Клиент выбирает категорию&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Система отображает экран с разбивкой на подкатегории, список и сумму расходов соответствующих выбранной категории за период (Экран 4)&amp;nbsp;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Клиент выбирает подкатегорию&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Система отображает экран со списком и суммой расходов для выбранной подкатегории за период (Экран 5)&lt;/li&gt;&lt;/ol&gt;&lt;b style=&quot;font-size: 12px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&lt;b style=&quot;text-align: center;&quot;&gt;Критерий успеха:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;font-weight: normal; text-align: center;&quot;&gt;Клиенту доступна история расходов с навигацией по категориям за определенный период&lt;/span&gt;&lt;/div&gt;&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="TuTyOI3v1py-L152ERck-39">
+          <mxGeometry x="278" width="422" height="210" as="geometry">
+            <mxRectangle width="422" height="210" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-47" value="&lt;div&gt;&lt;b&gt;Функциональность&lt;/b&gt;: Просмотр истории расходов&lt;/div&gt;&lt;b&gt;Дано&lt;/b&gt;: пользователь просматривает список расходов (экран 3)&lt;div&gt;&lt;b&gt;Когда&lt;/b&gt;: пользователь выбирает периода за который не было операций&lt;/div&gt;&lt;div&gt;&lt;b&gt;Тогда&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;white-space: nowrap; caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px;&quot;&gt;Ирыс%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22endArrow%3Dclassic%3Bhtml%3D1%3Brounded%3D0%3BexitX%3D0.905%3BexitY%3D0.946%3BexitDx%3D0%3BexitDy%3D0%3BexitPerimeter%3D0%3B%22%20edge%3D%221%22%20source%3D%223%22%20parent%3D%221%22%3E%3CmxGeometry%20width%3D%2250%22%20height%3D%2250%22%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22890%22%20y%3D%22537.75%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22640%22%20y%3D%22537.5999999999999%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%D0%9F%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%20%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%20%D0%B2%D1%8B%D0%B1%D0%B8%D1%80%D0%B0%D1%82%D1%8C%26amp%3Bnbsp%3B%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22710%22%20y%3D%22509.75%22%20width%3D%22166%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;white-space: nowrap; caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22endArrow%3Dclassic%3Bhtml%3D1%3Brounded%3D0%3BexitX%3D0.905%3BexitY%3D0.946%3BexitDx%3D0%3BexitDy%3D0%3BexitPerimeter%3D0%3B%22%20edge%3D%221%22%20source%3D%223%22%20parent%3D%221%22%3E%3CmxGeometry%20width%3D%2250%22%20height%3D%2250%22%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22890%22%20y%3D%22537.75%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22640%22%20y%3D%22537.5999999999999%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%D0%9F%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%20%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%20%D0%B2%D1%8B%D0%B1%D0%B8%D1%80%D0%B0%D1%82%D1%8C%26amp%3Bnbsp%3B%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22710%22%20y%3D%22509.75%22%20width%3D%22166%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;white-space: nowrap; caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22endArrow%3Dclassic%3Bhtml%3D1%3Brounded%3D0%3BexitX%3D0.905%3BexitY%3D0.946%3BexitDx%3D0%3BexitDy%3D0%3BexitPerimeter%3D0%3B%22%20edge%3D%221%22%20source%3D%223%22%20parent%3D%221%22%3E%3CmxGeometry%20width%3D%2250%22%20height%3D%2250%22%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22890%22%20y%3D%22537.75%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22640%22%20y%3D%22537.5999999999999%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%D0%9F%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%20%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%20%D0%B2%D1%8B%D0%B1%D0%B8%D1%80%D0%B0%D1%82%D1%8C%26amp%3Bnbsp%3B%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22710%22%20y%3D%22509.75%22%20width%3D%22166%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%Трсввсвсввава. &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;отображается сообщение &quot;Нет трат за выбранный период&quot;&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="70" y="830" width="430" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-50" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Кейс 1:&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="390" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-51" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Кейс 2:&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="950" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-52" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1000" width="200" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-53" value="" style="image;html=1;image=img/lib/clip_art/finance/Pie_Chart_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="135" y="1034" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-54" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1014" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-55" value="Период:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;октябрь&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="95" y="1009" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-56" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="1320" as="sourcePoint" />
+            <mxPoint x="280" y="1170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-57" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Расходы&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;        -&lt;/span&gt;96&lt;span style=&quot;white-space: pre;&quot;&gt;00 р&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="81.5" y="1131" width="165" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-58" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;супермаркеты 3000 р&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#FDF2D2;strokeColor=#d6b656;fillStyle=auto;align=center;verticalAlign=middle;horizontal=1;spacing=0;spacingBottom=5;" vertex="1" parent="1">
+          <mxGeometry x="91.96000000000004" y="1104" width="71" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-59" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;развлечения 5000 р&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;spacing=0;spacingBottom=5;" vertex="1" parent="1">
+          <mxGeometry x="177.96000000000004" y="1104" width="71" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-60" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;связь 600 р&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;spacing=0;spacingBottom=5;" vertex="1" parent="1">
+          <mxGeometry x="91.96000000000004" y="1122" width="71" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-61" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;транспорт 1000 р&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;spacingBottom=5;" vertex="1" parent="1">
+          <mxGeometry x="177.96000000000004" y="1122" width="71" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-62" value="Сегодня" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="78.5" y="1150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-63" value="" style="html=1;whiteSpace=wrap;shape=isoCube2;backgroundOutline=1;isoAngle=15;" vertex="1" parent="1">
+          <mxGeometry x="91.5" y="1180" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-64" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Четверочка&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="111.5" y="1170" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-65" value="- 1200 р" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="201.5" y="1175" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-66" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Интернет&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="111.5" y="1227.3400000000001" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-67" value="- 600 р" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="201.5" y="1232.3400000000001" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-68" value="28 октября" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="81.5" y="1205" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-69" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Метро&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="111.5" y="1257.3400000000001" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-70" value="- 1000 р" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="201.5" y="1262.3400000000001" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-71" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Кино&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="111.5" y="1287.65" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-72" value="- 500 р" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="201.5" y="1292.65" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-73" value="" style="shape=mxgraph.signs.transportation.train_2;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="91.95999999999992" y="1266.68" width="19.08" height="21.31" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-74" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/boxicons-regular-vol-3/24/bx-movie-play-128.png" vertex="1" parent="1">
+          <mxGeometry x="90" y="1296.15" width="23" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-75" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essential-app-1/16/mobile-phone-smart-screen-128.png" vertex="1" parent="1">
+          <mxGeometry x="91.84000000000003" y="1237.68" width="19.31" height="19.31" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-76" value="" style="shape=singleArrow;direction=west;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="78.5" y="1021.25" width="17.25" height="7.5" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-77" value="Экран 3" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="134" y="1350" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-78" value="&lt;div&gt;&lt;b&gt;Функциональность&lt;/b&gt;: Просмотр истории расходов&lt;/div&gt;&lt;b&gt;Дано&lt;/b&gt;: пользователь просматривает список расходов (экран 3)&lt;div&gt;&lt;b&gt;Когда&lt;/b&gt;: Пропадает соединение с интернетом&lt;/div&gt;&lt;div&gt;&lt;b&gt;Тогда&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;white-space: nowrap; caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px;&quot;&gt;Ирыс%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22endArrow%3Dclassic%3Bhtml%3D1%3Brounded%3D0%3BexitX%3D0.905%3BexitY%3D0.946%3BexitDx%3D0%3BexitDy%3D0%3BexitPerimeter%3D0%3B%22%20edge%3D%221%22%20source%3D%223%22%20parent%3D%221%22%3E%3CmxGeometry%20width%3D%2250%22%20height%3D%2250%22%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22890%22%20y%3D%22537.75%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22640%22%20y%3D%22537.5999999999999%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%D0%9F%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%20%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%20%D0%B2%D1%8B%D0%B1%D0%B8%D1%80%D0%B0%D1%82%D1%8C%26amp%3Bnbsp%3B%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22710%22%20y%3D%22509.75%22%20width%3D%22166%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;white-space: nowrap; caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22endArrow%3Dclassic%3Bhtml%3D1%3Brounded%3D0%3BexitX%3D0.905%3BexitY%3D0.946%3BexitDx%3D0%3BexitDy%3D0%3BexitPerimeter%3D0%3B%22%20edge%3D%221%22%20source%3D%223%22%20parent%3D%221%22%3E%3CmxGeometry%20width%3D%2250%22%20height%3D%2250%22%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22890%22%20y%3D%22537.75%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22640%22%20y%3D%22537.5999999999999%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%D0%9F%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%20%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%20%D0%B2%D1%8B%D0%B1%D0%B8%D1%80%D0%B0%D1%82%D1%8C%26amp%3Bnbsp%3B%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22710%22%20y%3D%22509.75%22%20width%3D%22166%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;white-space: nowrap; caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22endArrow%3Dclassic%3Bhtml%3D1%3Brounded%3D0%3BexitX%3D0.905%3BexitY%3D0.946%3BexitDx%3D0%3BexitDy%3D0%3BexitPerimeter%3D0%3B%22%20edge%3D%221%22%20source%3D%223%22%20parent%3D%221%22%3E%3CmxGeometry%20width%3D%2250%22%20height%3D%2250%22%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22890%22%20y%3D%22537.75%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22640%22%20y%3D%22537.5999999999999%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%D0%9F%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%20%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%20%D0%B2%D1%8B%D0%B1%D0%B8%D1%80%D0%B0%D1%82%D1%8C%26amp%3Bnbsp%3B%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22710%22%20y%3D%22509.75%22%20width%3D%22166%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%Трсввсвсввава. &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;отображается сообщение &quot;Невозможно загрузить историю операций, отсутствует соединение с интернетом&quot;&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1400" width="430" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-79" value="&lt;b&gt;Требования надёжности:&lt;/b&gt;&lt;br&gt;&lt;font&gt;&lt;span class=&quot;s1&quot; style=&quot;font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; line-height: normal; font-family: Arial; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;1.&lt;span class=&quot;Apple-converted-space&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;Система должна быть доступна 99% времени&lt;/font&gt;.&lt;div&gt;2. В случае потери связи с интернетом, система должна автоматически продолжить работу после восстановления соединения&lt;br&gt;&lt;b&gt;Требования производительности:&lt;/b&gt;&lt;br&gt;&lt;font&gt;&lt;span class=&quot;s1&quot; style=&quot;font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; line-height: normal; font-family: Arial; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;1.&lt;span class=&quot;Apple-converted-space&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;font face=&quot;Arial&quot;&gt;История должна загружаться не более чем 0,5 секунды&lt;/font&gt;&lt;br&gt;&lt;span class=&quot;s1&quot; style=&quot;font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; line-height: normal; font-family: Arial; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;2.&lt;span class=&quot;Apple-converted-space&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;Запрос на получения списка транзакции &amp;nbsp;должен&lt;br&gt;выдерживать нагрузку не менее 2 rps.&lt;/font&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1560" width="480" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TuTyOI3v1py-L152ERck-80" value="&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Нефункциональные требования:&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="71.5" y="1520" width="288.5" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
