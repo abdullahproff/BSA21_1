@@ -28,14 +28,9 @@ paths:
             schema:
               $ref: '#/components/schemas/NotesTag'
       responses:
-        '201':
-          description: Created
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/CreatenResponse'
-       
-
+        '200':
+           description: Successful response with no content
+           
 
 
 components:
@@ -56,31 +51,9 @@ components:
                 type: integer
                 description: Unique tag identifier
                 example: 1
-              color:
-                type: string
-                description: Color of the tag
-                example: 'blue'
-              user_id:
-                type: integer
-                description: User identifier
-                example: 1
-              tag_name:
-                type: string
-                description: Category of the tag
-                example: 'work'
-          description: Array of tags with all parameters
-        tag_id:
-                type: integer
-                description: Unique tag identifier
-                example: 3
+              
 
 
-    CreatenResponse:
-      type: string
-      properties:
-        code:
-          type: integer
-          description: Succsessfull created - without contetnt
-          example: { } 
+   
 
    
