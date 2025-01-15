@@ -1,0 +1,85 @@
+
+openapi: 3.0.3 
+info: 
+  title: eSIM Activation 
+  description: API для управления активацией eSIM. 
+  version: 1.0.0 
+servers: 
+  - url: https://esim.swagger.io/api/v1 
+    description: Основной сервер API 
+ 
+tags: 
+  - name: eSIM Activation 
+    description: Методы для работы с активацией eSIM 
+ 
+paths: 
+  /v1/esim/{user_id}/activate: 
+    post: 
+      tags: 
+        - eSIM Activation 
+      summary: Инициировать процесс активации eSIM 
+      description: Инициирует процесс активации eSIM для конкретного пользователя. 
+      parameters: 
+        - name: user_id 
+          in: path 
+          required: true 
+          description: Уникальный идентификатор пользователя 
+          schema: 
+            type: integer 
+      requestBody: 
+        required: true 
+        description: Данные для активации eSIM 
+        content: 
+          application/json: 
+            schema: 
+              $ref: '#/components/schemas/EsimActivationRequest' 
+      responses: 
+        '201': 
+          description: Успешная активация eSIM 
+          content: 
+            application/json: 
+              schema: 
+                $ref: '#/components/schemas/EsimActivationResponse' 
+components: 
+  schemas: 
+    EsimActivationRequest: 
+      type: object 
+      required: 
+        - eSim_tariff_id 
+      properties: 
+        eSim_tariff_id: 
+          type: integer 
+          description: Уникальный идентификатор тарифного плана 
+    EsimActivationResponse: 
+      type: object 
+      required: 
+        - esim_id 
+        - eSim_serial_number 
+        - eSim_phone_number 
+        - status_esim 
+        - price 
+      properties: 
+        esim_id: 
+          type: integer 
+          description: Уникальный идентификатор eSIM 
+          example: 1 
+        eSim_serial_number: 
+          type: string 
+          description: Серийный номер новой esim 
+          example: 123-456-789 
+        eSim_phone_number: 
+          type: string 
+          description: Номер телефона esim 
+          example: +78005553535 
+        status_esim: 
+          type: string 
+          description: Статус esim 
+          example: activated 
+        tariff_name: 
+          type: string 
+          description: Название тарифного плана 
+          example: MegaPlan 
+        price: 
+          type: number 
+          description: Цена тарифного плана 
+          example: 1000
