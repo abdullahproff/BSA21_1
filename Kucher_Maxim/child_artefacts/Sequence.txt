@@ -1,0 +1,22 @@
+@startuml
+actor User
+participant MobileApp
+participant Backend
+database DB
+
+autonumber
+activate User
+User -> MobileApp : Нажимает на кнопку «Добавить в избранное»
+activate MobileApp
+MobileApp -> Backend : HTTP-запрос на добавление товара в избранное
+activate Backend
+Backend -> DB : SQL-запрос на добавление в базу данных
+activate DB
+DB --> Backend : SQL-ответ об успешном добавлении
+deactivate DB
+Backend --> MobileApp : HTTP-ответ об успешном добавлении в избранное
+deactivate Backend
+MobileApp --> User : Сердечко становиться красным, сообщение о добавлении в избранное
+deactivate MobileApp
+
+@enduml
