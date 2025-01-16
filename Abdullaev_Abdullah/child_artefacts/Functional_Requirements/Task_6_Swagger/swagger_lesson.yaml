@@ -1,0 +1,56 @@
+openapi: 3.0.3
+info:
+  title: Swagger  - OpenAPI 3.0
+  description: примеры методов
+  version: 1.0.0
+servers:
+  - url: https://api.duolingo.com
+tags:
+  - name: Lessons
+    description: Методы, связанные с уроками
+paths:
+  /lessons/{lessonId}:
+    get:
+      tags:
+        - Lessons
+      summary: Получить урок по lessonId
+      description: Возвращает информацию о конкретном уроке по его идентификатору.
+      parameters:
+        - name: lessonId
+          in: path
+          description: Идентификатор урока
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Успешный ответ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Lesson'
+components:
+  schemas:
+    Lesson:
+      type: object
+      properties:
+        languageName:
+          type: string
+          example: "English"
+          description: Название языка
+        lessonName:
+          type: string
+          example: "Introduction to Grammar"
+          description: Название урока
+        topic:
+          type: string
+          example: "Grammar Basics"
+          description: Тема урока
+        status:
+          type: string
+          example: "completed"
+          description: Статус урока
+        aiInitialMessage:
+          type: string
+          example: "Welcome to your first grammar lesson!"
+          description: Инициализирующее сообщение
