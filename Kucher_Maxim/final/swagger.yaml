@@ -1,0 +1,103 @@
+openapi: 3.0.0
+info:
+  title: Favorites API
+  description: API для управления списком избранного пользователя
+  version: 1.0.0
+
+paths:
+  /v1/favorites:
+    post:
+      summary: Добавление товара в список избранного пользователя
+      description: Добавляет товар в список избранного пользователя.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: integer
+                  description: Уникальный идентификатор пользователя
+                productId:
+                  type: integer
+                  description: Уникальный идентификатор товара
+              required:
+                - userId
+                - productId
+              example:
+                userId: 123
+                productId: 456
+      responses:
+        '201':
+          description: Операция выполнена успешно
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  favoriteId:
+                    type: integer
+                    description: Уникальный идентификатор записи
+                  userId:
+                    type: integer
+                    description: Уникальный идентификатор пользователя
+                  productId:
+                    type: integer
+                    description: Уникальный идентификатор товара
+                  message:
+                    type: string
+                    description: Статус операции
+                example:
+                  favoriteId: 789
+                  userId: 123
+                  productId: 456
+                  message: "Товар добавлен в избранное."
+  /v1/favorites/{userId}:
+    get:
+      summary: Получение списка избранных товаров
+      description: Возвращает список товаров в избранном пользователя.
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          schema:
+            type: integer
+          description: Уникальный идентификатор пользователя
+      responses:
+        '200':
+          description: Операция выполнена успешно
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    favoriteId:
+                      type: integer
+                      description: Уникальный идентификатор записи
+                    productId:
+                      type: integer
+                      description: Уникальный идентификатор товара
+                    productName:
+                      type: string
+                      description: Название товара
+                    price:
+                      type: number
+                      format: decimal
+                      description: Цена товара
+                    description:
+                      type: string
+                      description: Описание товара
+              example:
+                - favoriteId: 1
+                  productId: 456
+                  productName: "Смартфон"
+                  price: 699.99
+                  description: "Флагманский смартфон с большим экраном."
+                - favoriteId: 2
+                  productId: 789
+                  productName: "Ноутбук"
+                  price: 1299.99
+                  description: "Мощный ноутбук для работы и игр."
