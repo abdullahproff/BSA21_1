@@ -12,13 +12,10 @@ participant Backend
 database "Relational DB" as Database
 
 activate User
-User -> Frontend: Выбирает желаемую валюту
+User -> Frontend: Выбирает желаемую валюту и заполняет параметры поиска
 
 activate Frontend
-||10||
-User <-- Frontend : Отображает форму с параметрами поиска
-||10||
-User -> Frontend : Заполняет параметры
+
 Frontend -> Backend: HTTPS-запрос на получение списка по заданным параметрам
 
 activate Backend
@@ -26,10 +23,10 @@ Backend -> Backend: Валидация запроса
 Backend -> Database: SQL запрос на\nформирование списка
 
 activate Database
-Database --> Backend: возврат данных об объектах размещения
+Database --> Backend: Возврат данных об объектах размещения
 deactivate Database
 
-Backend->Backend: создание json
+Backend->Backend: создание JSON
 
 Backend --> Frontend: HTTPS-ответ
 deactivate Backend
@@ -40,3 +37,6 @@ deactivate Frontend
 deactivate User
 
 @enduml
+
+
+
