@@ -1,0 +1,107 @@
+openapi: 3.0.1
+info:
+  title: Пример API
+  version: 1.0.0
+
+paths:
+  /products/favorites:
+    post:
+      summary: Добавление товара в раздел "Избранное"
+      description: |
+        Данный метод позволяет добавить товар в раздел "Избранное" на основе идентификатора пользователя и товара.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - userId
+                - productId
+              properties:
+                userId:
+                  type: integer
+                  format: int64
+                  description: "Уникальный идентификатор пользователя"
+                productId:
+                  type: integer
+                  format: int64
+                  description: "Уникальный идентификатор товара"
+            example:
+              userId: 123
+              productId: 456
+      responses:
+        '201':
+          description: Товар успешно добавлен в «Избранное»
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  favoriteid:
+                    type: integer
+                    format: int64
+                    description: "Уникальный идентификатор записи товара в избранное"
+                  date_add:
+                    type: string
+                    format: date-time
+                    description: "Дата добавления товара в «Избранное» (необязательно)"
+                    nullable: true
+                  userid:
+                    type: integer
+                    format: int64
+                    description: "Уникальный идентификатор пользователя"
+                  productid:
+                    type: integer
+                    format: int64
+                    description: "Уникальный идентификатор товара"
+                required:
+                  - favoriteid
+                  - userid
+                  - productid
+              example:
+                favoriteid: 10
+                date_add: "2025-01-17T10:05:00Z"
+                userid: 123
+                productid: 456
+
+  /products/{product_id}:
+    get:
+      summary: Получение данных о товаре по его идентификатору
+      description: |
+        Возвращает информацию о товаре, включая название, цену и описание, по переданному идентификатору товара.
+      parameters:
+        - name: product_id
+          in: path
+          required: true
+          description: Уникальный идентификатор товара
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Данные о товаре успешно получены
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  product_name:
+                    type: string
+                    description: "Название товара"
+                  price:
+                    type: number
+                    format: float
+                    description: "Цена товара"
+                  product_description:
+                    type: string
+                    description: "Описание товара (необязательно)"
+                    nullable: true
+                required:
+                  - product_name
+                  - price
+              example:
+                product_name: "Пример товара"
+                price: 199.99
+                product_description: "Описание примера товара"
+
