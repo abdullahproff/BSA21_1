@@ -1,0 +1,97 @@
+openapi: 3.0.3
+info:
+  title: Swagger
+  description: Получение топа песен
+  version: 1.0.11
+servers:
+  - url: https://spotify.com/api/v1
+  
+tags:
+  - name: monthtop
+    description: Запрос для работы с топом
+
+paths:
+  /monthtop:
+    get:
+      tags:
+        - monthtop
+      summary: Запрос топа песен пользователя
+      description: Возвращает массив с треками
+      parameters:
+        - name: month_from
+          in: query
+          description: С какой даты прогрузить
+          required: true
+          schema:
+            type: string
+            format: date
+            example: '2019-03-01'
+        - name: month_up_to
+          in: query
+          description: До какой даты прогрузить
+          required: true
+          schema:
+            type: string
+            format: date
+            example: '2018-02-01'
+      responses:
+        '200':
+          description: Успешная операция
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/monthtop_response'  
+components:
+  schemas:
+    monthtop_response:
+      type: array
+      items:
+        $ref: '#/components/schemas/monthtop_inf'
+
+    monthtop_inf:
+      type: object
+      required:
+        - month
+        - tracks
+      properties:
+        month:
+          $ref: '#/components/schemas/month'
+        tracks:
+          type: array
+          items:
+            $ref: '#/components/schemas/track'
+    
+    month:
+      type: string
+      format: date
+      example: '2018-03-01'
+      description: Месяц и год песни
+          
+    track:
+      type: object
+      required:
+        - track_name
+        - track_artist
+        - track_number
+        - track_id
+      properties:
+        track_name:
+          type: string
+          description: Название песни
+          example: Эспрессо
+        track_album:
+          type: string
+          description: Название альбома
+          example: Феникс
+        track_artist:
+          type: string
+          description: Исполнитель
+          example: Рианна
+        track_number:
+          type: integer
+          description: Номер песни в топе
+          example: 1        
+        track_id:
+          type: integer
+          description: Номер песни в системе
+          example: 17424976
