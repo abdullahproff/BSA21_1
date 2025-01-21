@@ -1,0 +1,24 @@
+@startuml
+
+title "Messages - Sequence Diagram"
+
+actor Пользователь as User
+participant       "Интернет-сайт" as GUI
+participant       "Сервер" as SC
+database          "База данных" as database
+
+User -> GUI :      1. Запрос на просмотр товаров заданного цвета 
+activate GUI
+GUI ->  SC :       2. HTTP Запрос на поиск раздела     
+activate SC
+SC ->  database:   3. SQL-запрос  на получение выборки данных
+activate database
+
+SC  <-  database:  4. Отправка SQL-ответа
+deactivate database
+GUI <-  SC :       5. HTTP ответ на запрос данных  
+deactivate SC
+User <- GUI :      6. Отображение товаров заданного цвета
+deactivate GUI
+
+@enduml
