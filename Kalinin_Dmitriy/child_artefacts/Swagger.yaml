@@ -1,0 +1,139 @@
+openapi: 3.0.0
+info:
+  title: API для создания новых списков акций и получения информации о них
+  description: POST запрос создает новый список, GET запрос получает информацию о списке
+  version: '1.0'
+servers:
+  - url: https://brocker.swagger.io/api/v1
+
+tags:
+  - name: Lists
+    description: Запрос на создание нового списка
+  - name: Info
+    description: Запрос на получение информации о списке по имени
+
+paths:
+  /online_terminal/lists:
+    post:
+      tags:
+        - Lists
+      description: Создание нового списка акций по параметрам пользователя
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UsersList'
+        required: true
+      responses:
+        '200':
+          description: Список создан успешно
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListResponse'          
+      
+  /online_terminal/list_info/:
+    get:
+      tags:
+          - Info
+      description: Запрос на получение информацию о списке акций
+      parameters:
+        - name: listName
+          in: query
+          description: Имя списка, по которому запрашивается информация
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/InfoResponse'  
+
+
+components:
+  schemas:
+    UsersList:
+      required:
+        - listName
+        - sectorOfEconomy
+        - dailyTurnoverFrom
+        - dailyTurnoverTo
+      type: object
+      properties:
+        listName:
+          type: string
+          example: List_1
+        sectorOfEconomy:
+          type: string
+          example: Retail
+        dailyTurnoverFrom:
+          type: integer
+          format: int64
+          example: 100000
+        dailyTurnoverTo:
+          type: integer
+          format: int64
+          example: 900000
+
+    ListResponse:
+      required:
+        - listName
+        - sharesList
+        - Name
+        - Price
+      type: object
+      properties:
+        listName:
+          type: string
+          example: List_1
+        sharesList:
+          type: array
+          items:
+            $ref: '#/components/schemas/ListItem'
+
+    ListItem:
+      required:
+        - Name
+        - Price
+      type: object
+      properties:
+        Name:
+          type: string
+          example: Лукойл
+        Price:
+          type: integer
+          format: int32
+          example: 143.60
+
+    InfoResponse:
+      required:
+        - sectorOfEconomy
+        - numberOfItems
+        - dailyTurnoverFrom
+        - dailyTurnoverTo
+      type: object
+      properties:
+        sectorOfEconomy:
+          type: string
+          example: Retail
+        numberOfItems:
+          type: integer
+          format: int32
+          example: 7
+        dailyTurnoverFrom:
+          type: integer
+          format: int64
+          example: 100000
+        dailyTurnoverTo:
+          type: integer
+          format: int64
+          example: 900000
+
+
+
+
