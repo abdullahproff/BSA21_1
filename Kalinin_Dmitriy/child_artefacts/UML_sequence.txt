@@ -1,0 +1,29 @@
+@@startuml
+autonumber
+skinparam responseMessageBelowArrow true
+
+title Диаграммы последовательностей создания нового списка
+
+actor User #EFD334
+participant Website #336699
+participant Backend #77DD77
+database DataBase #EC4B63
+
+activate User
+User -> Website : Нажимает кнопку "+"
+activate Website
+||10||
+User <-- Website : Отображает форму с параметрами
+||10||
+User -> Website : Заполняет параметры
+Website ->Backend : https запрос на получение списка\nпо заданным параметрам
+activate Backend
+Backend -> DataBase : SQL запрос на\nформирование списка
+activate DataBase
+return Ответ из БД со\nсписком акций
+Website <-- Backend : JSON со сформированным списком
+deactivate Backend
+User <-- Website : Отображение списка на сайте
+deactivate Website
+deactivate User
+@@enduml
