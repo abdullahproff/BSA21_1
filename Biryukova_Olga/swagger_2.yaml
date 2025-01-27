@@ -1,0 +1,61 @@
+openapi: 3.0.3
+info:
+  title: Swagger - OpenAPI 3.0
+  description: Для получения транскрибации трека в приложении
+  version: 1.0.0
+servers:
+  - url: https://zvukapp_demo.com/api/v1
+tags:
+  - name: transcriptions
+    description: Запросы для работы с транскрибациями
+paths:
+  /transcriptions/{transcriptionId}:
+    get:
+      tags:
+        - transcriptions
+      summary: Получение транскрибации трека
+      description: Возвращает данные о транскрибации трека по его уникальному идентификатору.
+      parameters:
+        - name: transcriptionId
+          in: path
+          description: Уникальный идентификатор транскрибации
+          required: true
+          schema:
+            type: integer
+            example: 102
+      responses:
+        '200':
+          description: Успешное получение данных о транскрибации
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TranscriptionResponse'
+components:
+  schemas:
+    TranscriptionResponse:
+      type: object
+      required:
+        - transcriptionId
+        - type
+        - description
+      properties:
+        transcriptionId:
+          type: integer
+          description: Уникальный идентификатор транскрибации
+          example: 102
+        type:
+          type: string
+          description: Тип транскрибации (например, "Chords" или "Notes")
+          example: Chords
+        description:
+          type: string
+          description: Транскрибация трека
+          example: |
+            [Intro]
+            C G Am F
+
+            [Chorus]
+            C             G
+            Jingle bells, jingle bells,
+            Am              F
+            Jingle all the way!
